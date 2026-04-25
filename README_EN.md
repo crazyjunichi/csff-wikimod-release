@@ -5,22 +5,20 @@ Install BepInEx and place WikiMod.dll in the Plugin folder.
 After entering the game, you can enable or disable the main mod features from the game’s Settings menu.
 More advanced features can be enabled in Anything Mod (default hotkey: `).
 
-## Latest Update V2.6.0 (2026/04/19)
-- [Anything Mod] Supports modifying native game UI hotkeys
-- [Anything Mod] Added an NPC status repair tool for issues like gray partridge snare traps not triggering and wolf packs not respawning
-- [Anything Mod] Supports getting 10 cards at once
-- [Anything Mod] If NPC respawn rate is modified, NPCs will respawn at full health
-- [Anything Mod] Supports defining a hotkey to directly execute the first button action on cards
-- [Anything Mod] Optimized object preview and tree expansion display in Developer Mode
-- [Anything Mod] Fixed an incorrect upper limit when modifying card attributes
-- [Achievement Badges] Fixed Brewing and Life badges defaulting to quality 0
-- [Achievement Badges] Fixed colored lights disappearing after being put away
-- [Map] Fixed roads and hunting fences under construction being shown on the map
-- [Detail Tooltip] Shows attribute transfer
-- [Detail Tooltip] Shows NPC respawn conditions
-- Supports updating Chinese translation files
-- Fixed a potential loading screen crash
-- Added more null checks
+## Latest Update V2.6.3 (2026/04/19)
+- Compatible with 0.62d
+- Added buttons in the F2 screen to copy debug info and open the save-report folder
+- [Anything Mod] Fixed missing essence dropdown when generating cards
+- [Anything Mod] Added a quick-action button toggle; highlight and hotkeys apply only when enabled
+- [Anything Mod] Compatible with ModCore loading flow to support mod item queries
+- [Anything Mod] Fixed errors when dragging sliders in Anything Mod
+- [Anything Mod] Supports resetting a single hotkey independently
+- [Detail Tooltip] Fixed incorrect display of skill decay names
+- [Detail Tooltip] Sorted skill decay entries
+- [Detail Tooltip] Fixed incorrect attribute transfer display
+- [Detail Tooltip] Fixed errors when value change rate is 0
+- [Detail Tooltip] Fixed incorrect hour display in NPC respawn conditions
+- [Detail Tooltip] Added current-value display when conditions are not met
 
 ## ✨ Main Features
 
@@ -149,6 +147,21 @@ In blueprint/container slot UI, right-click to open menu and quickly add availab
 
 
 ## 📝 Changelog
+### V2.6.3 (2026/04/19)
+- Compatible with 0.62d.
+- Added buttons in the F2 screen to copy debug info and open the save-report folder.
+- [Anything Mod] Fixed missing essence dropdown when generating cards.
+- [Anything Mod] Added a quick-action button toggle; highlight and hotkeys apply only when enabled.
+- [Anything Mod] Compatible with ModCore loading flow to support mod item queries.
+- [Anything Mod] Fixed errors when dragging sliders in Anything Mod.
+- [Anything Mod] Supports resetting a single hotkey independently.
+- [Detail Tooltip] Fixed incorrect display of skill decay names.
+- [Detail Tooltip] Sorted skill decay entries.
+- [Detail Tooltip] Fixed incorrect attribute transfer display.
+- [Detail Tooltip] Fixed errors when value change rate is 0.
+- [Detail Tooltip] Fixed incorrect hour display in NPC respawn conditions.
+- [Detail Tooltip] Added current-value display when conditions are not met.
+
 ### V2.6.0 (2026/04/19)
 - [Anything Mod] Supports modifying native game hotkeys
 - [Anything Mod] Supports getting cards x10
