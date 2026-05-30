@@ -24027,7 +24027,7 @@ ClayCauldron_CookingRecipes[5].ActionName,Melt Butter,融化黄油
 CookingPot_CookingRecipes[2].ActionName,Cook in Cookable Liquid,在可烹煮液体中烹煮
 CookingPot_CookingRecipes[4].ActionName,Melt Fat,融化油脂
 CookingPot_CookingRecipes[5].ActionName,Melt Butter,融化黄油
-AcornsDiseasedRaw_CardName,Diseased Acorns,病变橡果
+AcornsDiseasedRaw_CardName,Diseased Acorns,病变橡子
 AcornsDiseasedRaw_CardDescription,Oaks seem to be angry.,橡树似乎在生气。
 AcornsDiseasedRaw_SpoilageTime.CardStatName,Spoilage,变质
 AcornsDiseasedRaw_SpoilageTime.OnFull.ActionDescription,Acorns Spoiled!,橡子变质了！
@@ -24372,12 +24372,12 @@ CharcoalPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessage
 CharcoalPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessages[1].Message,Too thick,太浓稠
 CharcoalPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessages[2].Message,Not hot enough,还不够热
 Firewood_AlternateNames[4].Name,Alder Firewood,桤木柴火
-IronBloom_CardName,Iron Bloom,铁块
+IronBloom_CardName,Iron Bloom,块炼铁
 IronBloom_CardDescription,Can be worked into an iron nugget by hitting it repeatedly with a hammering tool.,用锤击工具反复敲打可加工成铁锭。
-IronBloom_AlternateNames[0].Name,Heated Iron Bloom,加热铁块
+IronBloom_AlternateNames[0].Name,Heated Iron Bloom,加热的块炼铁
 IronBloom_FuelCapacity.CardStatName,Temperature,温度
 IronBloom_SpecialDurability1.CardStatName,Strikes,捶打
-IronBloom_SpecialDurability1.OnZero.ActionDescription,Iron Bloom Finished!,铁块加工完成！
+IronBloom_SpecialDurability1.OnZero.ActionDescription,Iron Bloom Finished!,块炼铁加工完成！
 IronBloom_SpecialDurability2.CardStatName,Quality,品质
 IronBloom_SpecialDurability4.CardStatName,Metal Type,金属类型
 IronBloom_CardInteractions[0].ActionName,Smith,锻造
