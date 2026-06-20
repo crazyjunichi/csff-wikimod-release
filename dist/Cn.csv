@@ -108,7 +108,7 @@ INVENTORY_FULL,{0} inventory full,{0}已满
 IS_NOT_EQUIPMENT,{0} is not equippable,{0}不可装备
 JOURNAL_SUBTITLE_NAME,The {0} tale of {2}\n({1}),{2}的{0}幻想\n（{1}）
 LESS_THAN,less than {0},少于{0}
-LIQUID_AUTO_FILLING,Filling with {0},正在灌入{0}
+LIQUID_AUTO_FILLING,Filling with {0},正在生成{0}
 LIQUID_CONTAINER_EMPTY,{0} is empty,{0}空了
 LIQUID_TRANSFER,Transfer Liquid,转存液体
 LOAD,Load,加载
@@ -528,7 +528,7 @@ Bp_LeatherVest_CardDescription,Provides protection and insulation.,提供保护�
 Bp_LogTrap_CardName,Log Trap,原木陷阱
 Bp_LogTrap_CardDescription,A big game trap.,一个针对大型猎物的陷阱。
 Bp_LogTrap_UnlockConditionsDesc,More Trapping Needed,需要更高的陷阱技能
-Bp_Loom_CardName,Loom,织布机
+Bp_Loom_CardName,Weighted Loom,重锤织机
 Bp_Loom_CardDescription,Used for weaving cloth of different sizes.,用于纺织不同尺寸的布。
 Bp_MeadowgrassField_CardName,Meadowgrass,牧草
 Bp_MeadowgrassField_CardDescription,"Found in pine clearings; has very few needs and is ideal for letting fields rest because of its soil structure improving capabilities.\n\nCan be used as bedding material, roofing, animal feed or as a cover crop. Produces seeds in summer.",生长在松树林隙中；不怎么需要照料，能够改善土质，适宜用作土壤休耕。\n\n可用作垫料、屋顶材料、动物饲料或作为覆土作物。夏季结籽。
@@ -574,9 +574,6 @@ Bp_RusticTable_CardDescription,Increases comfort.,增加舒适度。
 Bp_RusticTable_UnlockConditionsDesc,Planks Needed,需要木板
 Bp_RyeField_CardName,Rye,黑麦
 Bp_RyeField_CardDescription,"Bought from traders; needs medium to high acidity, medium to low hydration and low to medium nutrients. Increases soil structure.\n\nEdible grain, long lasting and useful for making bread and beer.",从商人处购得；需要中高酸度、中低湿度和中低养分。能改善土质。\n\n持久耐储的可食用谷物，可制作面包和啤酒。
-Bp_Sack_CardName,Sack,布袋
-Bp_Sack_CardDescription,"A cloth sack, good for carrying stuff around.",一个布制的袋子，很适合装东西。
-Bp_Sack_UnlockConditionsDesc,More Tailoring Needed,需要更高的纺织技能
 Bp_SharpenedStone_CardName,Sharpened Stone,石刀
 Bp_SharpenedStone_CardDescription,"A useful tool, could use it to craft spears out of long sticks or axes out of wood.",实用的工具，可以用它把长木棍削成长矛，或者和木材组合成斧子。
 Bp_Shelf_CardName,Shelf,储物架
@@ -2420,13 +2417,13 @@ ClothVeryLarge_DismantleActions[0].ActionName,Rip Cloth,撕开布料
 Cord_CardName,Cord,细线
 Cord_CardDescription,Strong and Reliable. ,坚韧可靠。
 Fibers_CardName,Fibers,纤维
-Fibers_CardDescription,Can be combined with additional fiber to make twine.\n\nCan increase its quality with a hackler or use it as tinder.,可与其它纤维结合来制作细线。\n\n可以用梳理器来提高品质或者直接用作火绒。
+Fibers_CardDescription,Can be combined with additional fiber to make twine.\n\nCan increase its quality with a hackle or use it as tinder.,可与额外的纤维合成细线。\n\n可用梳麻器提升其品质，或用作火绒。
 Fibers_SpecialDurability2.CardStatName,Quality,品质
 Fibers_CardInteractions[0].ActionName,Light with Hand Drill,钻木取火
 Fibers_CardInteractions[1].ActionName,Light Tinder,点燃火绒
 Fibers_CardInteractions[2].ActionName,Make Twine,制作细线
 Fibers_CardInteractions[3].ActionName,Comb,梳理
-Loom_CardName,Loom,织布机
+Loom_CardName,Weighted Loom,重锤织机
 Loom_CardDescription,Used for weaving cloth of different sizes.,用于纺织不同尺寸的布。
 Loom_DismantleActions[0].ActionName,Disassemble Loom,拆卸织布机
 ShirtCloth_CardName,Cloth Shirt,布衬衫
@@ -2662,7 +2659,6 @@ FairyweedFresh_UsageDurability.CardStatName,Drying,干燥
 FairyweedFresh_Progress.CardStatName,Growth,成长度
 FairyweedFresh_SpecialDurability1.CardStatName,Burn,烧
 FairyweedFresh_SpecialDurability2.CardStatName,Quality,品质
-FairyweedFresh_CardInteractions[0].ActionName,Soak,浸泡
 FirerootCutFresh_CardName,Cut Fireroot,切碎的火根
 FirerootCutFresh_CardDescription,"Increases body temperature, boosts immune system, stamina and alertness. Slightly toxic.\n\nCan be dried to enhance its effects.",增加体温，增强免疫系统、耐力和警觉度。微毒。\n\n可干燥以增强效力。
 FirerootCutFresh_UsageDurability.CardStatName,Drying,干燥
@@ -2825,7 +2821,6 @@ FairyweedDried_CardName,Dry Fairyweed,干仙灵草
 FairyweedDried_CardDescription,"Lowers fever, pain, stress and wakefulness, while slightly altering your mind state.\n\nCan be dried to enhance its effects.",减轻你的发热、疼痛、压力，降低清醒度，同时略微让你更容易陷入精神失常状态。\n\n可干燥以增强效力。
 FairyweedDried_SpecialDurability1.CardStatName,Burned,烤焦的
 FairyweedDried_SpecialDurability2.CardStatName,Quality,品质
-FairyweedDried_CardInteractions[0].ActionName,Soak,浸泡
 FairyweedDried_CardInteractions[2].ActionName,Grind,研磨
 FirerootDried_CardName,Dried Fireroot,干火根
 FirerootDried_CardDescription,"Increases body temperature, boosts immune system, stamina and alertness. Slightly toxic.\n\nCan be ground to enhance its effects.",增加体温，增强免疫系统、耐力和警觉度。微毒。\n\n可研磨以增强效力。
@@ -3004,8 +2999,6 @@ LeatherHaversack_CardDescription,Increases your carrying capacity.\n\n <b>CAN BE
 LeatherSatchel_CardName,Leather Satchel,皮革挎包
 LeatherSatchel_CardDescription,I can store things inside.\n\n <b>CAN BE EQUIPPED ON EQUIPMENT SLOTS</b>,我可以把物品储存在里面。\n\n<b>可以装备在装备槽上</b>
 LeatherSatchel_DismantleActions[0].ActionName,Dismantle,拆解
-Sack_CardName,Sack,布袋
-Sack_CardDescription,I can store things inside.,我可以把物品储存在里面。
 Travois_CardName,Travois,旧式雪橇
 Travois_CardDescription,A device for carrying things around at the cost of some speed.,一种为了携带物品而牺牲速度的设备。
 Travois_SpoilageTime.CardStatName,Spoilage,耐久
@@ -3085,7 +3078,6 @@ LeavesFresh_CardName,Fresh Leaves,树叶
 LeavesFresh_CardDescription,"Useful as bedding material, animal fodder or compost.",可用作垫料、动物饲料、堆肥。
 LeavesFresh_SpoilageTime.CardStatName,Wetness,湿度
 LeavesFresh_SpoilageTime.OnZero.ActionDescription,Leaves Dried!,叶子干了！
-LeavesFresh_SpecialDurability2.CardStatName,Quality,品质
 MudBrick_CardName,Mud Brick,泥砖
 MudBrick_CardDescription,Ideal for simple construction.,很适合简单的建筑结构。
 MudBrick_CardInteractions[0].ActionName,Break,破坏
@@ -3421,9 +3413,7 @@ Campfire_CardInteractions[3].ActionName,Feed Fuel,添入燃料
 Campfire_CardInteractions[4].ActionName,Feed Fuel,添入燃料
 Campfire_CardInteractions[5].ActionName,Feed Charcoal,添入木炭
 Campfire_CardInteractions[6].ActionName,Light Tinder,点燃火绒
-Campfire_CardInteractions[7].ActionName,Feed Leaves,添入树叶
 Campfire_CardInteractions[8].ActionName,Craft Rustic Spear,制作简易长矛
-Campfire_CardInteractions[9].ActionName,Place Alembic,放置蒸馏器
 Campfire_DismantleActions[0].ActionName,Take Embers,取出火炭
 Campfire_DismantleActions[0].RequiredReceivingDurabilities.FailMessage,Charcoal not ready yet.,木炭尚未完成。
 Campfire_DismantleActions[1].ActionName,Extinguish Fire,熄灭火焰
@@ -3438,12 +3428,9 @@ CampfireExtinguished_CardInteractions[0].ActionName,Feed Firewood,添入柴火
 CampfireExtinguished_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 CampfireExtinguished_CardInteractions[3].ActionName,Feed Fuel,添入燃料
 CampfireExtinguished_CardInteractions[4].ActionName,Feed Charcoal,添入木炭
-CampfireExtinguished_CardInteractions[5].ActionName,Feed Leaves,添入树叶
 CampfireExtinguished_CardInteractions[6].ActionName,Feed Embers,添入火炭
-CampfireExtinguished_CardInteractions[7].ActionName,Feed Husk,添入椰子皮
 CampfireExtinguished_CardInteractions[8].ActionName,Light Fire,点燃
 CampfireExtinguished_CardInteractions[8].RequiredReceivingDurabilities.FailMessage,Not Enough Fuel,燃料不足
-CampfireExtinguished_CardInteractions[9].ActionName,Place Alembic,放置蒸馏器
 CampfireExtinguished_DismantleActions[0].ActionName,Take Charcoal and Ash,取出木炭和灰烬
 CampfireExtinguished_DismantleActions[0].RequiredReceivingDurabilities.FailMessage,Charcoal not ready yet.,木炭尚未完成。
 CampfireExtinguished_DismantleActions[1].ActionName,Dismantle,拆解
@@ -3456,9 +3443,7 @@ Fireplace_CardInteractions[3].ActionName,Feed Fuel,添入燃料
 Fireplace_CardInteractions[4].ActionName,Feed Fuel,添入燃料
 Fireplace_CardInteractions[5].ActionName,Feed Charcoal,添入木炭
 Fireplace_CardInteractions[6].ActionName,Light Tinder,点燃火绒
-Fireplace_CardInteractions[7].ActionName,Feed Leaves,添入树叶
 Fireplace_CardInteractions[8].ActionName,Make Rustic Spear,制作简易长矛
-Fireplace_CardInteractions[9].ActionName,Place Alembic,放置蒸馏器
 Fireplace_DismantleActions[0].ActionName,Take Embers,取出火炭
 Fireplace_DismantleActions[0].RequiredReceivingDurabilities.FailMessage,Charcoal not ready yet.,木炭尚未完成。
 Fireplace_DismantleActions[1].ActionName,Extinguish Fire,熄灭火焰
@@ -3475,12 +3460,9 @@ FireplaceExtinguished_CardInteractions[0].ActionName,Feed Firewood,添入柴火
 FireplaceExtinguished_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 FireplaceExtinguished_CardInteractions[3].ActionName,Feed Fuel,添入燃料
 FireplaceExtinguished_CardInteractions[4].ActionName,Feed Charcoal,添入木炭
-FireplaceExtinguished_CardInteractions[5].ActionName,Feed Leaves,添入树叶
 FireplaceExtinguished_CardInteractions[6].ActionName,Feed Embers,添入火炭
-FireplaceExtinguished_CardInteractions[7].ActionName,Feed Husk,添入椰子皮
 FireplaceExtinguished_CardInteractions[8].ActionName,Light Fire,点燃
 FireplaceExtinguished_CardInteractions[8].RequiredReceivingDurabilities.FailMessage,Not Enough Fuel,燃料不足
-FireplaceExtinguished_CardInteractions[9].ActionName,Place Alembic,放置蒸馏器
 FireplaceExtinguished_DismantleActions[0].ActionName,Take Charcoal and Ash,取出木炭和灰烬
 FireplaceExtinguished_DismantleActions[0].RequiredReceivingDurabilities.FailMessage,Charcoal not ready yet.,木炭尚未完成。
 Hearth_CardName,Hearth,火炉
@@ -3613,7 +3595,6 @@ Kiln_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 Kiln_CardInteractions[3].ActionName,Feed Charcoal,添入木炭
 Kiln_CardInteractions[4].ActionName,Feed Embers,添入火炭
 Kiln_CardInteractions[5].ActionName,Light Tinder,点燃火绒
-Kiln_CardInteractions[6].ActionName,Feed Leaves,添入树叶
 Kiln_DismantleActions[0].ActionName,Warm Up,取暖
 Kiln_DismantleActions[1].ActionName,Wait by Fire,在火边等待
 Kiln_CookingConditions.CookingPausedNotification,Not Hot Enough,温度还不够
@@ -3645,7 +3626,6 @@ KilnExtinguished_CardInteractions[0].ActionName,Feed Firewood,添入柴火
 KilnExtinguished_CardInteractions[1].ActionName,Feed Fuel,添入燃料
 KilnExtinguished_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 KilnExtinguished_CardInteractions[3].ActionName,Feed Charcoal,添入木炭
-KilnExtinguished_CardInteractions[4].ActionName,Feed Leaves,添入树叶
 KilnExtinguished_CardInteractions[5].ActionName,Light Fire,点燃
 KilnExtinguished_CardInteractions[6].ActionName,Feed Tinder,添入火绒
 KilnExtinguished_DismantleActions[0].ActionName,Demolish,拆除
@@ -3658,7 +3638,6 @@ Oven_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 Oven_CardInteractions[3].ActionName,Feed Charcoal,添入木炭
 Oven_CardInteractions[4].ActionName,Feed Embers,添入火炭
 Oven_CardInteractions[5].ActionName,Light Tinder,点燃火绒
-Oven_CardInteractions[6].ActionName,Feed Leaves,添入树叶
 Oven_DismantleActions[0].ActionName,Warm Up,取暖
 Oven_DismantleActions[1].ActionName,Wait by Fire,在火边等待
 Oven_CookingConditions.CookingPausedNotification,Not Hot Enough,温度还不够
@@ -3674,9 +3653,7 @@ OvenExtinguished_CardInteractions[0].ActionName,Feed Firewood,添入柴火
 OvenExtinguished_CardInteractions[1].ActionName,Feed Fuel,添入燃料
 OvenExtinguished_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 OvenExtinguished_CardInteractions[3].ActionName,Feed Charcoal,添入木炭
-OvenExtinguished_CardInteractions[4].ActionName,Feed Leaves,添入树叶
 OvenExtinguished_CardInteractions[5].ActionName,Light Fire,点燃
-OvenExtinguished_CardInteractions[6].ActionName,Feed Tinder,添入火绒
 OvenExtinguished_DismantleActions[0].ActionName,Demolish,拆除
 OvenExtinguished_CookingRecipes[0].ActionName,Firing Temp: Fires Medium (Cooking Pot etc...),加热温度：中火（适用于烹饪锅等...）
 OvenExtinguished_CookingRecipes[1].ActionName,Firing Temp: Fast Burn Charables,加热温度：快速燃烧木炭
@@ -3928,11 +3905,9 @@ DryingRack_DismantleActions[0].ActionName,Dismantle,拆解
 DryingRack_CookingRecipes[1].ActionName,Dry QuickDryable and Dryable ( Quality + 0.3 ),干燥速干物和可干燥物（品质+0.3）
 FlintVein_CardName,Flint Vein,燧石矿脉
 FlintVein_CardDescription,Can be mined for flint.,可采燧石。
-FlintVein_CardInteractions[0].ActionName,Mine,采掘
 FlintVein_CardInteractions[1].ActionName,Mine,采掘
 FlintVeinInfinite_CardName,Flint Mother Lode,燧石母矿脉
 FlintVeinInfinite_CardDescription,A very large and sacred vein of Flint. ,一座巨大、神圣的燧石矿脉。
-FlintVeinInfinite_CardInteractions[0].ActionName,Mine,采掘
 FlintVeinInfinite_CardInteractions[1].ActionName,Mine,采掘
 FrozenRiver_CardName,Frozen River,上冻的河流
 FrozenRiver_CardDescription,Should open a hole on it with a hammer tool to get water or fish.,应该用锤子工具在上面开一个洞，以便取水或取鱼。
@@ -3968,7 +3943,6 @@ IceHole_CardDescription,Could try to get some fish with the right equipment.,可
 IceHole_SpoilageTime.CardStatName,Spoilage,耐久
 IceHole_CardInteractions[2].ActionName,Wash of Tannins,洗净鞣质
 IceHole_CardInteractions[3].ActionName,Extend,拓展
-IceHole_DismantleActions[0].ActionName,Drink,饮用
 IceHole_DismantleActions[1].ActionName,Wash yourself,洗个澡
 IceHole_DismantleActions[2].ActionName,Gaze at Water,凝视水面
 InvisibleLocationEnricher_UsageDurability.CardStatName,Nutrition,营养
@@ -4387,7 +4361,7 @@ InsulationHeat_Statuses[4].GameName,Lvl 5,5级
 Irrigated_GameName,Irrigated,已灌溉
 Irrigated_NotEnoughText,Cannot be built here.,不能在这里建造。
 IsNight_GameName,IsNight,夜晚
-IsNight_NotEnoughText,It's too dark for this action...,太黑了我做不到……
+IsNight_NotEnoughText,Only during deep Night. ,仅在深夜期间可用。
 JasmineEffect_GameName,Jasmine,茉莉效果
 JasmineEffect_Description,"Relaxes you, lowering your stress and making you sleepy.",使你放松，降低你的压力并让你昏昏欲睡。
 JasmineEffect_Statuses[0].GameName,Moderate Jasmine Effect,中等茉莉花效果
@@ -5441,10 +5415,10 @@ GpTag_LogPiece_TabName,Log Piece,原木块
 GpTag_Meat_TabName,Meat,肉
 GpTag_Needle_TabName,Needle,针
 GpTag_NettleLeaves_TabName,Nettle Leaves,荨麻叶
-GpTag_Reeds_TabName,Reeds,芦苇
+GpTag_Reeds_TabName,Insulation Material,隔热材料
 GpTag_Scraps_TabName,Scraps,碎料
 GpTag_ScrapsMeat_TabName,Bait Ingredients,诱饵材料
-GpTag_SharpAxe_TabName,Sharp Axe,锋利的斧
+GpTag_SharpAxe_TabName,Shaping Tool,塑形工具
 GpTag_SharpKnife_TabName,Sharp Cutting Tool,锋利的切割工具
 GpTag_Shovel_TabName,Shovel,铲子
 GpTag_SmallLiquidContainer_TabName,Small Liquid Container,小型液体容器
@@ -5473,7 +5447,6 @@ tag_GrowingCropField_InGameName,Growing Crop Field,生长中的农田
 tag_MatureCropField_InGameName,Mature Crop Field,成熟的农田
 tag_Paddy_InGameName,Paddy,水稻田
 tag_Feed_InGameName,Feed,喂/添加
-tag_FeedCarniOmni_InGameName,Feed for Carnivores and Omnivores,肉食和杂食动物饲料
 tag_FeedHerbi_InGameName,Feed for Herbivores,草食动物饲料
 tag_FeedHerbiOmni_InGameName,Feed for Herbivores and Omnivores,草食和杂食动物饲料
 tag_FeedRich_InGameName,Rich Feed,高效饲料
@@ -8479,37 +8452,31 @@ MudHutConstructionLocationCellar_SpoilageTime.CardStatName,Filthiness,污秽
 MudHutConstructionLocationCellar_CardInteractions[0].ActionName,Clean,打扫
 MudHutConstructionLocationEnclosure_CardName,Enclosure,畜栏
 MudHutConstructionLocationEnclosure_SpoilageTime.CardStatName,Filth,污垢
-MudHutConstructionLocationEnclosure_FuelCapacity.CardStatName,Flood,洪水
 MudHutConstructionLocationEnclosure_SpecialDurability2.CardStatName,Overgrowth,过度生长
 MudHutConstructionLocationEnclosure_SpecialDurability3.CardStatName,Foraging,觅食
 MudHutConstructionLocationEnclosure_CardInteractions[1].ActionName,Throw Inside,扔进去
 MudHutConstructionLocationEnclosure_CardInteractions[5].ActionName,Shovel Snow,铲雪
 MudHutConstructionLocationEnclosure_CardInteractions[6].ActionName,Shovel Snow,铲雪
-MudHutConstructionLocationEnclosure_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
 MudHutConstructionLocationRoom_CardName,Room,房间
 MudHutConstructionLocationRoom_SpoilageTime.CardStatName,Filthiness,污秽
-MudHutConstructionLocationRoom_FuelCapacity.CardStatName,Flood,洪水
 MudHutConstructionLocationRoom_Progress.CardStatName,Affinity,亲和度
 MudHutConstructionLocationRoom_SpecialDurability1.CardStatName,Roof Hole Counter,屋顶破洞计数
 MudHutConstructionLocationRoom_SpecialDurability1.OnFull.ActionDescription,A part of the roof fell!,部分屋顶塌了！
 MudHutConstructionLocationRoom_SpecialDurability2.CardStatName,Roof Collapse Counter,屋顶坍塌计数
 MudHutConstructionLocationRoom_SpecialDurability2.OnFull.ActionDescription,The roof collapsed!,塌房啦！
 MudHutConstructionLocationRoom_CardInteractions[0].ActionName,Clean,清理
-MudHutConstructionLocationRoom_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
 MudHutConstructionStartingPointCellar_CardName,Cellar,地窖
 MudHutConstructionStartingPointCellar_CardDescription,"An underground room, food stored here will last longer.",一片地下空间，储存在这里的食物保存得更久。
 MudHutConstructionStartingPointCellar_SpoilageTime.CardStatName,Filthiness,污秽
 MudHutConstructionStartingPointCellar_CardInteractions[0].ActionName,Clean,打扫
 MudHutConstructionStartingPointMudHut_CardName,Mud Hut,泥屋
 MudHutConstructionStartingPointMudHut_SpoilageTime.CardStatName,Filthiness,污秽
-MudHutConstructionStartingPointMudHut_FuelCapacity.CardStatName,Flood,洪水
 MudHutConstructionStartingPointMudHut_Progress.CardStatName,Affinity,亲和度
 MudHutConstructionStartingPointMudHut_SpecialDurability1.CardStatName,Roof Hole Counter,屋顶破洞计数
 MudHutConstructionStartingPointMudHut_SpecialDurability1.OnFull.ActionDescription,A part of the roof fell!,部分屋顶塌了！
 MudHutConstructionStartingPointMudHut_SpecialDurability2.CardStatName,Roof Collapse Counter,屋顶坍塌计数
 MudHutConstructionStartingPointMudHut_SpecialDurability2.OnFull.ActionDescription,The roof collapsed!,塌房啦！
 MudHutConstructionStartingPointMudHut_CardInteractions[0].ActionName,Clean,清理
-MudHutConstructionStartingPointMudHut_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
 Cellar_CardName,Cellar,地窖
 Cellar_CardDescription,"An underground room, food stored here will last longer.",一片地下空间，储存在这里的食物保存得更久。
 Cellar_SpoilageTime.CardStatName,Filthiness,污秽
@@ -9334,7 +9301,7 @@ WillowTwigs_CardName,Willow Twigs,柳枝
 WillowTwigs_CardDescription,Can be used for weaving.,可用作编织材料。
 WillowTwigs_SpecialDurability2.CardStatName,Quality,品质
 eTag_ShoesOuter_InGameName,Outer Shoes,鞋套
-GpTag_DryReedsOrWillowTwigs_TabName,Dry Reeds or Willow Twigs,干芦苇或柳枝
+GpTag_DryReedsOrWillowTwigs_TabName,Basketry Material,编篮材料
 tag_ContainerLeaking_InGameName,Small Open Container,小型敞口容器
 NewsEARelease23_PageTitle,Branch Merge and Patch Notes #21,分支合并和更新日志 #21
 NewsEARelease23_Sections[0].Entries[0].Content,"Hello everyone! Hope you are all well.\n\nWe are uploading a bunch of bug fixes for the exploration update, here's a full list:\n\n<size=150%>Beta Branch: EA_0.26</size>\n\n- Fixed a bug with Wood cards collected before the update not giving any fuel (the old wood cards will fix themselves after 1 tick passes in the game).\n- Snow Shoes can now be worn while you have your regular shoes equiped.\n- Fixed a bug where the Waterskin would leak even when waterproofed, or sometimes generate liquid over time.\n- Updated Unfired Cooking Pot description to include the Oven.\n- Fixed a bug where the River card would disappear from the River Clearing location.\n- Fixed a bug where the new Pond and Old Sleeping Tree would not appear in saves from before the update.\n- Fixed a bug with wood and sticks being too heavy.\n- Fixed a bug with Birch Syrup showing a ""Birch Syrup is complete"" notification repeatedly.\n- The Waterfall changes should now also appear in saves from before the update.\n- The Floods should now properly stop after a day or so. The Water Level will go back to normal after a while.\n- Fixed a bug where the Travois' movement penalty would apply all the time after putting the Travois in your hand.\n- Added a temporary fix for when the Flood Damage event follows you into an area with no river (items will not get destroyed in this case).\n- Willow tree now drops normal leaves and willow twigs.\n- Heated Resin now correctly cools down into Cold Resin instead of Tar.\n- Updated the Quest to make Tar; it now requires firing a Pine Log Piece.\n- Updated texts and translations.\n\n\nAside from that, we are also updating the Main branch to version EA_0.24, with the following patch notes:\n\n<size=150%>Main branch: EA_0.24</size>\n\n- Performance improvements to cards that affect their inventory content (like Garden Plots, Stretching Frames and Tanning Pits).\n- Fixed a bug where stacks of card were not sorting properly by spoilage.\n- Fixed a bug that was causing the cellar preservation effect not to work.\n- Implemented a temporary fix for the bug that is causing River cards to disappear from some areas (this should fix old river-less saves too). :)\n- Fixed an exploit where putting something perishable in a storage pot and picking up and placing the pot repeatedly would make the content gain spoilage over time.\n- Fixed a bug that was causing body temperature to drop too fast at the threshold between freezing and extremely freezing temperatures.\n- Improved Perceived Temperature stat so that its effect on Body Temperature is more gradual.\n- You can no longer wash wounds with frozen rivers unless there's an open ice hole available.\n- Storage Pot now fully fills up with water when interacted with River or Ice Hole.\n- Players can now store Fat inside Clay Jars.\n- Fat can now be placed on and eaten from a clay Plate.\n- Bone Needles, Bone Hooks and Bonemeal can now be added to stews.\n- Oven no longer dries reeds and clothing if the temperature is not at least drying.\n- Snowmen can now be renamed.\n- Removed Health stat from soaking nettle stems.\n- Sturgeon, Trout and Pike can no longer be placed inside cooking stations such as Campfires and Ovens.\n- Fixed a bug where chasing animals after a fight didn't work properly (the trader fox bug!).\n- Fixed a bug where you could place planted crops from a garden into a hand basket.\n- Fixed a bug where the ""Delete Character"" button in the main menu didn't work.\n- ""Payload Too Large"" errors when sending bug reports should now be less common.\n- Fixed a bug with the digestion system. Eating calorie light foods such as soups and broths will now give proper amounts of calories.\n- Oaken Staff Blueprint now display a ""Not enough Insight"" message if you do not have enough insight to craft it.\n- Partridge Eggs can now be boiled. \n- Adding ingredients to brews now takes only 3 minutes.\n\n\nThat's it for today, see you in the next patch notes!",大家好！希望你们都很好。\n\n我们正在上传大量针对探索更新的bug修复，以下是完整列表：\n\n<size=150%>测试分支：EA_0.26</size>\n\n- 修复了更新前收集的木材类卡牌不提供任何热值的错误（旧的卡牌将在游戏中经过1 tick（15分钟）后自行修复）。\n- 现在可以在装备了普通鞋子时穿雪靴了。\n- 修复了一个导致水袋做了防水也会漏水，或者有时会虚空生产液体的bug。\n- 更新了未烧制的烹饪锅的文本描述。\n- 修复了河流在河畔林隙消失的bug。\n- 修复了新的池塘和沉眠老树不会出现在更新前的存档中的bug。\n- 修复了木材和木棍过重的bug。\n- 修复了白桦糖浆反复显示“白桦糖浆已完成”的bug。\n- 瀑布的变动现在也应该出现在更新前的存档中。\n- 洪水现在应该会在约一天后正常停止。水位将在一段时间后恢复正常。\n- 修复了将雪橇放在手中后雪橇的移动惩罚会一直生效的bug。\n- 添加了阻止当洪水损害事件跟随您进入没有河流的区域时会摧毁当前区域内物品的临时修复。\n- 柳树现在能掉落普通的叶子和柳树枝了。\n- 液态树脂现在可以正确冷却为固态树脂而不是焦油。\n- 更新了制作焦油的任务；现在需要烧松树原木块。\n- 更新了部分文本和翻译。\n\n\n除此之外，我们还将主分支更新至版本 EA_0.24，更新日志如下：\n\n<size=150%>主分支：EA_0.24</size>\n\n- 优化了部分有内容的卡牌的性能（如菜园、伸张架和鞣制坑）。\n- 修复了堆叠卡牌无法按耐久/保质期正确排序的bug。\n- 修复了导致地窖保鲜效果无法生效的bug。\n- 添加了临时热修，修复了导致河流卡从某些区域消失的bug（这应该也能修复旧的存档）。:)\n- 修复了反复拿起放置储存罐可以返鲜的bug。\n- 修复了在寒冷和极度寒冷的环境温度之间的阈值处会导致体温下降过快的bug。\n- 改进了体感温度状态，使其对体温的影响更加平缓。\n- 不能再用冰冻的河流清洗伤口了（除非有冰洞）。\n- 当与河流或冰洞互动时，储藏罐现在能完全装满水了。\n- 玩家现在可以将脂肪储存在小陶罐中。\n- 脂肪现在可以放在陶盘上食用。\n- 骨针、骨钩和骨粉现在可以添加到炖菜中。\n- 烤箱将不再温度没有达到干燥程度时烘干芦苇和衣物了。\n- 雪人现在可以重命名。\n- 移除了泡荨麻茎的健康属性。\n- 鲟鱼、鳟鱼和狗鱼不再能直接放入营火和烤箱等烹饪设施内。\n- 修复了一个导致战斗后追逐动物无法正常交互的bug（和狐狸交易的老bug！）。\n- 修复了一个可以将花园中种植的作物放入手提篮中的bug。\n- 修复了一个导致主菜单中的“删除角色”按钮不起作用的bug。\n- 发送错误报告时“包裹过大”的错误现在应该不那么常见了。\n- 修复了消化系统的一个bug。现在吃低卡路里的食物，如汤和肉汤，会提供适当的卡路里了。\n- 没有足够的灵视来制作橡木法杖蓝图时，现在会显示“灵视不足”的消息。\n- 灰山鹑蛋现在可以水煮了。\n- 现在只需 3 分钟即可将各种原料添加到酿造物中。\n\n\n今天就到这里，下个更新日志再见！
@@ -9451,7 +9418,7 @@ SimpleArrowqwr_OnStatsChangeActions[3].ActionName,Adjust Quality - Willow ( ID =
 SimpleBowqwr_SpecialDurability2.CardStatName,Quality,品质
 SimpleBowqwr_SpecialDurability4.CardStatName,ID,ID
 SoothingPasteApplied_Statuses[1].GameName,Strong Soothing Effect,强效舒缓效果
-GpTag_Straw_TabName,Straw,秸秆
+GpTag_Straw_TabName,Brick Binder,砖块粘合料
 NewsEARelease28_PageTitle,"Bows, Arrows and Patch Notes #26",弓箭与更新日志 #26
 NewsEARelease28_Sections[0].Entries[0].Content,"Hello everyone!\n\nHope you are all well.\n\nToday we're adding the bow and arrows.\nBows work pretty much as they used to but have quality dependent on the type of wood you use to make them, in addition to your archery and woodworking skills. Higher quality bows have greater accuracy, durability and strength,\nYou can also craft two different types of arrows: simple and flint ones.\nWhile simple arrows are cheap and can get some smaller animals, they're not enough to hunt big game. For those you'll need flint ones, as well as a bit of patience and luck.\n\nAnd now to the patch notes:\n\n<size=150%>Version EA_0.31:</size>\n- Bows and arrows can now be unlocked.\n- Butchering Partridges and successfully climbing to a Bird Nest now gives Feathers again.\n- Releasing Animal Spirits now gives Insight and helps unlock Blessings and Enchantments earlier on Research mode\n- Fixed a bug which prevented Fireplace from heating up Cold Tar.\n- Player can now throw food into the enclosure even if Filth is maxed out, making them more effective for feeding animals automatically.\n- It is no longer possible to Clear Brushwood and Chop Wood inside Enclosures.\n- Birch Clearings Clear Action now sometimes drops a Birch Long Stick.\n- Pine Needles can now be used to Acidify the Garden Plots.\n- Repairing the Travois with Twine now takes only 15 minutes and repairs it quite a bit more.\n\n\nSee you next time!",大家好！\n\n希望你们都很好。\n\n今天我们添加了弓箭。\n弓的工作原理与以前基本相同，但其品质取决于您用来制作弓箭的木材类型，以及您的箭术和木工技能等级。更高品质的弓具有更高的准度、耐久和强度，\n您还可以制作两种不同类型的箭：简易箭和燧石箭。\n虽然简易箭很便宜，可以用于捕获一些较小的动物，但它们不足以捕猎大型猎物。对于大型猎物，您需要燧石箭，以及一点耐心和运气。\n\n现在来看看更新日志：\n\n<size=150%>版本 EA_0.31：</size>\n- 现在可以解锁弓箭。\n- 现在屠宰灰山鹑并成功爬上鸟巢时能获得羽毛了。\n - 释放动物精魄现在可以增加灵视，并有助于在研究模式下更早地解锁赐福和附魔。\n- 修复了阻止壁炉加热冷焦油的bug。\n- 玩家现在可以在污秽满值的情况下将食物扔进围栏中，从而更有效地自动喂养动物。\n- 不再能在畜栏内清理树丛和砍伐木材。\n- 桦树林隙的清理动作现在有时会掉落桦树长木棍。\n- 松针现在可用于酸化菜园。\n- 用细线修复雪橇现在只需 15 分钟，并且修复的耐久更多。\n\n\n下次见！
 NewsEARelease29_PageTitle,Balance Pass and Patch Notes #27,平衡调整和更新日志 #27
@@ -9461,8 +9428,8 @@ NewsEARelease30_Sections[0].Entries[0].Content,"Hello everyone!\n\nPatch notes a
 Bp_TranquilizerCoating_CardName,Tranquilizer Coating,麻醉涂层
 Bp_TranquilizerCoating_CardDescription,Sedative that can be applied to pointy weapons.,能涂在尖锐武器上的镇静剂。
 Bp_TranquilizerCoating_UnlockConditionsDesc,Salve Needed,需要药膏
-Bp_WolfsbaneCoating_CardName,Wolfsbane Coating,乌头涂层
-Bp_WolfsbaneCoating_CardDescription,Poisonous coating that can be applied to pointy weapons.,能涂在尖锐武器上的毒素。
+Bp_WolfsbaneCoating_CardName,Wolfsbane Tranquilizer Coating,乌头麻醉涂层
+Bp_WolfsbaneCoating_CardDescription,Poisonous and sedative coating that can be applied to pointy weapons.,一种可涂在尖锐武器上的有毒镇静涂层。
 Bp_WolfsbaneCoating_UnlockConditionsDesc,Salve Needed,需要药膏
 AppleweedPlantedDormant_SpecialDurability2.OnFull.ActionDescription,Appleweed recovered!,柰草恢复了！
 BillberriesPlantedDormant_SpecialDurability2.OnFull.ActionDescription,Billberries recovered!,越橘恢复了！
@@ -9538,7 +9505,7 @@ TranquilizerCoating_CardInteractions[0].ActionName,Apply,涂抹
 TranquilizerCoating_CardInteractions[1].ActionName,Apply,涂抹
 TranquilizerCoating_CardInteractions[2].ActionName,Apply,涂抹
 TranquilizerCoating_CardInteractions[3].ActionName,Apply,涂抹
-WolfsbaneCoating_CardName,Wolfsbane Coating,乌头涂层
+WolfsbaneCoating_CardName,Wolfsbane Tranquilizer Coating,乌头麻醉涂层
 WolfsbaneCoating_SpecialDurability2.CardStatName,Quality,品质
 WolfsbaneCoating_CardInteractions[0].ActionName,Apply,涂抹
 WolfsbaneCoating_CardInteractions[1].ActionName,Apply,涂抹
@@ -9570,7 +9537,7 @@ WolfsbaneExposure_Statuses[0].GameName,Minor Wolfsbane Exposure,轻微乌头暴�
 WolfsbaneExposure_Statuses[1].GameName,Moderate Wolfsbane Exposure,中度乌头暴露
 WolfsbaneExposure_Statuses[2].GameName,Severe Wolfsbane Exposure,重度乌头暴露
 Tab_3_Hunting_Subtab_5_Coatings_TabName,Coatings,涂层
-GpTag_ReedsOrStraw_TabName,Reeds or Straw,芦苇或稻杆
+GpTag_ReedsOrStraw_TabName,Stalks,茎秆
 GpTag_Wolfsbane_TabName,Wolfsbane,乌头
 tag_Wolfsbane_InGameName,Fairyweed Derivate,仙灵草衍生
 W_BarrenCurse_SpecialDurability2.CardStatName,Recovery,治愈
@@ -9579,13 +9546,13 @@ NewsEARelease31_Sections[0].Entries[0].Content,"Hello everyone!\n\nHope you're a
 ResinTap_CardName,Resin Tap,松脂采集点
 ResinTap_CardDescription,Produces resin for a limited period of time.,在一段时间内产出松脂。
 ResinTap_SpecialDurability3.CardStatName,Resin Flowing,松脂流动
-ResinTap_CardInteractions[0].ActionName,Cut Tree,切割
+ResinTap_CardInteractions[0].ActionName,Refresh,刷新
 ResinTap_CookingRecipes[0].ActionName,Make Resin,产出松脂
 ResinTap_CookingRecipes[0].CustomCookingText,Making Resin...,产出松脂中……
 SapTap_CardName,Sap Tap,树汁采集点
 SapTap_CardDescription,Produces sap for a limited period of time. Place a container inside to gather it.,在一段时间内产出树汁。需放置一个容器来收集。
 SapTap_SpecialDurability3.CardStatName,Sap Flowing,树汁流动
-SapTap_CardInteractions[0].ActionName,Cut Tree,切割
+SapTap_CardInteractions[0].ActionName,Refresh,刷新
 SapTap_CookingRecipes[0].ActionName,Sap,树汁
 SapTap_CookingRecipes[1].ActionName,Maintain,剩余
 RyeGrains_SpoilageTime.CardStatName,Spoilage,变质
@@ -11237,10 +11204,6 @@ TravoisPenalty_Statuses[0].EffectsOnActions[0].ActionBlockMessage,You cannot hau
 TravoisPenalty_NotEnoughText,My Leg is not in shape for this action.,腿的状态不能攀爬。
 Skill_Socials_GameName,Socials,人情练达
 Skill_Socials_Description,Helps you gain the trust of others.,助你取信于人。
-RoadTravelingAidEast_Statuses[0].GameName,Road Traveling Aid East,东部道路移动援助
-RoadTravelingAidNorth_Statuses[0].GameName,Road Traveling Aid North,北部道路移动援助
-RoadTravelingAidSouth_Statuses[0].GameName,Road Traveling Aid South,南部道路移动援助
-RoadTravelingAidWest_Statuses[0].GameName,Road Traveling Aid West,西部道路移动援助
 Symmetry_GameName,Symmetry,面部对称性
 Symmetry_Statuses[0].GameName,Low,低
 Symmetry_Statuses[1].GameName,Medium,中
@@ -11310,11 +11273,11 @@ GreenstoneQWE_CardInteractions[1].ActionName,Grind,研磨
 GreenstoneSlagQWE_CardName,Greenstone Slag,绿炉石
 GreenstoneSlagQWE_SpecialDurability2.CardStatName,Quality,品质
 LumpOfCopperFinishedQWE_CardName,Heated Metal Bar,加热的金属锭
-LumpOfCopperFinishedQWE_CardDescription,Required for forging metal tools. Can be heated up on any fire.,用于锻造金属工具。可在任何火上加热。
+LumpOfCopperFinishedQWE_CardDescription,Required for forging metal tools. Should be heated on a hot enough fire.,用于锻造金属工具。需在足够高温的火中加热。
 LumpOfCopperFinishedQWE_FuelCapacity.CardStatName,Temperature,温度
 LumpOfCopperFinishedQWE_CardInteractions[0].ActionName,Smith,锻造
 LumpOfCopperUnfinishedQWE_CardName,Unfinished Metal Bar,半成品金属锭
-LumpOfCopperUnfinishedQWE_CardDescription,Required for forging metal tools. Can be heated up on any fire.,用于锻造金属工具。可在任何火上加热。
+LumpOfCopperUnfinishedQWE_CardDescription,Required for forging metal tools. Should be heated on a hot enough fire.,用于锻造金属工具。需在足够高温的火中加热。
 LumpOfCopperUnfinishedQWE_FuelCapacity.CardStatName,Temperature,温度
 LumpOfCopperUnfinishedQWE_CardInteractions[0].ActionName,Smith,锻造
 Arrow_CopperBluntQWE_CardName,Blunt Metal Arrow,钝金属箭
@@ -11347,10 +11310,8 @@ FurnaceExtinguishedQWE_CardInteractions[0].ActionName,Feed Firewood,添入柴火
 FurnaceExtinguishedQWE_CardInteractions[1].ActionName,Feed Fuel,添入燃料
 FurnaceExtinguishedQWE_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 FurnaceExtinguishedQWE_CardInteractions[3].ActionName,Feed Charcoal,添入木炭
-FurnaceExtinguishedQWE_CardInteractions[4].ActionName,Feed Leaves,添入树叶
 FurnaceExtinguishedQWE_CardInteractions[5].ActionName,Light Fire,点燃
 FurnaceExtinguishedQWE_CardInteractions[6].ActionName,Light Fire,点燃
-FurnaceExtinguishedQWE_CardInteractions[7].ActionName,Feed Tinder,添入火绒
 FurnaceExtinguishedQWE_DismantleActions[0].ActionName,Demolish,拆除
 FurnaceQWE_CardName,Furnace,熔炉
 FurnaceQWE_CardDescription,A furnace hot enough to smelt copper.\n\nRequires bellows or a windy location to reach high enough temperatures.,温度足够高，足以熔炼铜的熔炉。\n\n需要风箱或在多风的区域才能达到足够高的温度。
@@ -11362,7 +11323,6 @@ FurnaceQWE_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 FurnaceQWE_CardInteractions[3].ActionName,Feed Charcoal,添入木炭
 FurnaceQWE_CardInteractions[4].ActionName,Feed Embers,添入火炭
 FurnaceQWE_CardInteractions[5].ActionName,Light Tinder,点燃火绒
-FurnaceQWE_CardInteractions[6].ActionName,Feed Leaves,添入树叶
 FurnaceQWE_CardInteractions[7].ActionName,Increase Temperature,提高温度
 FurnaceQWE_DismantleActions[0].ActionName,Warm Up,取暖
 FurnaceQWE_DismantleActions[1].ActionName,Wait by Fire,在火边等待
@@ -11403,7 +11363,6 @@ MudHutConstructionDoorEntranceMainEnclosure_DismantleActions[0].ActionName,Enter
 MudHutConstructionDoorEntranceMainEnclosure_DismantleActions[0].FadeMessage,Entering the Enclosurer...,正在进入畜栏……
 MudHutConstructionStartingPointEnclosure_CardName,Enclosure,畜栏
 MudHutConstructionStartingPointEnclosure_SpoilageTime.CardStatName,Filth,污垢
-MudHutConstructionStartingPointEnclosure_FuelCapacity.CardStatName,Flood,洪水
 MudHutConstructionStartingPointEnclosure_SpecialDurability2.CardStatName,Overgrowth,过度生长
 MudHutConstructionStartingPointEnclosure_SpecialDurability3.CardStatName,Foraging,觅食
 MudHutConstructionStartingPointEnclosure_CardInteractions[0].ActionName,Throw Inside,扔进去
@@ -11413,7 +11372,6 @@ MudHutConstructionStartingPointEnclosure_CardInteractions[3].ActionName,Throw In
 MudHutConstructionStartingPointEnclosure_CardInteractions[4].ActionName,Shovel Snow,铲雪
 MudHutConstructionStartingPointEnclosure_CardInteractions[5].ActionName,Shovel Snow,铲雪
 MudHutConstructionStartingPointEnclosure_CardInteractions[6].ActionName,Clean,打扫
-MudHutConstructionStartingPointEnclosure_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
 Caves_FmFloodedTunnel_CardInteractions[2].ActionName,Wet,打湿
 Path_GreenfallsFromWaterfallCave_CardInteractions[0].ActionName,Wet,打湿
 Path_WaterfallCavesFromGreenFallsHidden_CardInteractions[0].ActionName,Wet,打湿
@@ -12010,7 +11968,7 @@ SolidifiedCrucibleSmallQWE_SpecialDurability2.CardStatName,Metal Quality,总金�
 SolidifiedCrucibleSmallQWE_SpecialDurability3.CardStatName,Quality,品质
 SolidifiedCrucibleSmallQWE_SpecialDurability4.CardStatName,Metal Type,金属类型
 Blank_ArrowHeadQWE_AlternateNames[0].Name,Copper Arrow Head Blank,铜箭头坯
-Blank_ArrowHeadQWE_AlternateNames[1].Name,Heated Copper Arrow Head Blank,加热的铜箭头坯
+Blank_ArrowHeadQWE_AlternateNames[1].Name,Copper Arrow Head Blank,铜箭头坯
 Blank_ArrowHeadQWE_AlternateNames[2].Name,White Bronze Arrow Head Blank,白铜箭头坯
 Blank_ArrowHeadQWE_FuelCapacity.CardStatName,Temperature,温度
 Blank_ArrowHeadQWE_Progress.CardStatName,Smelted,熔炼
@@ -12021,10 +11979,10 @@ Blank_ArrowHeadQWE_SpecialDurability2.CardStatName,Metal Quality,总金属品质
 Blank_ArrowHeadQWE_SpecialDurability3.CardStatName,Quality,品质
 Blank_ArrowHeadQWE_SpecialDurability4.CardStatName,Metal Type,金属类型
 Blank_ArrowHeadQWE_CardInteractions[0].ActionName,Smith,锻造
-MetalAxeHeadBlankQWE_AlternateNames[0].Name,Copper Axe Head Blank,铜斧刃头坯
-MetalAxeHeadBlankQWE_AlternateNames[1].Name,Heated Copper Axe Head Blank,加热的铜斧刃头坯
-MetalAxeHeadBlankQWE_AlternateNames[2].Name,White Bronze Axe Head Blank,白铜斧刃头坯
-MetalAxeHeadBlankQWE_AlternateNames[3].Name,Heated White Bronze Axe Head Blank,加热的白铜斧刃头坯
+MetalAxeHeadBlankQWE_AlternateNames[0].Name,Copper Axe Blank,铜斧坯
+MetalAxeHeadBlankQWE_AlternateNames[1].Name,Copper Axe Blank,铜斧坯
+MetalAxeHeadBlankQWE_AlternateNames[2].Name,White Bronze Axe Blank,白铜斧坯
+MetalAxeHeadBlankQWE_AlternateNames[3].Name,White Bronze Axe Blank,白铜斧坯
 MetalAxeHeadBlankQWE_Progress.CardStatName,Smelted,熔炼
 MetalAxeHeadBlankQWE_Progress.OnFull.ActionDescription,Axe Head smelted!,斧刃头熔炼完成！
 MetalAxeHeadBlankQWE_SpecialDurability1.CardStatName,Strikes,捶打
@@ -12033,10 +11991,10 @@ Blank_AxeHeadQWE_SpecialDurability2.CardStatName,Metal Quality,总金属品质
 MetalAxeHeadBlankQWE_SpecialDurability3.CardStatName,Quality,品质
 MetalAxeHeadBlankQWE_SpecialDurability4.CardStatName,Metal Type,金属类型
 MetalAxeHeadBlankQWE_CardInteractions[0].ActionName,Smith,锻造
-Blank_KnifeBladeQWE_AlternateNames[0].Name,Copper Knife Blade Blank,铜刀刃片坯
-Blank_KnifeBladeQWE_AlternateNames[1].Name,Heated Copper Knife Blade Blank,加热的铜刀刃片坯
-Blank_KnifeBladeQWE_AlternateNames[2].Name,White Bronze Knife Blade Blank,白铜刀刃片坯
-Blank_KnifeBladeQWE_AlternateNames[3].Name,Heated White Bronze Knife Blade Blank,加热的白铜刀刃片坯
+Blank_KnifeBladeQWE_AlternateNames[0].Name,Copper Knife Blank,铜刀坯
+Blank_KnifeBladeQWE_AlternateNames[1].Name,Copper Knife Blank,铜刀坯
+Blank_KnifeBladeQWE_AlternateNames[2].Name,White Bronze Knife Blank,白铜刀坯
+Blank_KnifeBladeQWE_AlternateNames[3].Name,White Bronze Knife Blank,白铜刀坯
 Blank_KnifeBladeQWE_FuelCapacity.CardStatName,Temperature,温度
 Blank_KnifeBladeQWE_Progress.CardStatName,Smelted,熔炼
 Blank_KnifeBladeQWE_Progress.OnFull.ActionDescription,Knife Blade smelted!,刀刃片熔炼完成！
@@ -12048,10 +12006,10 @@ Blank_KnifeBladeQWE_SpecialDurability4.CardStatName,Metal Type,金属类型
 Blank_KnifeBladeQWE_CardInteractions[0].ActionName,Smith,锻造
 Blank_ShovelHeadQWE_CardName,Heated Shovel Head Blank,加热的铲子头坯
 Blank_ShovelHeadQWE_CardDescription,Must be struck into shape.,必须将其打造出形状。
-Blank_ShovelHeadQWE_AlternateNames[0].Name,Copper Shovel Head Blank,铜铲子头坯
-Blank_ShovelHeadQWE_AlternateNames[1].Name,Heated Copper Shovel Head Blank,加热的铜铲子头坯
-Blank_ShovelHeadQWE_AlternateNames[2].Name,White Bronze Shovel Head Blank,白铜铲子头坯
-Blank_ShovelHeadQWE_AlternateNames[3].Name,Heated White Bronze Shovel Head Blank,加热的白铜铲子头坯
+Blank_ShovelHeadQWE_AlternateNames[0].Name,Copper Shovel Blank,铜铲坯
+Blank_ShovelHeadQWE_AlternateNames[1].Name,Copper Shovel Blank,铜铲坯
+Blank_ShovelHeadQWE_AlternateNames[2].Name,White Bronze Shovel Blank,白铜铲坯
+Blank_ShovelHeadQWE_AlternateNames[3].Name,White Bronze Shovel Blank,白铜铲坯
 Blank_ShovelHeadQWE_FuelCapacity.CardStatName,Temperature,温度
 Blank_ShovelHeadQWE_Progress.CardStatName,Smelted,熔炼
 Blank_ShovelHeadQWE_Progress.OnFull.ActionDescription,Shovel Head smelted!,铲子头熔炼完成！
@@ -12281,7 +12239,6 @@ FurnaceExtinguished_CookingRecipes[1].ActionName,Temperature 1100+: Small Prepar
 FurnaceExtinguished_CookingRecipes[2].ActionName,Temperature 1100+: Smelts things which require 1100+ temperature,温度 1100+：熔炼物品需要 1100+ 的温度
 WitchstoneVein_CardName,Witchstone Vein,巫石矿脉
 WitchstoneVein_CardDescription,Can be mined for witchstone. Highly toxic.,可采巫石。剧毒。
-WitchstoneVein_CardInteractions[0].ActionName,Mine,采掘
 WitchstoneVein_CardInteractions[1].ActionName,Mine,采掘
 WitchstoneVeinInfinite_CardName,Witchstone Vein,巫石矿脉
 WitchstoneVeinInfinite_CardDescription,Can be mined for witchstone. Highly toxic.,可采巫石。剧毒。
@@ -13343,16 +13300,12 @@ CabinConstructionLocationAttic_Progress.CardStatName,Affinity,亲和度
 CabinConstructionLocationAttic_CardInteractions[0].ActionName,Clean,清理
 CabinConstructionLocationCabinRoom_CardName,Cabin Room,木质房间
 CabinConstructionLocationCabinRoom_SpoilageTime.CardStatName,Filthiness,污秽
-CabinConstructionLocationCabinRoom_FuelCapacity.CardStatName,Flood,洪水
 CabinConstructionLocationCabinRoom_Progress.CardStatName,Affinity,亲和度
 CabinConstructionLocationCabinRoom_CardInteractions[0].ActionName,Clean,清理
-CabinConstructionLocationCabinRoom_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
 CabinConstructionStartingPointCabin_CardName,Cabin,木屋
 CabinConstructionStartingPointCabin_SpoilageTime.CardStatName,Filthiness,污秽
-CabinConstructionStartingPointCabin_FuelCapacity.CardStatName,Flood,洪水
 CabinConstructionStartingPointCabin_Progress.CardStatName,Affinity,亲和度
 CabinConstructionStartingPointCabin_CardInteractions[0].ActionName,Clean,清理
-CabinConstructionStartingPointCabin_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
 Env_CabinConstructionLocationAttic_CardName,Attic,阁楼
 Env_CabinConstructionLocationCabinRoom_CardName,Cabin Room,木质房间
 Env_CabinConstructionStartingPointCabin_CardName,Cabin,木屋
@@ -14138,9 +14091,9 @@ Blank_ArrowBroadheadQQQ_CardInteractions[0].ActionName,Smith,锻造
 Blank_HuntingSpearHeadBlankQQQ_CardName,Heated Hunting Spear Blank,加热的狩猎长矛头坯
 Blank_HuntingSpearHeadBlankQQQ_CardDescription,Must be struck into shape.,必须将其打造出形状。
 Blank_HuntingSpearHeadBlankQQQ_AlternateNames[0].Name,Copper Hunting Spear Blank,铜狩猎长矛头坯
-Blank_HuntingSpearHeadBlankQQQ_AlternateNames[1].Name,Heated Copper Hunting Spear Blank,加热的铜狩猎长矛头坯
+Blank_HuntingSpearHeadBlankQQQ_AlternateNames[1].Name,Copper Hunting Spear Blank,铜狩猎长矛头坯
 Blank_HuntingSpearHeadBlankQQQ_AlternateNames[2].Name,White Bronze Hunting Spear Blank,白铜狩猎长矛头坯
-Blank_HuntingSpearHeadBlankQQQ_AlternateNames[3].Name,Heated White Bronze Hunting Spear Blank,加热的白铜狩猎长矛头坯
+Blank_HuntingSpearHeadBlankQQQ_AlternateNames[3].Name,White Bronze Hunting Spear Blank,白铜狩猎长矛头坯
 Blank_HuntingSpearHeadBlankQQQ_FuelCapacity.CardStatName,Temperature,温度
 Blank_HuntingSpearHeadBlankQQQ_Progress.CardStatName,Smelted,熔炼
 Blank_HuntingSpearHeadBlankQQQ_Progress.OnFull.ActionDescription,Spear Head smelted!,矛头熔炼完成！
@@ -14948,42 +14901,42 @@ Blank_MetalArrowBroadheadQQQ_AlternateNames[1].Name,Ghost Bronze Broadhead Blank
 Blank_MetalArrowBroadheadQQQ_AlternateNames[2].Name,Tin Broadhead Blank,锡宽头箭头坯
 Blank_MetalArrowBroadheadQQQ_AlternateNames[3].Name,Tin Bronze Broadhead Blank,青铜宽头箭头坯
 Blank_MetalArrowBroadheadQQQ_AlternateNames[4].Name,White Bronze Broadhead Blank,白铜宽头箭头坯
-Blank_MetalArrowBroadheadQQQ_AlternateNames[5].Name,Heated Copper Broadhead Blank,加热的铜宽头箭头坯
-Blank_MetalArrowBroadheadQQQ_AlternateNames[6].Name,Heated Ghost Bronze Broadhead Blank,加热的鬼铜宽头箭头坯
-Blank_MetalArrowBroadheadQQQ_AlternateNames[7].Name,Heated Tin Broadhead Blank,加热的锡宽头箭头坯
-Blank_MetalArrowBroadheadQQQ_AlternateNames[8].Name,Heated Tin Bronze Broadhead Blank,加热的青铜宽头箭头坯
-Blank_MetalArrowBroadheadQQQ_AlternateNames[9].Name,Heated White Bronze Broadhead Blank,加热的白铜宽头箭头坯
+Blank_MetalArrowBroadheadQQQ_AlternateNames[5].Name,Copper Broadhead Blank,铜宽头箭头坯
+Blank_MetalArrowBroadheadQQQ_AlternateNames[6].Name,Ghost Bronze Broadhead Blank,鬼铜宽头箭头坯
+Blank_MetalArrowBroadheadQQQ_AlternateNames[7].Name,Tin Broadhead Blank,锡宽头箭头坯
+Blank_MetalArrowBroadheadQQQ_AlternateNames[8].Name,Tin Bronze Broadhead Blank,青铜宽头箭头坯
+Blank_MetalArrowBroadheadQQQ_AlternateNames[9].Name,White Bronze Broadhead Blank,白铜宽头箭头坯
 Blank_MetalArrowHead_AlternateNames[1].Name,Ghost Bronze Arrow Head Blank,鬼铜箭头坯
 Blank_MetalArrowHead_AlternateNames[2].Name,Tin Arrow Head Blank,锡箭头坯
 Blank_MetalArrowHead_AlternateNames[3].Name,Tin Bronze Arrow Head Blank,青铜箭头坯
-Blank_MetalArrowHead_AlternateNames[6].Name,Heated Ghost Bronze Arrow Head Blank,加热的鬼铜箭头坯
-Blank_MetalArrowHead_AlternateNames[7].Name,Heated Tin Arrow Head Blank,加热的锡箭头坯
-Blank_MetalArrowHead_AlternateNames[8].Name,Heated Tin Bronze Arrow Head Blank,加热的青铜箭头坯
-Blank_MetalArrowHead_AlternateNames[9].Name,Heated White Bronze Arrow Head Blank,加热的白铜箭头坯
-Blank_MetalAxeHead_AlternateNames[1].Name,Ghost Bronze Axe Head Blank,鬼铜斧刃头坯
-Blank_MetalAxeHead_AlternateNames[2].Name,Tin Axe Head Blank,锡斧刃头坯
-Blank_MetalAxeHead_AlternateNames[3].Name,Tin Bronze Axe Head Blank,青铜斧刃头坯
-Blank_MetalAxeHead_AlternateNames[6].Name,Heated Ghost Bronze Axe Head Blank,加热的鬼铜斧刃头坯
-Blank_MetalAxeHead_AlternateNames[7].Name,Heated Tin Axe Head Blank,加热的锡斧刃头坯
-Blank_MetalAxeHead_AlternateNames[8].Name,Heated Tin Bronze Axe Head Blank,加热的青铜斧刃头坯
+Blank_MetalArrowHead_AlternateNames[6].Name,Ghost Bronze Arrow Head Blank,鬼铜箭头坯
+Blank_MetalArrowHead_AlternateNames[7].Name,Tin Arrow Head Blank,锡箭头坯
+Blank_MetalArrowHead_AlternateNames[8].Name,Tin Bronze Arrow Head Blank,青铜箭头坯
+Blank_MetalArrowHead_AlternateNames[9].Name,White Bronze Arrow Head Blank,白铜箭头坯
+Blank_MetalAxeHead_AlternateNames[1].Name,Ghost Bronze Axe Blank,鬼铜斧坯
+Blank_MetalAxeHead_AlternateNames[2].Name,Tin Axe Blank,锡斧坯
+Blank_MetalAxeHead_AlternateNames[3].Name,Tin Bronze Axe Blank,青铜斧坯
+Blank_MetalAxeHead_AlternateNames[6].Name,Ghost Bronze Axe Blank,鬼铜斧坯
+Blank_MetalAxeHead_AlternateNames[7].Name,Tin Axe Blank,锡斧坯
+Blank_MetalAxeHead_AlternateNames[8].Name,Tin Bronze Axe Blank,青铜斧坯
 Blank_MetalHuntingSpearHeadBlankQQQ_AlternateNames[1].Name,Ghost Bronze Hunting Spear Blank,鬼铜狩猎长矛头坯
 Blank_MetalHuntingSpearHeadBlankQQQ_AlternateNames[2].Name,Tin Hunting Spear Blank,锡狩猎长矛头坯
 Blank_MetalHuntingSpearHeadBlankQQQ_AlternateNames[3].Name,Tin Bronze Hunting Spear Blank,青铜狩猎长矛头坯
-Blank_MetalHuntingSpearHeadBlankQQQ_AlternateNames[6].Name,Heated Ghost Bronze Hunting Spear Blank,加热的鬼铜狩猎长矛头坯
-Blank_MetalHuntingSpearHeadBlankQQQ_AlternateNames[7].Name,Heated Tin Hunting Spear Blank,加热的锡狩猎长矛头坯
-Blank_MetalHuntingSpearHeadBlankQQQ_AlternateNames[8].Name,Heated Tin Bronze Hunting Spear Blank,加热的青铜狩猎长矛头坯
-Blank_MetalKnifeBlade_AlternateNames[1].Name,Ghost Bronze Knife Blade Blank,鬼铜刀刃片坯
-Blank_MetalKnifeBlade_AlternateNames[2].Name,Tin Knife Blade Blank,锡刀刃片坯
-Blank_MetalKnifeBlade_AlternateNames[3].Name,Tin Bronze Knife Blade Blank,青铜刀刃片坯
-Blank_MetalKnifeBlade_AlternateNames[6].Name,Heated Ghost Bronze Knife Blade Blank,加热的鬼铜刀刃片坯
-Blank_MetalKnifeBlade_AlternateNames[7].Name,Heated Tin Knife Blade Blank,加热的锡刀刃片坯
-Blank_MetalKnifeBlade_AlternateNames[8].Name,Heated Tin Bronze Knife Blade Blank,加热的青铜刀刃片坯
-Blank_MetalShovelHead_AlternateNames[1].Name,Ghost Bronze Shovel Head Blank,鬼铜铲子头坯
-Blank_MetalShovelHead_AlternateNames[2].Name,Tin Shovel Head Blank,锡铲子头坯
-Blank_MetalShovelHead_AlternateNames[3].Name,Tin Bronze Shovel Head Blank,青铜铲子头坯
-Blank_MetalShovelHead_AlternateNames[6].Name,Heated Ghost Bronze Shovel Head Blank,加热的鬼铜铲子头坯
-Blank_MetalShovelHead_AlternateNames[7].Name,Heated Tin Shovel Head Blank,加热的锡铲子头坯
-Blank_MetalShovelHead_AlternateNames[8].Name,Heated Tin Bronze Shovel Head Blank,加热的青铜铲子头坯
+Blank_MetalHuntingSpearHeadBlankQQQ_AlternateNames[6].Name,Ghost Bronze Hunting Spear Blank,鬼铜狩猎长矛头坯
+Blank_MetalHuntingSpearHeadBlankQQQ_AlternateNames[7].Name,Tin Hunting Spear Blank,锡狩猎长矛头坯
+Blank_MetalHuntingSpearHeadBlankQQQ_AlternateNames[8].Name,Tin Bronze Hunting Spear Blank,青铜狩猎长矛头坯
+Blank_MetalKnifeBlade_AlternateNames[1].Name,Ghost Bronze Knife Blank,鬼铜刀坯
+Blank_MetalKnifeBlade_AlternateNames[2].Name,Tin Knife Blank,锡刀坯
+Blank_MetalKnifeBlade_AlternateNames[3].Name,Tin Bronze Knife Blank,青铜刀坯
+Blank_MetalKnifeBlade_AlternateNames[6].Name,Ghost Bronze Knife Blank,鬼铜刀坯
+Blank_MetalKnifeBlade_AlternateNames[7].Name,Tin Knife Blank,锡刀坯
+Blank_MetalKnifeBlade_AlternateNames[8].Name,Tin Bronze Knife Blank,青铜刀坯
+Blank_MetalShovelHead_AlternateNames[1].Name,Ghost Bronze Shovel Blank,鬼铜铲坯
+Blank_MetalShovelHead_AlternateNames[2].Name,Tin Shovel Blank,锡铲坯
+Blank_MetalShovelHead_AlternateNames[3].Name,Tin Bronze Shovel Blank,青铜铲坯
+Blank_MetalShovelHead_AlternateNames[6].Name,Ghost Bronze Shovel Blank,鬼铜铲坯
+Blank_MetalShovelHead_AlternateNames[7].Name,Tin Shovel Blank,锡铲坯
+Blank_MetalShovelHead_AlternateNames[8].Name,Tin Bronze Shovel Blank,青铜铲坯
 Blank_MetalSpearHeadBlank_AlternateNames[1].Name,Ghost Bronze Spear Head Blank,鬼铜矛头坯
 Blank_MetalSpearHeadBlank_AlternateNames[2].Name,Tin Spear Head Blank,锡矛头坯
 Blank_MetalSpearHeadBlank_AlternateNames[3].Name,Tin Bronze Spear Head Blank,青铜矛头坯
@@ -15082,67 +15035,67 @@ MetalWireUnfinished_SpecialDurability3.CardStatName,Quality,品质
 MetalWireUnfinished_SpecialDurability4.CardStatName,Metal Type,金属类型
 MetalWireUnfinished_CardInteractions[0].ActionName,Smith,锻造
 Shape_MetalArrowBroadHeadQQQ_AlternateNames[4].Name,White Bronze Broadhead,白铜宽头箭头
-Shape_MetalArrowBroadHeadQQQ_AlternateNames[5].Name,Heated Copper Broadhead,加热的铜宽头箭头
-Shape_MetalArrowBroadHeadQQQ_AlternateNames[6].Name,Heated Ghost Bronze Broadhead,加热的鬼铜宽头箭头
-Shape_MetalArrowBroadHeadQQQ_AlternateNames[7].Name,Heated Tin Broadhead,加热的锡宽头箭头
-Shape_MetalArrowBroadHeadQQQ_AlternateNames[8].Name,Heated Tin Bronze Broadhead,加热的青铜宽头箭头
-Shape_MetalArrowBroadHeadQQQ_AlternateNames[9].Name,Heated White Bronze Broadhead,加热的白铜宽头箭头
+Shape_MetalArrowBroadHeadQQQ_AlternateNames[5].Name,Copper Broadhead,铜宽头箭头
+Shape_MetalArrowBroadHeadQQQ_AlternateNames[6].Name,Ghost Bronze Broadhead,加热的鬼铜宽头箭头
+Shape_MetalArrowBroadHeadQQQ_AlternateNames[7].Name,Tin Broadhead,锡宽头箭头
+Shape_MetalArrowBroadHeadQQQ_AlternateNames[8].Name,Tin Bronze Broadhead,青铜宽头箭头
+Shape_MetalArrowBroadHeadQQQ_AlternateNames[9].Name,White Bronze Broadhead,白铜宽头箭头
 Shape_MetalArrowHead_AlternateNames[0].Name,Copper Arrow Head,铜箭头
 Shape_MetalArrowHead_AlternateNames[1].Name,Ghost Bronze Arrow Head,鬼铜箭头
 Shape_MetalArrowHead_AlternateNames[2].Name,Tin Arrow Head,锡箭头
 Shape_MetalArrowHead_AlternateNames[3].Name,Tin Bronze Arrow Head,青铜箭头
 Shape_MetalArrowHead_AlternateNames[4].Name,White Bronze Arrow Head,白铜箭头
-Shape_MetalArrowHead_AlternateNames[5].Name,Heated Copper Arrow Head,加热的铜箭头
-Shape_MetalArrowHead_AlternateNames[6].Name,Heated Ghost Bronze Arrow Head,加热的鬼铜箭头
-Shape_MetalArrowHead_AlternateNames[7].Name,Heated Tin Arrow Head,加热的锡箭头
-Shape_MetalArrowHead_AlternateNames[8].Name,Heated Tin Bronze Arrow Head,加热的青铜箭头
-Shape_MetalArrowHead_AlternateNames[9].Name,Heated White Bronze Arrow Head,加热的白铜箭头
+Shape_MetalArrowHead_AlternateNames[5].Name,Copper Arrow Head,铜箭头
+Shape_MetalArrowHead_AlternateNames[6].Name,Ghost Bronze Arrow Head,鬼铜箭头
+Shape_MetalArrowHead_AlternateNames[7].Name,Tin Arrow Head,锡箭头
+Shape_MetalArrowHead_AlternateNames[8].Name,Tin Bronze Arrow Head,青铜箭头
+Shape_MetalArrowHead_AlternateNames[9].Name,White Bronze Arrow Head,白铜箭头
 Shape_MetalAxeHead_AlternateNames[0].Name,Copper Axe Head,铜斧刃头
 Shape_MetalAxeHead_AlternateNames[1].Name,Ghost Bronze Axe Head,鬼铜斧刃头
 Shape_MetalAxeHead_AlternateNames[2].Name,Tin Axe Head,锡斧刃头
 Shape_MetalAxeHead_AlternateNames[3].Name,Tin Bronze Axe Head,青铜斧刃头
 Shape_MetalAxeHead_AlternateNames[4].Name,White Bronze Axe Head,白铜斧刃头
-Shape_MetalAxeHead_AlternateNames[5].Name,Heated Copper Axe Head,加热的铜斧刃头
-Shape_MetalAxeHead_AlternateNames[6].Name,Heated Ghost Bronze Axe Head,加热的鬼铜斧刃头
-Shape_MetalAxeHead_AlternateNames[7].Name,Heated Tin Axe Head,加热的锡斧刃头
-Shape_MetalAxeHead_AlternateNames[8].Name,Heated Tin Bronze Axe Head,加热的青铜斧刃头
-Shape_MetalAxeHead_AlternateNames[9].Name,Heated White Bronze Axe Head,加热的白铜斧刃头
+Shape_MetalAxeHead_AlternateNames[5].Name,Copper Axe Head,铜斧刃头
+Shape_MetalAxeHead_AlternateNames[6].Name,Ghost Bronze Axe Head,鬼铜斧刃头
+Shape_MetalAxeHead_AlternateNames[7].Name,Tin Axe Head,锡斧刃头
+Shape_MetalAxeHead_AlternateNames[8].Name,Tin Bronze Axe Head,青铜斧刃头
+Shape_MetalAxeHead_AlternateNames[9].Name,White Bronze Axe Head,白铜斧刃头
 Shape_MetalHuntingSpearHeadQQQ_AlternateNames[4].Name,White Bronze Hunting Spearhead,白铜狩猎长矛头
-Shape_MetalHuntingSpearHeadQQQ_AlternateNames[5].Name,Heated Copper Hunting Spearhead,加热的铜狩猎长矛头
-Shape_MetalHuntingSpearHeadQQQ_AlternateNames[6].Name,Heated Ghost Bronze Hunting Spearhead,加热的鬼铜狩猎长矛头
-Shape_MetalHuntingSpearHeadQQQ_AlternateNames[7].Name,Heated Tin Hunting Spearhead,加热的锡狩猎长矛头
-Shape_MetalHuntingSpearHeadQQQ_AlternateNames[8].Name,Heated Tin Bronze Hunting Spearhead,加热的青铜狩猎长矛头
-Shape_MetalHuntingSpearHeadQQQ_AlternateNames[9].Name,Heated White Bronze Hunting Spearhead,加热的白铜狩猎长矛头
+Shape_MetalHuntingSpearHeadQQQ_AlternateNames[5].Name,Copper Hunting Spearhead,铜狩猎长矛头
+Shape_MetalHuntingSpearHeadQQQ_AlternateNames[6].Name,Ghost Bronze Hunting Spearhead,鬼铜狩猎长矛头
+Shape_MetalHuntingSpearHeadQQQ_AlternateNames[7].Name,Tin Hunting Spearhead,锡狩猎长矛头
+Shape_MetalHuntingSpearHeadQQQ_AlternateNames[8].Name,Tin Bronze Hunting Spearhead,青铜狩猎长矛头
+Shape_MetalHuntingSpearHeadQQQ_AlternateNames[9].Name,White Bronze Hunting Spearhead,白铜狩猎长矛头
 Shape_MetalKnifeBlade_AlternateNames[0].Name,Copper Knife Blade,铜刀刃片
 Shape_MetalKnifeBlade_AlternateNames[1].Name,Ghost Bronze Knife Blade,鬼铜刀刃片
 Shape_MetalKnifeBlade_AlternateNames[2].Name,Tin Knife Blade,锡刀刃片
 Shape_MetalKnifeBlade_AlternateNames[3].Name,Tin Bronze Knife Blade,青铜刀刃片
 Shape_MetalKnifeBlade_AlternateNames[4].Name,White Bronze Knife Blade,白铜刀刃片
-Shape_MetalKnifeBlade_AlternateNames[5].Name,Heated Copper Knife Blade,加热的铜刀刃片
-Shape_MetalKnifeBlade_AlternateNames[6].Name,Heated Ghost Bronze Knife Blade,加热的鬼铜刀刃片
-Shape_MetalKnifeBlade_AlternateNames[7].Name,Heated Tin Knife Blade,加热的锡刀刃片
-Shape_MetalKnifeBlade_AlternateNames[8].Name,Heated Tin Bronze Knife Blade,加热的青铜刀刃片
-Shape_MetalKnifeBlade_AlternateNames[9].Name,Heated White Bronze Knife Blade,加热的白铜刀刃片
+Shape_MetalKnifeBlade_AlternateNames[5].Name,Copper Knife Blade,铜刀刃片
+Shape_MetalKnifeBlade_AlternateNames[6].Name,Ghost Bronze Knife Blade,鬼铜刀刃片
+Shape_MetalKnifeBlade_AlternateNames[7].Name,Tin Knife Blade,锡刀刃片
+Shape_MetalKnifeBlade_AlternateNames[8].Name,Tin Bronze Knife Blade,青铜刀刃片
+Shape_MetalKnifeBlade_AlternateNames[9].Name,White Bronze Knife Blade,白铜刀刃片
 Shape_MetalShovelHead_AlternateNames[0].Name,Copper Shovel Head,铜铲子头
 Shape_MetalShovelHead_AlternateNames[1].Name,Ghost Bronze Shovel Head,鬼铜铲子头
 Shape_MetalShovelHead_AlternateNames[2].Name,Tin Shovel Head,锡铲子头
 Shape_MetalShovelHead_AlternateNames[3].Name,Tin Bronze Shovel Head,青铜铲子头
 Shape_MetalShovelHead_AlternateNames[4].Name,White Bronze Shovel Head,白铜铲子头
-Shape_MetalShovelHead_AlternateNames[5].Name,Heated Copper Shovel Head,加热的铜铲子头
-Shape_MetalShovelHead_AlternateNames[6].Name,Heated Ghost Bronze Shovel Head,加热的鬼铜铲子头
-Shape_MetalShovelHead_AlternateNames[7].Name,Heated Tin Shovel Head,加热的锡铲子头
-Shape_MetalShovelHead_AlternateNames[8].Name,Heated Tin Bronze Shovel Head,加热的青铜铲子头
-Shape_MetalShovelHead_AlternateNames[9].Name,Heated White Bronze Shovel Head,加热的白铜铲子头
+Shape_MetalShovelHead_AlternateNames[5].Name,Copper Shovel Head,铜铲子头
+Shape_MetalShovelHead_AlternateNames[6].Name,Ghost Bronze Shovel Head,鬼铜铲子头
+Shape_MetalShovelHead_AlternateNames[7].Name,Tin Shovel Head,锡铲子头
+Shape_MetalShovelHead_AlternateNames[8].Name,Tin Bronze Shovel Head,青铜铲子头
+Shape_MetalShovelHead_AlternateNames[9].Name,White Bronze Shovel Head,白铜铲子头
 Shape_MetalSpearHead_AlternateNames[0].Name,Copper Spear Head,铜矛头
 Shape_MetalSpearHead_AlternateNames[1].Name,Ghost Bronze Spear Head,鬼铜矛头
 Shape_MetalSpearHead_AlternateNames[2].Name,Tin Spear Head,锡矛头
 Shape_MetalSpearHead_AlternateNames[3].Name,Tin Bronze Spear Head,青铜矛头
 Shape_MetalSpearHead_AlternateNames[4].Name,White Bronze Spear Head,白铜矛头
-Shape_MetalSpearHead_AlternateNames[5].Name,Heated Copper Spear Head,加热的铜矛头
-Shape_MetalSpearHead_AlternateNames[6].Name,Heated Ghost Bronze Spear Head,加热的鬼铜矛头
-Shape_MetalSpearHead_AlternateNames[7].Name,Heated Tin Spear Head,加热的锡矛头
-Shape_MetalSpearHead_AlternateNames[8].Name,Heated Tin Bronze Spear Head,加热的青铜矛头
-Shape_MetalSpearHead_AlternateNames[9].Name,Heated White Bronze Spear Head,加热的白铜矛头
+Shape_MetalSpearHead_AlternateNames[5].Name,Copper Spear Head,铜矛头
+Shape_MetalSpearHead_AlternateNames[6].Name,Ghost Bronze Spear Head,鬼铜矛头
+Shape_MetalSpearHead_AlternateNames[7].Name,Tin Spear Head,锡矛头
+Shape_MetalSpearHead_AlternateNames[8].Name,Tin Bronze Spear Head,青铜矛头
+Shape_MetalSpearHead_AlternateNames[9].Name,White Bronze Spear Head,白铜矛头
 Pk_5_1_6_ScribeGear_JarWithSootInk_CardName,Clay Jar,小陶罐
 Pk_5_1_6_ScribeGear_JarWithSootInk_CardDescription,"A small sealed container, ideal for preserving spices, medicines and dried powders in general.",一个小型密封容器，非常适合用于保存香料、药物和粉末。
 Pk_5_1_6_ScribeGear_JarWithSootInk_FuelCapacity.CardStatName,Container Temperature,容器温度
@@ -15519,16 +15472,16 @@ RusticBarrelPlaced_DismantleActions[1].ActionName,Urinate,排尿
 RusticBarrelPlaced_DismantleActions[2].ActionName,Urinate,排尿
 Blank_MetalButcheringKnifeBlade_CardName,Heated Butchering Knife Blade Blank,加热的金属屠宰刀刃片坯
 Blank_MetalButcheringKnifeBlade_CardDescription,Must be struck into shape.,必须将其打造出形状。
-Blank_MetalButcheringKnifeBlade_AlternateNames[0].Name,Copper Butchering Knife Blade Blank,铜屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[1].Name,Ghost Bronze Butchering Knife Blade Blank,鬼铜屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[2].Name,Tin Butchering Knife Blade Blank,锡屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[3].Name,Tin Bronze Butchering Knife Blade Blank,青铜屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[4].Name,White Bronze Butchering Knife Blade Blank,白铜屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[5].Name,Heated Copper Butchering Knife Blade Blank,加热的铜屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[6].Name,Heated Ghost Bronze Butchering Knife Blade Blank,加热的鬼铜屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[7].Name,Heated Tin Butchering Knife Blade Blank,加热的锡屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[8].Name,Heated Tin Bronze Butchering Knife Blade Blank,加热的青铜屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[9].Name,Heated White Bronze Butchering Knife Blade Blank,加热的白铜屠宰刀刃片坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[0].Name,Copper Butchering Knife Blank,铜屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[1].Name,Ghost Bronze Butchering Knife Blank,鬼铜屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[2].Name,Tin Butchering Knife Blank,锡屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[3].Name,Tin Bronze Butchering Knife Blank,青铜屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[4].Name,White Bronze Butchering Knife Blank,白铜屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[5].Name,Copper Butchering Knife Blank,铜屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[6].Name,Ghost Bronze Butchering Knife Blank,鬼铜屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[7].Name,Tin Butchering Knife Blank,锡屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[8].Name,Tin Bronze Butchering Knife Blank,青铜屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[9].Name, White Bronze Butchering Knife Blank,白铜屠宰刀坯
 Blank_MetalButcheringKnifeBlade_FuelCapacity.CardStatName,Temperature,温度
 Blank_MetalButcheringKnifeBlade_Progress.CardStatName,Smelted,熔炼
 Blank_MetalButcheringKnifeBlade_Progress.OnFull.ActionDescription,Butchering Knife Blade smelted!,屠宰刀刃片熔炼完成！
@@ -15540,16 +15493,16 @@ Blank_MetalButcheringKnifeBlade_SpecialDurability4.CardStatName,Metal Type,金�
 Blank_MetalButcheringKnifeBlade_CardInteractions[0].ActionName,Smith,锻造
 Blank_MetalChiselBlade_CardName,Heated Metal Chisel Blade Blank,加热的金属凿刃坯
 Blank_MetalChiselBlade_CardDescription,Must be struck into shape.,必须将其打造出形状。
-Blank_MetalChiselBlade_AlternateNames[0].Name,Copper Chisel Blade Blank,铜凿刃坯
-Blank_MetalChiselBlade_AlternateNames[1].Name,Ghost Bronze Chisel Blade Blank,鬼铜凿刃坯
-Blank_MetalChiselBlade_AlternateNames[2].Name,Tin Chisel Blade Blank,锡凿刃坯
-Blank_MetalChiselBlade_AlternateNames[3].Name,Tin Bronze Chisel Blade Blank,青铜凿刃坯
-Blank_MetalChiselBlade_AlternateNames[4].Name,Iron Chisel Blade Blank,铁凿刃坯
-Blank_MetalChiselBlade_AlternateNames[5].Name,Heated Copper Chisel Blade Blank,加热的铜凿刃坯
-Blank_MetalChiselBlade_AlternateNames[6].Name,Heated Ghost Bronze Chisel Blade Blank,加热的鬼铜凿刃坯
-Blank_MetalChiselBlade_AlternateNames[7].Name,Heated Tin Chisel Blade Blank,加热的锡凿刃坯
-Blank_MetalChiselBlade_AlternateNames[8].Name,Heated Tin Bronze Chisel Blade Blank,加热的青铜凿刃坯
-Blank_MetalChiselBlade_AlternateNames[9].Name,Heated Iron Chisel Blade Blank,加热的铁凿刃坯
+Blank_MetalChiselBlade_AlternateNames[0].Name,Copper Chisel Blank,铜凿坯
+Blank_MetalChiselBlade_AlternateNames[1].Name,Ghost Bronze Chisel Blank,鬼铜凿坯
+Blank_MetalChiselBlade_AlternateNames[2].Name,Tin Chisel Blank,锡凿坯
+Blank_MetalChiselBlade_AlternateNames[3].Name,Tin Bronze Chisel Blank,青铜凿坯
+Blank_MetalChiselBlade_AlternateNames[4].Name,White Bronze Chisel Blank,白铜凿坯
+Blank_MetalChiselBlade_AlternateNames[5].Name,Copper Chisel Blank,铜凿坯
+Blank_MetalChiselBlade_AlternateNames[6].Name,Ghost Bronze Chisel Blank,鬼铜凿坯
+Blank_MetalChiselBlade_AlternateNames[7].Name,Tin Chisel Blank,锡凿坯
+Blank_MetalChiselBlade_AlternateNames[8].Name,Tin Bronze Chisel Blank,青铜凿坯
+Blank_MetalChiselBlade_AlternateNames[9].Name,White Bronze Chisel Blank,白铜凿坯
 Blank_MetalChiselBlade_FuelCapacity.CardStatName,Temperature,温度
 Blank_MetalChiselBlade_Progress.CardStatName,Smelted,熔炼
 Blank_MetalChiselBlade_Progress.OnFull.ActionDescription,Chisel Blade smelted!,凿刃熔炼完成！
@@ -15561,16 +15514,16 @@ Blank_MetalChiselBlade_SpecialDurability4.CardStatName,Metal Type,金属类型
 Blank_MetalChiselBlade_CardInteractions[0].ActionName,Smith,锻造
 Blank_MetalDrawknifeBlade_CardName,Heated Metal Drawknife Blade Blank,加热的金属拉刀刃片坯
 Blank_MetalDrawknifeBlade_CardDescription,Must be struck into shape.,必须将其打造出形状。
-Blank_MetalDrawknifeBlade_AlternateNames[0].Name,Copper Drawknife Blade Blank,铜拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[1].Name,Ghost Bronze Drawknife Blade Blank,鬼铜拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[2].Name,Tin Drawknife Blade Blank,锡拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[3].Name,Tin Bronze Drawknife Blade Blank,青铜拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[4].Name,White Bronze Drawknife Blade Blank,白铜拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[5].Name,Heated Copper Drawknife Blade Blank,加热的铜拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[6].Name,Heated Ghost Bronze Drawknife Blade Blank,加热的鬼铜拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[7].Name,Heated Tin Drawknife Blade Blank,加热的锡拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[8].Name,Heated Tin Bronze Drawknife Blade Blank,加热的青铜拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[9].Name,Heated White Bronze Drawknife Blade Blank,加热的白铜拉刀刃片坯
+Blank_MetalDrawknifeBlade_AlternateNames[0].Name,Copper Drawknife Blank,铜刨刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[1].Name,Ghost Bronze Drawknife Blank,鬼铜刨刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[2].Name,Tin Drawknife Blank,锡刨刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[3].Name,Tin Bronze Drawknife Blank,青铜刨刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[4].Name,White Bronze Drawknife Blank,白铜刨刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[5].Name,Copper Drawknife Blank,铜刨刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[6].Name,Ghost Bronze Drawknife Blank,鬼铜刨刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[7].Name,Tin Drawknife Blank,锡刨刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[8].Name,Tin Bronze Drawknife Blank,青铜刨刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[9].Name,White Bronze Drawknife Blank,白铜刨刀坯
 Blank_MetalDrawknifeBlade_FuelCapacity.CardStatName,Temperature,温度
 Blank_MetalDrawknifeBlade_Progress.CardStatName,Smelted,熔炼
 Blank_MetalDrawknifeBlade_Progress.OnFull.ActionDescription,Drawknife Blade smelted!,拉刀刃片熔炼完成！
@@ -15587,11 +15540,11 @@ Blank_MetalMeatHook_AlternateNames[1].Name,Ghost Bronze Meat Hook Blank,鬼铜�
 Blank_MetalMeatHook_AlternateNames[2].Name,Tin Meat Hook Blank,锡肉钩坯
 Blank_MetalMeatHook_AlternateNames[3].Name,Tin Bronze Meat Hook Blank,青铜肉钩坯
 Blank_MetalMeatHook_AlternateNames[4].Name,White Bronze Meat Hook Blank,白铜肉钩坯
-Blank_MetalMeatHook_AlternateNames[5].Name,Heated Copper Meat Hook Blank,加热的铜肉钩坯
-Blank_MetalMeatHook_AlternateNames[6].Name,Heated Ghost Bronze Meat Hook Blank,加热的鬼铜肉钩坯
-Blank_MetalMeatHook_AlternateNames[7].Name,Heated Tin Meat Hook Blank,加热的锡肉钩坯
-Blank_MetalMeatHook_AlternateNames[8].Name,Heated Tin Bronze Meat Hook Blank,加热的青铜肉钩坯
-Blank_MetalMeatHook_AlternateNames[9].Name,Heated White Bronze Meat Hook Blank,加热的白铜肉钩坯
+Blank_MetalMeatHook_AlternateNames[5].Name,Copper Meat Hook Blank,铜肉钩坯
+Blank_MetalMeatHook_AlternateNames[6].Name,Ghost Bronze Meat Hook Blank,鬼铜肉钩坯
+Blank_MetalMeatHook_AlternateNames[7].Name,Tin Meat Hook Blank,锡肉钩坯
+Blank_MetalMeatHook_AlternateNames[8].Name,Tin Bronze Meat Hook Blank,青铜肉钩坯
+Blank_MetalMeatHook_AlternateNames[9].Name,White Bronze Meat Hook Blank,白铜肉钩坯
 Blank_MetalMeatHook_FuelCapacity.CardStatName,Temperature,温度
 Blank_MetalMeatHook_Progress.CardStatName,Smelted,熔炼
 Blank_MetalMeatHook_Progress.OnFull.ActionDescription,Meat Hook smelted!,肉钩熔炼完成！
@@ -15603,16 +15556,16 @@ Blank_MetalMeatHook_SpecialDurability4.CardStatName,Metal Type,金属类型
 Blank_MetalMeatHook_CardInteractions[0].ActionName,Smith,锻造
 Blank_MetalSkinningKnifeBlade_CardName,Heated Skinning Knife Blade Blank,加热的剥皮刀刃片坯
 Blank_MetalSkinningKnifeBlade_CardDescription,Must be struck into shape.,必须将其打造出形状。
-Blank_MetalSkinningKnifeBlade_AlternateNames[0].Name,Copper Skinning Knife Blade Blank,铜剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[1].Name,Ghost Bronze Skinning Knife Blade Blank,鬼铜剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[2].Name,Tin Skinning Knife Blade Blank,锡剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[3].Name,Tin Bronze Skinning Knife Blade Blank,青铜剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[4].Name,White Bronze Skinning Knife Blade Blank,白铜剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[5].Name,Heated Copper Skinning Knife Blade Blank,加热的铜剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[6].Name,Heated Ghost Bronze Skinning Knife Blade Blank,加热的鬼铜剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[7].Name,Heated Tin Skinning Knife Blade Blank,加热的锡剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[8].Name,Heated Tin Bronze Skinning Knife Blade Blank,加热的青铜剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[9].Name,Heated White Bronze Skinning Knife Blade Blank,加热的白铜剥皮刀刃片坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[0].Name,Copper Skinning Knife Blank,铜剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[1].Name,Ghost Bronze Skinning Knife Blank,鬼铜剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[2].Name,Tin Skinning Knife Blank,锡剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[3].Name,Tin Bronze Skinning Knife Blank,青铜剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[4].Name,White Bronze Skinning Knife Blank,白铜剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[5].Name,Copper Skinning Knife Blank,铜剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[6].Name,Ghost Bronze Skinning Knife Blank,鬼铜剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[7].Name,Tin Skinning Knife Blank,锡剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[8].Name,Tin Bronze Skinning Knife Blank,青铜剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[9].Name,White Bronze Skinning Knife Blank,白铜剥皮刀坯
 Blank_MetalSkinningKnifeBlade_FuelCapacity.CardStatName,Temperature,温度
 Blank_MetalSkinningKnifeBlade_Progress.CardStatName,Smelted,熔炼
 Blank_MetalSkinningKnifeBlade_Progress.OnFull.ActionDescription,Skinning Knife Blade smelted!,剥皮刀熔炼完成！
@@ -15727,11 +15680,11 @@ Shape_MetalButcheringKnifeBlade_AlternateNames[1].Name,Ghost Bronze Butchering K
 Shape_MetalButcheringKnifeBlade_AlternateNames[2].Name,Tin Butchering Knife Blade,锡屠宰刀刃片
 Shape_MetalButcheringKnifeBlade_AlternateNames[3].Name,Tin Bronze Butchering Knife Blade,青铜屠宰刀刃片
 Shape_MetalButcheringKnifeBlade_AlternateNames[4].Name,White Bronze Butchering Knife Blade,白铜屠宰刀刃片
-Shape_MetalButcheringKnifeBlade_AlternateNames[5].Name,Heated Copper Butchering Knife Blade,加热的铜屠宰刀刃片
-Shape_MetalButcheringKnifeBlade_AlternateNames[6].Name,Heated Ghost Bronze Butchering Knife Blade,加热的鬼铜屠宰刀刃片
-Shape_MetalButcheringKnifeBlade_AlternateNames[7].Name,Heated Tin Butchering Knife Blade,加热的锡屠宰刀刃片
-Shape_MetalButcheringKnifeBlade_AlternateNames[8].Name,Heated Tin Bronze Butchering Knife Blade,加热的青铜屠宰刀刃片
-Shape_MetalButcheringKnifeBlade_AlternateNames[9].Name,Heated White Bronze Butchering Knife Blade,加热的白铜屠宰刀刃片
+Shape_MetalButcheringKnifeBlade_AlternateNames[5].Name,Copper Butchering Knife Blade,铜屠宰刀刃片
+Shape_MetalButcheringKnifeBlade_AlternateNames[6].Name,Ghost Bronze Butchering Knife Blade,鬼铜屠宰刀刃片
+Shape_MetalButcheringKnifeBlade_AlternateNames[7].Name,Tin Butchering Knife Blade,锡屠宰刀刃片
+Shape_MetalButcheringKnifeBlade_AlternateNames[8].Name,Tin Bronze Butchering Knife Blade,青铜屠宰刀刃片
+Shape_MetalButcheringKnifeBlade_AlternateNames[9].Name,White Bronze Butchering Knife Blade,白铜屠宰刀刃片
 Shape_MetalButcheringKnifeBlade_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalButcheringKnifeBlade_Progress.CardStatName,Smelted,熔炼
 Shape_MetalButcheringKnifeBlade_Progress.OnFull.ActionDescription,Butchering Knife Blade smelted!,屠宰刀刃片熔炼完成！
@@ -15747,11 +15700,11 @@ Shape_MetalChiselBlade_AlternateNames[1].Name,Ghost Bronze Chisel Blade,鬼铜�
 Shape_MetalChiselBlade_AlternateNames[2].Name,Tin Chisel Blade,锡凿刃
 Shape_MetalChiselBlade_AlternateNames[3].Name,Tin Bronze Chisel Blade,青铜凿刃
 Shape_MetalChiselBlade_AlternateNames[4].Name,White Bronze Chisel Blade,白铜凿刃
-Shape_MetalChiselBlade_AlternateNames[5].Name,Heated Copper Chisel Blade,加热的铜凿刃
-Shape_MetalChiselBlade_AlternateNames[6].Name,Heated Ghost Bronze Chisel Blade,加热的鬼铜凿刃
-Shape_MetalChiselBlade_AlternateNames[7].Name,Heated Tin Chisel Blade,加热的锡凿刃
-Shape_MetalChiselBlade_AlternateNames[8].Name,Heated Tin Bronze Chisel Blade,加热的青铜凿刃
-Shape_MetalChiselBlade_AlternateNames[9].Name,Heated White Bronze Chisel Blade,加热的白铜凿刃
+Shape_MetalChiselBlade_AlternateNames[5].Name,Copper Chisel Blade,铜凿刃
+Shape_MetalChiselBlade_AlternateNames[6].Name,Ghost Bronze Chisel Blade,鬼铜凿刃
+Shape_MetalChiselBlade_AlternateNames[7].Name,Tin Chisel Blade,锡凿刃
+Shape_MetalChiselBlade_AlternateNames[8].Name,Tin Bronze Chisel Blade,青铜凿刃
+Shape_MetalChiselBlade_AlternateNames[9].Name,White Bronze Chisel Blade,白铜凿刃
 Shape_MetalChiselBlade_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalChiselBlade_Progress.CardStatName,Smelted,熔炼
 Shape_MetalChiselBlade_Progress.OnFull.ActionDescription,Chisel Blade smelted!,凿刃熔炼完成！
@@ -15767,11 +15720,11 @@ Shape_MetalDrawknifeBlade_AlternateNames[1].Name,Ghost Bronze Drawknife Blade,�
 Shape_MetalDrawknifeBlade_AlternateNames[2].Name,Tin Drawknife Blade,锡拉刀刃片
 Shape_MetalDrawknifeBlade_AlternateNames[3].Name,Tin Bronze Drawknife Blade,青铜拉刀刃片
 Shape_MetalDrawknifeBlade_AlternateNames[4].Name,White Bronze Drawknife Blade,白铜拉刀刃片
-Shape_MetalDrawknifeBlade_AlternateNames[5].Name,Heated Copper Drawknife Blade,加热的铜拉刀刃片
-Shape_MetalDrawknifeBlade_AlternateNames[6].Name,Heated Ghost Bronze Drawknife Blade,加热的鬼铜拉刀刃片
-Shape_MetalDrawknifeBlade_AlternateNames[7].Name,Heated Tin Drawknife Blade,加热的锡拉刀刃片
-Shape_MetalDrawknifeBlade_AlternateNames[8].Name,Heated Tin Bronze Drawknife Blade,加热的青铜拉刀刃片
-Shape_MetalDrawknifeBlade_AlternateNames[9].Name,Heated White Bronze Drawknife Blade,加热的白铜拉刀刃片
+Shape_MetalDrawknifeBlade_AlternateNames[5].Name,Copper Drawknife Blade,铜刨刀刃片
+Shape_MetalDrawknifeBlade_AlternateNames[6].Name,Ghost Bronze Drawknife Blade,鬼铜刨刀刃片
+Shape_MetalDrawknifeBlade_AlternateNames[7].Name,Tin Drawknife Blade,锡刨刀刃片
+Shape_MetalDrawknifeBlade_AlternateNames[8].Name,Tin Bronze Drawknife Blade,青铜刨刀刃片
+Shape_MetalDrawknifeBlade_AlternateNames[9].Name,White Bronze Drawknife Blade,白铜刨刀刃片
 Shape_MetalDrawknifeBlade_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalDrawknifeBlade_Progress.CardStatName,Smelted,熔炼
 Shape_MetalDrawknifeBlade_Progress.OnFull.ActionDescription,Drawknife Blade smelted!,拉刀刃片熔炼完成！
@@ -15787,11 +15740,11 @@ Shape_MetalMeatHook_AlternateNames[1].Name,Ghost Bronze Meat Hook,鬼铜肉钩
 Shape_MetalMeatHook_AlternateNames[2].Name,Tin Meat Hook,锡肉钩
 Shape_MetalMeatHook_AlternateNames[3].Name,Tin Bronze Meat Hook,青铜肉钩
 Shape_MetalMeatHook_AlternateNames[4].Name,White Bronze Meat Hook,白铜肉钩
-Shape_MetalMeatHook_AlternateNames[5].Name,Heated Copper Meat Hook,加热的铜肉钩
-Shape_MetalMeatHook_AlternateNames[6].Name,Heated Ghost Bronze Meat Hook,加热的鬼铜肉钩
-Shape_MetalMeatHook_AlternateNames[7].Name,Heated Tin Meat Hook,加热的锡肉钩
-Shape_MetalMeatHook_AlternateNames[8].Name,Heated Tin Bronze Meat Hook,加热的青铜肉钩
-Shape_MetalMeatHook_AlternateNames[9].Name,Heated White Bronze Meat Hook,加热的白铜肉钩
+Shape_MetalMeatHook_AlternateNames[5].Name,Copper Meat Hook,铜肉钩
+Shape_MetalMeatHook_AlternateNames[6].Name,Ghost Bronze Meat Hook,鬼铜肉钩
+Shape_MetalMeatHook_AlternateNames[7].Name,Tin Meat Hook,锡肉钩
+Shape_MetalMeatHook_AlternateNames[8].Name,Tin Bronze Meat Hook,青铜肉钩
+Shape_MetalMeatHook_AlternateNames[9].Name,White Bronze Meat Hook,白铜肉钩
 Shape_MetalMeatHook_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalMeatHook_Progress.CardStatName,Smelted,熔炼
 Shape_MetalMeatHook_Progress.OnFull.ActionDescription,Meat Hook smelted!,肉钩熔炼完成！
@@ -15807,11 +15760,11 @@ Shape_MetalSkinningKnifeBlade_AlternateNames[1].Name,Ghost Bronze Skinning Knife
 Shape_MetalSkinningKnifeBlade_AlternateNames[2].Name,Tin Skinning Knife Blade,锡剥皮刀刃片
 Shape_MetalSkinningKnifeBlade_AlternateNames[3].Name,Tin Bronze Skinning Knife Blade,青铜剥皮刀刃片
 Shape_MetalSkinningKnifeBlade_AlternateNames[4].Name,White Bronze Skinning Knife Blade,白铜剥皮刀刃片
-Shape_MetalSkinningKnifeBlade_AlternateNames[5].Name,Heated Copper Skinning Knife Blade,加热的铜剥皮刀刃片
-Shape_MetalSkinningKnifeBlade_AlternateNames[6].Name,Heated Ghost Bronze Skinning Knife Blade,加热的鬼铜剥皮刀刃片
-Shape_MetalSkinningKnifeBlade_AlternateNames[7].Name,Heated Tin Skinning Knife Blade,加热的锡剥皮刀刃片
-Shape_MetalSkinningKnifeBlade_AlternateNames[8].Name,Heated Tin Bronze Skinning Knife Blade,加热的青铜剥皮刀刃片
-Shape_MetalSkinningKnifeBlade_AlternateNames[9].Name,Heated White Bronze Skinning Knife Blade,加热的白铜剥皮刀刃片
+Shape_MetalSkinningKnifeBlade_AlternateNames[5].Name,Copper Skinning Knife Blade,铜剥皮刀刃片
+Shape_MetalSkinningKnifeBlade_AlternateNames[6].Name,Ghost Bronze Skinning Knife Blade,鬼铜剥皮刀刃片
+Shape_MetalSkinningKnifeBlade_AlternateNames[7].Name,Tin Skinning Knife Blade,锡剥皮刀刃片
+Shape_MetalSkinningKnifeBlade_AlternateNames[8].Name,Tin Bronze Skinning Knife Blade,青铜剥皮刀刃片
+Shape_MetalSkinningKnifeBlade_AlternateNames[9].Name,White Bronze Skinning Knife Blade,白铜剥皮刀刃片
 Shape_MetalSkinningKnifeBlade_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalSkinningKnifeBlade_Progress.CardStatName,Smelted,熔炼
 Shape_MetalSkinningKnifeBlade_Progress.OnFull.ActionDescription,Skinning Knife Blade smelted!,剥皮刀熔炼完成！
@@ -15827,11 +15780,11 @@ Shape_MetalSpoonBit_AlternateNames[1].Name,Ghost Bronze Spoon Bit,鬼铜勺型�
 Shape_MetalSpoonBit_AlternateNames[2].Name,Tin Spoon Bit,锡勺型钻头
 Shape_MetalSpoonBit_AlternateNames[3].Name,Tin Bronze Spoon Bit,青铜勺型钻头
 Shape_MetalSpoonBit_AlternateNames[4].Name,White Bronze Spoon Bit,白铜勺型钻头
-Shape_MetalSpoonBit_AlternateNames[5].Name,Heated Copper Spoon Bit,加热的铜勺型钻头
-Shape_MetalSpoonBit_AlternateNames[6].Name,Heated Ghost Bronze Spoon Bit,加热的鬼铜勺型钻头
-Shape_MetalSpoonBit_AlternateNames[7].Name,Heated Tin Spoon Bit,加热的锡勺型钻头
-Shape_MetalSpoonBit_AlternateNames[8].Name,Heated Tin Bronze Spoon Bit,加热的青铜勺型钻头
-Shape_MetalSpoonBit_AlternateNames[9].Name,Heated White Bronze Spoon Bit,加热的白铜勺型钻头
+Shape_MetalSpoonBit_AlternateNames[5].Name,Copper Spoon Bit,铜勺型钻头
+Shape_MetalSpoonBit_AlternateNames[6].Name,Ghost Bronze Spoon Bit,鬼铜勺型钻头
+Shape_MetalSpoonBit_AlternateNames[7].Name,Tin Spoon Bit,锡勺型钻头
+Shape_MetalSpoonBit_AlternateNames[8].Name,Tin Bronze Spoon Bit,青铜勺型钻头
+Shape_MetalSpoonBit_AlternateNames[9].Name,White Bronze Spoon Bit,白铜勺型钻头
 Shape_MetalSpoonBit_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalSpoonBit_Progress.CardStatName,Smelted,熔炼
 Shape_MetalSpoonBit_Progress.OnFull.ActionDescription,Spoon Bit smelted!,勺型钻头熔炼完成！
@@ -16972,7 +16925,7 @@ GrovePine_WindNeedlesQEE_DismantleActions[5].ActionName,Climb Down,爬下去
 GrovePine_WindNeedlesQEE_DismantleActions[5].ActionDescription,...to Damp Hollow,......前往潮润幽谷
 GrovePine_WindNeedlesQEE_DismantleActions[6].ActionName,South,南方
 GrovePine_WolfPassQEE_CardName,Wolf Pass,狼嚎隘口
-GrovePine_WolfPassQEE_CardHelpSection,"<b>Pine Grove:\n</b>\n\n<b>Conditions:</b> Acidic soil.\n\n<b>Flora:</b> Pines, Healer's Moss, Fireroot, Bilberries (summer), Pine Nuts (autumn), Fly Agaric.\n\n<b>Fauna:</b> Squirrels..",<b>松木林地：\n</b>\n\n<b>条件：</b>-酸性土壤\n\n<b>植物：</b>松树，疗伤地衣，火根，越橘（夏季），松子（秋季），毒蝇伞。\n\n<b>动物：</b>松鼠。
+GrovePine_WolfPassQEE_CardHelpSection,"<b>Pine Grove:\n</b>\n\n<b>Conditions:</b> Acidic soil.\n\n<b>Flora:</b> Pines, Healer's Moss, Fireroot, Bilberries (summer), Pine Nuts (autumn), Fly Agaric.\n\n<b>Fauna:</b> Squirrels.",<b>松木林地：\n</b>\n\n<b>条件：</b>-酸性土壤\n\n<b>植物：</b>松树，疗伤地衣，火根，越橘（夏季），松子（秋季），毒蝇伞。\n\n<b>动物：</b>松鼠。
 GrovePine_WolfPassQEE_SpecialDurability1.CardStatName,Trees,树林
 GrovePine_WolfPassQEE_SpecialDurability2.CardStatName,Overgrowth,过度生长
 GrovePine_WolfPassQEE_SpecialDurability3.CardStatName,Foraging,觅食
@@ -17803,7 +17756,7 @@ WheatBreadLoaf_SpecialDurability1.CardStatName,Burned,烤焦的
 WheatBreadLoaf_SpecialDurability2.CardStatName,Quality,品质
 WheatBreadLoaf_SpecialDurability3.CardStatName,Yeast,发酵
 WheatBreadLoaf_CardInteractions[0].ActionName,Cut,切
-WheatBreadLoafRaw_CardName,Wheat Rye Breadloaf,小麦面包条
+WheatBreadLoafRaw_CardName,Raw Wheat Breadloaf,生小麦面包坯
 WheatBreadLoafRaw_CardDescription,Best if baked in an oven.,最好在烤箱中烘烤。
 WheatBreadLoafRaw_SpoilageTime.CardStatName,Spoilage,变质
 WheatBreadLoafRaw_SpoilageTime.OnFull.ActionDescription,Bread Loaf Spoiled!,面包条变质了！
@@ -17865,16 +17818,16 @@ WheatWheatEggbread_SpecialDurability2.CardStatName,Quality,品质
 WheatWheatEggbread_DismantleActions[0].ActionName,Eat,食用
 Blank_MetalHoeHead_CardName,Heated Hoe Head Blank,加热的锄头坯
 Blank_MetalHoeHead_CardDescription,Must be struck into shape.,必须将其打造出形状。
-Blank_MetalHoeHead_AlternateNames[0].Name,Copper Hoe Head Blank,铜锄头坯
-Blank_MetalHoeHead_AlternateNames[1].Name,Ghost Bronze Hoe Head Blank,鬼铜锄头坯
-Blank_MetalHoeHead_AlternateNames[2].Name,Tin Hoe Head Blank,锡锄头坯
-Blank_MetalHoeHead_AlternateNames[3].Name,Tin Bronze Hoe Head Blank,青铜锄头坯
-Blank_MetalHoeHead_AlternateNames[4].Name,White Bronze Hoe Head Blank,白铜锄头坯
-Blank_MetalHoeHead_AlternateNames[5].Name,Heated Copper Hoe Head Blank,加热的铜锄头坯
-Blank_MetalHoeHead_AlternateNames[6].Name,Heated Ghost Bronze Hoe Head Blank,加热的鬼铜锄头坯
-Blank_MetalHoeHead_AlternateNames[7].Name,Heated Tin Hoe Head Blank,加热的锡锄头坯
-Blank_MetalHoeHead_AlternateNames[8].Name,Heated Tin Bronze Hoe Head Blank,加热的青铜锄头坯
-Blank_MetalHoeHead_AlternateNames[9].Name,Heated White Bronze Hoe Head Blank,加热的白铜锄头坯
+Blank_MetalHoeHead_AlternateNames[0].Name,Copper Hoe Blank,铜锄坯
+Blank_MetalHoeHead_AlternateNames[1].Name,Ghost Bronze Hoe Blank,鬼铜锄坯
+Blank_MetalHoeHead_AlternateNames[2].Name,Tin Hoe Blank,锡锄坯
+Blank_MetalHoeHead_AlternateNames[3].Name,Tin Bronze Hoe Blank,青铜锄坯
+Blank_MetalHoeHead_AlternateNames[4].Name,White Bronze Hoe Blank,白铜锄坯
+Blank_MetalHoeHead_AlternateNames[5].Name,Copper Hoe Blank,铜锄坯
+Blank_MetalHoeHead_AlternateNames[6].Name,Ghost Bronze Hoe Blank,鬼铜锄坯
+Blank_MetalHoeHead_AlternateNames[7].Name,Tin Hoe Blank,锡锄坯
+Blank_MetalHoeHead_AlternateNames[8].Name,Tin Bronze Hoe Blank,青铜锄坯
+Blank_MetalHoeHead_AlternateNames[9].Name,White Bronze Hoe Blank,白铜锄坯
 Blank_MetalHoeHead_FuelCapacity.CardStatName,Temperature,温度
 Blank_MetalHoeHead_Progress.CardStatName,Smelted,熔炼
 Blank_MetalHoeHead_Progress.OnFull.ActionDescription,Hoe Heat smelted!,锄头熔炼完成！
@@ -17886,16 +17839,16 @@ Blank_MetalHoeHead_SpecialDurability4.CardStatName,Metal Type,金属类型
 Blank_MetalHoeHead_CardInteractions[0].ActionName,Smith,锻造
 Blank_MetalScytheBlade_CardName,Heated Scythe Blade Blank,加热的大镰刀刃片坯
 Blank_MetalScytheBlade_CardDescription,Must be struck into shape.,必须将其打造出形状。
-Blank_MetalScytheBlade_AlternateNames[0].Name,Copper Scythe Blade Blank,铜大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[1].Name,Ghost Bronze Scythe Blade Blank,鬼铜大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[2].Name,Tin Scythe Blade Blank,锡大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[3].Name,Tin Bronze Scythe Blade Blank,青铜大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[4].Name,White Bronze Scythe Blade Blank,白铜大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[5].Name,Heated Copper Scythe Blade Blank,加热的铜大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[6].Name,Heated Ghost Bronze Scythe Blade Blank,加热的鬼铜大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[7].Name,Heated Tin Scythe Blade Blank,加热的锡大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[8].Name,Heated Tin Bronze Scythe Blade Blank,加热的青铜大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[9].Name,Heated White Bronze Scythe Blade Blank,加热的白铜大镰刀刃片坯
+Blank_MetalScytheBlade_AlternateNames[0].Name,Copper Scythe Blank,铜大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[1].Name,Ghost Bronze Scythe Blank,鬼铜大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[2].Name,Tin Scythe Blank,锡大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[3].Name,Tin Bronze ScytheBlank,青铜大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[4].Name,White Bronze Scythe Blank,白铜大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[5].Name,Copper Scythe Blank,铜大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[6].Name,Ghost Bronze Scythe Blank,鬼铜大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[7].Name,Tin Scythe Blank,锡大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[8].Name,Tin Bronze Scythe Blank,青铜大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[9].Name,White Bronze Scythe Blank,白铜大镰刀坯
 Blank_MetalScytheBlade_FuelCapacity.CardStatName,Temperature,温度
 Blank_MetalScytheBlade_Progress.CardStatName,Smelted,熔炼
 Blank_MetalScytheBlade_Progress.OnFull.ActionDescription,Scythe Blade smelted!,大镰刀刃片熔炼完成！
@@ -17907,16 +17860,16 @@ Blank_MetalScytheBlade_SpecialDurability4.CardStatName,Metal Type,金属类型
 Blank_MetalScytheBlade_CardInteractions[0].ActionName,Smith,锻造
 Blank_MetalSickleBlade_CardName,Heated Metal Sickle Blade Blank,加热的金属镰刀刃片坯
 Blank_MetalSickleBlade_CardDescription,Must be struck into shape.,必须将其打造出形状。
-Blank_MetalSickleBlade_AlternateNames[0].Name,Copper Sickle Blade Blank,铜镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[1].Name,Ghost Bronze Sickle Blade Blank,鬼铜镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[2].Name,Tin Sickle Blade Blank,锡镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[3].Name,Tin Bronze Sickle Blade Blank,青铜镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[4].Name,White Bronze Sickle Blade Blank,白铜镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[5].Name,Heated Copper Sickle Blade Blank,加热的铜镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[6].Name,Heated Ghost Bronze Sickle Blade Blank,加热的鬼铜镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[7].Name,Heated Tin Sickle Blade Blank,加热的锡镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[8].Name,Heated Tin Bronze Sickle Blade Blank,加热的青铜镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[9].Name,Heated White Bronze Sickle Blade Blank,加热的白铜镰刀刃片坯
+Blank_MetalSickleBlade_AlternateNames[0].Name,Copper Sickle Blank,铜镰刀坯
+Blank_MetalSickleBlade_AlternateNames[1].Name,Ghost Bronze Sickle Blank,鬼铜镰刀坯
+Blank_MetalSickleBlade_AlternateNames[2].Name,Tin Sickle Blank,锡镰刀坯
+Blank_MetalSickleBlade_AlternateNames[3].Name,Tin Bronze Sickle Blank,青铜镰刀坯
+Blank_MetalSickleBlade_AlternateNames[4].Name,White Bronze Sickle Blank,白铜镰刀坯
+Blank_MetalSickleBlade_AlternateNames[5].Name,Copper Sickle Blank,铜镰刀坯
+Blank_MetalSickleBlade_AlternateNames[6].Name,Ghost Bronze Sickle Blank,鬼铜镰刀坯
+Blank_MetalSickleBlade_AlternateNames[7].Name,Tin Sickle Blank,锡镰刀
+Blank_MetalSickleBlade_AlternateNames[8].Name,Tin Bronze Sickle Blank,青铜镰刀
+Blank_MetalSickleBlade_AlternateNames[9].Name,White Bronze Sickle Blank,白铜镰刀
 Blank_MetalSickleBlade_FuelCapacity.CardStatName,Temperature,温度
 Blank_MetalSickleBlade_Progress.CardStatName,Smelted,熔炼
 Blank_MetalSickleBlade_Progress.OnFull.ActionDescription,Sickle Blade smelted!,镰刀刃片熔炼完成！
@@ -17967,11 +17920,11 @@ Shape_MetalHoeHead_AlternateNames[1].Name,Ghost Bronze Hoe Head,鬼铜锄头
 Shape_MetalHoeHead_AlternateNames[2].Name,Tin Hoe Head,锡锄头
 Shape_MetalHoeHead_AlternateNames[3].Name,Tin Bronze Hoe Head,青铜锄头
 Shape_MetalHoeHead_AlternateNames[4].Name,White Bronze Hoe Head,白铜锄头
-Shape_MetalHoeHead_AlternateNames[5].Name,Heated Copper Hoe Head,加热的铜锄头
-Shape_MetalHoeHead_AlternateNames[6].Name,Heated Ghost Bronze Hoe Head,加热的鬼铜锄头
-Shape_MetalHoeHead_AlternateNames[7].Name,Heated Tin Hoe Head,加热的锡锄头
-Shape_MetalHoeHead_AlternateNames[8].Name,Heated Tin Bronze Hoe Head,加热的青铜锄头
-Shape_MetalHoeHead_AlternateNames[9].Name,Heated White Bronze Hoe Head,加热的白铜锄头
+Shape_MetalHoeHead_AlternateNames[5].Name,Copper Hoe Head,铜锄头
+Shape_MetalHoeHead_AlternateNames[6].Name,Ghost Bronze Hoe Head,鬼铜锄头
+Shape_MetalHoeHead_AlternateNames[7].Name,Tin Hoe Head,锡锄头
+Shape_MetalHoeHead_AlternateNames[8].Name,Tin Bronze Hoe Head,青铜锄头
+Shape_MetalHoeHead_AlternateNames[9].Name,White Bronze Hoe Head,白铜锄头
 Shape_MetalHoeHead_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalHoeHead_Progress.CardStatName,Smelted,熔炼
 Shape_MetalHoeHead_Progress.OnFull.ActionDescription,Hoe Head smelted!,锄头熔炼完成！
@@ -17987,11 +17940,11 @@ Shape_MetalScytheBlade_AlternateNames[1].Name,Ghost Bronze Scythe Blade,鬼铜�
 Shape_MetalScytheBlade_AlternateNames[2].Name,Tin Scythe Blade,锡大镰刀头
 Shape_MetalScytheBlade_AlternateNames[3].Name,Tin Bronze Scythe Blade,青铜大镰刀头
 Shape_MetalScytheBlade_AlternateNames[4].Name,White Bronze Scythe Blade,白铜大镰刀头
-Shape_MetalScytheBlade_AlternateNames[5].Name,Heated Copper Scythe Blade,加热的铜大镰刀头
-Shape_MetalScytheBlade_AlternateNames[6].Name,Heated Ghost Bronze Scythe Blade,加热的鬼铜大镰刀头
-Shape_MetalScytheBlade_AlternateNames[7].Name,Heated Tin Scythe Blade,加热的锡大镰刀头
-Shape_MetalScytheBlade_AlternateNames[8].Name,Heated Tin Bronze Scythe Blade,加热的青铜大镰刀头
-Shape_MetalScytheBlade_AlternateNames[9].Name,Heated White Bronze Scythe Blade,加热的白铜大镰刀头
+Shape_MetalScytheBlade_AlternateNames[5].Name,Copper Scythe Blade,铜大镰刀头
+Shape_MetalScytheBlade_AlternateNames[6].Name,Ghost Bronze Scythe Blade,鬼铜镰刀头
+Shape_MetalScytheBlade_AlternateNames[7].Name,Tin Scythe Blade,锡大镰刀头
+Shape_MetalScytheBlade_AlternateNames[8].Name,Tin Bronze Scythe Blade,青铜大镰刀头
+Shape_MetalScytheBlade_AlternateNames[9].Name,White Bronze Scythe Blade,白铜大镰刀头
 Shape_MetalScytheBlade_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalScytheBlade_Progress.CardStatName,Smelted,熔炼
 Shape_MetalScytheBlade_Progress.OnFull.ActionDescription,Scythe Blade smelted!,大镰刀头冶炼完成！
@@ -18007,11 +17960,11 @@ Shape_MetalSickleBlade_AlternateNames[1].Name,Ghost Bronze Sickle Blade,鬼铜�
 Shape_MetalSickleBlade_AlternateNames[2].Name,Tin Sickle Blade,锡镰刀头
 Shape_MetalSickleBlade_AlternateNames[3].Name,Tin Bronze Sickle Blade,青铜镰刀头
 Shape_MetalSickleBlade_AlternateNames[4].Name,White Bronze Sickle Blade,白铜镰刀头
-Shape_MetalSickleBlade_AlternateNames[5].Name,Heated Copper Sickle Blade,加热的铜镰刀头
-Shape_MetalSickleBlade_AlternateNames[6].Name,Heated Ghost Bronze Sickle Blade,加热的鬼铜镰刀头
-Shape_MetalSickleBlade_AlternateNames[7].Name,Heated Tin Sickle Blade,加热的锡镰刀头
-Shape_MetalSickleBlade_AlternateNames[8].Name,Heated Tin Bronze Sickle Blade,加热的青铜镰刀头
-Shape_MetalSickleBlade_AlternateNames[9].Name,Heated White Bronze Sickle Blade,加热的白铜镰刀头
+Shape_MetalSickleBlade_AlternateNames[5].Name,Copper Sickle Blade,铜镰刀头
+Shape_MetalSickleBlade_AlternateNames[6].Name,Ghost Bronze Sickle Blade,鬼铜镰刀头
+Shape_MetalSickleBlade_AlternateNames[7].Name,Tin Sickle Blade,锡镰刀头
+Shape_MetalSickleBlade_AlternateNames[8].Name,Tin Bronze Sickle Blade,青铜镰刀头
+Shape_MetalSickleBlade_AlternateNames[9].Name,White Bronze Sickle Blade,白铜镰刀头
 Shape_MetalSickleBlade_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalSickleBlade_Progress.CardStatName,Smelted,熔炼
 Shape_MetalSickleBlade_Progress.OnFull.ActionDescription,Sickle Blade smelted!,镰刀头冶炼完成！
@@ -21631,7 +21584,7 @@ Path_CaveFromStillHollow_CardName,Still Cave,静谧洞穴
 Path_CaveFromStillHollow_DismantleActions[0].ActionName,Enter the Cave,进入洞穴
 Path_CaveFromStillHollow_DismantleActions[0].FadeMessage,Entering the Cave...,正在进入洞穴……
 Path_DampHollowFromCave_CardName,Narrow Tunnel,狭窄隧道
-Path_DampHollowFromCave_DismantleActions[0].ActionName,Exit,离开
+Path_DampHollowFromCave_DismantleActions[0].ActionName,Enter,离开
 Path_DampHollowFromCave_DismantleActions[0].FadeMessage,Exiting the Cave...,正在离开洞穴……
 Path_OldHollowFromCave_CardName,Exit,出口
 Path_OldHollowFromCave_DismantleActions[0].ActionName,Exit,离开
@@ -21868,7 +21821,7 @@ WestStoneBlessing_Statuses[4].GameName,West Stone Blessing,韦石赐福
 WestStoneBlessing_Statuses[5].GameName,West Stone Blessing,韦石赐福
 GpTag_LeatherPrimevalWolf_TabName,Primeval Wolf Pelt,原初狼皮
 SeasonCounter_Summer_NotEnoughText*,Only in Summer,必须在夏季
-SeasonCounter_Summer_TooMuchText*,Only in Summer,必须在夏季
+SeasonCounter_Summer_TooMuchText*,Not Available in Summer,夏季不可用
 COMMISSIONS,Commissions,委托
 TraderIntroAnimal_TraderIntroIntro_Line,"The man pauses, studying you in silence.",男人停顿片刻，沉默地打量着你。
 TraderIntroAnimal_TraderIntroIntro_PossibleAnswers[0].Answer,Approach cautiously,谨慎接触
@@ -22703,7 +22656,7 @@ PieRaw_CardInteractions[20].ActionName,Add Fireroot,加入火根
 PieRaw_CardInteractions[20].RequiredReceivingDurabilities.FailMessage,No more room.,没有更多空间了。
 PieRaw_CardInteractions[21].ActionName,Add Fireroot,加入火根
 PieRaw_CardInteractions[21].RequiredReceivingDurabilities.FailMessage,No more room.,没有更多空间了。
-PieRaw_CardInteractions[22].ActionName,Add Fish Filling,添加鱼肉馅料
+PieRaw_CardInteractions[22].ActionName,Add Fish Meat,添加鱼肉
 PieRaw_CardInteractions[22].RequiredReceivingDurabilities.FailMessage,No more room.,没有更多空间了。
 PieRaw_CardInteractions[23].ActionName,Add Frog,加入青蛙
 PieRaw_CardInteractions[23].RequiredReceivingDurabilities.FailMessage,No more room.,没有更多空间了。
@@ -23001,7 +22954,6 @@ FirePit_CardInteractions[4].ActionName,Feed Charcoal,添入木炭
 FirePit_CardInteractions[5].ActionName,Light Tinder,点燃火绒
 FirePit_CardInteractions[6].ActionName,Light Tinder,点燃火绒
 FirePit_CardInteractions[7].ActionName,Light Tinder,点燃火绒
-FirePit_CardInteractions[8].ActionName,Feed Leaves,添入树叶
 FirePit_CardInteractions[9].ActionName,Craft Rustic Spear,削成简易长矛
 FirePit_DismantleActions[0].ActionName,Take Embers,取出火炭
 FirePit_DismantleActions[0].RequiredReceivingDurabilities.FailMessage,Charcoal not ready yet.,木炭尚未完成。
@@ -23022,14 +22974,11 @@ FirePitExtinguished_CardInteractions[2].ActionName,Feed Firewood,添入柴火
 FirePitExtinguished_CardInteractions[3].ActionName,Feed Fuel,添入燃料
 FirePitExtinguished_CardInteractions[4].ActionName,Feed Fuel,添入燃料
 FirePitExtinguished_CardInteractions[5].ActionName,Feed Charcoal,添入木炭
-FirePitExtinguished_CardInteractions[6].ActionName,Feed Leaves,添入树叶
 FirePitExtinguished_CardInteractions[7].ActionName,Feed Embers,添入火炭
-FirePitExtinguished_CardInteractions[8].ActionName,Feed Husk,添入椰子皮
 FirePitExtinguished_CardInteractions[9].ActionName,Light Fire,点燃
 FirePitExtinguished_CardInteractions[9].RequiredReceivingDurabilities.FailMessage,Not Enough Fuel,燃料不足
 FirePitExtinguished_CardInteractions[10].ActionName,Light Fire,点燃
 FirePitExtinguished_CardInteractions[10].RequiredReceivingDurabilities.FailMessage,Not Enough Fuel,燃料不足
-FirePitExtinguished_CardInteractions[11].ActionName,Place Alembic,放置蒸馏器
 FirePitExtinguished_DismantleActions[0].ActionName,Take Charcoal and Ash,取出木炭和灰烬
 FirePitExtinguished_DismantleActions[0].RequiredReceivingDurabilities.FailMessage,Charcoal not ready yet.,木炭尚未完成。
 FirePitExtinguished_DismantleActions[1].ActionName,Dismantle,拆解
@@ -23086,10 +23035,10 @@ Bp_BugRepellentSalve_CardName,Bug Repellent Salve,驱虫膏
 Bp_BugRepellentSalve_UnlockConditionsDesc,Bog Myrtle Leaves Needed,需要沼泽香木叶
 Bp_Bloomery_CardName,Bloomery,块炼炉
 Bp_Bloomery_CardDescription,A furnace hot enough to smelt iron. Only accept coal as fuel.\n\nRequires bellows or a windy location to reach high enough temperatures.,温度足以熔炼铁的熔炉。仅接受煤作为燃料。\n\n需要风箱或在多风的区域才能达到足够高的温度。
-Bp_Bloomery_UnlockConditionsDesc,Furnace Needed,需要熔炉
+Bp_Bloomery_UnlockConditionsDesc,More Smithing Needed,需要更高的金工技能
 Bp_Forge_CardName,Forge,锻造台
 Bp_Forge_CardDescription,A station for working hot metal. Only accepts coal as fuel.,用于加工热金属的工作台。仅接受煤作为燃料。
-Bp_Forge_UnlockConditionsDesc,Furnace Needed,需要熔炉
+Bp_Forge_UnlockConditionsDesc,More Smithing Needed,需要更高的金工技能
 Bp_ToolOrWeapon_Hammer_Metal_CardName,Forge Hammer,锻造锤
 Bp_ToolOrWeapon_Hammer_Metal_CardDescription,A sturdy tool for shaping metal more easily. Essential for working iron tools.,用于更轻松塑形金属的坚固工具。制作铁制工具的必备品。
 Bp_ToolOrWeapon_Hammer_Metal_UnlockConditionsDesc,Hammer Head Needed,需要锤头
@@ -23188,7 +23137,7 @@ Env_River_ClearingAlder_FetidBog_CardName,Fetid Bog,恶臭沼泽
 Env_River_ClearingAlder_MosquitoFlats_CardName,Mosquito Flats,蚊虫浅滩
 Env_River_ClearingAlder_PeatBog_CardName,Peat Bog,泥炭沼泽
 Env_River_ClearingAlder_RedMire_CardName,Red Mire,红色泥沼
-Env_River_ClearingAlder_ReedPool_CardName,Reed Pool,芦苇水池
+Env_River_ClearingAlder_ReedPool_CardName,Reed Pool,芦苇池塘
 Env_River_GroveAlder_DuckPoint__CardName,Duck Point,野鸭岬角
 Env_River_GroveAlder_WillowSwamp_CardName,Willow Swamp,柳木沼泽
 Env_River_GroveAlder_WillowWays_CardName,Willow Ways,柳林小径
@@ -23550,7 +23499,7 @@ River_ClearingAlder_RedMire_DismantleActions[3].FadeMessage,Travelling North...,
 River_ClearingAlder_RedMire_AlternateDismantleActions[0].ActionName,North,北方
 River_ClearingAlder_RedMire_AlternateDismantleActions[0].CustomConfirmText,"It's dark, and you may get lost. Are you sure?",太暗了，可能会迷路。确定吗？
 River_ClearingAlder_RedMire_AlternateDismantleActions[0].FadeMessage,Travelling in the dark...,在黑暗中移动……
-River_ClearingAlder_ReedPool_CardName,Reed Pool,芦苇水池
+River_ClearingAlder_ReedPool_CardName,Reed Pool,芦苇池塘
 River_ClearingAlder_ReedPool_CardHelpSection,"<b>Alder Clearing, Wetlands, Riverbank:\n</b>\n\n<b>Conditions:</b> Neutral and humid soil. \n\n<b>Flora:</b> Alders, Willows, Kingcup, Frostleaf, Reeds.\n\n<b>Fauna:</b> Frogs, Mosquitoes.",<b>桤木空地、湿地、河岸：\n</b>\n\n<b>环境：</b>中性、潮湿土壤。\n\n<b>植物群：</b>桤木、柳树、驴蹄草、霜叶草、芦苇。\n\n<b>动物群：</b>青蛙、蚊子。
 River_ClearingAlder_ReedPool_SpecialDurability1.CardStatName,Trees,树林
 River_ClearingAlder_ReedPool_SpecialDurability2.CardStatName,Overgrowth,过度生长
@@ -23849,7 +23798,7 @@ BogMyrtlePlantedMature_CardInteractions[0].ActionName,Harvest,收获
 BogMyrtlePlantedMature_DismantleActions[0].ActionName,Harvest,收获
 BogMyrtlePlantedMature_DismantleActions[1].ActionName,Destroy,摧毁
 KingcupPatchWild_CardName,Kingcup Patch,驴蹄草丛
-KingcupPatchWild_CardDescription,A nutritious plant that grows in swampy areas. ,一种生长在沼泽地区的营养丰富的植物。
+KingcupPatchWild_CardDescription,"A nutritious plant that grows in swampy areas. Needs low to medium acidity, medium to high nutrients, and high hydration.",一种生长在沼泽地区的营养植物。需要中低酸度、中高养分和高水分。
 KingcupPatchWild_AlternateNames[0].Name,Blooming Kingcup Patch,盛开的驴蹄草丛
 KingcupPatchWild_SpecialDurability1.CardStatName,Yield,饱满度
 KingcupPatchWild_SpecialDurability4.CardStatName,Bloom,盛开
@@ -23887,7 +23836,7 @@ TreeLargeAlder_CardDescription,Its fragrant wood is of moderate quality and weig
 TreeLargeAlder_AlternateNames[0].Name,Marked Alder Tree,标记的桤木
 TreeLargeAlder_UsageDurability.CardStatName,Fragrance,香气
 TreeLargeAlder_FuelCapacity.CardStatName,Fuel,燃料
-TreeLargeAlder_Progress.CardStatName,Cut,分割
+TreeLargeAlder_Progress.CardStatName,Cut,砍倒进程
 TreeLargeAlder_Progress.OnZero.ActionDescription,Tree Down!,树倒了！
 TreeLargeAlder_SpecialDurability1.CardStatName,Marked,已标记
 TreeLargeAlder_SpecialDurability2.CardStatName,Quality,品质
@@ -23993,7 +23942,7 @@ WillowBarkPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessa
 WillowBarkPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessages[2].Message,Not hot enough,还不够热
 HealersMossBoiled_SpecialDurability4.CardStatName,Boil,烹煮
 KingcupBoiled_CardName,Boiled Kingcup ,煮熟的驴蹄草
-KingcupBoiled_CardDescription,A nutritious plant.,一种营养丰富的植物。
+KingcupBoiled_CardDescription,"A nutritious plant that grows in swampy areas. Needs low to medium acidity, medium to high nutrients, and high hydration.",一种生长在沼泽地区的营养植物。需要中低酸度、中高养分和高水分。
 KingcupBoiled_CardHelpSection,"<b>Found:</b> Shallow Waters.\n\n<b>Growth Needs:</b> Low to Mid Acidity, High Hydration,Mid to High Nutrients.\n\n<b>Benefits:</b> Food. ",<b>产地：</b>浅水区。\n\n<b>生长需求：</b>低至中等酸度，高湿度，中至高养分。\n\n<b>效果：</b>食物。
 KingcupBoiled_SpoilageTime.CardStatName,Spoilage,变质
 KingcupBoiled_SpoilageTime.OnFull.ActionDescription,Nettle Leaves Spoiled!,荨麻叶变质了！
@@ -24036,7 +23985,7 @@ AcornsDiseasedRaw_SpecialDurability2.CardStatName,Quality,品质
 AcornsDiseasedRaw_SpecialDurability4.CardStatName,Boil,烹煮
 ButterChunk_SpecialDurability1.CardStatName,Liquidity,流动性
 KingcupRaw_CardName,Raw Kingcup ,生驴蹄草
-KingcupRaw_CardDescription,A nutritious plant.,一种营养丰富的植物。
+KingcupRaw_CardDescription,"A nutritious plant that grows in swampy areas. Needs low to medium acidity, medium to high nutrients, and high hydration.",一种生长在沼泽地区的营养植物。需要中低酸度、中高养分和高水分。
 KingcupRaw_CardHelpSection,"<b>Found:</b> Shallow Waters.\n\n<b>Growth Needs:</b> Low to Mid Acidity, High Hydration,Mid to High Nutrients.\n\n<b>Benefits:</b> Food. ",<b>产地：</b>浅水区。\n\n<b>需求：</b>低至中等酸度，高湿度，中至高等养分。\n\n<b>效果：</b>食物。
 KingcupRaw_SpoilageTime.CardStatName,Spoilage,变质
 KingcupRaw_SpoilageTime.OnFull.ActionDescription,Nettle Leaves Spoiled!,荨麻叶变质了！
@@ -24105,12 +24054,12 @@ AlderBark_CardInteractions[1].ActionName,Soak,浸泡
 AlderBark_CardInteractions[1].RequiredReceivingDurabilities.SpecificFailMessages[0].Message,The mixture is too thick...,混合物太浓稠了......
 AlderBark_CardInteractions[1].RequiredReceivingDurabilities.SpecificFailMessages[1].Message,Not hot enough...,温度还不够......
 Blank_MetalArrowBroadheadQQQ_AlternateNames[10].Name,Iron Broadhead Blank,铁宽头箭头坯
-Blank_MetalArrowBroadheadQQQ_AlternateNames[11].Name,Heated Iron Broadhead Blank,加热的铁宽头箭头坯
+Blank_MetalArrowBroadheadQQQ_AlternateNames[11].Name,Iron Broadhead Blank,铁宽头箭头坯
 Blank_MetalArrowBroadhead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
 Blank_ArrowHeadQWE_AlternateNames[3].Name,Iron Arrow Head Blank,铁箭头坯
-Blank_MetalArrowHead_AlternateNames[10].Name,Heated Iron Arrow Head Blank,加热的铁箭头坯
-MetalAxeHeadBlankQWE_AlternateNames[4].Name,Iron Axe Head Blank,铁斧刃头坯
-MetalAxeHeadBlankQWE_AlternateNames[5].Name,Heated Iron Axe Head Blank,加热的铁斧刃头坯
+Blank_MetalArrowHead_AlternateNames[10].Name,Iron Arrow Head Blank,铁箭头坯
+MetalAxeHeadBlankQWE_AlternateNames[4].Name,Iron Axe Blank,铁斧坯
+MetalAxeHeadBlankQWE_AlternateNames[5].Name,Iron Axe Blank,铁斧坯
 Blank_MetalAxeHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
 Blank_MetalAxeHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料是铁（金属类型 200）且品质 30% 或更高，将打击次数设为 +1
 Blank_MetalAxeHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
@@ -24122,8 +24071,8 @@ Blank_MetalAxeHead_OnStatsChangeActions[7].ActionName,Set Strikes to 2 if Materi
 Blank_MetalAxeHead_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Blank_MetalAxeHead_OnStatsChangeActions[9].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当 Quality 为 0 时）
 Blank_MetalAxeHead_OnStatsChangeActions[10].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到 Quality（仅当 Quality 为 0 时）
-Blank_MetalButcheringKnifeBlade_AlternateNames[10].Name,Iron Butchering Knife Blade Blank,铁屠宰刀刃片坯
-Blank_MetalButcheringKnifeBlade_AlternateNames[11].Name,Heated Iron Butchering Knife Blade Blank,加热的铁屠宰刀刃片坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[10].Name,Iron Butchering Knife Blank,铁屠宰刀坯
+Blank_MetalButcheringKnifeBlade_AlternateNames[11].Name,Iron Butchering Knife Blank,铁屠宰刀坯
 Blank_MetalButcheringKnifeBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
 Blank_MetalButcheringKnifeBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料是铁（金属类型 200）且品质 30% 或更高，将打击次数设为 +1
 Blank_MetalButcheringKnifeBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
@@ -24146,8 +24095,8 @@ Blank_MetalChiselBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 if Ma
 Blank_MetalChiselBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Blank_MetalChiselBlade_OnStatsChangeActions[9].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当 Quality 为 0 时）
 Blank_MetalChiselBlade_OnStatsChangeActions[10].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到 品质（仅当 品质 为 0 时）
-Blank_MetalDrawknifeBlade_AlternateNames[11].Name,Iron Drawknife Blade Blank,铁拉刀刃片坯
-Blank_MetalDrawknifeBlade_AlternateNames[10].Name,Heated Iron Drawknife Blade Blank,加热的铁拉刀刃片坯
+Blank_MetalDrawknifeBlade_AlternateNames[11].Name,Iron Drawknife Blank,铁拉刀坯
+Blank_MetalDrawknifeBlade_AlternateNames[10].Name,Iron Drawknife Blank,铁拉刀坯
 Blank_MetalDrawknifeBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
 Blank_MetalDrawknifeBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料是铁（金属类型 200）且品质 30% 或更高，将打击次数设为 +1
 Blank_MetalDrawknifeBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
@@ -24178,8 +24127,8 @@ Blank_MetalHammerHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Ma
 Blank_MetalHammerHead_OnStatsChangeActions[3].ActionName,Backwards Comptability - if Metal Type is 0 put it to 200,向后兼容 - 如果金属类型为 0，则改为 200
 Blank_MetalHammerHead_OnStatsChangeActions[4].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当 Quality 为 0 时）
 Blank_MetalHammerHead_OnStatsChangeActions[5].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到 品质（仅当 品质 为 0 时）
-Blank_MetalHoeHead_AlternateNames[10].Name,Iron Hoe Head Blank,铁锄头坯
-Blank_MetalHoeHead_AlternateNames[11].Name,Heated Iron Hoe Head Blank,加热的铁锄头坯
+Blank_MetalHoeHead_AlternateNames[10].Name,Iron Hoe Blank,铁锄坯
+Blank_MetalHoeHead_AlternateNames[11].Name,Iron Hoe Blank,铁锄坯
 Blank_MetalHoeHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
 Blank_MetalHoeHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料是铁（金属类型 200）且品质 30% 或更高，将打击次数设为 +1
 Blank_MetalHoeHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
@@ -24192,7 +24141,7 @@ Blank_MetalHoeHead_OnStatsChangeActions[8].ActionName,Backwards Comptability - i
 Blank_MetalHoeHead_OnStatsChangeActions[9].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当 Quality 为 0 时）
 Blank_MetalHoeHead_OnStatsChangeActions[10].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到 Quality（仅当 Quality 为 0 时）
 Blank_HuntingSpearHeadBlankQQQ_AlternateNames[4].Name,Iron Hunting Spear Blank,铁狩猎长矛头坯
-Blank_HuntingSpearHeadBlankQQQ_AlternateNames[5].Name,Heated Iron Hunting Spear Blank,加热的铁狩猎长矛头坯
+Blank_HuntingSpearHeadBlankQQQ_AlternateNames[5].Name,Iron Hunting Spear Blank,铁狩猎长矛坯
 Blank_MetalHuntingSpearHeadBlank_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
 Blank_MetalHuntingSpearHeadBlank_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料是铁（金属类型 200）且品质 30% 或更高，将打击次数设为 +1
 Blank_MetalHuntingSpearHeadBlank_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
@@ -24204,8 +24153,8 @@ Blank_MetalHuntingSpearHeadBlank_OnStatsChangeActions[7].ActionName,Set Strikes 
 Blank_MetalHuntingSpearHeadBlank_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Blank_MetalHuntingSpearHeadBlank_OnStatsChangeActions[9].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当 Quality 为 0 时）
 Blank_MetalHuntingSpearHeadBlank_OnStatsChangeActions[10].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到 Quality（仅当 Quality 为 0 时）
-Blank_KnifeBladeQWE_AlternateNames[4].Name,Iron Knife Blade Blank,铁刀刃片坯
-Blank_KnifeBladeQWE_AlternateNames[5].Name,Heated Iron Knife Blade Blank,加热的铁刀刃片坯
+Blank_KnifeBladeQWE_AlternateNames[4].Name,Iron Knife Blank,铁刀坯
+Blank_KnifeBladeQWE_AlternateNames[5].Name,Iron Knife Blank,铁刀坯
 Blank_MetalKnifeBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
 Blank_MetalKnifeBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料是铁（金属类型 200）且品质 30% 或更高，将打击次数设为 +1
 Blank_MetalKnifeBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
@@ -24218,7 +24167,7 @@ Blank_MetalKnifeBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability 
 Blank_MetalKnifeBlade_OnStatsChangeActions[9].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当 Quality 为 0 时）
 Blank_MetalKnifeBlade_OnStatsChangeActions[10].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到 Quality（仅当 Quality 为 0 时）
 Blank_MetalMeatHook_AlternateNames[10].Name,Iron Meat Hook Blank,铁肉钩坯
-Blank_MetalMeatHook_AlternateNames[11].Name,Heated Iron Meat Hook Blank,加热的铁肉钩坯
+Blank_MetalMeatHook_AlternateNames[11].Name,Iron Meat Hook Blank,铁肉钩坯
 Blank_MetalMeatHook_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
 Blank_MetalMeatHook_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料为铁（金属类型 200）且品质 30% 以上，将打击次数设为 +1
 Blank_MetalMeatHook_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料为铁（金属类型 200）且品质 50% 以上，将打击次数设为 +1
@@ -24249,8 +24198,8 @@ Blank_MetalPickAxeHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if M
 Blank_MetalPickAxeHead_OnStatsChangeActions[3].ActionName,Backwards Comptability - if Metal Type is 0 put it to 200,回落兼容 - 金属类型是 0 的话改为 200
 Blank_MetalPickAxeHead_OnStatsChangeActions[4].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当品质为 0 时）
 Blank_MetalPickAxeHead_OnStatsChangeActions[5].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到品质（仅当品质为 0 时）
-Blank_MetalScytheBlade_AlternateNames[10].Name,Iron Scythe Blade Blank,铁大镰刀刃片坯
-Blank_MetalScytheBlade_AlternateNames[11].Name,Heated Iron Scythe Blade Blank,加热的铁大镰刀刃片坯
+Blank_MetalScytheBlade_AlternateNames[10].Name,Iron Scythe Blank,铁大镰刀坯
+Blank_MetalScytheBlade_AlternateNames[11].Name,Iron Scythe Blank,铁大镰刀坯
 Blank_MetalScytheBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料为铁（金属类型 200），将打击次数设为 4
 Blank_MetalScytheBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料为铁（金属类型 200）且品质 30% 以上，将打击次数设为 +1
 Blank_MetalScytheBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料为铁（金属类型 200）且品质 50% 以上，将打击次数设为 +1
@@ -24262,8 +24211,8 @@ Blank_MetalScytheBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 if Ma
 Blank_MetalScytheBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Blank_MetalScytheBlade_OnStatsChangeActions[9].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当品质为 0 时）
 Blank_MetalScytheBlade_OnStatsChangeActions[10].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到品质（仅当品质为 0 时）
-Blank_ShovelHeadQWE_AlternateNames[4].Name,Iron Shovel Head Blank,铁铲子头坯
-Blank_ShovelHeadQWE_AlternateNames[5].Name,Heated Iron Shovel Head Blank,加热的铁铲子头坯
+Blank_ShovelHeadQWE_AlternateNames[4].Name,Iron Shovel Blank,铁铲坯
+Blank_ShovelHeadQWE_AlternateNames[5].Name,Iron Shovel Blank,铁铲子头坯
 Blank_MetalShovelHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料为铁（金属类型 200），将打击次数设为 4
 Blank_MetalShovelHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料为铁（金属类型 200）且品质 30% 以上，将打击次数设为 +1
 Blank_MetalShovelHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料为铁（金属类型 200）且品质 50% 以上，将打击次数设为 +1
@@ -24275,8 +24224,8 @@ Blank_MetalShovelHead_OnStatsChangeActions[7].ActionName,Set Strikes to 2 if Mat
 Blank_MetalShovelHead_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Blank_MetalShovelHead_OnStatsChangeActions[9].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当品质为 0 时）
 Blank_MetalShovelHead_OnStatsChangeActions[10].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到品质（仅当品质为 0 时）
-Blank_MetalSickleBlade_AlternateNames[10].Name,Iron Sickle Blade Blank,铁镰刀刃片坯
-Blank_MetalSickleBlade_AlternateNames[11].Name,Heated Iron Sickle Blade Blank,加热的铁镰刀刃片坯
+Blank_MetalSickleBlade_AlternateNames[10].Name,Iron Sickle Blank,铁镰刀坯
+Blank_MetalSickleBlade_AlternateNames[11].Name,Iron Sickle Blank,铁镰刀坯
 Blank_MetalSickleBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料为铁（金属类型 200），将打击次数设为 4
 Blank_MetalSickleBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料为铁（金属类型 200）且品质 30% 以上，将打击次数设为 +1
 Blank_MetalSickleBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料为铁（金属类型 200）且品质 50% 以上，将打击次数设为 +1
@@ -24288,8 +24237,8 @@ Blank_MetalSickleBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 if Ma
 Blank_MetalSickleBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Blank_MetalSickleBlade_OnStatsChangeActions[9].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当品质为 0 时）
 Blank_MetalSickleBlade_OnStatsChangeActions[10].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到品质（仅当品质为 0 时）
-Blank_MetalSkinningKnifeBlade_AlternateNames[10].Name,Iron Skinning Knife Blade Blank,铁剥皮刀刃片坯
-Blank_MetalSkinningKnifeBlade_AlternateNames[11].Name,Heated Iron Skinning Knife Blade Blank,加热的铁剥皮刀刃片坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[10].Name,Iron Skinning Knife Blank,铁剥皮刀坯
+Blank_MetalSkinningKnifeBlade_AlternateNames[11].Name,Iron Skinning Knife Blank,铁剥皮刀坯
 Blank_MetalSkinningKnifeBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料为铁（金属类型 200），将打击次数设为 4
 Blank_MetalSkinningKnifeBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料为铁（金属类型 200）且品质 30% 以上，将打击次数设为 +1
 Blank_MetalSkinningKnifeBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料为铁（金属类型 200）且品质 50% 以上，将打击次数设为 +1
@@ -24356,7 +24305,7 @@ BogIronFresh_SpecialDurability3.CardStatName,Mill,研磨
 BogIronFresh_CardInteractions[0].ActionName,Crush,碾碎
 BogIronFresh_CardInteractions[1].ActionName,Crush,碾碎
 BogIronRoasted_CardName,Roasted Bog Iron,烘烤沼铁
-BogIronRoasted_CardDescription,Can be smelted into iron bloom in a bloomery.\n\nIts quality can be increased by grounding it.,可以在熔炉中熔炼成铁块。\n\n通过研磨可以提升其品质。
+BogIronRoasted_CardDescription,Can be smelted into iron bloom in a bloomery.\n\nIts quality can be increased by grinding it.,可以在熔炉中熔炼成铁块。\n\n通过研磨可以提升其品质。
 BogIronRoasted_Progress.CardStatName,Smelted,熔炼
 BogIronRoasted_Progress.OnFull.ActionDescription,Iron smelted!,铁已熔炼！
 BogIronRoasted_SpecialDurability2.CardStatName,Quality,品质
@@ -24377,7 +24326,7 @@ IronBloom_CardDescription,Can be worked into an iron nugget by hitting it repeat
 IronBloom_AlternateNames[0].Name,Heated Iron Bloom,加热的块炼铁
 IronBloom_FuelCapacity.CardStatName,Temperature,温度
 IronBloom_SpecialDurability1.CardStatName,Strikes,捶打
-IronBloom_SpecialDurability1.OnZero.ActionDescription,Iron Bloom Finished!,块炼铁加工完成！
+IronBloom_SpecialDurability1.OnZero.ActionDescription,Iron Bloom Finished!,块炼铁完成！
 IronBloom_SpecialDurability2.CardStatName,Quality,品质
 IronBloom_SpecialDurability4.CardStatName,Metal Type,金属类型
 IronBloom_CardInteractions[0].ActionName,Smith,锻造
@@ -24424,9 +24373,9 @@ PeatTurfWet_FuelCapacity.CardStatName,Wetness,湿度
 PeatTurfWet_FuelCapacity.OnZero.ActionDescription,Peat Turf dried!,泥煤块已晒干！
 Plank_AlternateNames[4].Name,Alder Plank,桤木板
 Shape_MetalArrowBroadHeadQQQ_AlternateNames[10].Name,Iron Broadhead,铁宽头箭头
-Shape_MetalArrowBroadHeadQQQ_AlternateNames[11].Name,Heated Iron Broadhead,加热的铁宽头箭头
+Shape_MetalArrowBroadHeadQQQ_AlternateNames[11].Name,Iron Broadhead,铁宽头箭头
 Shape_MetalArrowHead_AlternateNames[10].Name,Iron Arrow Head,铁箭头
-Shape_MetalArrowHead_AlternateNames[11].Name,Heated Iron Arrow Head,加热的铁箭头
+Shape_MetalArrowHead_AlternateNames[11].Name,Iron Arrow Head,铁箭头
 Shape_MetalArrowHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalArrowHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalArrowHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24437,7 +24386,7 @@ Shape_MetalArrowHead_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and inc
 Shape_MetalArrowHead_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),若材质为白铜（金属类型 140），将打击次数设为 2 并最多提升品质 10
 Shape_MetalArrowHead_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalAxeHead_AlternateNames[10].Name,Iron Axe Head,铁斧刃头
-Shape_MetalAxeHead_AlternateNames[11].Name,Heated Iron Axe Head,加热的铁斧刃头
+Shape_MetalAxeHead_AlternateNames[11].Name,Iron Axe Head,铁斧刃头
 Shape_MetalAxeHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalAxeHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalAxeHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24448,7 +24397,7 @@ Shape_MetalAxeHead_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and incre
 Shape_MetalAxeHead_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),若材质为白铜（金属类型 140），将打击次数设为 2 并最多提升品质 10
 Shape_MetalAxeHead_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalButcheringKnifeBlade_AlternateNames[10].Name,Iron Butchering Knife Blade,铁屠宰刀刃片
-Shape_MetalButcheringKnifeBlade_AlternateNames[11].Name,Heated Iron Butchering Knife Blade,加热的铁屠宰刀刃片
+Shape_MetalButcheringKnifeBlade_AlternateNames[11].Name,Iron Butchering Knife Blade,铁屠宰刀刃片
 Shape_MetalButcheringKnifeBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalButcheringKnifeBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalButcheringKnifeBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24459,7 +24408,7 @@ Shape_MetalButcheringKnifeBlade_OnStatsChangeActions[6].ActionName,Set Strikes t
 Shape_MetalButcheringKnifeBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),若材质为白铜（金属类型 140），将打击次数设为 2 并最多提升品质 10
 Shape_MetalButcheringKnifeBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalChiselBlade_AlternateNames[10].Name,Iron Chisel Blade,铁凿刃
-Shape_MetalChiselBlade_AlternateNames[11].Name,Heated Iron Chisel Blade,加热的铁凿刃
+Shape_MetalChiselBlade_AlternateNames[11].Name,Iron Chisel Blade,铁凿刃
 Shape_MetalChiselBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalChiselBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalChiselBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24470,7 +24419,7 @@ Shape_MetalChiselBlade_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and i
 Shape_MetalChiselBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),若材质为白铜（金属类型 140），将打击次数设为 2 并最多提升品质 10
 Shape_MetalChiselBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalDrawknifeBlade_AlternateNames[10].Name,Iron Drawknife Blade,铁拉刀刃片
-Shape_MetalDrawknifeBlade_AlternateNames[11].Name,Heated Iron Drawknife Blade,加热的铁拉刀刃片
+Shape_MetalDrawknifeBlade_AlternateNames[11].Name,Iron Drawknife Blade,铁拉刀刃片
 Shape_MetalDrawknifeBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalDrawknifeBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalDrawknifeBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24497,7 +24446,7 @@ Shape_MetalHammerHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Ma
 Shape_MetalHammerHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
 Shape_MetalHammerHead_OnStatsChangeActions[3].ActionName,Backwards Comptability - if Metal Type is 0 put it to 200,向后兼容 - 若金属类型为 0 则改为 200
 Shape_MetalHoeHead_AlternateNames[10].Name,Iron Hoe Head,铁锄头
-Shape_MetalHoeHead_AlternateNames[11].Name,Heated Iron Hoe Head,加热的铁锄头
+Shape_MetalHoeHead_AlternateNames[11].Name,Iron Hoe Head,铁锄头
 Shape_MetalHoeHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalHoeHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalHoeHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24508,7 +24457,7 @@ Shape_MetalHoeHead_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and incre
 Shape_MetalHoeHead_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),若材质为白铜（金属类型 140），将打击次数设为 2 并最多提升品质 10
 Shape_MetalHoeHead_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalHuntingSpearHeadQQQ_AlternateNames[10].Name,Iron Hunting Spearhead,铁狩猎长矛头
-Shape_MetalHuntingSpearHeadQQQ_AlternateNames[11].Name,Heated Iron Hunting Spearhead,加热的铁狩猎长矛头
+Shape_MetalHuntingSpearHeadQQQ_AlternateNames[11].Name,Iron Hunting Spearhead,铁狩猎长矛头
 Shape_MetalHuntingSpearHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalHuntingSpearHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalHuntingSpearHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24519,7 +24468,7 @@ Shape_MetalHuntingSpearHead_OnStatsChangeActions[6].ActionName,Set Strikes to 3 
 Shape_MetalHuntingSpearHead_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),若材质为白铜（金属类型 140），将打击次数设为 2 并最多提升品质 10
 Shape_MetalHuntingSpearHead_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalKnifeBlade_AlternateNames[10].Name,Iron Knife Blade,铁刀刃片
-Shape_MetalKnifeBlade_AlternateNames[11].Name,Heated Iron Knife Blade,加热的铁刀刃片
+Shape_MetalKnifeBlade_AlternateNames[11].Name,Iron Knife Blade,铁刀刃片
 Shape_MetalKnifeBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalKnifeBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalKnifeBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24530,7 +24479,7 @@ Shape_MetalKnifeBlade_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and in
 Shape_MetalKnifeBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),若材质为白铜（金属类型 140），将打击次数设为 2 并最多提升品质 10
 Shape_MetalKnifeBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalMeatHook_AlternateNames[10].Name,Iron Meat Hook,铁肉钩
-Shape_MetalMeatHook_AlternateNames[11].Name,Heated Iron Meat Hook,加热的铁肉钩
+Shape_MetalMeatHook_AlternateNames[11].Name,IIron Meat Hook,铁肉钩
 Shape_MetalMeatHook_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalMeatHook_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalMeatHook_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24557,7 +24506,7 @@ Shape_MetalPickaxeHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if M
 Shape_MetalPickaxeHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材质为铁（金属类型 200）且品质 50% 或以上，打击次数 +1
 Shape_MetalPickaxeHead_OnStatsChangeActions[3].ActionName,Backwards Comptability - if Metal Type is 0 put it to 200,向后兼容 - 如果金属类型为 0 则改为 200
 Shape_MetalScytheBlade_AlternateNames[10].Name,Iron Scythe Blade,铁大镰刀头
-Shape_MetalScytheBlade_AlternateNames[11].Name,Heated Iron Scythe Blade,加热的铁大镰刀头
+Shape_MetalScytheBlade_AlternateNames[11].Name,Iron Scythe Blade,铁大镰刀头
 Shape_MetalScytheBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalScytheBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材质为铁（金属类型 200）且品质 30% 或以上，打击次数 +1
 Shape_MetalScytheBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材质为铁（金属类型 200）且品质 50% 或以上，打击次数 +1
@@ -24568,7 +24517,7 @@ Shape_MetalScytheBlade_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and i
 Shape_MetalScytheBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),如果材质为白铜（金属类型 140），将打击次数设为 2 并将品质最多提升 10
 Shape_MetalScytheBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalShovelHead_AlternateNames[10].Name,Iron Shovel Head,铁铲头
-Shape_MetalShovelHead_AlternateNames[11].Name,Heated Iron Shovel Head,加热的铁铲头
+Shape_MetalShovelHead_AlternateNames[11].Name,Iron Shovel Head,铁铲头
 Shape_MetalShovelHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalShovelHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材质为铁（金属类型 200）且品质 30% 或以上，打击次数 +1
 Shape_MetalShovelHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材质为铁（金属类型 200）且品质 50% 或以上，打击次数 +1
@@ -24579,7 +24528,7 @@ Shape_MetalShovelHead_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and in
 Shape_MetalShovelHead_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),如果材质为白铜（金属类型 140），将打击次数设为 2 并将品质最多提升 10
 Shape_MetalShovelHead_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalSickleBlade_AlternateNames[10].Name,Iron Sickle Blade,铁镰刀刃
-Shape_MetalSickleBlade_AlternateNames[11].Name,Heated Iron Sickle Blade,加热的铁镰刀刃
+Shape_MetalSickleBlade_AlternateNames[11].Name,Iron Sickle Blade,铁镰刀刃
 Shape_MetalSickleBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalSickleBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材质为铁（金属类型 200）且品质 30% 或以上，打击次数 +1
 Shape_MetalSickleBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材质为铁（金属类型 200）且品质 50% 或以上，打击次数 +1
@@ -24590,7 +24539,7 @@ Shape_MetalSickleBlade_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and i
 Shape_MetalSickleBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),如果材质为白铜（金属类型 140），将打击次数设为 2 并将品质最多提升 10
 Shape_MetalSickleBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalSkinningKnifeBlade_AlternateNames[10].Name,Iron Skinning Knife Blade,铁剥皮刀刃片
-Shape_MetalSkinningKnifeBlade_AlternateNames[11].Name,Heated Iron Skinning Knife Blade,加热的铁剥皮刀刃片
+Shape_MetalSkinningKnifeBlade_AlternateNames[11].Name,Iron Skinning Knife Blade,铁剥皮刀刃片
 Shape_MetalSkinningKnifeBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalSkinningKnifeBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材质为铁（金属类型 200）且品质 30% 或以上，打击次数 +1
 Shape_MetalSkinningKnifeBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材质为铁（金属类型 200）且品质 50% 或以上，打击次数 +1
@@ -24601,7 +24550,7 @@ Shape_MetalSkinningKnifeBlade_OnStatsChangeActions[6].ActionName,Set Strikes to 
 Shape_MetalSkinningKnifeBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),如果材质为白铜（金属类型 140），将打击次数设为 2 并将品质最多提升 10
 Shape_MetalSkinningKnifeBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalSpearHead_AlternateNames[10].Name,White Iron Head,白铁矛头
-Shape_MetalSpearHead_AlternateNames[11].Name,Heated Iron Spear Head,加热的铁矛头
+Shape_MetalSpearHead_AlternateNames[11].Name,Iron Spear Head,铁矛头
 Shape_MetalSpearHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalSpearHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材质为铁（金属类型 200）且品质 30% 或以上，打击次数 +1
 Shape_MetalSpearHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材质为铁（金属类型 200）且品质 50% 或以上，打击次数 +1
@@ -24612,7 +24561,7 @@ Shape_MetalSpearHead_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and inc
 Shape_MetalSpearHead_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),如果材质为白铜（金属类型 140），将打击次数设为 2 并将品质最多提升 10
 Shape_MetalSpearHead_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalSpoonBit_AlternateNames[10].Name,Iron Spoon Bit,铁勺型钻头
-Shape_MetalSpoonBit_AlternateNames[11].Name,Heated Iron Spoon Bit,加热的铁勺型钻头
+Shape_MetalSpoonBit_AlternateNames[11].Name,Iron Spoon Bit,铁勺型钻头
 Shape_MetalSpoonBit_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalSpoonBit_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材质为铁（金属类型 200）且品质 30% 或以上，打击次数 +1
 Shape_MetalSpoonBit_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材质为铁（金属类型 200）且品质 50% 或以上，打击次数 +1
@@ -24875,7 +24824,7 @@ BogIronPatch_DismantleActions[0].RequiredReceivingDurabilities.FailMessage,Nothi
 FrozenRiver_AlternateNames[2].Name,Frozen Mire,冰冻泥沼
 FrozenRiver_AlternateNames[3].Name,Frozen Bog,冰冻沼泽
 FrozenRiver_AlternateNames[4].Name,Frozen Swamp,冰冻沼泽地
-HagPond_CardName,Hag Pond,老妪池塘
+HagPond_CardName,Hag Pond,老巫池塘
 HagPond_CardDescription,Should boil its water before drinking it.,饮用前应将水煮沸。
 HagPond_FuelCapacity.CardStatName,Frog Population,青蛙种群
 HagPond_CardInteractions[0].ActionName,Dig Up Mud,挖泥巴
@@ -24903,7 +24852,7 @@ HagPond_DismantleActions[4].ActionName,Gaze at Water,凝视水面
 HagPond_DismantleActions[5].ActionName,Catch Frogs,捕捉青蛙
 HagPond_DismantleActions[5].RequiredReceivingDurabilities.FailMessage,Nothing to Catch,没东西抓
 HagPond_DismantleActions[5].ProducedCards[0].CollectionMessages[0],No luck...,运气不佳……
-HagPondFrozen_CardName,Frozen Hag Pond,冰冻老妪池塘
+HagPondFrozen_CardName,Frozen Hag Pond,结冰的老巫池塘
 HagPondFrozen_CardDescription,Should boil its water before drinking it.,饮用前应将水煮沸。
 HagPondFrozen_FuelCapacity.CardStatName,Frog Population,青蛙种群
 HagPondFrozen_CardInteractions[0].ActionName,Dig Up Dirt,挖干土
@@ -24922,10 +24871,6 @@ MosquitoPond_CardInteractions[0].ActionName,Dig Up Mud,挖泥巴
 MosquitoPond_CardInteractions[1].ActionName,Fish,钓鱼
 MosquitoPond_CardInteractions[1].RequiredReceivingDurabilities.FailMessage,Nothing to Catch,没东西抓
 MosquitoPond_CardInteractions[1].ProducedCards[0].CollectionMessages[0],No luck...,运气不佳……
-MosquitoPond_CardInteractions[2].ActionName,Spearfish,叉鱼
-MosquitoPond_CardInteractions[2].RequiredReceivingDurabilities.FailMessage,Nothing to Catch,没东西抓
-MosquitoPond_CardInteractions[2].ProducedCards[0].CollectionMessages[0],No luck...,运气不佳……
-MosquitoPond_CardInteractions[3].ActionName,Fill,取水
 MosquitoPond_CardInteractions[4].ActionName,Soak Nettle Stems,泡荨麻茎
 MosquitoPond_CardInteractions[5].ActionName,Soak Flax Stems,泡亚麻茎
 MosquitoPond_CardInteractions[6].ActionName,Soak Reeds,泡芦苇
@@ -24936,14 +24881,13 @@ MosquitoPond_CardInteractions[10].ActionName,Wash the Dressing,清洗敷料
 MosquitoPond_CardInteractions[11].ActionName,Wet,打湿
 MosquitoPond_OnStatsChangeActions[0].ActionName,Freeze,结冰
 MosquitoPond_DismantleActions[0].ActionName,Drink,饮用
-MosquitoPond_DismantleActions[1].ActionName,Swim,游泳
 MosquitoPond_DismantleActions[2].ActionName,Wash yourself,洗个澡
 MosquitoPond_DismantleActions[3].ActionName,Dig up Mud,挖泥巴
 MosquitoPond_DismantleActions[4].ActionName,Gaze at Water,凝视水面
 MosquitoPond_DismantleActions[5].ActionName,Catch Frogs,捕捉青蛙
 MosquitoPond_DismantleActions[5].RequiredReceivingDurabilities.FailMessage,Nothing to Catch,没东西抓
 MosquitoPond_DismantleActions[5].ProducedCards[0].CollectionMessages[0],No luck...,运气不佳……
-MosquitoPondFrozen_CardName,Frozen Mosquito Pond,冰冻蚊虫池塘
+MosquitoPondFrozen_CardName,Frozen Mosquito Pond,结冰的蚊虫池塘
 MosquitoPondFrozen_CardDescription,Should boil its water before drinking it.,饮用前应将水煮沸。
 MosquitoPondFrozen_FuelCapacity.CardStatName,Frog Population,青蛙种群
 MosquitoPondFrozen_CardInteractions[0].ActionName,Dig Up Dirt,挖干土
@@ -25038,7 +24982,7 @@ RiverSwamp_DismantleActions[4].ActionName,Gaze at Water,凝视水面
 SpiritShrine_Earth_SacredOak_Progress.CardStatName,Cut,分割
 SpiritShrine_Rott_RottenOak_CardName,Rotten Oak,枯橡树
 SpiritShrine_Rott_RottenOak_CardDescription,An ancient rotten oak. There's something special about it.,一棵古老的枯橡树，它与众不同。
-SpiritShrine_Rott_RottenOak_Progress.CardStatName,Cut,分割
+SpiritShrine_Rott_RottenOak_Progress.CardStatName,Cut,砍倒进程
 SpiritShrine_Rott_RottenOak_Progress.OnZero.ActionDescription,Tree Down!,树倒了！
 SpiritShrine_Rott_RottenOak_CardInteractions[0].ActionName,Cut Tree,砍树
 SpiritShrine_Willow_SacredWillow_CardName,Sacred Willow,神圣柳树
@@ -25107,5 +25051,607 @@ W_Leech_DismantleActions[0].ActionName,Rip it off,扯下来
 W_Leech_InventorySlotsText,PLACE DRESSING HERE,在此放置敷料 / 绷带
 W_Leech_CookingRecipes[0].ActionName,Dressing,敷料
 W_Leech_CookingRecipes[0].CustomCookingText,Protecting Wound,正在保护伤口
-Bp_CommissionCopperNuggets_CardName,5 Copper Nuggets,5 块铜块
-Bp_CommissionPartridgeEggs_CardName,15 Partridge Eggs,15 颗灰山鹑蛋
+Dialogue_Hag_SceneTitle,Hag,老巫
+Dialogue_Hag_HagIntro_Line,"""Yes, brave one...""\n\nThe hag smiles at you with her empty eyes.",“好，勇敢的家伙……”老巫婆朝你微笑，眼神空洞。
+Dialogue_Hag_Main Hub_Line,What can we do for you?,我能为你做点什么？
+Dialogue_Hag_Main Hub_PossibleAnswers[0].Answer,I have to go.,我得走了。
+Dialogue_Hag_Main Hub_PossibleAnswers[1].Answer,I need your knowledge.,我需要你的知识。
+Dialogue_Hag_Main Hub_PossibleAnswers[2].Answer,I need your help.,我需要你的帮助。
+Dialogue_Hag_Night Broth_Line,Very well. We can teach you a thing or two.\n\n<b>NIGHT BROTH LEARNED</b>,很好。我们可以教你一两招。\n\nd<b>暗夜浓汤已习得</b>
+Dialogue_Hag_Night Broth_PossibleAnswers[0].Answer,Continue,继续
+Dialogue_Hag_Bargain Hub_Line,"Yes... we see it.\n\nYou're carrying so much. Let us lighten your load.\n\nWhatever you no longer want, we can carry back into our pond.",是的……我们看到了。\n\n你身负重重，让我们替你卸下一些。\n\n凡你所弃之物，我们皆可携回塘中。
+Dialogue_Hag_Bargain Hub_PossibleAnswers[0].Answer,I changed my mind.,我改变主意了。
+Dialogue_Hag_Bargain Hub_PossibleAnswers[1].Answer,I'm hungry.,我饿了。
+Dialogue_Hag_Bargain Hub_PossibleAnswers[2].Answer,I'm afraid.,我很害怕。
+Dialogue_Hag_Bargain Hub_PossibleAnswers[3].Answer,I'm sick.,我病了。
+Dialogue_Hag_Was good seeing you_Line,"Very well.\n\nIt was good seeing you, brave one.\n\nWe will meet again...",很好。\n\n很高兴见到你，勇敢的人。\n我们还会再见的……
+Dialogue_Hag_Hunger Bargain_Line,Good. \n\nWe will take your hunger and keep it beneath the water then.\n\nIt will no longer gnaw at you. Your belly will never cry again.\n\n\n\n<b>HUNGER BARGAIN STRUCK</b>,很好。\n\n我们便将汝之饥饿携走，藏于水底。\n\n它不再啮咬你身，汝腹亦永不复哀鸣。\n\n\n\n<b>饥馑之契已立</b>”
+Dialogue_Hag_Hunger Bargain_PossibleAnswers[0].Answer,Continue,继续
+Dialogue_Hag_Fear Bargain_Line,Good. We will take your fear and drown it in the water then.\n\nThe wolves will seem no larger than rabbits. The cliffs no steeper than gentle hills.\n\n\n\n<b>FEAR BARGAIN STRUCK</b>,很好。我们便将汝之恐惧携走，溺于水底。\n\n群狼视之不过如兔，峭壁望之亦不逾缓丘。\n\n\n\n<b>恐惧之契已立</b>
+Dialogue_Hag_Fear Bargain_PossibleAnswers[0].Answer,Continue,继续
+Dialogue_Hag_Health Bargain_Line,It does not wish to leave with us.\n\nVery well. Then we shall make it yours forever. A small and faithful rot.\n\nIt will linger at your side and keep the hungrier sicknesses from finding a home within you.\n\n\n\n<b>HEALTH BARGAIN STRUCK</b>,其不愿随我等而去。\n\n善哉。那我们便使其永属汝身——一小簇忠腐，常伴不离。\n\n它将傍汝左右，令诸般贪疾无以寓于汝体。\n\n\n\n<b>康健之契已立</b>
+Dialogue_Hag_Health Bargain_PossibleAnswers[0].Answer,Continue,继续
+Dialogue_HummingWidow_SceneTitle,Humming Widow,嗡鸣寡妇
+Dialogue_HummingWidow_HummingWidowIntro_Line,"The Humming Widow fixes you with an empty stare.\n\n\nHer swarms gather oppressively around you, growing louder and louder.\n\n\nTheir ceaseless buzzing presses against both your skin and your mind, searching for the smallest openings through which to seep.",嗡鸣寡妇用空洞的目光盯着你。\n\n\n她的虫群令人窒息地聚拢在你周围，嗡嗡声越来越响。\n\n\n那无休止的嗡鸣贴着你的皮肤与心灵，寻找最细微的缝隙渗入其中。
+Dialogue_HummingWidow_HummingWidowIntro_PossibleAnswers[0].Answer,Leave,离去
+Agent_Hag_AgentName,Hag,老巫
+Agent_Hag_Interactions[0].ButtonName,Approach,接近
+Agent_Hag_AgentActions[0].ActionLocalizedName,Go to Hag Swamp,前往老巫沼泽
+Agent_Hag_AgentActions[1].ActionLocalizedName,Go to Spirit World,前往精魄界
+Agent_Hollow_AgentName,Hollow,空壳
+Agent_Hollow_Interactions[0].ButtonName,Approach,接近
+Agent_HummingWidow_AgentName,Humming Widow,嗡鸣寡妇
+Agent_HummingWidow_Interactions[0].ButtonName,Approach,接近
+Bp_Smithed_BlankFireStriker_CardName,Forged Fire Striker,锻造火镰
+Bp_Smithed_BlankFireStriker_CardDescription,A metal fire striker.,一个金属火镰。
+Bp_Smithed_BlankFireStriker_UnlockConditionsDesc,Iron Bar Needed,需要铁锭
+Bp_Smithed_BlankHandsawBlade_CardName,Forged Handsaw Blade,锻造手锯刀片
+Bp_Smithed_BlankHandsawBlade_CardDescription,A metal handsaw blade. \n\nUsed to cut wood into precise shapes and planks. Essential for advanced woodworking.,一个金属手锯刃片。\n\n用于将木材切割成精确的形状和板材。是高级木工的必备工具。
+Bp_Smithed_BlankHandsawBlade_UnlockConditionsDesc,Iron Bar Needed,需要铁锭
+Bp_CharcoalMound_CardName,Charcoal Mound,炭堆
+Bp_CharcoalMound_UnlockConditionsDesc,Kiln Needed,需要窑炉
+Bp_ClothLargeTreadle_CardName,Large cloth,大块的布
+Bp_ClothMediumTreadle_CardName,Cloth,布
+Bp_ClothSack_CardName,Cloth SAck,布袋
+Bp_ClothSack_CardDescription,"A cloth sack, good for carrying stuff around.",一个布制的袋子，很适合装东西。
+Bp_ClothSack_UnlockConditionsDesc,Large Cloth Needed,需要大块的布
+Bp_ClothSmallTreadle_CardName,Small Cloth,布片
+Bp_NightBroth_CardName,Night Broth,暗夜浓汤
+Bp_NightBroth_CardDescription,A disgusting liquid capable of inducing altered mindstates.,一种能引起精神状态改变的恶心液体。
+Bp_ProcessFlaxFiber_CardName,Process Flax Fiber,加工亚麻纤维
+Bp_ProcessNettleFiber_CardName,Process Nettle Fiber,加工荨麻纤维
+Bp_TwineSpinningWheel_CardName,Twine,细线
+Bp_TwineSpinningWheel_CardDescription,Used for construction and crafts.,用于建筑和制作。
+Bp_Wheelbarrow_CardName,Wheelbarrow,手推车
+Bp_Wheelbarrow_CardDescription,A device for carrying heavy loads across roads.,用来在道路上运输重物的装置。
+Bp_Wheelbarrow_UnlockConditionsDesc,More Woodworking Needed,需要更高的木工技能
+Bp_YarnSpinningWheel_CardName,Yarn,线团
+Bp_FiberBreak_CardName,Fiber Break,纤维破碎架
+Bp_FiberBreak_CardDescription,Used for extracting fibers more effectively.,用于更有效地提取纤维。
+Bp_FiberBreak_UnlockConditionsDesc,More Weaving Needed,需要更高的编织技能
+Bp_PotteryWheel_CardName,Pottery Wheel,陶轮
+Bp_PotteryWheel_CardDescription,A device for working clay more efficiently.,一种用于更高效加工黏土的装置。
+Bp_PotteryWheel_UnlockConditionsDesc,More Pottery Needed,需要更多制陶经验
+Bp_SpinningWheel_CardName,Spinning Wheel,纺车
+Bp_SpinningWheel_CardDescription,Used for spinning fibers into twine or yarn much more effectively.,用于非常高效地将纤维缠成细线或线团。
+Bp_SpinningWheel_UnlockConditionsDesc,More Weaving Needed,需要更高的编织技能
+Bp_ToolOrWeapon_Handsaw_Metal_CardName,Metal Handsaw,金属手锯
+Bp_ToolOrWeapon_Handsaw_Metal_CardDescription,Used to cut wood into precise shapes and planks. Essential for advanced woodworking.,用于将木材切割成精确的形状和板材。是高级木工的必备工具。
+Bp_ToolOrWeapon_Handsaw_Metal_UnlockConditionsDesc,Handsaw Blade Needed,需要手锯刀片
+Bp_TreadleLoom_CardName,Treadle Loom,踏板织机
+Bp_TreadleLoom_CardDescription,Used for weaving cloth of different sizes more efficiently.,用于更高效的纺织不同尺寸的布。
+Bp_TreadleLoom_UnlockConditionsDesc,More Weaving Needed,需要更高的编织技能
+Bp_BeaverEnchantment_CardName,Beaver Enchantment,河狸附魔
+Bp_BeaverEnchantment_CardDescription,"Enchants an object with the blessings of a beaver spirit, making you better at woodworking. ",用河狸精魄的赐福附魔一件物品，使你更善于做木工。
+Bp_BeaverEnchantment_BuildingContainerDurabilitiesConditions.FailMessage,Carcass has no spirit.,尸体没有精魄。
+Bp_BeaverSpiritCalling_CardName,Beaver Spirit Calling,呼唤河狸
+Bp_BeaverSpiritCalling_CardDescription,"Temporarily binds a beaver spirit to your soul, making you both a bit more like the other.",暂时将河狸精魄融入你的灵魂，使你们融为一体。
+Bp_BeaverSummoning_CardName,Summoning Ritual,召唤仪式
+Bp_BeaverSummoning_CardDescription,"Temporarily binds a beaver spirit to your soul, making you both a bit more like the other.",暂时将河狸精魄融入你的灵魂，使你们融为一体。
+Bp_BeaverSummoning_BuildingContainerDurabilitiesConditions.FailMessage,Carcass has no spirit.,尸体没有精魄。
+Bp_HummingWidowEnchantment_CardName,Humming Widow Enchantment,嗡鸣寡妇附魔
+Bp_HummingWidowEnchantment_CardDescription,"Enchants an object with the blessings of the humming widow, increasing your mosquito, leech and swamp fever protection as well as boosting your blood pressure recovery. ",以嗡鸣寡妇的赐福附魔一件物品，增加你对蚊虫、水蛭和沼泽热的防护，并提升血压恢复速度。
+Bp_HummingWidowSpiritCalling_CardName,Humming Widow Calling,呼唤嗡鸣寡妇
+Bp_HummingWidowSpiritCalling_CardDescription,"Temporarily binds the humming widow to your soul, making you both a bit more like the other.",暂时将嗡鸣寡妇精魄融入你的灵魂，使你们彼此变得更加相似。
+Bp_HummingWidowSummoning_CardName,Summoning Ritual,召唤仪式
+Bp_HummingWidowSummoning_CardDescription,"Temporarily binds the humming widow to your soul, making you both a bit more like the other.",暂时将嗡鸣寡妇精魄融入你的灵魂，使你们彼此变得更加相似。
+Combat_ BTHollow_Head.UnharmedResults[0].CombatLog.LogText,"Unfortunately, you didn't manage to harm {0}.",不幸的是，你没能伤害到{0}。
+Combat_ BTHollow_Head.MinorWounds[0].CombatLog.LogText,"You were able to hurt {0}, but only superficially.",你伤到了{0}，但仅仅是皮外伤。
+Combat_ BTHollow_Head.MediumWounds[0].CombatLog.LogText,"You landed a solid hit on {0}'s head, it looks a bit dazzled.",你对着{0}的头狠狠来了一下，它似乎有些懵。
+Combat_ BTHollow_Head.MediumWounds[1].CombatLog.LogText,"You pierced {0} in the face, causing an ugly wound.",你刺中{0}的脸部，造成了难看的伤口。
+Combat_ BTHollow_Head.MediumWounds[2].CombatLog.LogText,You wounded {0}'s head. It squeals in pain!,你伤了{0}的头。它痛苦地尖叫！
+Combat_ BTHollow_Head.SeriousWounds[0].CombatLog.LogText,"You cracked its skull, {0} is dead. ",你击碎了{0}的头骨，死了。
+Combat_ BTHollow_Head.SeriousWounds[1].CombatLog.LogText,You pierced one of {0}'s eyes!,你刺中了{0}的一只眼睛！
+Combat_ BTHollow_Head.SeriousWounds[2].CombatLog.LogText,"You pierced its brain, {0} is dead!",你刺穿了它的大脑，{0}死了！
+Combat_ BTHollow_Head.SeriousWounds[3].CombatLog.LogText,You caused a serious wound to {0}'s head.,你对{0}以迎头痛击！
+Combat_ BTHollow_Torso.UnharmedResults[0].CombatLog.LogText,"Unfortunately, you didn't manage to harm {0}.",不幸的是，你没能伤害到{0}。
+Combat_ BTHollow_Torso.MinorWounds[0].CombatLog.LogText,"You were able to hurt {0}, but only superficially.",你伤到了{0}，但仅仅是皮外伤。
+Combat_ BTHollow_Torso.MediumWounds[0].CombatLog.LogText,You struck {0} hard in the torso.,你狠狠捶打{0}的躯干。
+Combat_ BTHollow_Torso.MediumWounds[1].CombatLog.LogText,You opened a wound on {0}'s torso.,你在{0}的躯干上开了一道口子。
+Combat_ BTHollow_Torso.SeriousWounds[0].CombatLog.LogText,You struck {0} so hard you felt something crack inside!,你暴捶了{0}，感觉内部有什么东西被击碎了！
+Combat_ BTHollow_Torso.SeriousWounds[1].CombatLog.LogText,You opened a deep wound on {0}'s torso. It's bleeding profusely!,你重创{0}的躯干造成了深深的开口。伤口血如泉涌！
+Combat_ BTHollow_LArm.UnharmedResults[0].CombatLog.LogText,"Unfortunately, you didn't manage to harm {0}.",不幸的是，你没能伤害到{0}。
+Combat_ BTHollow_LArm.MinorWounds[0].CombatLog.LogText,You were able to graze one of {0}'s legs.,你擦伤了{0}的一条腿。
+Combat_ BTHollow_LArm.MediumWounds[0].CombatLog.LogText,You managed to hurt one of {0}'s legs.,你成功伤到了{0}的一条腿。
+Combat_ BTHollow_LArm.SeriousWounds[0].CombatLog.LogText,You seriously damaged one of {0}'s legs!,你重创了{0}的一条腿！
+Combat_ BTHollow_RArm.UnharmedResults[0].CombatLog.LogText,"Unfortunately, you didn't manage to harm {0}.",不幸的是，你没能伤害到{0}。
+Combat_ BTHollow_RArm.MinorWounds[0].CombatLog.LogText,You were able to graze one of {0}'s legs.,你擦伤了{0}的一条腿。
+Combat_ BTHollow_RArm.MediumWounds[0].CombatLog.LogText,You managed to hurt one of {0}'s legs.,你成功伤到了{0}的一条腿。
+Combat_ BTHollow_RArm.SeriousWounds[0].CombatLog.LogText,You seriously damaged one of {0}'s legs!,你重创了{0}的一条腿！
+Combat_ BTHollow_LLeg.UnharmedResults[0].CombatLog.LogText,"Unfortunately, you didn't manage to harm {0}.",不幸的是，你没能伤害到{0}。
+Combat_ BTHollow_LLeg.MinorWounds[0].CombatLog.LogText,You were able to graze one of {0}'s legs.,你擦伤了{0}的一条腿。
+Combat_ BTHollow_LLeg.MediumWounds[0].CombatLog.LogText,You managed to hurt one of {0}'s legs.,你成功伤到了{0}的一条腿。
+Combat_ BTHollow_LLeg.SeriousWounds[0].CombatLog.LogText,You seriously damaged one of {0}'s legs!,你重创了{0}的一条腿！
+Combat_ BTHollow_RLeg.UnharmedResults[0].CombatLog.LogText,"Unfortunately, you didn't manage to harm {0}.",不幸的是，你没能伤害到{0}。
+Combat_ BTHollow_RLeg.MinorWounds[0].CombatLog.LogText,You were able to graze one of {0}'s legs.,你擦伤了{0}的一条腿。
+Combat_ BTHollow_RLeg.MediumWounds[0].CombatLog.LogText,You managed to hurt one of {0}'s legs.,你成功伤到了{0}的一条腿。
+Combat_ BTHollow_RLeg.SeriousWounds[0].CombatLog.LogText,You seriously damaged one of {0}'s legs!,你重创了{0}的一条腿！
+Combat_EncounterHollow_EncounterTitle,Hollow,空壳
+Combat_EncounterHollow_EnemyName,the hollow,空壳
+Combat_EncounterHollow_EnemyActions[0].ActionLog.LogText,The hollow notices you...,空壳注意到了你……
+Combat_EncounterHollow_EnemyActions[1].ActionLog.LogText,It stops to catch its breath...,它停下来喘气......
+Combat_EncounterHollow_EnemyActions[2].ActionLog.LogText,It turns around and tries to escape...,它转过身准备跑路……
+Combat_EncounterHollow_EnemyGettingCloseLog.LogText,The hollow is getting closer.,空壳越来越近。
+Combat_EncounterHollow_EnemyDefeatedEffects.ResultLog.LogText,The hollow collapses on the floor.,空壳倒在了地上。
+Combat_EncounterHollow_EnemyEscapedEffects.ResultLog.LogText,The hollow disappears into the distance...,空壳消失在了远方……
+Combat_EncounterHollow_PlayerEscapedEffects.ResultLog.LogText,You disengage and retreat.,你脱身并撤退。
+Combat_EncounterHollow_PlayerDemoralizedEffects.ResultLog.LogText,You run away from the hollow.,你逃离了空壳。
+Combat_EncounterHollow_StartingOptions.EventTitle,You see a Hollow!,你看到了一只空壳！
+Combat_EncounterHollow_StartingOptions.EscapeOptionText,Leave it alone,不管它
+Event_HagPondFear_CardName,Fear is getting out of control!,恐惧失控了！
+Event_HagPondFear_DismantleActions[0].ActionName,Continue,继续
+Event_HagPondFear_DismantleActions[0].FadeMessage,Napping...,小憩中……
+Event_BeaverSpiritAngry_CardName,Beaver Spirit,河狸精魄
+Event_BeaverSpiritAngry_CardDescription,Spirit is not impressed. ,精魄不为所动。
+Event_BeaverSpiritAngry_DismantleActions[0].ActionName,Continue,继续
+Event_BeaverSpiritBlessingGranted_CardName,Blessing,赐福
+Event_BeaverSpiritBlessingGranted_DismantleActions[0].ActionName,Continue,继续
+Event_BeaverSpiritLeft_CardName,Beaver Spirit,河狸精魄
+Event_BeaverSpiritLeft_CardDescription,The Beaver Spirit leaves you for now.,河狸精魄已经离你而去。
+Event_BeaverSpiritLeft_DismantleActions[0].ActionName,Continue,继续
+Event_BeaverSpiritSummoning_CardName,Summoning Ritual,召唤仪式
+Event_BeaverSpiritSummoning_CardDescription,Where a spirit is temporarily bound to your soul.,由此，精魄暂时与你的灵魂绑定。
+Event_BeaverSpiritSummoning_DismantleActions[0].ActionName,Bind,融合
+Event_BeaverSpiritSummoning_DismantleActions[1].ActionName,Ignore,忽略
+Event_BeaverSpiritSummoningGranted_CardName,Summoning Ritual,召唤仪式
+Event_BeaverSpiritSummoningGranted_CardDescription,You sucessfully completed the ritual. The spirit is now temporarily a part of you.,你成功地完成了仪式。精魄暂时与你一体。
+Event_BeaverSpiritSummoningGranted_DismantleActions[0].ActionName,Continue,继续
+Event_BeaverSpiritUsedAllPower_CardName,Beaver Spirit,河狸精魄
+Event_BeaverSpiritUsedAllPower_CardDescription,The Spirit used all its power and is now leaving you. ,精魄用尽了它的力量，离开你了。
+Event_BeaverSpiritUsedAllPower_DismantleActions[0].ActionName,Continue,继续
+Event_HummingWidowLeft_CardName,Humming Widow,嗡鸣寡妇
+Event_HummingWidowLeft_CardDescription,The Humming Widow leaves you for now.,嗡鸣寡妇暂时离开了你。
+Event_HummingWidowLeft_DismantleActions[0].ActionName,Continue,继续
+Event_HummingWidowSpiritAngry_CardName,Humming Widow,嗡鸣寡妇
+Event_HummingWidowSpiritAngry_CardDescription,Spirit is not impressed. It spawns leeches on you and vanishes. ,精魄不为所动。它在你身上召出水蛭后消逝了。
+Event_HummingWidowSpiritAngry_DismantleActions[0].ActionName,Continue,继续
+Event_HummingWidowSpiritBlessingGranted_CardName,Blessing,赐福
+Event_HummingWidowSpiritBlessingGranted_DismantleActions[0].ActionName,Continue,继续
+Event_HummingWidowSpiritSummoning_CardName,Summoning Ritual,召唤仪式
+Event_HummingWidowSpiritSummoning_CardDescription,Where a spirit is temporarily bound to your soul.,由此，精魄暂时与你的灵魂绑定。
+Event_HummingWidowSpiritSummoning_DismantleActions[0].ActionName,Bind,融合
+Event_HummingWidowSpiritSummoning_DismantleActions[1].ActionName,Ignore,忽略
+Event_HummingWidowSpiritSummoningGranted_CardName,Summoning Ritual,召唤仪式
+Event_HummingWidowSpiritSummoningGranted_CardDescription,You sucessfully completed the ritual. The spirit is now temporarily a part of you.,你成功地完成了仪式。精魄暂时与你一体。
+Event_HummingWidowSpiritSummoningGranted_DismantleActions[0].ActionName,Continue,继续
+Event_HummingWidowSpiritUsedAllPower_CardName,Humming Widow,嗡鸣寡妇
+Event_HummingWidowSpiritUsedAllPower_CardDescription,The Spirit used all its power and is now leaving you. ,精魄用尽了它的力量，离开你了。
+Event_HummingWidowSpiritUsedAllPower_DismantleActions[0].ActionName,Continue,继续
+Hollowness_FlavourName,Hollow,空壳
+HeatherStemsFresh_Progress.OnFull.ActionDescription,Heather has taken.,帚石南已扎根。
+KingcupPlantedDormant_CardDescription,"A nutritious plant that grows in swampy areas. Needs low to medium acidity, medium to high nutrients, and high hydration.",一种生长在沼泽地区的营养植物。需要中低酸度、中高养分和高水分。
+KingcupPlantedGrowing_CardDescription,"A nutritious plant that grows in swampy areas. Needs low to medium acidity, medium to high nutrients, and high hydration.",一种生长在沼泽地区的营养植物。需要中低酸度、中高养分和高水分。
+KingcupPlantedMature_CardDescription,"A nutritious plant that grows in swampy areas. Needs low to medium acidity, medium to high nutrients, and high hydration.",一种生长在沼泽地区的营养植物。需要中低酸度、中高养分和高水分。
+NettleStemsFresh_Progress.OnFull.ActionDescription,Nettle has taken.,荨麻已扎根。
+TumourBoiled_CardName,Boiled Tumour,水煮肿瘤
+TumourBoiled_CardDescription,A strange and ominous piece of meat.,一块奇异而不祥的肉。
+TumourBoiled_SpoilageTime.CardStatName,Spoilage,变质
+TumourBoiled_SpoilageTime.OnFull.ActionDescription,Tumour Spoiled!,肿瘤变质了！
+TumourBoiled_FuelCapacity.CardStatName,Temperature,温度
+TumourBoiled_SpecialDurability2.CardStatName,Quality,品质
+TumourBoiled_SpecialDurability4.CardStatName,Boil,烹煮
+TumourBoiled_DismantleActions[0].ActionName,Eat,吃掉
+Carcass_BeaverCarcass_Progress.CardStatName,Spirit,精魄
+Carcass_BeaverCarcass_DismantleActions[0].ActionName,Release the Spirit,释放精魄
+Carcass_BeaverCarcass_DismantleActions[1].ActionName,Blessing,赐福
+Carcass_BeaverCarcass_DismantleActions[1].RequiredReceivingDurabilities.FailMessage,Carcass has no spirit.,尸体没有精魄。
+Carcass_HollowCarcass_CardName,Hollow Carcass,空壳尸体
+Carcass_HollowCarcass_CardDescription,Need a knife to properly process it.,需要一把刀才能妥善处理它。
+Carcass_HollowCarcass_SpoilageTime.CardStatName,Spoilage,变质
+Carcass_HollowCarcass_SpoilageTime.OnFull.ActionDescription,Doe Spoiled!,母鹿变质了！
+Carcass_HollowCarcass_FuelCapacity.CardStatName,Consumed,已消耗
+Carcass_HollowCarcass_SpecialDurability2.CardStatName,Quality,品质
+Carcass_HollowCarcass_CardInteractions[0].ActionName,Bleed,放血
+Carcass_HollowCarcassBleeding_CardName,Bled Hollow Carcass,放完血的空壳尸体
+Carcass_HollowCarcassBleeding_CardDescription,Can skin it with a knife or harvest its blood with a container.,可以用刀剥皮或者用容器接血。
+Carcass_HollowCarcassBleeding_AlternateNames[0].Name,Bleeding Hollow Carcass,放血中的空壳尸体
+Carcass_HollowCarcassBleeding_SpoilageTime.CardStatName,Spoilage,变质
+Carcass_HollowCarcassBleeding_SpoilageTime.OnFull.ActionDescription,Doe Spoiled!,母鹿变质了！
+Carcass_HollowCarcassBleeding_FuelCapacity.CardStatName,Consumed,已消耗
+Carcass_HollowCarcassBleeding_SpecialDurability2.CardStatName,Quality,品质
+Carcass_HollowCarcassBleeding_SpecialDurability3.CardStatName,Blood,放血
+Carcass_HollowCarcassBleeding_CardInteractions[0].ActionName,Skin,剥皮
+Carcass_HollowCarcassSkinned_CardName,Skinned Hollow Carcass,剥皮的空壳尸体
+Carcass_HollowCarcassSkinned_CardDescription,Needs to be butchered with a knife.,需要用刀来屠宰。
+Carcass_HollowCarcassSkinned_SpoilageTime.CardStatName,Spoilage,变质
+Carcass_HollowCarcassSkinned_SpoilageTime.OnFull.ActionDescription,Doe Spoiled!,母鹿变质了！
+Carcass_HollowCarcassSkinned_FuelCapacity.CardStatName,Consumed,已消耗
+Carcass_HollowCarcassSkinned_SpecialDurability2.CardStatName,Quality,品质
+Carcass_HollowCarcassSkinned_SpecialDurability3.CardStatName,Butchering Progress,屠宰进度
+Carcass_HollowCarcassSkinned_CardInteractions[0].ActionName,Disembowel,开膛破肚
+Carcass_HollowCarcassSkinned_CardInteractions[1].ActionName,Harvest Haunch Meat,收获腿肉
+Carcass_HollowCarcassSkinned_CardInteractions[2].ActionName,Harvest Loin Meat,收获脊肉
+Carcass_HollowCarcassSkinned_CardInteractions[3].ActionName,Harvest Shoulder Meat,收获肩肉
+KingcupRaw_Progress.OnFull.ActionDescription,Kingcup has taken.,驴蹄草已扎根。
+TumourRaw_CardName,Raw Tumour,生肿瘤
+TumourRaw_CardDescription,A strange and ominous piece of meat.\n\nCan be cooked or dried to last longer.,一块奇异而不祥的肉。\n\n可以烹制或晾干以延长保质期。
+TumourRaw_SpoilageTime.CardStatName,Spoilage,变质
+TumourRaw_SpoilageTime.OnFull.ActionDescription,Tumour Spoiled!,肿瘤变质了！
+TumourRaw_UsageDurability.CardStatName,Drying,干燥中
+TumourRaw_UsageDurability.OnFull.ActionDescription,Tumour dried!,肿瘤已晾干！
+TumourRaw_FuelCapacity.CardStatName,Temperature,温度
+TumourRaw_SpecialDurability1.CardStatName,Cook,烹饪
+TumourRaw_SpecialDurability2.CardStatName,Quality,品质
+TumourRaw_SpecialDurability4.CardStatName,Boil,烹煮
+TumourRaw_DismantleActions[0].ActionName,Eat,吃掉
+PeasDried_Progress.OnFull.ActionDescription,Peas have taken.,豌豆已扎根。
+PieRaw_CardInteractions[44].ActionName,Add Fish Filling,添加鱼肉填料
+TumourCooked_CardName,Cooked Tumour,烹制肿瘤
+TumourCooked_CardDescription,A strange and ominous piece of meat.\n\nCan be dried to last longer.,一块奇异而不祥的肉。\n\n可以晾干以延长保质期。
+TumourCooked_SpoilageTime.CardStatName,Spoilage,变质
+TumourCooked_SpoilageTime.OnFull.ActionDescription,Tumour Spoiled!,肿瘤变质了！
+TumourCooked_UsageDurability.CardStatName,Drying,干燥中
+TumourCooked_UsageDurability.OnFull.ActionDescription,Tumour dried!,肿瘤已晾干！
+TumourCooked_FuelCapacity.CardStatName,Temperature,温度
+TumourCooked_SpecialDurability1.CardStatName,Burned,烤焦的
+TumourCooked_SpecialDurability2.CardStatName,Quality,品质
+TumourCooked_SpecialDurability4.CardStatName,Boil,烹煮
+TumourCooked_DismantleActions[0].ActionName,Eat,吃掉
+TumourDried_CardName,Dried Tumour,肿瘤干
+TumourDried_CardDescription,A strange and ominous piece of meat.,一块奇异而不祥的肉。
+TumourDried_SpoilageTime.CardStatName,Spoilage,变质
+TumourDried_SpoilageTime.OnFull.ActionDescription,Tumour Spoiled!,肿瘤变质了！
+TumourDried_FuelCapacity.CardStatName,Temperature,温度
+TumourDried_SpecialDurability1.CardStatName,Burned,烤焦的
+TumourDried_SpecialDurability2.CardStatName,Quality,品质
+TumourDried_SpecialDurability4.CardStatName,Boil,烹煮
+TumourDried_DismantleActions[0].ActionName,Eat,吃掉
+ClothSack_CardName,Cloth Sack,布袋
+ClothSack_CardDescription,Increases your carrying capacity.\n\n <b>CAN BE EQUIPPED ON EQUIPMENT SLOTS</b>,增加你携带物品的能力。\n\n<b>可以装备在装备槽上</b>
+ClothSack_SpecialDurability3.CardStatName,Blessed,已赐福
+Blank_MetalChiselBlade_AlternateNames[10].Name,Iron Chisel Blank,铁凿坯
+Blank_MetalChiselBlade_AlternateNames[11].Name,Iron Chisel Blank,铁凿坯
+Blank_MetalFireStriker_CardName,Metal Fire Striker,金属火镰
+Blank_MetalFireStriker_CardDescription,Must be struck into shape.,必须将其打造出形状。
+Blank_MetalFireStriker_AlternateNames[0].Name,Iron Fire Striker Blank,铁火镰坯
+Blank_MetalFireStriker_AlternateNames[1].Name,Iron Fire Striker Blank,铁火镰坯
+Blank_MetalFireStriker_FuelCapacity.CardStatName,Temperature,温度
+Blank_MetalFireStriker_Progress.CardStatName,Smelted,熔炼
+Blank_MetalFireStriker_Progress.OnFull.ActionDescription,Fire Striker smelted!,火镰冶炼完成！
+Blank_MetalFireStriker_SpecialDurability1.CardStatName,Strikes,捶打
+Blank_MetalFireStriker_SpecialDurability1.OnZero.ActionDescription,Fire Striker Blank Finished!,火镰坯完成了！
+Blank_MetalFireStriker_SpecialDurability2.CardStatName,Metal Quality,总金属品质
+Blank_MetalFireStriker_SpecialDurability3.CardStatName,Quality,品质
+Blank_MetalFireStriker_SpecialDurability4.CardStatName,Metal Type,金属类型
+Blank_MetalFireStriker_CardInteractions[0].ActionName,Smith,锻造
+Blank_MetalFireStriker_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
+Blank_MetalFireStriker_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料是铁（金属类型 200）且品质 30% 或更高，将打击次数设为 +1
+Blank_MetalFireStriker_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
+Blank_MetalFireStriker_OnStatsChangeActions[3].ActionName,Backwards Comptability - if Metal Type is 0 put it to 200,向后兼容 - 如果金属类型为 0，则改为 200
+Blank_MetalFireStriker_OnStatsChangeActions[4].ActionName,Add Metal Quality to QualityBonus Stat ( Only if Quality is 0 ),将金属品质加到 品质奖励 属性（仅当 Quality 为 0 时）
+Blank_MetalFireStriker_OnStatsChangeActions[5].ActionName,Transfer QualityBonus Stat to Quality ( only if Quality is 0 ),将 品质奖励 属性转移到 Quality（仅当 Quality 为 0 时）
+Blank_MetalHandsawBlade_CardName,Metal Handsaw Blank,金属手锯坯
+Blank_MetalHandsawBlade_CardDescription,Must be struck into shape.,必须将其打造出形状。
+Blank_MetalHandsawBlade_AlternateNames[0].Name,Iron Handsaw Blank,铁手锯坯
+Blank_MetalHandsawBlade_AlternateNames[1].Name,Iron Handsaw Blank,铁手锯坯
+Blank_MetalHandsawBlade_FuelCapacity.CardStatName,Temperature,温度
+Blank_MetalHandsawBlade_Progress.CardStatName,Smelted,熔炼
+Blank_MetalHandsawBlade_Progress.OnFull.ActionDescription,Shovel Head smelted!,铲子头熔炼完成！
+Blank_MetalHandsawBlade_SpecialDurability1.CardStatName,Strikes,捶打
+Blank_MetalHandsawBlade_SpecialDurability1.OnZero.ActionDescription,Handsaw Blade Blank Finished!,手锯刀片坯完成了！
+Blank_MetalHandsawBlade_SpecialDurability2.CardStatName,Metal Quality,总金属品质
+Blank_MetalHandsawBlade_SpecialDurability3.CardStatName,Quality,品质
+Blank_MetalHandsawBlade_SpecialDurability4.CardStatName,Metal Type,金属类型
+Blank_MetalHandsawBlade_CardInteractions[0].ActionName,Smith,锻造
+Shape_MetalFireStriker_CardName,Metal Fire Striker Shape,金属火镰形模
+Shape_MetalFireStriker_AlternateNames[0].Name,Iron Fire Striker,铁火镰
+Shape_MetalFireStriker_AlternateNames[1].Name,Iron Fire Striker,铁火镰
+Shape_MetalFireStriker_AlternateNames[1].Description,Needs to cool down before it can be used. ,需要冷却后才能使用。
+Shape_MetalFireStriker_FuelCapacity.CardStatName,Temperature,温度
+Shape_MetalFireStriker_FuelCapacity.OnZero.ActionDescription,Fire Striker Finished!,火镰完成了！
+Shape_MetalFireStriker_Progress.CardStatName,Smelted,熔炼
+Shape_MetalFireStriker_Progress.OnFull.ActionDescription,Chisel Blade smelted!,凿刃熔炼完成！
+Shape_MetalFireStriker_SpecialDurability1.CardStatName,Strikes,捶打
+Shape_MetalFireStriker_SpecialDurability2.CardStatName,Metal Quality,总金属品质
+Shape_MetalFireStriker_SpecialDurability3.CardStatName,Quality,品质
+Shape_MetalFireStriker_SpecialDurability4.CardStatName,Metal Type,金属类型
+Shape_MetalFireStriker_CardInteractions[0].ActionName,Smith,锻造
+Shape_MetalFireStriker_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
+Shape_MetalFireStriker_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料是铁（金属类型 200）且品质 30% 或更高，将打击次数设为 +1
+Shape_MetalFireStriker_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
+Shape_MetalFireStriker_OnStatsChangeActions[3].ActionName,Backwards Comptability - if Metal Type is 0 put it to 200,向后兼容 - 如果金属类型为 0，则改为 200
+Shape_MetalHandsawBlade_CardName,Metal Handsaw Blade,金属手锯刀片
+Shape_MetalHandsawBlade_CardDescription,Required for crafting metal handsaws.,用于制作金属手锯。
+Shape_MetalHandsawBlade_AlternateNames[0].Name,Iron Handsaw Blade,铁手锯刃片
+Shape_MetalHandsawBlade_AlternateNames[1].Name,Iron Handsaw Blade,铁手锯刃片
+Shape_MetalHandsawBlade_FuelCapacity.CardStatName,Temperature,温度
+Shape_MetalHandsawBlade_Progress.CardStatName,Smelted,熔炼
+Shape_MetalHandsawBlade_Progress.OnFull.ActionDescription,Shovel Head smelted!,铲子头熔炼完成！
+Shape_MetalHandsawBlade_SpecialDurability1.CardStatName,Strikes,捶打
+Shape_MetalHandsawBlade_SpecialDurability2.CardStatName,Metal Quality,总金属品质
+Shape_MetalHandsawBlade_SpecialDurability3.CardStatName,Quality,品质
+Shape_MetalHandsawBlade_SpecialDurability4.CardStatName,Metal Type,金属类型
+Shape_MetalHandsawBlade_CardInteractions[0].ActionName,Smith,锻造
+Shape_MetalHandsawBlade_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
+Shape_MetalHandsawBlade_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,如果材料是铁（金属类型 200）且品质 30% 或更高，将打击次数设为 +1
+Shape_MetalHandsawBlade_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
+Shape_MetalHandsawBlade_OnStatsChangeActions[3].ActionName,Set Strikes to 2 and increase quality by up to 10  if Material is Copper ( metal type 100 ),若材质为铜（金属类型 100），将打击次数设为 2 并最多提升品质 10
+Shape_MetalHandsawBlade_OnStatsChangeActions[4].ActionName,Set Strikes to 3 and increase quality by up to 6  if Material is Ghost Bronze ( metal type 110 ),若材质为鬼铜（金属类型 110），将打击次数设为 3 并最多提升品质 6
+Shape_MetalHandsawBlade_OnStatsChangeActions[5].ActionName,Set Strikes to 1 and increase quality by up to 14 if Material is Tin ( metal type 120 ),若材质为锡（金属类型 120），将打击次数设为 1 并最多提升品质 14
+Shape_MetalHandsawBlade_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and increase quality by up to 6 if Material is Tin Bronze ( metal type 130 ),若材质为青铜（金属类型 130），将打击次数设为 3 并最多提升品质 6
+Shape_MetalHandsawBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),若材质为白铜（金属类型 140），将打击次数设为 2 并最多提升品质 10
+Shape_MetalHandsawBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
+StickLong_AlternateNames[4].Name,Alder Long Stick,桤木长木棍
+ToolOrWeapon_FireStrikerWithFlint_Metal_CardName,Iron Striker,火镰
+ToolOrWeapon_FireStrikerWithFlint_Metal_CardDescription,A fire starting device. Use it on tinder.,一种生火装置。用它点燃火绒。
+ToolOrWeapon_FireStrikerWithFlint_Metal_FuelCapacity.CardStatName,Temperature,温度
+ToolOrWeapon_FireStrikerWithFlint_Metal_Progress.CardStatName,Smelted,熔炼
+ToolOrWeapon_FireStrikerWithFlint_Metal_Progress.OnFull.ActionDescription,Chisel Blade smelted!,凿刃熔炼完成！
+ToolOrWeapon_FireStrikerWithFlint_Metal_SpecialDurability1.CardStatName,Flint,燧石
+ToolOrWeapon_FireStrikerWithFlint_Metal_SpecialDurability2.CardStatName,Metal Quality,总金属品质
+ToolOrWeapon_FireStrikerWithFlint_Metal_SpecialDurability3.CardStatName,Quality,品质
+ToolOrWeapon_FireStrikerWithFlint_Metal_SpecialDurability4.CardStatName,Metal Type,金属类型
+ToolOrWeapon_FireStrikerWithFlint_Metal_CardInteractions[0].ActionName,Light Tinder,点燃火绒
+ToolOrWeapon_FireStrikerWithFlint_Metal_CardInteractions[1].ActionName,Light Tinder,点燃火绒
+ToolOrWeapon_FireStrikerWithFlint_Metal_DismantleActions[0].ActionName,Throw away the Flint,丢掉燧石
+ToolOrWeapon_FireStriker_Metal_CardName,Iron Striker,火镰
+ToolOrWeapon_FireStriker_Metal_CardDescription,A fire starting device. Needs a piece of flint to work.,一种生火装置。需要一块燧石才能工作。
+ToolOrWeapon_FireStriker_Metal_SpoilageTime.CardStatName,Beauty,美观
+ToolOrWeapon_FireStriker_Metal_FuelCapacity.CardStatName,Temperature,温度
+ToolOrWeapon_FireStriker_Metal_Progress.CardStatName,Smelted,熔炼
+ToolOrWeapon_FireStriker_Metal_Progress.OnFull.ActionDescription,Chisel Blade smelted!,凿刃熔炼完成！
+ToolOrWeapon_FireStriker_Metal_SpecialDurability2.CardStatName,Metal Quality,总金属品质
+ToolOrWeapon_FireStriker_Metal_SpecialDurability3.CardStatName,Quality,品质
+ToolOrWeapon_FireStriker_Metal_SpecialDurability4.CardStatName,Metal Type,金属类型
+ToolOrWeapon_FireStriker_Metal_CardInteractions[0].ActionName,Combine,组合
+ToolOrWeapon_FireStriker_Metal_OnStatsChangeActions[1].ActionName,Metal Type 200 (Iron) + Beauty is 0 = Calculate Usage  and Beauty,金属类型 200（铁）+ 美观为 0 = 计算美观
+ToolOrWeapon_FireStriker_Metal_OnStatsChangeActions[2].ActionName,Backwards Comptability - if Metal Type is 0 put it to 200,向后兼容 - 如果金属类型为 0，则改为 200
+WolfsbaneCoating_CardDescription,Poisonous and sedative coating that can be applied to pointy weapons.,可涂在尖锐武器上的有毒镇静涂层。
+Wheelbarrow_CardName,Wheelbarrow,手推车
+Wheelbarrow_CardDescription,A device for carrying heavy loads across roads.,用来在道路上运输重物的装置。
+Wheelbarrow_SpoilageTime.CardStatName,Spoilage,变质
+Wheelbarrow_CardInteractions[0].ActionName,Repair,修复
+TreadleLoom_CardName,Treadle Loom,踏板织机
+TreadleLoom_CardDescription,Used for weaving cloth of different sizes more efficiently.,用于更高效的纺织不同尺寸的布。
+TreadleLoom_DismantleActions[0].ActionName,Disassemble Loom,拆卸织布机
+FiberBreak_CardName,Fiber Break,纤维破碎架
+FiberBreak_CardDescription,Used for extracting fibers more effectively.,用于更有效地提取纤维。
+FiberBreak_SpecialDurability2.CardStatName,Quality,品质
+FiberBreak_DismantleActions[0].ActionName,Disassemble Spinning Wheel,拆解纺车
+PotteryWheelItem_CardName,Pottery Wheel,陶轮
+PotteryWheelItem_CardDescription,A device for working clay more efficiently.\n\nNeeds to be placed to work.,一种能更高效地加工黏土的装置。\n\n需要放置后才能使用。
+PotteryWheelItem_DismantleActions[0].ActionName,Place,放置
+PotteryWheelLocation_CardName,Pottery Wheel,陶轮
+PotteryWheelLocation_CardDescription,A device for working clay more efficiently.,一种能更高效地加工黏土的装置。
+PotteryWheelLocation_DismantleActions[0].ActionName,Pick up,拿起
+SpinningWheel_CardName,Spinning Wheel,纺车
+SpinningWheel_CardDescription,Used for spinning fibers into twine or yarn much more effectively.,用于非常高效地将纤维缠成细线或线团。
+SpinningWheel_SpecialDurability2.CardStatName,Quality,品质
+SpinningWheel_DismantleActions[0].ActionName,Disassemble Spinning Wheel,拆解纺车
+ToolOrWeaponBlunt_Handsaw_Metal_CardName,Blunt Metal Handsaw,钝金属手锯
+ToolOrWeaponBlunt_Handsaw_Metal_CardDescription,Should sharpen it with a stone before it can be used again.,先用石头将其磨利，然后才能再次使用。
+ToolOrWeaponBlunt_Handsaw_Metal_AlternateNames[0].Name,Blunt Iron Handsaw,钝铁手锯
+ToolOrWeaponBlunt_Handsaw_Metal_Progress.CardStatName,Beauty,美观
+ToolOrWeaponBlunt_Handsaw_Metal_SpecialDurability2.CardStatName,Metal Quality,总金属品质
+ToolOrWeaponBlunt_Handsaw_Metal_SpecialDurability3.CardStatName,Quality,品质
+ToolOrWeaponBlunt_Handsaw_Metal_SpecialDurability4.CardStatName,Metal Type,金属类型
+ToolOrWeaponBlunt_Handsaw_Metal_CardInteractions[0].ActionName,Sharpen,磨利
+ToolOrWeaponBlunt_Handsaw_Metal_CardInteractions[1].ActionName,Sharpen,磨利
+ToolOrWeaponBlunt_Handsaw_Metal_CardInteractions[2].ActionName,Sharpen,磨利
+ToolOrWeaponBlunt_Handsaw_Metal_DismantleActions[0].ActionName,Dismantle,拆解
+ToolOrWeapon_Handsaw_Metal_CardName,Metal Handsaw,金属手锯
+ToolOrWeapon_Handsaw_Metal_CardDescription,Used to cut wood into precise shapes and planks. Essential for advanced woodworking.,用于将木材切割成精确的形状和板材。是高级木工的必备工具。
+ToolOrWeapon_Handsaw_Metal_AlternateNames[0].Name,Iron Handsaw,铁手锯
+ToolOrWeapon_Handsaw_Metal_SpoilageTime.CardStatName,Sharpness,锋利度
+ToolOrWeapon_Handsaw_Metal_SpoilageTime.OnZero.ActionDescription,Handsaw is blunt!,手锯已钝！
+ToolOrWeapon_Handsaw_Metal_FuelCapacity.CardStatName,Recently Sharpened,近期磨利
+ToolOrWeapon_Handsaw_Metal_Progress.CardStatName,Beauty,美观
+ToolOrWeapon_Handsaw_Metal_SpecialDurability2.CardStatName,Metal Quality,总金属品质
+ToolOrWeapon_Handsaw_Metal_SpecialDurability3.CardStatName,Quality,品质
+ToolOrWeapon_Handsaw_Metal_SpecialDurability4.CardStatName,Metal Type,金属类型
+ToolOrWeapon_Handsaw_Metal_CardInteractions[0].ActionName,Sharpen,磨利
+ToolOrWeapon_Handsaw_Metal_CardInteractions[1].ActionName,Sharpen,磨利
+ToolOrWeapon_Handsaw_Metal_CardInteractions[2].ActionName,Sharpen,磨利
+ToolOrWeapon_Handsaw_Metal_DismantleActions[0].ActionName,Dismantle,拆解
+LQ_AcornFlour_CardName,Acorn Flour,橡子粉
+LQ_AcornFlour_CardDescription,Can mix it with water to make dough.,可以和水搅拌后制成生面团。
+LQ_AcornFlour_SpoilageTime.CardStatName,Spoilage,变质
+LQ_AcornFlour_SpoilageTime.OnFull.ActionDescription,Flour Spoiled!,面粉变质了！
+LQ_AcornFlour_SpecialDurability2.CardStatName,Quality,品质
+LQ_AcornFlour_DismantleActions[0].ActionName,Take Out,取出
+LQ_AcornFlour_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_AppleweedPowder_CardInteractions[1].ActionName,Soak,浸泡
+LQ_Ash_CardName,Ash,灰烬
+LQ_Ash_CardDescription,"Could use it to temper clay, lower soil acidity or to make lye, by mixing it with water and boiling it.",可以作为抗裂剂与粘土混合，降低土壤酸度或与水混合并煮沸来制作碱水。
+LQ_Ash_CardInteractions[0].ActionName,Soak,浸泡
+LQ_Ash_DismantleActions[0].ActionName,Take Out,取出
+LQ_Ash_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_Blood_Progress.CardStatName,Freshened Blood,新鲜血液
+LQ_BogMyrtleLeavesPowder_CardDescription,Mildly psychoactive plant with very strong insect repellent properties.,具有轻微致幻作用的植物，驱虫效果极强。
+LQ_Clay_CardName,Clay,粘土
+LQ_Clay_CardDescription,Ideal for crafting pots and improving waterproofing in construction.,非常适合制作容器和改善建筑防水性能。
+LQ_Clay_SpecialDurability2.CardStatName,Quality,品质
+LQ_Clay_DismantleActions[0].ActionName,Take Out,取出
+LQ_Clay_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_FairyweedPowder_CardInteractions[0].RequiredGivenDurabilities.SpecificFailMessages[0].Message,Not enough liquid,液体不足
+LQ_FairyweedPowder_CardInteractions[0].RequiredGivenDurabilities.SpecificFailMessages[1].Message,Too thick,太浓稠
+LQ_FairyweedPowder_CardInteractions[0].RequiredGivenDurabilities.SpecificFailMessages[2].Message,Not hot enough,温度还不够
+LQ_FairyweedPowder_CardInteractions[1].ActionName,Soak,浸泡
+LQ_FairyweedPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessages[0].Message,Not enough liquid,液体不足
+LQ_FairyweedPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessages[1].Message,Too thick,太浓稠
+LQ_FairyweedPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessages[2].Message,Not hot enough,温度还不够
+LQ_FirerootPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessages[0].Message,Not enough liquid,液体不足
+LQ_FirerootPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessages[1].Message,Too thick,太浓稠
+LQ_FirerootPowder_CardInteractions[1].RequiredGivenDurabilities.SpecificFailMessages[2].Message,Not hot enough,温度还不够
+LQ_FirerootPowder_CardInteractions[2].ActionName,Soak,浸泡
+LQ_FirerootPowder_CardInteractions[2].RequiredGivenDurabilities.SpecificFailMessages[0].Message,Not enough liquid,液体不足
+LQ_FirerootPowder_CardInteractions[2].RequiredGivenDurabilities.SpecificFailMessages[1].Message,Too thick,太浓稠
+LQ_FirerootPowder_CardInteractions[2].RequiredGivenDurabilities.SpecificFailMessages[2].Message,Not hot enough,温度还不够
+LQ_LeavesDry_CardName,Dry Leaves,枯叶
+LQ_LeavesDry_CardDescription,"Can be used as tinder by dragging a fire starter to it, or used as compost or soil acidifier.",可以通过拖动生火工具将其用作火绒，或用作堆肥又或土壤酸化剂。
+LQ_LeavesDry_SpoilageTime.CardStatName,Durability,耐久度
+LQ_LeavesDry_SpoilageTime.OnZero.ActionDescription,Leaves Expired!,叶子已过期！
+LQ_LeavesDry_FuelCapacity.OnFull.ActionDescription,Tinder Lit!,火绒点燃了！
+LQ_LeavesDry_Progress.CardStatName,Nutrition,营养
+LQ_LeavesDry_DismantleActions[0].ActionName,Take Out,取出
+LQ_LeavesDry_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_LeavesFresh_CardName,Fresh Leaves,树叶
+LQ_LeavesFresh_CardDescription,"Useful as bedding material, animal fodder or compost.",可用作垫料、动物饲料、堆肥。
+LQ_LeavesFresh_SpoilageTime.CardStatName,Wetness,湿度
+LQ_LeavesFresh_SpoilageTime.OnZero.ActionDescription,Leaves Dried!,叶子干了！
+LQ_LeavesFresh_DismantleActions[0].ActionName,Take Out,取出
+LQ_LeavesFresh_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_NeedlesDried_CardName,Dry Needles,干松针
+LQ_NeedlesDried_CardDescription,"Can be used as tinder by dragging a fire starter to it, or used as compost or soil acidifier.",可以通过拖动生火工具将其用作火绒，或用作堆肥又或土壤酸化剂。
+LQ_NeedlesDried_SpoilageTime.CardStatName,Durability,耐久度
+LQ_NeedlesDried_SpoilageTime.OnZero.ActionDescription,Needles Expired!,松针消失了！
+LQ_NeedlesDried_FuelCapacity.OnFull.ActionDescription,Tinder Lit!,火绒点燃了！
+LQ_NeedlesDried_Progress.CardStatName,Nutrition,营养
+LQ_NeedlesDried_DismantleActions[0].ActionName,Take Out,取出
+LQ_NeedlesDried_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_NeedlesFresh_CardName,Pine Needles,松针
+LQ_NeedlesFresh_CardDescription,"Useful as bedding material, animal fodder, compost or soil acidifier. Can also be used to make vitamin rich tea.",可用作垫料、动物饲料、堆肥或土壤酸化剂。也可用于制作富含维生素的茶。
+LQ_NeedlesFresh_SpoilageTime.CardStatName,Wetness,湿度
+LQ_NeedlesFresh_SpoilageTime.OnZero.ActionDescription,Needles Dried!,松针干了！
+LQ_NeedlesFresh_DismantleActions[0].ActionName,Take Out,取出
+LQ_NeedlesFresh_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_NightBroth_CardName,Night Broth,暗夜浓汤
+LQ_NightBroth_CardDescription,A disgusting liquid capable of inducing altered mindstates.,一种能引起精神状态改变的恶心液体。
+LQ_NightBroth_FuelCapacity.CardStatName,Liquid Temperature,液体温度
+LQ_NightBroth_DismantleActions[0].ActionName,Drink,饮用
+LQ_Quicklime_CardName,Quicklime,生石灰
+LQ_Quicklime_CardDescription,Could make mortar and other things with this.,可以做砂浆或者其他东西。
+LQ_Quicklime_DismantleActions[0].ActionName,Take Out,取出
+LQ_Quicklime_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_RottenRemains_CardName,Rotten Remains,腐烂物
+LQ_RottenRemains_CardDescription,"Can be used as fertilizer, compost or trap bait.",可以用作肥料、陷阱诱饵或用来堆肥。
+LQ_RottenRemains_DismantleActions[0].ActionName,Take Out,取出
+LQ_RottenRemains_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_RyeFlour_CardName,Rye Flour,黑麦面粉
+LQ_RyeFlour_CardDescription,Can mix it with water in a bowl to make dough.,可以在碗里和水搅拌后制成生面团。
+LQ_RyeFlour_SpoilageTime.CardStatName,Spoilage,变质
+LQ_RyeFlour_SpoilageTime.OnFull.ActionDescription,Flour Spoiled!,面粉变质了！
+LQ_RyeFlour_SpecialDurability2.CardStatName,Quality,品质
+LQ_RyeFlour_DismantleActions[0].ActionName,Take Out,取出
+LQ_RyeFlour_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_RyeGrains_CardName,Rye Grains,黑麦粒
+LQ_RyeGrains_CardDescription,"Edible grain, long lasting and useful for making bread and beer. Hydrate it to start the malting process (beer) or grind it to make flour (bread).",可食用的谷物，耐储存，可用于制作面包和啤酒。将其浸水后用于制作麦芽（啤酒用），或将其磨碎后用于制作面粉（面包用）。
+LQ_RyeGrains_CardHelpSection,"<b>Found:</b> Bought from Traders. \n\n<b>Growth Needs:</b> Mid to High Acidity, Low to Mid Hydration and Mid to High Structure. Produces the most yield on Medium Nutrients during Autumn and Winter. \n\n<b>Benefits:</b> Staple Food. ",<b>获取：</b>从商人处购得。\n\n<b>需求：</b>中高酸度、中低湿度和中高土质。秋、冬季中等养分下产量最高。\n\n<b>效果：</b>主食。
+LQ_RyeGrains_SpoilageTime.CardStatName,Spoilage,变质
+LQ_RyeGrains_SpoilageTime.OnFull.ActionDescription,Rye Grains Spoiled!,黑麦粒变质了！
+LQ_RyeGrains_SpecialDurability2.CardStatName,Quality,品质
+LQ_RyeGrains_DismantleActions[0].ActionName,Take Out,取出
+LQ_RyeGrains_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_Water_AlternateNames[0].Description,A very thick and nourishing soup.,一种非常浓稠且营养丰富的汤。
+LQ_Water_AlternateNames[1].Description,A thick soup that provides good sustenance.,一种浓稠的汤，能提供良好的营养。
+LQ_Water_AlternateNames[2].Description,A moderate thickness liquid that provides some sustenance.,一种中等浓度的液体，能提供一些营养。
+LQ_Water_AlternateNames[3].Description,"A light, soup-like liquid that provides modest nourishment.",一种清淡的、类似汤的液体，能提供少量营养。
+LQ_WheatFlour_CardName,Wheat Flour,小麦面粉
+LQ_WheatFlour_CardDescription,Can mix it with water in a bowl to make dough.,可以在碗里和水搅拌后制成生面团。
+LQ_WheatFlour_SpoilageTime.CardStatName,Spoilage,变质
+LQ_WheatFlour_SpoilageTime.OnFull.ActionDescription,Flour Spoiled!,面粉变质了！
+LQ_WheatFlour_SpecialDurability2.CardStatName,Quality,品质
+LQ_WheatFlour_DismantleActions[0].ActionName,Take Out,取出
+LQ_WheatFlour_DismantleActions[1].ActionName,Take Out 10,拿出10份
+LQ_WheatGrains_CardName,Wheat Grains,小麦粒
+LQ_WheatGrains_CardDescription,"Edible grain, long lasting and useful for making bread and beer. Hydrate it to start the malting process (beer) or grind it to make flour (bread).",可食用的谷物，耐储存，可用于制作面包和啤酒。将其浸水后用于制作麦芽（啤酒用），或将其磨碎后用于制作面粉（面包用）。
+LQ_WheatGrains_CardHelpSection,"<b>Found:</b> Bought from Traders. \n\n<b>Growth Needs:</b> Mid Acidity, Mid Hydration and Mid to High Structure. Produces the most yield on High Nutrients during Spring. \n\n<b>Benefits:</b> Staple Food. ",<b>获取：</b>从商人处购得。\n\n<b>需求：</b>中等酸度、中等湿度和中高土质。春季高养分下产量最高。\n\n<b>效果：</b>主食。
+LQ_WheatGrains_SpoilageTime.CardStatName,Spoilage,变质
+LQ_WheatGrains_SpoilageTime.OnFull.ActionDescription,Rye Grains Spoiled!,黑麦粒变质了！
+LQ_WheatGrains_SpecialDurability2.CardStatName,Quality,品质
+LQ_WheatGrains_DismantleActions[0].ActionName,Take Out,取出
+LQ_WheatGrains_DismantleActions[1].ActionName,Take Out 10,拿出10份
+Fireplace_CardInteractions[1].ActionName,Feed Pine Needles,添入松针
+CharcoalMound_CardName,Charcoal Mound,炭堆
+CharcoalMound_DismantleActions[0].ActionName,Dig up,挖掘
+CharcoalMoundBurning_CardName,Burning Charcoal Mound,燃烧中的炭堆
+CharcoalMoundBurning_Progress.OnFull.ActionDescription,Charcoal Mound Finished Burning!,炭堆烧制完成！
+IceHoleRiver_SpecialDurability4.CardStatName,River Type,河流类型
+IceHoleRiver_DismantleActions[0].ActionName,Drink,饮用
+IceHoleRiver_DismantleActions[1].ActionName,Drink,饮用
+SpiritShrine_Bugs_MosquitoPond_SpecialDurability4.CardStatName,Spirit,精魄
+SpiritShrine_Bugs_MosquitoPond_CardInteractions[2].ActionName,Spearfish,叉鱼
+SpiritShrine_Bugs_MosquitoPond_CardInteractions[2].RequiredReceivingDurabilities.FailMessage,Nothing to Catch,没东西抓
+SpiritShrine_Bugs_MosquitoPond_CardInteractions[2].ProducedCards[0].CollectionMessages[0],No luck...,运气不佳……
+SpiritShrine_Bugs_MosquitoPond_CardInteractions[3].ActionName,Fill,取水
+SpiritShrine_Bugs_MosquitoPond_DismantleActions[1].ActionName,Swim,游泳
+SpiritShrine_Bugs_MosquitoPond_DismantleActions[6].ActionName,Blessing,赐福
+SpiritShrine_Bugs_MosquitoPond_DismantleActions[6].RequiredReceivingDurabilities.FailMessage,The blessing is not ready yet.,赐福尚未准备好。
+SpiritShrine_Bugs_MosquitoPondFrozen_SpecialDurability4.CardStatName,Spirit,精魄
+LQ_SpiritBeaver_CardName,Beaver Spirit,河狸精魄
+LQ_SpiritBeaver_CardDescription,A personified manifestation of the essence of beaverkind. \n\nCan help you with woodworking. ,河狸精魄的拟人化体现。\n\n可以帮助你做木工。
+LQ_SpiritBeaver_LiquidSuffixName,(Beaver),（河狸）
+LQ_SpiritBeaver_CardInteractions[0].ActionName,Bestial Resilience,野兽般坚韧
+LQ_SpiritBeaver_DismantleActions[0].ActionName,Blessing,赐福
+LQ_SpiritHummingWidow_CardName,Humming Widow,嗡鸣寡妇
+LQ_SpiritHummingWidow_CardDescription,"A personified manifestation of the essence of humming widow.\n\nIncreases mosquito, leech and swamp fever protection as well as boost blood pressure recovery. ",嗡鸣寡妇精魄的拟人化具现化。\n\n增加蚊虫、水蛭和沼泽热防护，并促进血压恢复。
+LQ_SpiritHummingWidow_LiquidSuffixName,(Humming Widow),（嗡鸣寡妇）
+LQ_SpiritHummingWidow_CardInteractions[0].ActionName,Stop Bloodloss,止血
+LQ_SpiritHummingWidow_CardInteractions[1].ActionName,Freshen Blood,净化血液
+LQ_SpiritHummingWidow_CardInteractions[2].ActionName,Dispel Swarms,驱散虫群
+LQ_SpiritHummingWidow_DismantleActions[0].ActionName,Blessing,赐福
+Spirit_Beaver_CardName,Beaver Spirit,河狸精魄
+Spirit_Beaver_CardDescription,A personified manifestation of the essence of beaver kind. \n\nCan help you with woodworking. ,河狸精魄的拟人化具现化。\n\n可以帮助你做木工。
+Spirit_Beaver_SpoilageTime.CardStatName,Attunement,共鸣
+Spirit_Beaver_SpoilageTime.OnZero.ActionName,Leave,离去
+Spirit_Beaver_FuelCapacity.CardStatName,Duration,耗时
+Spirit_Beaver_FuelCapacity.OnZero.ActionName,Death,逝去
+Spirit_Beaver_Progress.OnZero.ActionName,Death,逝去
+Spirit_Beaver_DismantleActions[0].ActionName,Release,释放
+Spirit_HagBargainFear_CardName,Fear Bargain,恐惧契约
+Spirit_HagBargainFear_CardDescription,We will take your fear and drown it in the water.\n\nThe wolves will seem no larger than rabbits. The cliffs no steeper than gentle hills.,很好。我们便将汝之恐惧携走，溺于水底。\n\n群狼视之不过如兔，峭壁望之亦不逾缓丘。
+Spirit_HagBargainHealth_CardName,Health Bargain,康健契约
+Spirit_HagBargainHealth_CardDescription,We shall make it yours forever. A small and faithful rot.\n\nIt will linger at your side and keep the hungrier sicknesses from finding a home within you.,我们将使其永属汝身——一小簇忠腐，常伴不离。\n\n它将傍汝左右，令诸般贪疾无以寓于汝体。
+Spirit_HagBargainHunger_CardName,Hunger Bargain,饥馑契约
+Spirit_HagBargainHunger_CardDescription,We will take your hunger and keep it beneath the water then.\n\nIt will no longer gnaw at you. Your belly will never cry again.,我们便将汝之饥饿携走，藏于水底。\n\n它不再啮咬你身，汝腹亦永不复哀鸣。
+Spirit_HummingWidow_CardName,Humming Widow,嗡鸣寡妇
+Spirit_HummingWidow_CardDescription,"A personified manifestation of the essence of humming widow.\n\nIncreases mosquito, leech and swamp fever protection as well as boost blood pressure recovery. ",嗡鸣寡妇精魄的拟人化具现化。\n\n增加蚊虫、水蛭和沼泽热防护，并促进血压恢复。
+Spirit_HummingWidow_SpoilageTime.CardStatName,Attunement,共鸣
+Spirit_HummingWidow_SpoilageTime.OnZero.ActionName,Leave,离去
+Spirit_HummingWidow_FuelCapacity.CardStatName,Duration,耗时
+Spirit_HummingWidow_FuelCapacity.OnZero.ActionName,Death,逝去
+Spirit_HummingWidow_Progress.OnZero.ActionName,Death,逝去
+Spirit_HummingWidow_DismantleActions[0].ActionName,Release,释放
+IsNight_TooMuchText,Only outside deep Night. ,仅在深夜之外可用。
+PotteryWheelActionBonus_Statuses[0].GameName,Pottery Wheel,陶轮
+RiverWaterLevelFloodedStatus_Statuses[0].EffectsOnActions[0].ActionAddedSuffix,flooded,洪水
+HagActive_GameName,Hag Active,老巫激活
+HagBargainFear_Description,Nukes player perception in EncounterWindow and gives 1 confidence modifier when bigger than 1. ,在遭遇窗口中大幅削弱玩家感知，且当数值大于 1 时给予 1 点信心修正。
+HagFavour_GameName,Hag Favour,老巫好感度
+HummingWidowDispelSwarms_GameName,Dispel Swarms,驱散虫群
+HummingWidowDispelSwarms_Statuses[0].GameName,Dispel Swarms,驱散虫群
+BeaverBlessing_GameName,Beaver Blessing,河狸赐福
+BeaverBlessing_Description,A spirit blessing. Makes you better at woodworking.,一种精魄赐福。让你更擅长木工。
+BeaverBlessing_Statuses[0].GameName,Beaver Blessing,河狸赐福
+BeaverBlessing_Statuses[1].GameName,Beaver Blessing,河狸赐福
+BeaverBlessing_Statuses[2].GameName,Beaver Blessing,河狸赐福
+BeaverBlessing_Statuses[3].GameName,Beaver Blessing,河狸赐福
+BeaverBlessing_Statuses[4].GameName,Beaver Blessing,河狸赐福
+BeaverBlessing_Statuses[5].GameName,Beaver Blessing,河狸赐福
+HummingWidowBlessing_GameName,Humming Widow Blessing,嗡鸣寡妇赐福
+HummingWidowBlessing_Description,"A spirit blessing. Protects you from mosquitos, leeches or swamp fever and increases your blood pressure.",一种精魄赐福。保护你免受蚊虫、水蛭或沼泽热侵害，并提升你的血压。
+HummingWidowBlessing_Statuses[0].GameName,Humming Widow Blessing,嗡鸣寡妇赐福
+HummingWidowBlessing_Statuses[1].GameName,Humming Widow Blessing,嗡鸣寡妇赐福
+HummingWidowBlessing_Statuses[2].GameName,Humming Widow Blessing,嗡鸣寡妇赐福
+HummingWidowBlessing_Statuses[3].GameName,Humming Widow Blessing,嗡鸣寡妇赐福
+HummingWidowBlessing_Statuses[4].GameName,Humming Widow Blessing,嗡鸣寡妇赐福
+HummingWidowBlessing_Statuses[5].GameName,Humming Widow Blessing,嗡鸣寡妇赐福
+BeaverUrge_GameName,Beaver Urge,河狸本能
+BeaverUrge_Description,"Raises your stress levels if not satisfied.\nCan be satisfied by harvesting bark, swimming and woodworking. ",如果得不到满足，将增加你的压力水平。\n可以通过剥取树皮、游泳和木工得到满足。
+BeaverUrge_Statuses[0].GameName,Beaver Urge,河狸本能
+BeaverUrge_Statuses[1].GameName,Beaver Urge,河狸本能
+BeaverUrge_Statuses[2].GameName,Beaver Urge,河狸本能
+HummingWidowUrge_GameName,Humming Widow Urge,嗡鸣寡妇本能
+HummingWidowUrge_Description,"Raises your stress levels if not satisfied.\nCan be satisfied by being in areas with mosquitos, by eating leeches, blood sausages and blood curds or drinking blood. ",如果得不到满足，将增加你的压力水平。\n可以通过待在有蚊虫的区域、食用水蛭、血肠和血凝块或饮血得到满足。
+HummingWidowUrge_Statuses[0].GameName,Humming Widow Urge,嗡鸣寡妇本能
+HummingWidowUrge_Statuses[1].GameName,Humming Widow Urge,嗡鸣寡妇本能
+HummingWidowUrge_Statuses[2].GameName,Humming Widow Urge,嗡鸣寡妇本能
+BugAffinity_GameName,Bug Affinity,虫类亲和度
+BugAffinity_Description,How much in common you have with the bug spirits. \n\nEat Bugs or spend time around Mosquitos to increase it.,你与虫类精魄的融合程度。\n\n食用虫子或在蚊虫附近逗留均可得到提升。
+BugAffinity_NotEnoughText,Not enough affinity.,亲和度不够。
+HummingWidowLeechProtection_GameName,Humming Widow Leech Protection,嗡鸣寡妇水蛭防护
+GpTag_Leech_TabName,Leech,水蛭
+GpTag_MiningTools_TabName,Mining Tool,采矿工具
+GpTag_OakLongStick_TabName,Oak Long Stick,长橡木棍
+GpTag_WillowBark_TabName,Willow Bark,柳树皮
+tag_Leech_InGameName,Leech,水蛭
+tag_ReedClothingStalks_InGameName,Stalks,茎秆
+tag_MiningTool_InGameName,Hammer,锤
+tag_BrickBinder_InGameName,Temper,抗裂剂
+tag_SharpShapingTool_InGameName,Sharp Shaping Tool,锋利的塑形工具
+HollownessLevel_GameName,Hollowness Level,空壳化等级
+HollownessLevel_Statuses[0].GameName,Intermediate,中级
+HollownessLevel_Statuses[1].GameName,High,高
+HollownessStatus_GameName,Hollowness Status,空壳化状态
+HollownessStatus_Statuses[0].GameName,Intermediate,中级
+HollownessStatus_Statuses[1].GameName,High,高
