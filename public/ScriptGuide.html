@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WikiMod 脚本系统指南</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    background: #f6f7f9;
+    color: #1f2937;
+    line-height: 1.65;
+    font-size: 15px;
+  }
+
+  /* ===== 顶栏 ===== */
+  header.topbar {
+    position: sticky; top: 0; z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    display: flex; align-items: center;
+    padding: 0 16px;
+    height: 56px;
+    gap: 12px;
+  }
+  .brand {
+    font-weight: 700;
+    font-size: 17px;
+    color: #4f46e5;
+    flex-shrink: 0;
+  }
+  .brand .sub { color: #6b7280; font-weight: 500; font-size: 13px; margin-left: 6px; }
+
+  .spacer { flex: 1; }
+
+  .lang-switch {
+    display: flex; gap: 0;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .lang-btn {
+    background: #fff;
+    border: 0;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #4b5563;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .lang-btn + .lang-btn { border-left: 1px solid #d1d5db; }
+  .lang-btn:hover { background: #f9fafb; }
+  body[data-lang="zh"] .lang-btn[data-target="zh"],
+  body[data-lang="en"] .lang-btn[data-target="en"] {
+    background: #4f46e5; color: #fff;
+  }
+
+  /* 窄屏紧凑模式 */
+  @media (max-width: 760px) {
+    header.topbar { padding: 0 10px; gap: 8px; height: 52px; }
+    .brand { font-size: 15px; }
+    .brand .sub { display: none; }
+    .lang-btn { padding: 5px 10px; font-size: 12px; }
+  }
+
+  /* ===== 语言切换 ===== */
+  body[data-lang="zh"] [lang="en"],
+  body[data-lang="en"] [lang="zh"] { display: none !important; }
+
+  /* ===== 内容布局 ===== */
+  .layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 24px 48px;
+  }
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; padding: 16px; gap: 16px; }
+    aside.sidebar { position: static !important; max-height: none !important; }
+  }
+
+  aside.sidebar {
+    position: sticky;
+    top: 80px;
+    align-self: start;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 12px 8px;
+    font-size: 13.5px;
+  }
+  aside.sidebar ul { list-style: none; padding: 0; margin: 0; }
+  aside.sidebar a {
+    display: block;
+    padding: 6px 12px;
+    color: #4b5563;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1px;
+    transition: all 0.15s;
+  }
+  aside.sidebar a:hover { background: #f3f4f6; color: #1f2937; }
+  aside.sidebar a.active { background: #eef2ff; color: #4338ca; border-left-color: #6366f1; }
+  aside.sidebar a.lvl-3 { padding-left: 28px; font-size: 12.5px; color: #6b7280; }
+
+  /* ===== 文章内容样式 ===== */
+  article.content {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 32px 40px;
+    min-width: 0;
+  }
+  @media (max-width: 600px) {
+    article.content { padding: 20px; }
+  }
+
+  article h1 { font-size: 26px; margin: 0 0 16px; color: #111827; }
+  article h2 {
+    font-size: 22px; margin: 32px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e7eb;
+    color: #111827;
+  }
+  article h2:first-child { margin-top: 0; }
+  article h3 { font-size: 17px; margin: 24px 0 10px; color: #1f2937; }
+  article h4 { font-size: 15px; margin: 18px 0 8px; color: #374151; }
+
+  article p { margin: 10px 0; }
+  article ul, article ol { margin: 10px 0; padding-left: 24px; }
+  article li { margin: 4px 0; }
+  article li > p { margin: 4px 0; }
+
+  article a { color: #4f46e5; text-decoration: none; }
+  article a:hover { text-decoration: underline; }
+
+  article code {
+    background: #f3f4f6;
+    color: #be185d;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 13px;
+  }
+  article pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 14px 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  article pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    font-size: inherit;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  }
+
+  article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    margin: 12px 0;
+    display: block;
+  }
+
+  article blockquote {
+    border-left: 4px solid #6366f1;
+    background: #eef2ff;
+    margin: 14px 0;
+    padding: 10px 16px;
+    border-radius: 0 6px 6px 0;
+    color: #3730a3;
+  }
+  article blockquote p { margin: 4px 0; }
+
+  article table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 14px 0;
+    font-size: 14px;
+  }
+  article th, article td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  article th { background: #f9fafb; font-weight: 600; }
+
+  article hr {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+</style>
+</head>
+<body data-lang="zh">
+
+<header class="topbar">
+  <div class="brand">
+    WikiMod
+    <span class="sub" lang="zh">脚本系统指南</span>
+    <span class="sub" lang="en">Script System Guide</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="lang-switch">
+    <button type="button" class="lang-btn" data-target="zh">中</button>
+    <button type="button" class="lang-btn" data-target="en">EN</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" lang="zh"><ul>
+<li><a href="#zh-h2-1">1. 快速入门</a></li>
+<li><a href="#zh-h2-2">2. 基础概念</a></li>
+<li><a href="#zh-h2-2-h3-1" class="lvl-3">什么是脚本</a></li>
+<li><a href="#zh-h2-2-h3-2" class="lvl-3">脚本文件</a></li>
+<li><a href="#zh-h2-2-h3-3" class="lvl-3">界面操作</a></li>
+<li><a href="#zh-h2-2-h3-4" class="lvl-3">快捷键</a></li>
+<li><a href="#zh-h2-3">3. 脚本语法</a></li>
+<li><a href="#zh-h2-3-h3-1" class="lvl-3">3.1 注释和元数据</a></li>
+<li><a href="#zh-h2-3-h3-2" class="lvl-3">3.2 卡牌操作</a></li>
+<li><a href="#zh-h2-3-h3-3" class="lvl-3">3.3 卡牌选择器</a></li>
+<li><a href="#zh-h2-3-h3-4" class="lvl-3">3.4 生成与检查</a></li>
+<li><a href="#zh-h2-3-h3-5" class="lvl-3">3.5 消息命令</a></li>
+<li><a href="#zh-h2-3-h3-6" class="lvl-3">3.6 控制流</a></li>
+<li><a href="#zh-h2-3-h3-7" class="lvl-3">3.7 条件表达式</a></li>
+<li><a href="#zh-h2-3-h3-8" class="lvl-3">3.8 完整指令形式</a></li>
+<li><a href="#zh-h2-4">4. 名称规则</a></li>
+<li><a href="#zh-h2-4-h3-1" class="lvl-3">卡牌名怎么写</a></li>
+<li><a href="#zh-h2-4-h3-2" class="lvl-3">支持卡牌标签（CardTag）</a></li>
+<li><a href="#zh-h2-4-h3-3" class="lvl-3">动作名怎么写</a></li>
+<li><a href="#zh-h2-4-h3-4" class="lvl-3">属性名怎么写</a></li>
+<li><a href="#zh-h2-4-h3-5" class="lvl-3">环境限制</a></li>
+<li><a href="#zh-h2-5">5. 错误处理</a></li>
+<li><a href="#zh-h2-5-h3-1" class="lvl-3">检查功能</a></li>
+<li><a href="#zh-h2-5-h3-2" class="lvl-3">两种错误模式</a></li>
+<li><a href="#zh-h2-5-h3-3" class="lvl-3">常见错误</a></li>
+<li><a href="#zh-h2-6">6. 实战示例</a></li>
+<li><a href="#zh-h2-6-h3-1" class="lvl-3">示例1：重复取水</a></li>
+<li><a href="#zh-h2-6-h3-2" class="lvl-3">示例2：条件判断自动加柴</a></li>
+<li><a href="#zh-h2-6-h3-3" class="lvl-3">示例3：智能选择器</a></li>
+<li><a href="#zh-h2-6-h3-4" class="lvl-3">示例4：砍树取材</a></li>
+<li><a href="#zh-h2-6-h3-5" class="lvl-3">示例5：一键建造蓝图</a></li>
+<li><a href="#zh-h2-6-h3-6" class="lvl-3">示例6：消息提示与确认</a></li>
+<li><a href="#zh-h2-6-h3-7" class="lvl-3">示例7：逻辑组合条件</a></li>
+<li><a href="#zh-h2-7">7. 参考速查表</a></li>
+<li><a href="#zh-h2-7-h3-1" class="lvl-3">语法一览</a></li>
+<li><a href="#zh-h2-7-h3-2" class="lvl-3">选择器</a></li>
+<li><a href="#zh-h2-7-h3-3" class="lvl-3">条件</a></li>
+<li><a href="#zh-h2-7-h3-4" class="lvl-3">模板表达式（用于 toast / alert / log）</a></li>
+<li><a href="#zh-h2-7-h3-5" class="lvl-3">比较运算符</a></li>
+<li><a href="#zh-h2-7-h3-6" class="lvl-3">快捷键</a></li>
+<li><a href="#zh-h2-8">8. 提示与技巧</a></li>
+</ul>
+</aside>
+  <aside class="sidebar" lang="en"><ul>
+<li><a href="#en-h2-1">1. Quick Start</a></li>
+<li><a href="#en-h2-2">2. Basics</a></li>
+<li><a href="#en-h2-2-h3-1" class="lvl-3">What is a Script</a></li>
+<li><a href="#en-h2-2-h3-2" class="lvl-3">Script Files</a></li>
+<li><a href="#en-h2-2-h3-3" class="lvl-3">UI Buttons</a></li>
+<li><a href="#en-h2-2-h3-4" class="lvl-3">Hotkeys</a></li>
+<li><a href="#en-h2-3">3. Script Syntax</a></li>
+<li><a href="#en-h2-3-h3-1" class="lvl-3">3.1 Comments and Directives</a></li>
+<li><a href="#en-h2-3-h3-2" class="lvl-3">3.2 Card Operations</a></li>
+<li><a href="#en-h2-3-h3-3" class="lvl-3">3.3 Card Selectors</a></li>
+<li><a href="#en-h2-3-h3-4" class="lvl-3">3.4 Blueprint Spawn and Inspect</a></li>
+<li><a href="#en-h2-3-h3-5" class="lvl-3">3.5 Message Commands</a></li>
+<li><a href="#en-h2-3-h3-6" class="lvl-3">3.6 Control Flow</a></li>
+<li><a href="#en-h2-3-h3-7" class="lvl-3">3.7 Conditional Expressions</a></li>
+<li><a href="#en-h2-3-h3-8" class="lvl-3">3.8 Full Command Forms</a></li>
+<li><a href="#en-h2-4">4. Naming Rules</a></li>
+<li><a href="#en-h2-4-h3-1" class="lvl-3">Writing Card Names</a></li>
+<li><a href="#en-h2-4-h3-2" class="lvl-3">Card Tags Are Supported</a></li>
+<li><a href="#en-h2-4-h3-3" class="lvl-3">Writing Action Names</a></li>
+<li><a href="#en-h2-4-h3-4" class="lvl-3">Writing Property Names</a></li>
+<li><a href="#en-h2-4-h3-5" class="lvl-3">Environment Limitations</a></li>
+<li><a href="#en-h2-5">5. Error Handling</a></li>
+<li><a href="#en-h2-5-h3-1" class="lvl-3">The Check Button</a></li>
+<li><a href="#en-h2-5-h3-2" class="lvl-3">Two Error Modes</a></li>
+<li><a href="#en-h2-5-h3-3" class="lvl-3">Common Errors</a></li>
+<li><a href="#en-h2-6">6. Practical Examples</a></li>
+<li><a href="#en-h2-6-h3-1" class="lvl-3">Example 1: Repeated Water Collection</a></li>
+<li><a href="#en-h2-6-h3-2" class="lvl-3">Example 2: Conditional Auto-Refuel</a></li>
+<li><a href="#en-h2-6-h3-3" class="lvl-3">Example 3: Smart Selector</a></li>
+<li><a href="#en-h2-6-h3-4" class="lvl-3">Example 4: Chopping Trees</a></li>
+<li><a href="#en-h2-6-h3-5" class="lvl-3">Example 5: One-Shot Build</a></li>
+<li><a href="#en-h2-6-h3-6" class="lvl-3">Example 6: Toast and Confirmation</a></li>
+<li><a href="#en-h2-6-h3-7" class="lvl-3">Example 7: Combined Logical Condition</a></li>
+<li><a href="#en-h2-7">7. Quick Reference</a></li>
+<li><a href="#en-h2-7-h3-1" class="lvl-3">Syntax at a Glance</a></li>
+<li><a href="#en-h2-7-h3-2" class="lvl-3">Selectors</a></li>
+<li><a href="#en-h2-7-h3-3" class="lvl-3">Conditions</a></li>
+<li><a href="#en-h2-7-h3-4" class="lvl-3">Template Expressions (for toast / alert / log)</a></li>
+<li><a href="#en-h2-7-h3-5" class="lvl-3">Comparison Operators</a></li>
+<li><a href="#en-h2-7-h3-6" class="lvl-3">Hotkeys</a></li>
+<li><a href="#en-h2-8">8. Tips and Tricks</a></li>
+</ul>
+</aside>
+  <article class="content" lang="zh"><h1 id="wikimod">WikiMod 脚本系统使用指南</h1>
+<h2 id="zh-h2-1">1. 快速入门</h2>
+<p>打开万能修改器，找到「脚本工具」页面。你会看到左边是脚本列表，右边是编辑区。</p>
+<p>试试写下你的第一个脚本：</p>
+<pre><code>河流.饮用
+</code></pre>
+<p>点击「运行」，脚本会自动帮你对「河流」执行「饮用」动作。就这么简单。</p>
+<h2 id="zh-h2-2">2. 基础概念</h2>
+<h3 id="zh-h2-2-h3-1">什么是脚本</h3>
+<p>脚本是一段文本，告诉游戏&quot;自动帮我做哪些操作&quot;。你可以用它来：</p>
+<ul>
+<li>重复执行某个动作（比如反复砍柴）</li>
+<li>按顺序执行多个操作（比如先加水，再加料，再煮）</li>
+<li>根据条件决定做什么（比如&quot;有肉干就吃掉，没有就算了&quot;）</li>
+</ul>
+<h3 id="zh-h2-2-h3-2">脚本文件</h3>
+<p>脚本保存在 <code>BepInEx/config/WikiMod/Scripts/</code> 目录下，扩展名为 <code>.wks</code>。你也可以用任何文本编辑器直接编辑这些文件。</p>
+<p>脚本名称就是文件名（不含扩展名），显示在左侧列表中。</p>
+<h3 id="zh-h2-2-h3-3">界面操作</h3>
+<ul>
+<li><strong>新建</strong> — 创建一个空白脚本</li>
+<li><strong>保存</strong> — 保存当前编辑内容到文件</li>
+<li><strong>检查</strong> — 检查脚本是否有语法错误</li>
+<li><strong>运行</strong> — 执行脚本</li>
+<li><strong>停止</strong> — 中止正在运行的脚本</li>
+<li><strong>打开文件夹</strong> — 在资源管理器中打开脚本目录</li>
+</ul>
+<p>另外，点击界面上的&quot;快捷键: 无&quot;按钮可以为当前脚本绑定一个独立快捷键。</p>
+<h3 id="zh-h2-2-h3-4">快捷键</h3>
+<p>每个脚本都可以通过 <code>@hotkey</code> 指令或界面上的快捷键按钮绑定独立快捷键，按下即执行该脚本，再按一次停止。</p>
+<h2 id="zh-h2-3">3. 脚本语法</h2>
+<h3 id="zh-h2-3-h3-1">3.1 注释和元数据</h3>
+<pre><code># 这是注释，不会被执行
+# 可以用来写备注
+
+@error stop
+@hotkey F5
+@silent
+</code></pre>
+<p><strong>注释</strong>：以 <code>#</code> 开头的行会被忽略，随便写什么都行。</p>
+<p><strong>@error</strong>：决定遇到错误时怎么办：</p>
+<ul>
+<li><code>@error stop</code> — 出错就停（默认）</li>
+<li><code>@error continue</code> — 出错了跳过，继续执行后面的</li>
+</ul>
+<p><strong>@hotkey</strong>：为脚本绑定快捷键，值为 Unity 的 KeyCode 名称（如 <code>F5</code>、<code>Tab</code>、<code>Alpha1</code> 等）。绑定后按对应键即可执行该脚本。</p>
+<p><strong>@silent</strong>：加上这一行，脚本执行完毕后不会弹出结果对话框。适合频繁执行的短脚本。</p>
+<h3 id="zh-h2-3-h3-2">3.2 卡牌操作</h3>
+<p>这是脚本最核心的功能——自动执行卡牌动作。</p>
+<h4 id="section-9">单一卡牌动作（对卡牌执行动作）</h4>
+<pre><code>河流.饮用
+River.Drink
+</code></pre>
+<p>格式：<code>卡牌名.动作名</code></p>
+<p>意思是&quot;找到这张卡牌，然后执行这个动作&quot;。就像你在游戏里右键点击卡牌，然后选择某个动作一样。</p>
+<h4 id="section-10">卡牌交互（把一张卡拖到另一张上）</h4>
+<pre><code>石斧+橡树
+Axe_Stone+TreeOakLarge
+</code></pre>
+<p>格式：<code>给予卡牌+接收卡牌</code></p>
+<p>意思是&quot;把左边的卡牌放到右边的卡牌上&quot;。就像你在游戏里拖拽操作一样。</p>
+<h4 id="section-11">独立动作（不指定卡牌）</h4>
+<pre><code>休息
+北方
+do Rest
+</code></pre>
+<p>格式：直接写动作名，或 <code>do 动作名</code></p>
+<p>直接写动作名时，系统会依次在以下位置查找匹配的动作：</p>
+<ol>
+<li>时间选项（TimeOptions）中的动作（如&quot;休息&quot;、&quot;睡觉&quot;等）</li>
+<li>当前场景中卡牌的动作（如当前地点卡的&quot;北方&quot;、&quot;南方&quot;等移动动作）</li>
+</ol>
+<p>这是一种语法糖——如果动作名在当前环境中是唯一的，无需指定卡牌名即可执行。</p>
+<h4 id="section-12">等待</h4>
+<pre><code>wait 2
+</code></pre>
+<p>让脚本暂停指定秒数（支持小数）。有些操作需要等待动画播完，或者等资源刷新。</p>
+<pre><code>wait_frame 5
+</code></pre>
+<p>按帧等待，暂停指定帧数。适合精确控制等待时长。</p>
+<pre><code>wait_until exists(河流) timeout 10
+</code></pre>
+<p>等待条件成立后继续执行。可选 <code>timeout</code> 参数指定超时秒数（默认 60 秒），超时后自动继续。</p>
+<h3 id="zh-h2-3-h3-3">3.3 卡牌选择器</h3>
+<p>当你场景里有多张同名卡牌时，选择器帮你指定要操作哪一张。</p>
+<h4 id="section-14">默认选择（第一张）</h4>
+<pre><code>河流.饮用
+</code></pre>
+<p>不加任何选择器，就操作找到的第一张。</p>
+<h4 id="section-15">按编号选择</h4>
+<pre><code>河流[0].饮用      # 第1张
+河流[1].饮用      # 第2张
+河流[2].饮用      # 第3张
+</code></pre>
+<p>编号从 0 开始。<code>[0]</code> 就是第一张，<code>[1]</code> 是第二张，以此类推。</p>
+<h4 id="section-16">按属性选择</h4>
+<pre><code>肉干[max:变质].吃掉     # 选变质最高的那张先吃
+肉干[min:变质].吃掉     # 选变质最低的那张先吃
+</code></pre>
+<ul>
+<li><code>[max:属性名]</code> — 选指定属性值最大的那张</li>
+<li><code>[min:属性名]</code> — 选指定属性值最小的那张</li>
+</ul>
+<p>属性名可以是游戏中显示的中文名（如&quot;变质&quot;、&quot;燃料&quot;、&quot;耐久&quot;），也可以是内部英文名称。</p>
+<h4 id="section-17">条件过滤</h4>
+<pre><code>肉干[变质&gt;80].吃掉              # 只选变质大于80的肉干
+储物箱[inventory&gt;0].清空        # 只选有内部物品的储物箱
+肉干[变质&gt;50, max:变质].吃掉    # 变质&gt;50的肉干中，选变质最高的
+木头[耐久&gt;=10, 0]               # 耐久&gt;=10的木头中，取第一张
+</code></pre>
+<p>在方括号内写 <code>属性名 运算符 数值</code> 作为过滤条件，只有满足条件的卡牌才参与后续选择。</p>
+<ul>
+<li>支持运算符：<code>&gt;</code>、<code>&lt;</code>、<code>&gt;=</code>、<code>&lt;=</code>、<code>=</code></li>
+<li>可用逗号组合多个过滤条件和一个选择策略（<code>max:</code>/<code>min:</code>/索引）</li>
+<li>特殊属性名 <code>inventory</code>：代表卡牌内部物品总数量（排除空槽位）</li>
+</ul>
+<h4 id="section-18">指定位置</h4>
+<pre><code>肉干[in:保险罐].吃掉                    # 只选在保险罐里的肉干
+肉干[in:保险罐, max:变质].吃掉          # 保险罐中变质最高的肉干
+木柴[in:场景]                            # 只选场景（户外）的木柴
+石斧[in:手中]                            # 只选在手中的石斧
+铁甲[in:装备]                            # 只选装备中的铁甲
+木板[in:场上]                            # 只选在场上/室内的木板
+</code></pre>
+<p><code>[in:位置]</code> 限定卡牌必须在指定位置。可与条件过滤、选择策略组合使用。</p>
+<p>支持的特殊位置关键字：</p>
+<table>
+<thead>
+<tr>
+<th>关键字</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>手中</code> / <code>hand</code></td>
+<td>玩家手中的卡牌</td>
+</tr>
+<tr>
+<td><code>装备</code> / <code>equipped</code></td>
+<td>装备中的卡牌</td>
+</tr>
+<tr>
+<td><code>场景</code> / <code>location</code></td>
+<td>场景中的卡牌（户外环境）</td>
+</tr>
+<tr>
+<td><code>场上</code> / <code>base</code></td>
+<td>场上的卡牌（基地/室内）</td>
+</tr>
+</tbody>
+</table>
+<p>其他值按容器名匹配（如 <code>in:保险罐</code>、<code>in:背包</code>）。</p>
+<h4 id="section-19">包含内容</h4>
+<pre><code>保险罐[has:肉干]                     # 装有肉干的保险罐
+水壶[has:水]                         # 装有水的水壶（检查物品和液体）
+容器[has:肉干, inventory&gt;3]          # 装有肉干且内部物品&gt;3的容器
+</code></pre>
+<p><code>[has:名称]</code> 筛选包含指定物品或液体的卡牌。同时检查内部物品（<code>CardsInInventory</code>）和内部液体（<code>ContainedLiquid</code>）。可与其他过滤条件组合使用。</p>
+<h4 id="section-20">特殊名称用引号</h4>
+<p>如果卡牌名或动作名里含有 <code>+ [ ]</code> 空格等符号，用双引号包起来：</p>
+<pre><code>&quot;带空格的卡牌&quot;[0].动作
+</code></pre>
+<h3 id="zh-h2-3-h3-4">3.4 生成与检查</h3>
+<h4 id="blueprint">生成蓝图：blueprint</h4>
+<pre><code>blueprint 木屑
+blueprint 木屑 3
+</code></pre>
+<p>格式：<code>blueprint 蓝图卡名 [数量]</code></p>
+<p>在当前环境中生成一张<strong>蓝图卡</strong>实例。数量可省略，默认为 1。仅生成空白蓝图，不进行填充与建造。</p>
+<blockquote>
+<p>⚠ <code>blueprint</code> 仅支持蓝图卡。传入普通物品会报错&quot;<code>blueprint 仅支持蓝图卡，&lt;X&gt; 不是蓝图卡</code>&quot;——这是为了避免脚本被用来凭空生成普通物品作弊。</p>
+<p>旧版本的 <code>spawn</code> 命令已禁用，遇到会报错&quot;<code>spawn 命令已禁用</code>&quot;；普通物品请通过对应蓝图建造产出。</p>
+</blockquote>
+<h4 id="build">一键建造蓝图：build ⭐</h4>
+<pre><code>build 木屑
+build Bp_Cabin
+</code></pre>
+<p>要批量建造，把 <code>build</code> 放在 <code>repeat</code> 块里：</p>
+<pre><code>repeat 5 {
+    build 木板房
+}
+</code></pre>
+<p>格式：<code>build 蓝图卡名</code></p>
+<p><strong>最常用的蓝图建造写法</strong>：一行命令完成&quot;创建蓝图（若不存在）→ 打开面板 → 等待 2 帧 → 自动填充 → 点击制作&quot;整套流程。每次调用只建造一份。</p>
+<p>执行特性：</p>
+<ul>
+<li><strong>复用而不重复</strong>：当前环境里已有同款未完工蓝图就直接拿来填充，不会再凭空 spawn 一张同样的蓝图堆叠。</li>
+<li><strong>遇错即停</strong>：未解锁、缺材料、缺耐久、属性不足、状态阻塞等任何一步失败，整段终止并在日志里给出具体原因（如&quot;自动填充后仍无法制作: 缺卡牌: 石头; 属性不满足: 体力&quot;）。</li>
+<li><strong>仅查&quot;已解锁蓝图&quot;</strong>：<code>build</code> 的目标只在已解锁的蓝图列表里按名字匹配。所以 <code>build 营火</code> 即使环境里同时有普通&quot;营火&quot;卡，也会准确命中 <code>Bp_Campfire</code>，不会被同名普通物品截胡。蓝图未解锁时会报错&quot;<code>未找到已解锁的蓝图: &lt;名称&gt;</code>&quot;。</li>
+<li><strong>不接受标签</strong>：传卡牌标签（如 <code>build 食物</code>）会在校验阶段就被拒绝。</li>
+<li><strong>优先用内部 ID</strong>：写成 <code>build Bp_Cabin</code> 最稳妥，可避免本地化文本变更或两个蓝图同名等罕见情况。</li>
+</ul>
+<h4 id="inspect">打开面板：inspect</h4>
+<pre><code>inspect 河流
+inspect 木板[0]
+</code></pre>
+<p>格式：<code>inspect 卡牌选择器</code></p>
+<p>打开指定卡牌的检查面板。通常配合 <code>click</code> 使用。</p>
+<h4 id="click">点击按钮：click</h4>
+<pre><code>inspect 河流
+click 饮用
+</code></pre>
+<p>格式：<code>click 按钮名</code></p>
+<p>点击当前已打开面板上的按钮。需要先用 <code>inspect</code> 打开卡牌面板，然后才能 <code>click</code>。按钮名就是面板上显示的文字。</p>
+<p>支持的按钮类型：选项按钮、分组选项按钮、清空背包按钮、建造/拆除按钮、自动填充按钮等。</p>
+<h3 id="zh-h2-3-h3-5">3.5 消息命令</h3>
+<h4 id="toast">提示消息：toast</h4>
+<pre><code>toast 你好，世界
+toast &quot;采集完成，共获得5块木板&quot;
+</code></pre>
+<p>格式：<code>toast 消息内容</code></p>
+<p>在屏幕上显示一条浮动提示，会自动消失。不会阻断脚本执行。</p>
+<h4 id="alert">弹窗消息：alert</h4>
+<pre><code>alert 请确认后继续
+alert &quot;操作已完成&quot;
+</code></pre>
+<p>格式：<code>alert 消息内容</code></p>
+<p>弹出一个居中对话框，用户点击「关闭」或按 ESC 后脚本才继续执行。适合需要暂停等待用户确认的场景。</p>
+<h4 id="liquid_merge">集中液体：liquid_merge</h4>
+<pre><code>liquid_merge 水壶
+liquid_merge 水壶[in:手中]
+liquid_merge 容器[has:水]
+</code></pre>
+<p>格式：<code>liquid_merge 选择器</code></p>
+<p>将匹配到的液体容器中的同类液体集中到尽量少的容器中（优先填满）。不同种类的液体会自动分组，各自集中，不会混合。</p>
+<p>使用游戏原生的液体转移机制，因此会遵守容器的最低保留量等游戏规则。匹配到的含液体容器少于 2 个时不执行。</p>
+<h4 id="section-23">模板表达式</h4>
+<p><code>toast</code> 和 <code>alert</code> 的消息内容支持用 <code>{表达式}</code> 嵌入游戏数据，运行时自动替换为实际值：</p>
+<pre><code>toast 石斧耐久：{石斧.耐久}
+toast 肉干数量：{count(肉干)}
+alert &quot;当前饥饿值：{饥饿}&quot;
+</code></pre>
+<p>支持的表达式：</p>
+<ul>
+<li><code>{卡牌名.属性名}</code> — 卡牌属性值（如 <code>{石斧.耐久}</code>）</li>
+<li><code>{卡牌名[选择器].属性名}</code> — 带选择器的属性值（如 <code>{石斧[0].耐久}</code>）</li>
+<li><code>{count(卡牌名)}</code> — 卡牌数量（如 <code>{count(肉干)}</code>）</li>
+<li><code>{exists(卡牌名)}</code> — 卡牌是否存在，显示&quot;是&quot;或&quot;否&quot;</li>
+<li><code>{inventory_count(卡牌名)}</code> — 卡牌内部物品总数量（如 <code>{inventory_count(背包)}</code>）</li>
+<li><code>{状态名}</code> — 游戏状态值（如 <code>{饥饿}</code>、<code>{HP}</code>）</li>
+</ul>
+<p>表达式求值失败时，原始 <code>{表达式}</code> 文本会原样保留，不影响消息显示。</p>
+<h3 id="zh-h2-3-h3-6">3.6 控制流</h3>
+<h4 id="repeat">循环：repeat</h4>
+<pre><code>repeat 10 {
+    河流.饮用
+}
+</code></pre>
+<p>重复执行大括号里的内容 N 次。上面的例子会连续对河流执行 10 次饮用。</p>
+<p>可以嵌套：</p>
+<pre><code>repeat 3 {
+    石斧+橡树
+    repeat 2 {
+        河流.饮用
+    }
+}
+</code></pre>
+<h4 id="if-else-if-else">条件：if / else if / else</h4>
+<pre><code>if exists(河流) {
+    河流.饮用
+}
+</code></pre>
+<p>只有条件成立时，才执行大括号里的内容。</p>
+<p>可以用 <code>else if</code> 和 <code>else</code> 添加分支：</p>
+<pre><code>if exists(河流) {
+    河流.饮用
+} else if exists(水壶) {
+    水壶.饮用
+} else {
+    toast 没有水源
+}
+</code></pre>
+<p>注意：<code>{</code> 必须和 <code>if</code> / <code>else if</code> / <code>else</code> 写在同一行。<code>else</code> 可以紧跟在前一个 <code>}</code> 的下一行，也可以与 <code>}</code> 写在同一行（K&amp;R 风格 <code>} else {</code> / <code>} else if (...) {</code>）。</p>
+<h4 id="while">条件循环：while</h4>
+<pre><code>while 营火.燃料 &lt; 30 and exists(木柴) {
+    木柴+营火
+}
+</code></pre>
+<p>只要条件成立就重复执行。每轮循环后会自动让出一帧避免阻塞。为防止死循环，最大迭代次数为 10000 次。</p>
+<h4 id="break-continue-stop">循环控制：break / continue / stop</h4>
+<pre><code>repeat 10 {
+    if not exists(肉干) {
+        break
+    }
+    肉干.吃掉
+}
+</code></pre>
+<ul>
+<li><code>break</code> — 跳出当前循环</li>
+<li><code>continue</code> — 跳过本轮，进入下一轮循环</li>
+<li><code>stop</code>（或 <code>exit</code>）— 立即终止整个脚本</li>
+</ul>
+<p><code>break</code> 和 <code>continue</code> 只能在循环（<code>repeat</code> / <code>while</code> / <code>foreach</code>）内使用。</p>
+<h4 id="var">变量：var</h4>
+<pre><code>var target = 肉干[max:变质]
+$target.吃掉
+
+var count = 5
+var backup = $target
+</code></pre>
+<p>用 <code>var</code> 定义变量：</p>
+<ul>
+<li>数字值：<code>var x = 42</code></li>
+<li>卡牌引用：<code>var t = 肉干[max:变质]</code>（在定义时查找卡牌）</li>
+<li>属性值：<code>var v = 肉干[max:变质].变质</code>（获取卡牌属性的数值）</li>
+<li>复制变量：<code>var b = $t</code>（复制另一个变量的值）</li>
+</ul>
+<p>在卡牌操作和条件中使用 <code>$变量名</code> 引用卡牌变量：</p>
+<pre><code>var t = 肉干[max:变质]
+$t.吃掉
+if $t.变质 &gt; 80 {
+    toast 快坏了！
+}
+</code></pre>
+<p>在模板表达式中用 <code>{$变量名}</code> 引用：</p>
+<pre><code>var t = 肉干[max:变质]
+toast 变质度：{$t.变质}
+log 当前目标：{$t}
+</code></pre>
+<h4 id="foreach">遍历：foreach</h4>
+<pre><code>foreach item in 肉干 {
+    if $item.变质 &gt; 80 {
+        $item.吃掉
+    }
+}
+</code></pre>
+<p>遍历场景中所有匹配的同名卡牌。每轮循环中，变量名会绑定到当前卡牌。在条件和卡牌操作中使用 <code>$变量名</code> 引用。支持 <code>break</code> / <code>continue</code>。</p>
+<h4 id="call">调用子脚本：call</h4>
+<pre><code>call 子脚本名
+</code></pre>
+<p>调用另一个脚本（按脚本名查找）。子脚本有独立的变量空间，不与父脚本共享变量。子脚本的日志会合并到父脚本。如果子脚本执行出错，错误会传播给父脚本。</p>
+<h4 id="log">日志：log</h4>
+<pre><code>log 当前燃料：{营火.燃料}
+log 变量值：{$target.变质}
+</code></pre>
+<p>写入日志但不弹窗。支持模板表达式。日志可在执行结果中查看。</p>
+<h3 id="zh-h2-3-h3-7">3.7 条件表达式</h3>
+<h4 id="exists">exists — 卡牌是否存在</h4>
+<pre><code>if exists(河流) {
+    河流.饮用
+}
+</code></pre>
+<p>检查当前场景中是否有这张卡牌。</p>
+<h4 id="count">count — 卡牌数量</h4>
+<pre><code>if count(肉干) &gt;= 3 {
+    肉干.吃掉
+}
+</code></pre>
+<p>检查当前场景中某卡牌有几张，可以用 <code>&gt;</code>、<code>&lt;</code>、<code>&gt;=</code>、<code>&lt;=</code>、<code>==</code>、<code>!=</code> 进行比较。</p>
+<h4 id="section-26">属性比较</h4>
+<pre><code>if 营火.燃料 &gt; 10 {
+    # 燃料还够，不用加柴
+}
+
+if 肉干.变质 &gt; 80 {
+    # 快坏了，赶紧吃
+    肉干[min:变质].吃掉
+}
+</code></pre>
+<p>检查卡牌的某个属性值。格式：<code>卡牌名.属性名 运算符 数值</code></p>
+<h4 id="section-27">状态比较</h4>
+<pre><code>if HP &gt; 50 {
+    # 生命值足够
+}
+</code></pre>
+<p>检查游戏全局状态值。格式：<code>状态名 运算符 数值</code></p>
+<h4 id="section-28">变量比较</h4>
+<pre><code>var c = 树叶[min:湿度].湿度
+if $c &gt; 100 {
+    toast 湿度很高：{$c}
+}
+</code></pre>
+<p>检查变量值。格式：<code>$变量名 运算符 数值</code>。变量必须是数值类型（通过 <code>var x = 卡牌.属性</code> 获得）。</p>
+<p>也可以在条件中直接访问变量卡牌的属性：</p>
+<pre><code>var t = 肉干[max:变质]
+if $t.变质 &gt; 80 {
+    $t.吃掉
+}
+</code></pre>
+<h4 id="section-29">逻辑运算符</h4>
+<p>条件可以用逻辑运算符组合：</p>
+<pre><code>if exists(河流) and count(肉干) &gt;= 3 {
+    河流.饮用
+}
+
+if not exists(营火) or 营火.燃料 &lt; 5 {
+    # 没有营火或燃料不足
+}
+
+if (exists(河流) and exists(石斧)) or count(肉干) &gt; 10 {
+    石斧+橡树
+}
+</code></pre>
+<ul>
+<li><code>and</code> 或 <code>&amp;&amp;</code> — 逻辑与，两边都为真才为真</li>
+<li><code>or</code> 或 <code>||</code> — 逻辑或，任一为真即为真</li>
+<li><code>not</code> 或 <code>!</code> — 逻辑非，取反</li>
+<li>支持用 <code>()</code> 括号控制优先级</li>
+</ul>
+<h3 id="zh-h2-3-h3-8">3.8 完整指令形式</h3>
+<p>上面的语法糖（<code>卡牌.动作</code> 和 <code>卡牌+卡牌</code>）实际上是简写。完整形式如下：</p>
+<pre><code># 单一卡牌动作的完整写法
+do River.Drink
+do 肉干[min:变质].吃掉
+
+# 卡牌交互的完整写法
+interact 石斧 橡树
+interact Axe_Stone TreeOakLarge
+</code></pre>
+<p>两种写法效果完全一样，用哪种都行。</p>
+<h2 id="zh-h2-4">4. 名称规则</h2>
+<h3 id="zh-h2-4-h3-1">卡牌名怎么写</h3>
+<p>脚本会按以下顺序尝试匹配卡牌名：</p>
+<ol>
+<li>游戏中显示的名称（当前语言）</li>
+<li>英文原名</li>
+<li>内部资源ID（如 <code>Bp_WoodShavings</code>）</li>
+</ol>
+<p>建议：直接写游戏里显示的中文名就行，比如&quot;河流&quot;、&quot;石斧&quot;、&quot;橡树&quot;。</p>
+<h3 id="zh-h2-4-h3-2">支持卡牌标签（CardTag）</h3>
+<p>除了直接写卡牌名，你还可以写卡牌标签名。系统会优先按卡牌名匹配，如果找不到对应的卡牌，就会自动尝试按标签查找。</p>
+<pre><code>斧头+大树
+</code></pre>
+<p>上面的&quot;斧头&quot;和&quot;大树&quot;都是标签名（CardTag），系统会从当前环境中找到带对应标签的卡牌来执行交互。</p>
+<p>标签名支持以下写法：</p>
+<ol>
+<li>标签的显示名称（当前语言，如&quot;斧头&quot;、&quot;大树&quot;）</li>
+<li>标签的英文原名</li>
+<li>标签的内部资源ID（如 <code>tag_HumanFood</code>）</li>
+</ol>
+<p>标签可以用在所有需要卡牌名的地方，包括：</p>
+<ul>
+<li>卡牌动作：<code>标签名.动作</code></li>
+<li>卡牌交互：<code>斧头+大树</code></li>
+<li>条件判断：<code>exists(标签名)</code>、<code>count(标签名)</code></li>
+<li>选择器：<code>标签名[max:属性]</code>、<code>标签名[min:属性]</code></li>
+</ul>
+<h3 id="zh-h2-4-h3-3">动作名怎么写</h3>
+<p>同样写游戏里显示的名称即可。比如对着河流右键看到&quot;饮用&quot;，就写 <code>河流.饮用</code>。</p>
+<h3 id="zh-h2-4-h3-4">属性名怎么写</h3>
+<p>属性可以用游戏中显示的中文名（如&quot;耐久&quot;、&quot;燃料&quot;），也可以用内部英文名称。具体哪个属性对应什么含义，取决于具体卡牌。</p>
+<h3 id="zh-h2-4-h3-5">环境限制</h3>
+<p>脚本只能操作当前所在环境的卡牌。如果你在室外，就操作不了房子里面的东西；如果你在帐篷里，就操作不了外面的卡牌。</p>
+<h2 id="zh-h2-5">5. 错误处理</h2>
+<h3 id="zh-h2-5-h3-1">检查功能</h3>
+<p>点击「检查」按钮可以在运行前发现问题：</p>
+<ul>
+<li><strong>语法错误</strong>：拼写错误、缺少括号等</li>
+<li><strong>语义错误</strong>：卡牌名不存在、动作名写错了</li>
+</ul>
+<p>错误会显示在编辑器下方，标明行号和原因。</p>
+<h3 id="zh-h2-5-h3-2">两种错误模式</h3>
+<pre><code>@error stop       # 遇到任何错误就停止整个脚本（默认）
+@error continue   # 遇到错误跳过那一步，继续执行后面的
+</code></pre>
+<p>什么时候用 <code>continue</code>？</p>
+<p>当你要批量处理，有些卡牌可能已经不在了：</p>
+<pre><code>@error continue
+
+repeat 20 {
+    肉干.吃掉
+}
+</code></pre>
+<p>这样即使场上只有 3 块肉干，吃完就会跳过错误继续（而不是报错停止）。</p>
+<h3 id="zh-h2-5-h3-3">常见错误</h3>
+<ul>
+<li><strong>找不到卡牌: xxx</strong> — 卡牌名写错了，检查游戏中的实际名称</li>
+<li><strong>找不到动作: xxx</strong> — 动作名写错了，右键卡牌看看实际的动作名</li>
+<li><strong>期望 '{'</strong> — 循环或条件缺少大括号，写成 <code>repeat 5 {</code> 或 <code>if ... {</code></li>
+<li><strong>缺少 '}'</strong> — 大括号没关上，在块的末尾加 <code>}</code></li>
+</ul>
+<h2 id="zh-h2-6">6. 实战示例</h2>
+<h3 id="zh-h2-6-h3-1">示例1：重复取水</h3>
+<pre><code>@error continue
+
+repeat 10 {
+    河流.饮用
+}
+</code></pre>
+<p>连续从河流取水 10 次。<code>@error continue</code> 保证即使河流不在也不会中途报错停止。</p>
+<h3 id="zh-h2-6-h3-2">示例2：条件判断自动加柴</h3>
+<pre><code>@error continue
+
+repeat 20 {
+    if exists(营火) {
+        if exists(木柴) {
+            木柴+营火
+        }
+    }
+}
+</code></pre>
+<p>检查营火和木柴是否都存在，如果都有就自动加柴。重复 20 次。</p>
+<h3 id="zh-h2-6-h3-3">示例3：智能选择器</h3>
+<pre><code>@error stop
+
+if exists(肉干) {
+    肉干[max:变质].吃掉
+}
+</code></pre>
+<p>选择变质最高（即最快要坏的）的肉干先吃，避免浪费。</p>
+<h3 id="zh-h2-6-h3-4">示例4：砍树取材</h3>
+<pre><code>@error continue
+
+repeat 5 {
+    石斧+橡树
+}
+</code></pre>
+<p>用石斧对橡树进行 5 次交互，批量砍伐取材。</p>
+<h3 id="zh-h2-6-h3-5">示例5：一键建造蓝图</h3>
+<pre><code>@silent
+
+build 木屑
+</code></pre>
+<p><code>build</code> 一行搞定整套流程：（如环境无未完工蓝图就）创建蓝图 → 打开面板 → 自动填充 → 点击制作。<code>@silent</code> 让执行完后不弹提示。仅支持已解锁的蓝图卡，材料不足时会在日志里报具体原因。</p>
+<p>批量制作时配合 <code>repeat</code>：</p>
+<pre><code>repeat 5 {
+    build 木屑
+}
+</code></pre>
+<h3 id="zh-h2-6-h3-6">示例6：消息提示与确认</h3>
+<pre><code>@error continue
+
+repeat 5 {
+    石斧+橡树
+}
+toast 砍伐完成，石斧耐久：{石斧.耐久}
+alert &quot;是否继续？&quot;
+</code></pre>
+<p>砍完树后用 <code>toast</code> 提示石斧耐久，再用 <code>alert</code> 弹窗等待确认。</p>
+<h3 id="zh-h2-6-h3-7">示例7：逻辑组合条件</h3>
+<pre><code>@error continue
+@hotkey F5
+
+repeat 10 {
+    if exists(木柴) and 营火.燃料 &lt; 30 {
+        木柴+营火
+    }
+}
+</code></pre>
+<p>只在有木柴且营火燃料不足 30 时才加柴。绑定到 F5 快捷键方便随时执行。</p>
+<h2 id="zh-h2-7">7. 参考速查表</h2>
+<h3 id="zh-h2-7-h3-1">语法一览</h3>
+<ul>
+<li><code>卡牌.动作</code> — 单一卡牌动作（如 <code>河流.饮用</code>）</li>
+<li><code>卡牌A+卡牌B</code> — 卡牌交互（如 <code>石斧+橡树</code>）</li>
+<li><code>动作名</code> — 独立动作，无需卡牌（如 <code>休息</code>、<code>北方</code>）</li>
+<li><code>wait N</code> — 等待 N 秒（如 <code>wait 2</code>、<code>wait 0.5</code>）</li>
+<li><code>wait_frame N</code> — 等待 N 帧（如 <code>wait_frame 5</code>）</li>
+<li><code>wait_until 条件 [timeout N]</code> — 等待条件成立（如 <code>wait_until exists(河流) timeout 10</code>）</li>
+<li><code>repeat N { }</code> — 循环 N 次</li>
+<li><code>while 条件 { }</code> — 条件循环</li>
+<li><code>foreach 变量 in 卡牌名 { }</code> — 遍历卡牌</li>
+<li><code>if 条件 { }</code> — 条件执行</li>
+<li><code>if ... { } else if ... { } else { }</code> — 多分支条件</li>
+<li><code>var 名 = 值</code> — 定义变量</li>
+<li><code>break</code> — 跳出循环</li>
+<li><code>continue</code> — 跳过本轮</li>
+<li><code>stop</code> / <code>exit</code> — 终止脚本</li>
+<li><code>call 脚本名</code> — 调用子脚本</li>
+<li><code>log 消息</code> — 写入日志</li>
+<li><code>blueprint 蓝图卡名 [数量]</code> — 生成蓝图卡（仅支持蓝图卡，如 <code>blueprint 木屑</code>）</li>
+<li><code>build 蓝图卡名</code> — <strong>一键建造蓝图</strong>（spawn→inspect→自动填充→制作 一条龙；如 <code>build Bp_Cabin</code>）</li>
+<li><code>inspect 选择器</code> — 打开检查面板（如 <code>inspect 河流</code>）</li>
+<li><code>click 按钮名</code> — 点击面板按钮（如 <code>click 饮用</code>）</li>
+<li><code>toast 消息</code> — 显示浮动提示（如 <code>toast 采集完成</code>）</li>
+<li><code>alert 消息</code> — 弹窗等待确认（如 <code>alert 请确认</code>）</li>
+<li><code>liquid_merge 选择器</code> — 集中液体（如 <code>liquid_merge 水壶[in:手中]</code>）</li>
+<li><code>@error stop/continue</code> — 错误策略</li>
+<li><code>@hotkey 键名</code> — 绑定快捷键（如 <code>@hotkey F5</code>）</li>
+<li><code>@silent</code> — 静默执行</li>
+<li><code># 文字</code> — 注释</li>
+</ul>
+<h3 id="zh-h2-7-h3-2">选择器</h3>
+<ul>
+<li><code>卡牌名</code> — 第一张匹配的</li>
+<li><code>卡牌名[0]</code> — 第 1 张</li>
+<li><code>卡牌名[1]</code> — 第 2 张</li>
+<li><code>卡牌名[max:属性]</code> — 属性最高的那张</li>
+<li><code>卡牌名[min:属性]</code> — 属性最低的那张</li>
+<li><code>卡牌名[属性&gt;值]</code> — 满足条件的第一张（支持 <code>&gt;</code> <code>&lt;</code> <code>&gt;=</code> <code>&lt;=</code> <code>=</code>）</li>
+<li><code>卡牌名[inventory&gt;N]</code> — 内部物品数量大于 N 的第一张</li>
+<li><code>卡牌名[in:位置]</code> — 只选在指定位置的卡牌（手中/装备/场景/场上/容器名）</li>
+<li><code>卡牌名[has:物品名]</code> — 只选包含指定物品或液体的卡牌</li>
+<li><code>卡牌名[条件, max:属性]</code> — 先过滤再排序（逗号组合）</li>
+<li><code>&quot;特殊名称&quot;</code> — 含特殊字符的名称</li>
+</ul>
+<h3 id="zh-h2-7-h3-3">条件</h3>
+<ul>
+<li><code>exists(卡牌名)</code> — 场景中是否有这张卡（也支持标签名）</li>
+<li><code>count(卡牌名) &gt; N</code> — 这张卡的数量是否大于 N（也支持标签名）</li>
+<li><code>卡牌.属性 &gt; N</code> — 卡牌的属性是否大于 N</li>
+<li><code>$变量名.属性 &gt; N</code> — 变量卡牌的属性是否大于 N</li>
+<li><code>状态名 &gt; N</code> — 游戏状态是否大于 N</li>
+<li><code>$变量名 &gt; N</code> — 数值变量是否大于 N</li>
+<li><code>条件1 and 条件2</code> — 逻辑与</li>
+<li><code>条件1 or 条件2</code> — 逻辑或</li>
+<li><code>not 条件</code> — 逻辑非</li>
+<li><code>(条件)</code> — 括号分组</li>
+</ul>
+<h3 id="zh-h2-7-h3-4">模板表达式（用于 toast / alert / log）</h3>
+<ul>
+<li><code>{卡牌.属性}</code> — 属性值（如 <code>{石斧.耐久}</code>）</li>
+<li><code>{卡牌[选择器].属性}</code> — 带选择器（如 <code>{石斧[0].耐久}</code>）</li>
+<li><code>{count(卡牌名)}</code> — 数量（如 <code>{count(木板)}</code>）</li>
+<li><code>{exists(卡牌名)}</code> — 是否存在（显示&quot;是&quot;/&quot;否&quot;）</li>
+<li><code>{inventory_count(卡牌名)}</code> — 内部物品总数量（如 <code>{inventory_count(背包)}</code>）</li>
+<li><code>{状态名}</code> — 状态值（如 <code>{饥饿}</code>）</li>
+<li><code>{$变量名}</code> — 变量值（如 <code>{$target}</code>）</li>
+<li><code>{$变量名.属性}</code> — 变量卡牌的属性（如 <code>{$target.变质}</code>）</li>
+</ul>
+<h3 id="zh-h2-7-h3-5">比较运算符</h3>
+<p><code>&gt;</code>、<code>&lt;</code>、<code>&gt;=</code>、<code>&lt;=</code>、<code>==</code>（等于）、<code>!=</code>（不等于）</p>
+<h3 id="zh-h2-7-h3-6">快捷键</h3>
+<ul>
+<li><code>@hotkey</code> 绑定 — 执行/停止对应脚本（每个脚本独立）</li>
+</ul>
+<h2 id="zh-h2-8">8. 提示与技巧</h2>
+<ul>
+<li><strong>善用 <code>@error continue</code></strong>：批量操作时加上这一行，避免因为一张卡不存在而导致整个脚本中断。</li>
+<li><strong>先检查再运行</strong>：写完脚本先点「检查」，能提前发现拼写错误。</li>
+<li><strong>wait 的作用</strong>：如果发现操作没生效，试试在动作之间加 <code>wait 1</code> 到 <code>wait 3</code>（秒），给游戏一些处理时间。需要精确帧控制时用 <code>wait_frame</code>。</li>
+<li><strong>选择器省着用</strong>：如果场上只有一张目标卡牌，不需要写选择器，直接写卡牌名就行。</li>
+<li><strong><code>@silent</code> 避免打扰</strong>：频繁执行的脚本加上 <code>@silent</code>，执行完不弹对话框。</li>
+<li><strong><code>@hotkey</code> 一键触发</strong>：常用脚本绑定一个快捷键，随时按一下就能执行。</li>
+</ul>
+</article>
+  <article class="content" lang="en"><h1 id="wikimod-script-system-guide">WikiMod Script System Guide</h1>
+<h2 id="en-h2-1">1. Quick Start</h2>
+<p>Open the Anything Tool and find the &quot;Script Tool&quot; page. You'll see the script list on the left and the editor on the right.</p>
+<p>Try writing your first script:</p>
+<pre><code>River.Drink
+</code></pre>
+<p>Click &quot;Run&quot; — the script will automatically perform the &quot;Drink&quot; action on &quot;River&quot;. That's it.</p>
+<h2 id="en-h2-2">2. Basics</h2>
+<h3 id="en-h2-2-h3-1">What is a Script</h3>
+<p>A script is a piece of text that tells the game &quot;automatically do these things for me&quot;. You can use it to:</p>
+<ul>
+<li>Repeat an action (e.g. chopping wood over and over)</li>
+<li>Run multiple steps in order (e.g. add water → add material → cook)</li>
+<li>Decide what to do based on conditions (e.g. &quot;if there's jerky, eat it; otherwise skip&quot;)</li>
+</ul>
+<h3 id="en-h2-2-h3-2">Script Files</h3>
+<p>Scripts are saved in <code>BepInEx/config/WikiMod/Scripts/</code> with the <code>.wks</code> extension. You can also edit them directly with any text editor.</p>
+<p>The script name is the file name (without extension), shown in the list on the left.</p>
+<h3 id="en-h2-2-h3-3">UI Buttons</h3>
+<ul>
+<li><strong>New</strong> — Create a blank script</li>
+<li><strong>Save</strong> — Save the current edits to file</li>
+<li><strong>Check</strong> — Check the script for syntax errors</li>
+<li><strong>Run</strong> — Execute the script</li>
+<li><strong>Stop</strong> — Abort the running script</li>
+<li><strong>Open Folder</strong> — Open the scripts directory in the file explorer</li>
+</ul>
+<p>You can also click the &quot;Hotkey: None&quot; button to bind a per-script hotkey.</p>
+<h3 id="en-h2-2-h3-4">Hotkeys</h3>
+<p>Each script can be bound to a hotkey via the <code>@hotkey</code> directive or the UI button. Press the key to run the script; press it again to stop.</p>
+<h2 id="en-h2-3">3. Script Syntax</h2>
+<h3 id="en-h2-3-h3-1">3.1 Comments and Directives</h3>
+<pre><code># This is a comment, not executed.
+# Use it for notes.
+
+@error stop
+@hotkey F5
+@silent
+</code></pre>
+<p><strong>Comments</strong>: Lines starting with <code>#</code> are ignored — write whatever you like.</p>
+<p><strong>@error</strong>: Decides what to do when an error occurs:</p>
+<ul>
+<li><code>@error stop</code> — Stop on error (default)</li>
+<li><code>@error continue</code> — Skip the failing step and keep going</li>
+</ul>
+<p><strong>@hotkey</strong>: Binds a hotkey to the script. The value is a Unity KeyCode name (e.g. <code>F5</code>, <code>Tab</code>, <code>Alpha1</code>). Once bound, pressing the key runs the script.</p>
+<p><strong>@silent</strong>: Add this and no result dialog will pop up after execution. Suitable for short, frequently-run scripts.</p>
+<h3 id="en-h2-3-h3-2">3.2 Card Operations</h3>
+<p>This is the heart of scripting — automating card actions.</p>
+<h4 id="single-card-action-run-an-action-on-a-card">Single Card Action (run an action on a card)</h4>
+<pre><code>River.Drink
+Campfire.Cook
+</code></pre>
+<p>Format: <code>CardName.ActionName</code></p>
+<p>Means &quot;find this card, then perform this action&quot; — exactly like right-clicking a card in-game and choosing one of its options.</p>
+<h4 id="card-interaction-drag-one-card-onto-another">Card Interaction (drag one card onto another)</h4>
+<pre><code>Axe_Stone+TreeOakLarge
+Firewood+Campfire
+</code></pre>
+<p>Format: <code>GivenCard+ReceivingCard</code></p>
+<p>Means &quot;drop the left card onto the right card&quot; — the same as drag-and-drop in-game.</p>
+<h4 id="standalone-action-without-a-card">Standalone Action (without a card)</h4>
+<pre><code>Rest
+North
+do Rest
+</code></pre>
+<p>Format: just the action name, or <code>do ActionName</code></p>
+<p>When you write a bare action name, the system searches in this order:</p>
+<ol>
+<li>Time options (e.g. &quot;Rest&quot;, &quot;Sleep&quot;)</li>
+<li>Actions on cards in the current scene (e.g. directional movement on the location card like &quot;North&quot;, &quot;South&quot;)</li>
+</ol>
+<p>This is syntactic sugar — when the action name is unique in the current environment, you don't need to specify a card.</p>
+<h4 id="wait">Wait</h4>
+<pre><code>wait 2
+</code></pre>
+<p>Pauses the script for the given number of seconds (decimals supported). Useful when an operation needs an animation to finish or resources to refresh.</p>
+<pre><code>wait_frame 5
+</code></pre>
+<p>Wait by frames — pause for the given number of frames. Use when you need precise frame control.</p>
+<pre><code>wait_until exists(River) timeout 10
+</code></pre>
+<p>Waits for a condition to become true before continuing. The optional <code>timeout</code> specifies the timeout in seconds (default 60s); after timeout, execution continues anyway.</p>
+<h3 id="en-h2-3-h3-3">3.3 Card Selectors</h3>
+<p>When the scene has multiple cards with the same name, selectors let you pick which one to operate on.</p>
+<h4 id="default-first-match">Default (first match)</h4>
+<pre><code>River.Drink
+</code></pre>
+<p>Without any selector, the first matching card is used.</p>
+<h4 id="by-index">By Index</h4>
+<pre><code>River[0].Drink     # 1st card
+River[1].Drink     # 2nd card
+River[2].Drink     # 3rd card
+</code></pre>
+<p>Indexes start at 0. <code>[0]</code> is the first match, <code>[1]</code> is the second, and so on.</p>
+<h4 id="by-property">By Property</h4>
+<pre><code>Jerky[max:Spoilage].Eat     # Eat the most spoiled one first
+Jerky[min:Spoilage].Eat     # Eat the least spoiled one first
+</code></pre>
+<ul>
+<li><code>[max:property]</code> — pick the card with the highest value of that property</li>
+<li><code>[min:property]</code> — pick the card with the lowest value of that property</li>
+</ul>
+<p>The property name can be the in-game display name (e.g. &quot;Spoilage&quot;, &quot;Fuel&quot;, &quot;Durability&quot;) or the internal English name.</p>
+<h4 id="condition-filters">Condition Filters</h4>
+<pre><code>Jerky[Spoilage&gt;80].Eat                  # Only pick jerky with spoilage &gt; 80
+Chest[inventory&gt;0].Empty                # Only pick chests with items inside
+Jerky[Spoilage&gt;50, max:Spoilage].Eat   # Filter then pick the most spoiled
+Wood[Durability&gt;=10, 0]                 # Filter then take the first
+</code></pre>
+<p>Write <code>property operator value</code> inside brackets to filter candidates. Only cards meeting the condition are considered.</p>
+<ul>
+<li>Supported operators: <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>=</code></li>
+<li>Multiple filters and one selection strategy (<code>max:</code>/<code>min:</code>/index) can be combined with commas</li>
+<li>Special property <code>inventory</code>: the total item count inside the card (excludes empty slots)</li>
+</ul>
+<h4 id="location-filter">Location Filter</h4>
+<pre><code>Jerky[in:SafetyJar].Eat                     # Only pick jerky inside the safety jar
+Jerky[in:SafetyJar, max:Spoilage].Eat       # Most spoiled jerky in the safety jar
+Firewood[in:location]                        # Only pick firewood on the outdoor board
+Axe[in:hand]                                 # Only pick axes in hand
+Armor[in:equipped]                           # Only pick equipped armor
+Plank[in:base]                               # Only pick planks inside base/indoor
+</code></pre>
+<p><code>[in:location]</code> restricts the search to cards at a specific location. Can be combined with condition filters and selection strategies.</p>
+<p>Special location keywords:</p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hand</code> / <code>手中</code></td>
+<td>Cards in the player's hand</td>
+</tr>
+<tr>
+<td><code>equipped</code> / <code>装备</code></td>
+<td>Cards currently equipped</td>
+</tr>
+<tr>
+<td><code>location</code> / <code>场景</code></td>
+<td>Cards in the current scene (outdoor)</td>
+</tr>
+<tr>
+<td><code>base</code> / <code>场上</code></td>
+<td>Cards on the base board (indoor)</td>
+</tr>
+</tbody>
+</table>
+<p>Other values match by container name (e.g. <code>in:SafetyJar</code>, <code>in:Backpack</code>).</p>
+<h4 id="content-filter">Content Filter</h4>
+<pre><code>SafetyJar[has:Jerky]                     # Safety jars containing jerky
+Kettle[has:Water]                        # Kettles containing water (checks items and liquids)
+Container[has:Jerky, inventory&gt;3]        # Containers with jerky and more than 3 items
+</code></pre>
+<p><code>[has:name]</code> filters cards that contain the specified item or liquid. It checks both internal items (<code>CardsInInventory</code>) and contained liquid (<code>ContainedLiquid</code>). Can be combined with other filters.</p>
+<h4 id="quoted-names-for-special-characters">Quoted Names for Special Characters</h4>
+<p>If a card or action name contains <code>+</code>, <code>[</code>, <code>]</code>, or whitespace, wrap it in double quotes:</p>
+<pre><code>&quot;Card With Spaces&quot;[0].Action
+</code></pre>
+<h3 id="en-h2-3-h3-4">3.4 Blueprint Spawn and Inspect</h3>
+<h4 id="spawn-blueprint-blueprint">Spawn Blueprint: blueprint</h4>
+<pre><code>blueprint WoodShavings
+blueprint WoodShavings 3
+</code></pre>
+<p>Format: <code>blueprint BlueprintCardName [count]</code></p>
+<p>Spawns one or more <strong>blueprint card</strong> instances in the current environment. Count is optional and defaults to 1. Spawn only — no fill, no build.</p>
+<blockquote>
+<p>⚠ <code>blueprint</code> only accepts blueprint cards. Passing a regular item raises <code>blueprint 仅支持蓝图卡，&lt;X&gt; 不是蓝图卡</code> — to prevent scripts from being used to conjure arbitrary items as a cheat.</p>
+<p>The legacy <code>spawn</code> command is disabled and raises <code>spawn 命令已禁用</code>. For regular items, build them through their blueprint instead.</p>
+</blockquote>
+<h4 id="one-shot-build-build">One-Shot Build: build ⭐</h4>
+<pre><code>build WoodShavings
+build Bp_Cabin
+</code></pre>
+<p>For batch building, wrap <code>build</code> in a <code>repeat</code> block:</p>
+<pre><code>repeat 5 {
+    build WoodenPlankHouse
+}
+</code></pre>
+<p>Format: <code>build BlueprintCardName</code></p>
+<p><strong>The recommended way to build anything from a blueprint</strong> — a single line that runs the whole pipeline: spawn the blueprint (if no unfinished one exists in this env) → open the construction panel → wait 2 frames → AutoFill → click Build. One build per call.</p>
+<p>Behavior:</p>
+<ul>
+<li><strong>Reuses, doesn't duplicate</strong>: if an unfinished blueprint of the same kind already exists in the current environment, <code>build</code> fills and finishes that one instead of spawning a duplicate.</li>
+<li><strong>Fails fast</strong>: any step's failure (not unlocked / missing material / missing durability / stat too low / blocking status / etc.) stops the whole script and logs the specific reason (e.g. <code>自动填充后仍无法制作: 缺卡牌: 石头; 属性不满足: 体力</code>).</li>
+<li><strong>Searches only unlocked blueprints</strong>: <code>build</code> resolves the name strictly against your unlocked blueprint list, so <code>build Campfire</code> lands on <code>Bp_Campfire</code> even when a regular &quot;Campfire&quot; card is also in the environment. If the blueprint isn't unlocked, it errors with <code>未找到已解锁的蓝图: &lt;name&gt;</code>.</li>
+<li><strong>Tags rejected</strong>: passing a CardTag (e.g. <code>build Food</code>) is rejected at validation time.</li>
+<li><strong>Prefer the internal ID</strong>: <code>build Bp_Cabin</code> is the safest form — it sidesteps localization changes and rare cases where two blueprints share a display name.</li>
+</ul>
+<h4 id="open-panel-inspect">Open Panel: inspect</h4>
+<pre><code>inspect River
+inspect Plank[0]
+</code></pre>
+<p>Format: <code>inspect CardSelector</code></p>
+<p>Opens the inspection panel for the given card. Typically used together with <code>click</code>.</p>
+<h4 id="click-buttons-click">Click Buttons: click</h4>
+<pre><code>inspect River
+click Drink
+</code></pre>
+<p>Format: <code>click ButtonName</code></p>
+<p>Clicks a button on the currently open panel. You must <code>inspect</code> a card first before you can <code>click</code>. The button name is the text shown on the panel.</p>
+<p>Supported button types: option buttons, grouped option buttons, empty-inventory buttons, build/deconstruct buttons, auto-fill buttons, and more.</p>
+<h3 id="en-h2-3-h3-5">3.5 Message Commands</h3>
+<h4 id="floating-toast-toast">Floating Toast: toast</h4>
+<pre><code>toast Hello, world
+toast &quot;Harvest done — got 5 planks&quot;
+</code></pre>
+<p>Format: <code>toast Message</code></p>
+<p>Shows a floating message on screen that auto-dismisses. Does not block script execution.</p>
+<h4 id="modal-alert-alert">Modal Alert: alert</h4>
+<pre><code>alert Please confirm to continue
+alert &quot;Operation complete&quot;
+</code></pre>
+<p>Format: <code>alert Message</code></p>
+<p>Shows a centered dialog. The script only continues after the user clicks &quot;Close&quot; or presses ESC. Use it when you need to pause and wait for user confirmation.</p>
+<h4 id="consolidate-liquids-liquid_merge">Consolidate Liquids: liquid_merge</h4>
+<pre><code>liquid_merge Waterskin
+liquid_merge Waterskin[in:hand]
+liquid_merge Container[has:Water]
+</code></pre>
+<p>Format: <code>liquid_merge Selector</code></p>
+<p>Consolidates liquids across matching containers so that fewer containers hold all the liquid (fills up the fullest first). Different liquid types are grouped separately — never mixed.</p>
+<p>Uses the native liquid transfer mechanism, so game rules like minimum retention per container are respected. Does nothing if fewer than 2 containers with liquid match.</p>
+<h4 id="template-expressions">Template Expressions</h4>
+<p>Both <code>toast</code> and <code>alert</code> support <code>{expression}</code> placeholders that are replaced with live game data at runtime:</p>
+<pre><code>toast Stone axe durability: {Axe_Stone.Durability}
+toast Jerky count: {count(Jerky)}
+alert &quot;Current hunger: {Hunger}&quot;
+</code></pre>
+<p>Supported expressions:</p>
+<ul>
+<li><code>{Card.Property}</code> — card property value (e.g. <code>{Axe_Stone.Durability}</code>)</li>
+<li><code>{Card[selector].Property}</code> — property with selector (e.g. <code>{Axe_Stone[0].Durability}</code>)</li>
+<li><code>{count(CardName)}</code> — card count (e.g. <code>{count(Jerky)}</code>)</li>
+<li><code>{exists(CardName)}</code> — whether the card exists (renders as &quot;Yes&quot; / &quot;No&quot;)</li>
+<li><code>{inventory_count(CardName)}</code> — total item count inside the card's inventory (e.g. <code>{inventory_count(Backpack)}</code>)</li>
+<li><code>{StatName}</code> — game stat value (e.g. <code>{Hunger}</code>, <code>{HP}</code>)</li>
+</ul>
+<p>If an expression fails to evaluate, the original <code>{expression}</code> text is kept verbatim — it won't break the message.</p>
+<h3 id="en-h2-3-h3-6">3.6 Control Flow</h3>
+<h4 id="loop-repeat">Loop: repeat</h4>
+<pre><code>repeat 10 {
+    River.Drink
+}
+</code></pre>
+<p>Repeats the contents of the braces N times. The example above drinks from the river 10 times in a row.</p>
+<p>You can nest loops:</p>
+<pre><code>repeat 3 {
+    Axe_Stone+TreeOakLarge
+    repeat 2 {
+        River.Drink
+    }
+}
+</code></pre>
+<h4 id="conditional-if-else-if-else">Conditional: if / else if / else</h4>
+<pre><code>if exists(River) {
+    River.Drink
+}
+</code></pre>
+<p>Only runs the body when the condition is true.</p>
+<p>You can chain <code>else if</code> and <code>else</code>:</p>
+<pre><code>if exists(River) {
+    River.Drink
+} else if exists(Waterskin) {
+    Waterskin.Drink
+} else {
+    toast No water source
+}
+</code></pre>
+<p>Note: <code>{</code> must be on the same line as <code>if</code> / <code>else if</code> / <code>else</code>. <code>else</code> must go on the line right after the previous <code>}</code>.</p>
+<h4 id="conditional-loop-while">Conditional Loop: while</h4>
+<pre><code>while Campfire.Fuel &lt; 30 and exists(Firewood) {
+    Firewood+Campfire
+}
+</code></pre>
+<p>Repeats as long as the condition is true. Each iteration yields a frame to avoid blocking. To prevent infinite loops, the maximum is 10000 iterations.</p>
+<h4 id="loop-control-break-continue-stop">Loop Control: break / continue / stop</h4>
+<pre><code>repeat 10 {
+    if not exists(Jerky) {
+        break
+    }
+    Jerky.Eat
+}
+</code></pre>
+<ul>
+<li><code>break</code> — exit the current loop</li>
+<li><code>continue</code> — skip the rest of this iteration and start the next</li>
+<li><code>stop</code> (or <code>exit</code>) — terminate the entire script immediately</li>
+</ul>
+<p><code>break</code> and <code>continue</code> can only be used inside loops (<code>repeat</code> / <code>while</code> / <code>foreach</code>).</p>
+<h4 id="variables-var">Variables: var</h4>
+<pre><code>var target = Jerky[max:Spoilage]
+$target.Eat
+
+var count = 5
+var backup = $target
+</code></pre>
+<p>Define a variable with <code>var</code>:</p>
+<ul>
+<li>Number: <code>var x = 42</code></li>
+<li>Card reference: <code>var t = Jerky[max:Spoilage]</code> (the card is resolved at definition time)</li>
+<li>Property value: <code>var v = Jerky[max:Spoilage].Spoilage</code> (numeric value of a card property)</li>
+<li>Copy a variable: <code>var b = $t</code> (copies another variable's value)</li>
+</ul>
+<p>Reference card variables in card operations and conditions with <code>$varName</code>:</p>
+<pre><code>var t = Jerky[max:Spoilage]
+$t.Eat
+if $t.Spoilage &gt; 80 {
+    toast About to spoil!
+}
+</code></pre>
+<p>In template expressions, use <code>{$varName}</code>:</p>
+<pre><code>var t = Jerky[max:Spoilage]
+toast Spoilage: {$t.Spoilage}
+log Current target: {$t}
+</code></pre>
+<h4 id="iteration-foreach">Iteration: foreach</h4>
+<pre><code>foreach item in Jerky {
+    if $item.Spoilage &gt; 80 {
+        $item.Eat
+    }
+}
+</code></pre>
+<p>Iterates over all matching cards with the same name in the scene. Each iteration binds the variable to the current card. Reference it with <code>$varName</code> in conditions and card operations. <code>break</code> and <code>continue</code> are supported.</p>
+<h4 id="sub-scripts-call">Sub-scripts: call</h4>
+<pre><code>call SubScriptName
+</code></pre>
+<p>Calls another script by name. Sub-scripts have an independent variable scope (they don't share variables with the parent). Sub-script logs are merged into the parent. If a sub-script errors out, the error propagates to the parent.</p>
+<h4 id="logging-log">Logging: log</h4>
+<pre><code>log Current fuel: {Campfire.Fuel}
+log Variable value: {$target.Spoilage}
+</code></pre>
+<p>Writes to the log without showing a popup. Supports template expressions. Logs can be reviewed in the execution result.</p>
+<h3 id="en-h2-3-h3-7">3.7 Conditional Expressions</h3>
+<h4 id="exists-does-the-card-exist">exists — does the card exist</h4>
+<pre><code>if exists(River) {
+    River.Drink
+}
+</code></pre>
+<p>Checks whether the card exists in the current scene.</p>
+<h4 id="count-number-of-cards">count — number of cards</h4>
+<pre><code>if count(Jerky) &gt;= 3 {
+    Jerky.Eat
+}
+</code></pre>
+<p>Checks how many of a card exist in the current scene. Comparable with <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>==</code>, <code>!=</code>.</p>
+<h4 id="property-comparison">Property Comparison</h4>
+<pre><code>if Campfire.Fuel &gt; 10 {
+    # Plenty of fuel, no need to add wood
+}
+
+if Jerky.Spoilage &gt; 80 {
+    # Going bad, eat it now
+    Jerky[min:Spoilage].Eat
+}
+</code></pre>
+<p>Checks a card's property value. Format: <code>CardName.Property operator number</code></p>
+<h4 id="stat-comparison">Stat Comparison</h4>
+<pre><code>if HP &gt; 50 {
+    # Health is sufficient
+}
+</code></pre>
+<p>Checks a global game stat value. Format: <code>StatName operator number</code></p>
+<h4 id="variable-comparison">Variable Comparison</h4>
+<pre><code>var c = Leaves[min:Moisture].Moisture
+if $c &gt; 100 {
+    toast Moisture is high: {$c}
+}
+</code></pre>
+<p>Checks a variable value. Format: <code>$varName operator number</code>. The variable must be a numeric value (obtained via <code>var x = Card.Property</code>).</p>
+<p>You can also access a card variable's properties directly inside conditions:</p>
+<pre><code>var t = Jerky[max:Spoilage]
+if $t.Spoilage &gt; 80 {
+    $t.Eat
+}
+</code></pre>
+<h4 id="logical-operators">Logical Operators</h4>
+<p>Conditions can be combined with logical operators:</p>
+<pre><code>if exists(River) and count(Jerky) &gt;= 3 {
+    River.Drink
+}
+
+if not exists(Campfire) or Campfire.Fuel &lt; 5 {
+    # No campfire or not enough fuel
+}
+
+if (exists(River) and exists(Axe_Stone)) or count(Jerky) &gt; 10 {
+    Axe_Stone+TreeOakLarge
+}
+</code></pre>
+<ul>
+<li><code>and</code> or <code>&amp;&amp;</code> — logical AND, both sides must be true</li>
+<li><code>or</code> or <code>||</code> — logical OR, either side being true is enough</li>
+<li><code>not</code> or <code>!</code> — logical NOT, negates the value</li>
+<li>Use <code>()</code> for grouping / precedence</li>
+</ul>
+<h3 id="en-h2-3-h3-8">3.8 Full Command Forms</h3>
+<p>The shorthand forms (<code>Card.Action</code> and <code>Card+Card</code>) are actually syntactic sugar. Their full forms:</p>
+<pre><code># Full form for a single card action
+do River.Drink
+do Jerky[min:Spoilage].Eat
+
+# Full form for card interaction
+interact Axe_Stone TreeOakLarge
+interact Stone Axe Oak Tree
+</code></pre>
+<p>Both styles do exactly the same thing — pick whichever you prefer.</p>
+<h2 id="en-h2-4">4. Naming Rules</h2>
+<h3 id="en-h2-4-h3-1">Writing Card Names</h3>
+<p>The script tries to match card names in this order:</p>
+<ol>
+<li>The display name in the current language</li>
+<li>The English name</li>
+<li>The internal resource ID (e.g. <code>Bp_WoodShavings</code>)</li>
+</ol>
+<p>Recommendation: just use the in-game display name in your current language — e.g. &quot;River&quot;, &quot;Stone Axe&quot;, &quot;Oak Tree&quot;.</p>
+<h3 id="en-h2-4-h3-2">Card Tags Are Supported</h3>
+<p>Besides direct card names, you can also use card tag names. The system first matches by card name; if no card matches, it falls back to tag matching.</p>
+<pre><code>Axe+Tree
+</code></pre>
+<p>Here both &quot;Axe&quot; and &quot;Tree&quot; are tag names (<code>CardTag</code>). The system finds cards with the corresponding tags in the current environment and performs the interaction.</p>
+<p>Tag names support these forms:</p>
+<ol>
+<li>The tag's display name in the current language (e.g. &quot;Axe&quot;, &quot;Tree&quot;)</li>
+<li>The tag's English name</li>
+<li>The tag's internal resource ID (e.g. <code>tag_HumanFood</code>)</li>
+</ol>
+<p>Tags can be used anywhere a card name is expected:</p>
+<ul>
+<li>Card actions: <code>Tag.Action</code></li>
+<li>Card interactions: <code>Axe+Tree</code></li>
+<li>Conditions: <code>exists(Tag)</code>, <code>count(Tag)</code></li>
+<li>Selectors: <code>Tag[max:property]</code>, <code>Tag[min:property]</code></li>
+</ul>
+<h3 id="en-h2-4-h3-3">Writing Action Names</h3>
+<p>Same idea — use the display name shown in-game. For example, if you right-click &quot;River&quot; and see &quot;Drink&quot;, write <code>River.Drink</code>.</p>
+<h3 id="en-h2-4-h3-4">Writing Property Names</h3>
+<p>Properties can use the in-game display name (e.g. &quot;Durability&quot;, &quot;Fuel&quot;) or the internal English name. Which property means what depends on the card.</p>
+<h3 id="en-h2-4-h3-5">Environment Limitations</h3>
+<p>Scripts can only operate on cards in the current environment. If you're outdoors, you can't operate on cards inside a house; if you're in a tent, you can't operate on cards outside.</p>
+<h2 id="en-h2-5">5. Error Handling</h2>
+<h3 id="en-h2-5-h3-1">The Check Button</h3>
+<p>Click &quot;Check&quot; before running to catch problems early:</p>
+<ul>
+<li><strong>Syntax errors</strong>: typos, missing brackets, etc.</li>
+<li><strong>Semantic errors</strong>: card name doesn't exist, action name is wrong</li>
+</ul>
+<p>Errors appear below the editor with line numbers and reasons.</p>
+<h3 id="en-h2-5-h3-2">Two Error Modes</h3>
+<pre><code>@error stop       # Stop the entire script on any error (default)
+@error continue   # Skip the failing step and keep going
+</code></pre>
+<p>When should you use <code>continue</code>?</p>
+<p>When you're processing in bulk and some cards may already be gone:</p>
+<pre><code>@error continue
+
+repeat 20 {
+    Jerky.Eat
+}
+</code></pre>
+<p>Even if there are only 3 jerkies, the script keeps going after eating them all (instead of stopping with an error).</p>
+<h3 id="en-h2-5-h3-3">Common Errors</h3>
+<ul>
+<li><strong>Card not found: xxx</strong> — wrong card name; check the actual in-game name</li>
+<li><strong>Action not found: xxx</strong> — wrong action name; right-click the card to see the real names</li>
+<li><strong>Expected '{'</strong> — the loop or <code>if</code> is missing its brace; write <code>repeat 5 {</code> or <code>if ... {</code></li>
+<li><strong>Missing '}'</strong> — an unclosed brace; add <code>}</code> at the end of the block</li>
+</ul>
+<h2 id="en-h2-6">6. Practical Examples</h2>
+<h3 id="en-h2-6-h3-1">Example 1: Repeated Water Collection</h3>
+<pre><code>@error continue
+
+repeat 10 {
+    River.Drink
+}
+</code></pre>
+<p>Drinks from the river 10 times in a row. <code>@error continue</code> ensures the script doesn't stop midway even if the river is gone.</p>
+<h3 id="en-h2-6-h3-2">Example 2: Conditional Auto-Refuel</h3>
+<pre><code>@error continue
+
+repeat 20 {
+    if exists(Campfire) {
+        if exists(Firewood) {
+            Firewood+Campfire
+        }
+    }
+}
+</code></pre>
+<p>Checks that both the campfire and firewood exist; if both, automatically adds wood. Repeats 20 times.</p>
+<h3 id="en-h2-6-h3-3">Example 3: Smart Selector</h3>
+<pre><code>@error stop
+
+if exists(Jerky) {
+    Jerky[max:Spoilage].Eat
+}
+</code></pre>
+<p>Eats the most spoiled jerky first to avoid waste.</p>
+<h3 id="en-h2-6-h3-4">Example 4: Chopping Trees</h3>
+<pre><code>@error continue
+
+repeat 5 {
+    Axe_Stone+TreeOakLarge
+}
+</code></pre>
+<p>Uses the stone axe on the oak tree 5 times — bulk chopping.</p>
+<h3 id="en-h2-6-h3-5">Example 5: One-Shot Build</h3>
+<pre><code>@silent
+
+build WoodShavings
+</code></pre>
+<p><code>build</code> runs the whole pipeline in one line: (if no unfinished one is in the env) spawn the blueprint → open the panel → AutoFill → click Build. <code>@silent</code> suppresses the result popup. Unlocked blueprints only; if materials/conditions don't satisfy, the log shows the exact reason.</p>
+<p>For batch building, wrap <code>build</code> in a <code>repeat</code> block:</p>
+<pre><code>repeat 5 {
+    build WoodShavings
+}
+</code></pre>
+<h3 id="en-h2-6-h3-6">Example 6: Toast and Confirmation</h3>
+<pre><code>@error continue
+
+repeat 5 {
+    Axe_Stone+TreeOakLarge
+}
+toast Chopping done. Axe durability: {Axe_Stone.Durability}
+alert &quot;Continue?&quot;
+</code></pre>
+<p>After chopping trees, <code>toast</code> shows the axe's durability, then <code>alert</code> waits for confirmation.</p>
+<h3 id="en-h2-6-h3-7">Example 7: Combined Logical Condition</h3>
+<pre><code>@error continue
+@hotkey F5
+
+repeat 10 {
+    if exists(Firewood) and Campfire.Fuel &lt; 30 {
+        Firewood+Campfire
+    }
+}
+</code></pre>
+<p>Only adds firewood when wood is available AND the campfire's fuel is below 30. Bound to F5 for one-press execution.</p>
+<h2 id="en-h2-7">7. Quick Reference</h2>
+<h3 id="en-h2-7-h3-1">Syntax at a Glance</h3>
+<ul>
+<li><code>Card.Action</code> — single card action (e.g. <code>River.Drink</code>)</li>
+<li><code>CardA+CardB</code> — card interaction (e.g. <code>Axe_Stone+TreeOakLarge</code>)</li>
+<li><code>ActionName</code> — standalone action with no card (e.g. <code>Rest</code>, <code>North</code>)</li>
+<li><code>wait N</code> — wait N seconds (e.g. <code>wait 2</code>, <code>wait 0.5</code>)</li>
+<li><code>wait_frame N</code> — wait N frames (e.g. <code>wait_frame 5</code>)</li>
+<li><code>wait_until cond [timeout N]</code> — wait for a condition (e.g. <code>wait_until exists(River) timeout 10</code>)</li>
+<li><code>repeat N { }</code> — repeat N times</li>
+<li><code>while cond { }</code> — conditional loop</li>
+<li><code>foreach var in CardName { }</code> — iterate over cards</li>
+<li><code>if cond { }</code> — conditional execution</li>
+<li><code>if ... { } else if ... { } else { }</code> — multi-branch conditional</li>
+<li><code>var name = value</code> — define a variable</li>
+<li><code>break</code> — exit a loop</li>
+<li><code>continue</code> — skip this iteration</li>
+<li><code>stop</code> / <code>exit</code> — terminate the script</li>
+<li><code>call ScriptName</code> — call a sub-script</li>
+<li><code>log Message</code> — write to the log</li>
+<li><code>blueprint BlueprintName [count]</code> — spawn a blueprint card (blueprint cards only, e.g. <code>blueprint WoodShavings</code>)</li>
+<li><code>build BlueprintName</code> — <strong>one-shot blueprint build</strong> (spawn→inspect→AutoFill→Build, all in one; e.g. <code>build Bp_Cabin</code>)</li>
+<li><code>inspect Selector</code> — open inspection panel (e.g. <code>inspect River</code>)</li>
+<li><code>click ButtonName</code> — click a panel button (e.g. <code>click Drink</code>)</li>
+<li><code>toast Message</code> — show a floating toast (e.g. <code>toast Done</code>)</li>
+<li><code>alert Message</code> — show a modal alert (e.g. <code>alert Please confirm</code>)</li>
+<li><code>liquid_merge Selector</code> — consolidate liquids (e.g. <code>liquid_merge Waterskin[in:hand]</code>)</li>
+<li><code>@error stop/continue</code> — error policy</li>
+<li><code>@hotkey KeyName</code> — bind a hotkey (e.g. <code>@hotkey F5</code>)</li>
+<li><code>@silent</code> — silent execution</li>
+<li><code># text</code> — comment</li>
+</ul>
+<h3 id="en-h2-7-h3-2">Selectors</h3>
+<ul>
+<li><code>CardName</code> — first match</li>
+<li><code>CardName[0]</code> — 1st card</li>
+<li><code>CardName[1]</code> — 2nd card</li>
+<li><code>CardName[max:property]</code> — highest property value</li>
+<li><code>CardName[min:property]</code> — lowest property value</li>
+<li><code>CardName[property&gt;N]</code> — first card meeting the condition (supports <code>&gt;</code> <code>&lt;</code> <code>&gt;=</code> <code>&lt;=</code> <code>=</code>)</li>
+<li><code>CardName[inventory&gt;N]</code> — first card with more than N inventory items</li>
+<li><code>CardName[in:location]</code> — only cards at specified location (hand/equipped/location/base/container name)</li>
+<li><code>CardName[filter, max:property]</code> — filter then sort (comma-separated)</li>
+<li><code>&quot;Special Name&quot;</code> — name containing special characters</li>
+</ul>
+<h3 id="en-h2-7-h3-3">Conditions</h3>
+<ul>
+<li><code>exists(CardName)</code> — whether the card is in the scene (tag names also supported)</li>
+<li><code>count(CardName) &gt; N</code> — whether the count is greater than N (tag names also supported)</li>
+<li><code>Card.Property &gt; N</code> — whether a property is greater than N</li>
+<li><code>$var.Property &gt; N</code> — whether a variable card's property is greater than N</li>
+<li><code>StatName &gt; N</code> — whether a game stat is greater than N</li>
+<li><code>$var &gt; N</code> — whether a numeric variable is greater than N</li>
+<li><code>cond1 and cond2</code> — logical AND</li>
+<li><code>cond1 or cond2</code> — logical OR</li>
+<li><code>not cond</code> — logical NOT</li>
+<li><code>(cond)</code> — grouping with parentheses</li>
+</ul>
+<h3 id="en-h2-7-h3-4">Template Expressions (for toast / alert / log)</h3>
+<ul>
+<li><code>{Card.Property}</code> — property value (e.g. <code>{Axe_Stone.Durability}</code>)</li>
+<li><code>{Card[selector].Property}</code> — with selector (e.g. <code>{Axe_Stone[0].Durability}</code>)</li>
+<li><code>{count(CardName)}</code> — count (e.g. <code>{count(Plank)}</code>)</li>
+<li><code>{exists(CardName)}</code> — existence (renders &quot;Yes&quot; / &quot;No&quot;)</li>
+<li><code>{inventory_count(CardName)}</code> — inventory item count (e.g. <code>{inventory_count(Backpack)}</code>)</li>
+<li><code>{StatName}</code> — stat value (e.g. <code>{Hunger}</code>)</li>
+<li><code>{$varName}</code> — variable value (e.g. <code>{$target}</code>)</li>
+<li><code>{$varName.Property}</code> — variable card's property (e.g. <code>{$target.Spoilage}</code>)</li>
+</ul>
+<h3 id="en-h2-7-h3-5">Comparison Operators</h3>
+<p><code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>==</code> (equal), <code>!=</code> (not equal)</p>
+<h3 id="en-h2-7-h3-6">Hotkeys</h3>
+<ul>
+<li><code>@hotkey</code> binding — run / stop the bound script (per-script independent)</li>
+</ul>
+<h2 id="en-h2-8">8. Tips and Tricks</h2>
+<ul>
+<li><strong>Use <code>@error continue</code> for batches</strong>: add this line for bulk operations to avoid the entire script stopping just because one card is missing.</li>
+<li><strong>Check before running</strong>: click &quot;Check&quot; after writing — it catches typos before runtime.</li>
+<li><strong>What <code>wait</code> is for</strong>: if an operation doesn't seem to take effect, try inserting <code>wait 1</code> to <code>wait 3</code> (seconds) between actions to give the game time to process. Use <code>wait_frame</code> when you need precise frame control.</li>
+<li><strong>Skip selectors when possible</strong>: if there's only one matching card in the scene, you don't need a selector — just write the card name.</li>
+<li><strong><code>@silent</code> to stay quiet</strong>: add <code>@silent</code> to scripts you run frequently so no dialog pops up after each run.</li>
+<li><strong><code>@hotkey</code> for one-press execution</strong>: bind a hotkey to your favorite scripts so you can trigger them instantly.</li>
+</ul>
+</article>
+</div>
+
+<script>
+(function () {
+  var STORAGE_LANG = "wikimod_scriptguide_lang";
+
+  function safeGet(key) {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
+  }
+  function safeSet(key, val) {
+    try { localStorage.setItem(key, val); } catch (e) {}
+  }
+
+  // URL 参数（优先级最高）
+  var urlParams = new URLSearchParams(window.location.search);
+  var urlLang = urlParams.get("lang");
+
+  // 初始化语言
+  var savedLang = safeGet(STORAGE_LANG);
+  var initialLang;
+  if (urlLang === "zh" || urlLang === "en") {
+    initialLang = urlLang;
+  } else if (savedLang === "zh" || savedLang === "en") {
+    initialLang = savedLang;
+  } else {
+    var browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+    initialLang = browserLang.indexOf("zh") === 0 ? "zh" : "en";
+  }
+  document.body.setAttribute("data-lang", initialLang);
+  document.documentElement.lang = initialLang === "zh" ? "zh-CN" : "en";
+
+  // 语言切换
+  document.querySelectorAll(".lang-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var target = btn.getAttribute("data-target");
+      document.body.setAttribute("data-lang", target);
+      document.documentElement.lang = target === "zh" ? "zh-CN" : "en";
+      safeSet(STORAGE_LANG, target);
+    });
+  });
+
+  // 侧边栏锚点高亮
+  function setupSidebarHighlight() {
+    if (!("IntersectionObserver" in window)) return;
+    document.querySelectorAll("article.content").forEach(function (article) {
+      var lang = article.getAttribute("lang");
+      var sidebar = document.querySelector('aside.sidebar[lang="' + lang + '"]');
+      if (!sidebar) return;
+      var headings = article.querySelectorAll("h2, h3");
+      var sidebarLinks = sidebar.querySelectorAll("a");
+      if (headings.length === 0 || sidebarLinks.length === 0) return;
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.id;
+            sidebarLinks.forEach(function (a) {
+              a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+            });
+          }
+        });
+      }, { rootMargin: "-80px 0px -70% 0px" });
+
+      headings.forEach(function (h) { if (h.id) observer.observe(h); });
+    });
+  }
+  setupSidebarHighlight();
+
+  // 平滑滚动（精确定位到顶栏下方）
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest("aside.sidebar a");
+    if (!a) return;
+    var href = a.getAttribute("href");
+    if (!href || href.charAt(0) !== "#") return;
+    var el = document.getElementById(href.slice(1));
+    if (!el) return;
+    e.preventDefault();
+    var top = el.getBoundingClientRect().top + window.pageYOffset - 70;
+    window.scrollTo({ top: top, behavior: "smooth" });
+    history.replaceState(null, "", href);
+  });
+})();
+</script>
+
+</body>
+</html>
