@@ -2213,7 +2213,7 @@ ChickenNestBox_CookingRecipes[0].CannotCookText,Requires a Fertile Partridge Egg
 NestingBox_CardName,Nesting Box,巢盒
 PartridgeChickFree_CardName,Partridge Chick,灰山鹑仔
 PartridgeChickFree_CardDescription,Feeds on its own provided there's enough to forage. Might escape if the area is not secured and its trust is low.,只要有足够的食物，它就会自己觅食。如果该区域不安全且信任度低，它可能会逃跑。
-PartridgeChickFree_SpoilageTime.CardStatName,Hunger,饥饿
+PartridgeChickFree_SpoilageTime.CardStatName,Satiation,饱食度
 PartridgeChickFree_UsageDurability.CardStatName,Happiness,幸福感
 PartridgeChickFree_SpecialDurability1.CardStatName,Growth,成长度
 PartridgeChickFree_SpecialDurability1.OnFull.ActionDescription,A chick has matured.,鸡仔已成熟。
@@ -2238,7 +2238,7 @@ PartridgeFeederEmpty_CardInteractions[3].ActionName,Feed,添入
 PartridgeFeederEmpty_DismantleActions[0].ActionName,Dismantle,拆解
 PartridgeFeederEmpty_CookingConditions.CookingPausedNotification,Organic waste needed!,需要有机残渣！
 PartridgeFemaleFree_CardName,Partridge,灰山鹑
-PartridgeFemaleFree_SpoilageTime.CardStatName,Hunger,饥饿
+PartridgeFemaleFree_SpoilageTime.CardStatName,Satiation,饱食度
 PartridgeFemaleFree_UsageDurability.CardStatName,Happiness,幸福感
 PartridgeFemaleFree_SpecialDurability1.CardStatName,Egg Growth,产卵度
 PartridgeFemaleFree_SpecialDurability1.OnFull.ActionName,Egg Ready,已产卵
@@ -2252,7 +2252,7 @@ PartridgeFemaleTied_DismantleActions[0].ActionName,Free,放养
 PartridgeFemaleTied_DismantleActions[1].ActionName,Kill,屠宰
 PartridgeMaleFree_CardName,Male Partridge,公灰山鹑
 PartridgeMaleFree_CardDescription,Feeds on its own provided there's enough to forage. Might escape if the area is not secured and its trust is low.,只要有足够的食物，它就会自己觅食。如果该区域不安全且信任度低，它可能会逃跑。
-PartridgeMaleFree_SpoilageTime.CardStatName,Hunger,饥饿
+PartridgeMaleFree_SpoilageTime.CardStatName,Satiation,饱食度
 PartridgeMaleFree_UsageDurability.CardStatName,Happiness,幸福感
 PartridgeMaleFree_DismantleActions[0].ActionName,Kill,屠宰
 PartridgeMaleTied_CardName,Male Partridge,公灰山鹑
@@ -3093,7 +3093,7 @@ OakLog_CardName,Tree Log,树干
 OakLog_CardDescription,Can chop it into smaller pieces or use it for construction.,可以劈成小块或将其用于建筑。
 OakLog_CardInteractions[0].ActionName,Split into pieces,劈碎
 OakLogPiece_CardName,Log Piece,原木块
-OakLogPiece_CardDescription,Can use it as a stool or carve it into something.,可以用作凳子或雕刻成其他东西。
+OakLogPiece_CardDescription,Can be used as a stool or chopped into firewood.,可以用作凳子或劈成柴火。
 OakLogPiece_CardInteractions[1].ActionName,Cut into Firewood,砍成柴火
 OakLogPiece_DismantleActions[0].ActionName,Place,放置
 PineFireWood_CardName,Pine firewood,松木柴
@@ -3627,7 +3627,6 @@ KilnExtinguished_CardInteractions[1].ActionName,Feed Fuel,添入燃料
 KilnExtinguished_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 KilnExtinguished_CardInteractions[3].ActionName,Feed Charcoal,添入木炭
 KilnExtinguished_CardInteractions[5].ActionName,Light Fire,点燃
-KilnExtinguished_CardInteractions[6].ActionName,Feed Tinder,添入火绒
 KilnExtinguished_DismantleActions[0].ActionName,Demolish,拆除
 Oven_CardName,Oven,烤箱
 Oven_CardDescription,"Used for drying, baking, or firing pottery at controlled temperatures.",控制温度可以干燥、烘烤或烧制陶器。
@@ -4041,7 +4040,7 @@ Pk_5_Underweight_PerkDescription,"Reduces your body weight, lowering fat reserve
 Pk_6_HighAppetite_PerkName,High Appetite,胃口大开
 Pk_6_HighAppetite_PerkDescription,"Makes you hungry faster, making eating easier so it's harder to become malnourished.",让你更快地感到饥饿，更容易进食，因此更难营养不良。
 Pk_6_LowAppetite_PerkName,Low Appetite,食欲不振
-Pk_6_LowAppetite_PerkDescription,"Delays your hunger, making it harder to eat  and easier to get malnourished.",延缓你的饥饿感，使你更难进食，更容易营养不良。
+Pk_6_LowAppetite_PerkDescription,"Delays your hunger, making it harder to eat and easier to get malnourished.",延缓你的饥饿感，使你更难进食，更容易营养不良。
 Pk_7_FastMetabolism_PerkName,Fast Metabolism,快速代谢
 Pk_7_FastMetabolism_PerkDescription,Makes you burn through your fat reserves faster and have a higher body temperature.,让你更快地消耗脂肪储备，体温更高。
 Pk_7_SlowMetabolism_PerkName,Slow Metabolism,缓慢代谢
@@ -4740,10 +4739,10 @@ Structure_Description,How predictable and stable your worldview feels. Stresses 
 Structure_Statuses[0].GameName,No Mental Structure,世界观崩塌
 Structure_Statuses[1].GameName,Low Structure,弱
 ThoughtDepth_GameName,Thought Depth,思维深度
-Trust_GameName,Trust,信任
+Trust_GameName,Empathy,信任
 Trust_Statuses[0].GameName,Low,低
-Trust_Statuses[1].GameName,Medium,中
-Trust_Statuses[2].GameName,High,高
+Trust_Statuses[1].GameName,High,中
+Trust_Statuses[2].GameName,Very High,高
 Wakefulness_GameName,Wakefulness,清醒度
 Wakefulness_Description,Shows how awake you are. Lack of sleep lowers your wellbeing and can alter your mind state.,显示你有多清醒，睡眠不足会降低你的幸福度，并且会改变你的精神状态。
 Wakefulness_Statuses[0].GameName,Sleepy,困了
@@ -8560,7 +8559,7 @@ BoarCarcassPiglet_CardDescription,Need a knife to properly process it.,需要一
 BoarCarcassPiglet_SpecialDurability1.CardStatName,Weight,重量
 BoarEnclosureFemale_CardName,Sow,母猪
 BoarEnclosureFemale_CardDescription,Can slaughter it for its meat and leather or breed it with a male Boar.,可以屠宰它以获取肉和皮革，或者让其与公野猪繁殖。
-BoarEnclosureFemale_SpoilageTime.CardStatName,Hunger,饥饿
+BoarEnclosureFemale_SpoilageTime.CardStatName,Satiation,饱食度
 BoarEnclosureFemale_SpoilageTime.OnZero.ActionName,Oh no!,噢不！
 BoarEnclosureFemale_SpoilageTime.OnZero.ActionDescription,Sow died of starvation!,母猪死于饥饿！
 BoarFreeFemale_UsageDurability.CardStatName,Happiness,幸福感
@@ -8580,7 +8579,7 @@ BoarFreeFemale_CardInteractions[3].ActionName,Kill,屠宰
 BoarEnclosureFemale_DismantleActions[2].ActionName,Care,照料
 BoarEnclosureMale_CardName,Boar,野猪
 BoarEnclosureMale_CardDescription,Could slaughter it for its meat and leather or let it impregnate the sows to breed more boars.,可以屠宰它以获取肉和皮革，或者让其与母猪繁殖。
-BoarEnclosureMale_SpoilageTime.CardStatName,Hunger,饥饿
+BoarEnclosureMale_SpoilageTime.CardStatName,Satiation,饱食度
 BoarFreeMale_UsageDurability.CardStatName,Happiness,幸福感
 BoarFreeMale_FuelCapacity.CardStatName,Trust,信任
 BoarEnclosureMale_SpecialDurability1.CardStatName,Weight,重量
@@ -8595,7 +8594,7 @@ BoarFreeMale_CardInteractions[3].ActionName,Kill,屠宰
 BoarFreeMale_DismantleActions[0].ActionName,Care,照料
 BoarEnclosurePiglet_CardName,Piglet,猪崽
 BoarEnclosurePiglet_CardDescription,Could slaughter it for its meat and leather or wait for it to grow into an adult.,可以屠宰它以获取肉和皮革，或者让其长大。
-BoarEnclosurePiglet_SpoilageTime.CardStatName,Hunger,饥饿
+BoarEnclosurePiglet_SpoilageTime.CardStatName,Satiation,饱食度
 BoarFreePiglet_UsageDurability.CardStatName,Happiness,幸福感
 BoarFreePiglet_FuelCapacity.CardStatName,Trust,信任
 BoarFreePiglet_SpecialDurability1.CardStatName,Growth,成长度
@@ -8796,7 +8795,7 @@ HandBasket_SpoilageTime.CardStatName,Spoilage,耐久
 FurMittens_DismantleActions[0].ActionName,Dismantle,拆解
 LeatherBracers_DismantleActions[0].ActionName,Dismantle,拆解
 LeatherGloves_DismantleActions[0].ActionName,Dismantle,拆解
-Antler_CardDescription,"A deer antler, can work as a makeshift shovel or pickaxe.",鹿角，可以充当临时铲子或镐使用。
+Antler_CardDescription,"A deer antler, can work as a makeshift shovel. ",鹿角，可以充当临时铲子使用。
 HandDrill_UnlockConditionsDesc,Knife Needed,需要刀具
 Bugs_FuelCapacity.CardStatName,Temperature,温度
 Bugs_SpecialDurability1.CardStatName,Cook,烹饪
@@ -11182,8 +11181,6 @@ LQ_WildGarlicPowder_DismantleActions[0].ActionName,Take Out,取出
 LQ_WildGarlicPowder_DismantleActions[1].ActionName,Take Out 10,拿出10份
 LQ_WillowbarkPowder_CardName,Willow Bark Powder,柳树皮粉
 LQ_WillowbarkPowder_CardDescription,"Lowers fever, pain and stress when made into a tea.",制成茶饮用，可以缓解发热和疼痛并降低压力。
-LQ_WillowbarkPowder_SpoilageTime.CardStatName,Spoilage,变质
-LQ_WillowbarkPowder_SpoilageTime.OnFull.ActionDescription,Bark Spoiled!,树皮变质了！
 LQ_WillowbarkPowder_SpecialDurability2.CardStatName,Quality,品质
 LQ_WillowbarkPowder_CardInteractions[0].ActionName,Soak,浸泡
 LQ_WillowbarkPowder_DismantleActions[0].ActionName,Take Out,取出
@@ -11204,38 +11201,32 @@ TravoisPenalty_Statuses[0].EffectsOnActions[0].ActionBlockMessage,You cannot hau
 TravoisPenalty_NotEnoughText,My Leg is not in shape for this action.,腿的状态不能攀爬。
 Skill_Socials_GameName,Socials,人情练达
 Skill_Socials_Description,Helps you gain the trust of others.,助你取信于人。
-Symmetry_GameName,Symmetry,面部对称性
-Symmetry_Statuses[0].GameName,Low,低
-Symmetry_Statuses[1].GameName,Medium,中
-Symmetry_Statuses[2].GameName,High,高
+Symmetry_GameName,Facial Harmony,面部对称性
 NewsEARelease40_PageTitle,"Roads, Powder Containers and Patch Notes #36",道路、粉末容器和更新日志#36
 NewsEARelease40_Sections[0].Entries[0].Content,"Hello everyone!\n\nFirst we wanted to give you some updates and news for the next few steps of development!\nWe have been refactoring our plans and we believe we will now be able to release some important  features faster than we had planned.\n\nFirst, we will be releasing <b>Basic Smithing</b> next Sunday (June the 1st). This should include copper smelting and forging, and the making of some copper tools.\nWe will be releasing additional smithing patches after that, which we'll alternate with other types of content. These patches will bring metal casting, more metal tools and some new more advanced structures that are only practical after getting metal tools. And later, once there's enough of the mountain areas, more metals so that alloys can start playing a role, as well as the addition of iron and bloomeries.\n \nSecond, we have started to work on the first character for Fantasy Forest: <b>The Witch</b>. \nGetting her ready will still take some time, but we'll be focusing on gradually releasing the different game pieces that her character requires to work. Starting with the beginnings of the swamp area to the south, some additional crops and animals and some spiritual additions and improvements. \n\nAnd now, the highlights for this update!\n\n<size=150%>Patch Highlights:</size>\n\n<size=125%>Paths:</size>\nPaths can now be built to connect to different locations and allow you to travel much faster between them. These paths are better than the ones in Tropical Island, as they allow travel in both directions. \n\n\n<size=125%>Powder Containers:</size>\nWe have introduced a new leather container called a pouch. Both pouches and clay jars now act as powder containers, and can store a large amount of powders and use them directly on target items without having to get them out first. So basically if you have a clay jar or pouch with salt, you can just drag it to your cooked meat too season it.\n\n\n<size=125%>Trader Improvements:</size>\nWe have rebalanced the prices for many objects, fixed many bugs and made it so that he will give you better prices depending on your character's traits. The trader was already altering his prices based on trust, but he will now gain trust faster based on traits such us how non threatening you appear, how socially compatible you are and how much he is willing to please you.\n\n\nAnd now to the patch notes.\n\n<size=150%>Version EA_0.41</size>\n\n\n- Fixed a bug where crafting yarn in the spindle would yield results of inconsistent quality.\n- Liquid quantity now affects the value of a trade.\n- Fixed a bug where you could perform drag and drop actions with the trader's items on your hand's items.\n- Most containers now cannot hold both a liquid and solid content at the same time.\n- Fixed a bug where you would sometimes get stuck after building a room or an enclosure in your mudhut.\n- Fixed a bug which made low quality bows trade for too much value.\n- Fixed a bug which caused the Spindle to do incorrect quality value calculations when crafting Yarn from Fibers.\n- Fixed a bug which allowed players to start a construction of 2 different rooms in a same direction and sometimes get stuck as a result.\n- Fixed a bug which allowed players to move spirits inside Cisterns.\n- Fixed a bug which allowed players to gut a fish while the Fish is inside a Funnel Trap placed in the River.\n- Fixed a bug which made Rye grains transfer too much spoilage when ground into Rye Flour.\n- Fixed a bug which would wrongly light up a River + Torch Interaction.\n- Added workplace bonus time reduction to butcher actions which were missing it.\n- Nettle stems can now also be used to make mud bricks.\n- Added dry Pine Needles to the Camp/Fire filter.\n- Wolfsbane maturity is now visible.\n- The Basic Trading quest will now also display/complete if you interact with the trader in autumn and not just spring.\n- Fixed a bug which prevented the wolfs packs from spawning.\n- Fixed a bug which sometimes caused northern rapids to drop Pine Cones when foraging in Spring.\n- Funnel Trap can now be built inside your mud hut.\n- Rye planted in gardens no longer loses health on low hydration.\n- Snow shoes now lose durability while equipped.\n- Stretching Frame now drops its contents when its destroyed.\n- Fixed a bug which caused the Rye Grains not to increase their hydration while the players is away.\n- Simple arrows now unlock earlier on Research mode.\n- Increased the research costs of most blueprints.\n- Balance tweaks to trader prices and changes in which items can be traded.\n- It is no longer possible to travel with more than one Travois in your hands.\n- You can no longer make salt requests from the Trader, but he know brings more salt every visit.\n- Clay Jar water capacity has been halved, allowing for more precise watering of Garden Plots.\n- Added Pouches.\n- Clay Jars and Pouches work as a new type of container that can hold some type powders and are ideal for seasoning foods or adding powders to make tea.\n- The trader now gains trust at a faster rate depending on some of your traits.\n- Added buildable paths that work in both directions.\n- Grains saturation is now available in the player saturation status list.\n- Splint no longer increases quality of baskets that store it.\n- Fixed a bug which caused spirit enchanted weapons not to lose the enchantments over time.\n- Boiling sacred water now turns it into normal water.\n- Tweaked how quality is determined with cloth shirts.\n- Flint arrows no longer drop twine when they get destroyed.\n\n\nThat's all for now.\n\nHope you all have a good week and we'll see you for the next announcement!",大家好！\n\n首先，我们想向大家介绍一些关于接下来几个开发阶段的内容！\n我们一直在调整计划，相信现在能够比原计划更快地发布一些重要功能。\n\n首先，我们将于下周日（国内应该是6月2日）发布[b]基础锻造[/b]。这将包括铜的冶炼和锻造，以及一些铜制工具的制作。\n之后，我们将发布额外的锻造更新，并与其他类型的内容交替发布。这些更新将带来金属模具铸造、更多的金属工具以及一些只有在获得金属工具后才能使用的更先进的新建筑。之后，在山脉区域足够大时，我们将添加更多金属，以便引入合金，同时还会添加铁和锻铁炉。\n\n其次，我们已经开始制作奇幻森林的第一位角色：[b]女巫[/b]。\n准备好她仍需一些时间，但我们将专注于逐步发布她所需的各种内容。首先是南部沼泽区域的初始部分，然后是一些新的农作物和动物，以及一些精神内容上的补充和改进。\n\n现在，来看看本次更新的亮点！\n\n<size=150%>更新亮点：</size>\n\n<size=125%>道路：</size>\n现在可以建造道路连接不同的地点，让您在它们之间更快地移动。这些道路比热带岛屿中的道路更好，因为它们允许双向移动。\n\n<size=125%>粉末容器：</size>\n我们引入了一种名为“袋子”的新型皮革容器。现在，袋子和小陶罐都可以用作粉末容器，可以储存大量粉末，无需先将其取出就能直接将它们用于目标物品。基本上是，将一个装有盐的小陶罐或小袋拖到煮熟的肉上就能调味。\n\n<size=125%>商人改进：</size>\n我们重新平衡了许多物品的价格，修复了许多bug，并使其能够根据您角色的特质提供更优惠的价格。之前，商人会根据您的信任度调整价格，但现在他会根据您的特质更快地增加信任度，例如您看起来是否具有威胁性、您的社交兼容性以及他有多愿意取悦您。\n\n现在来看看更新日志。\n\n<size=150%> 版本EA_0.41 </size>\n\n- 修复了在纺锤中制作细线会导致成品品质不一致的bug。\n- 液体份量现在会影响交易价值。\n- 修复了您可以将商人的物品拖放到您手中的物品上的bug。\n- 大多数容器现在无法同时容纳液体和固体。\n- 修复了您在泥屋中建造房间或畜栏后有时会卡住的bug。\n- 修复了导致低品质弓交易价值过高的bug。\n- 修复了导致纺锤在用纤维制作细线时计算错误品质值的bug。\n- 修复了导致玩家在同一方向建造两个不同的房间时，有时会卡住的bug。\n- 修复了导致玩家可以将精魄移动到雨水窖中的bug。\n- 修复了允许玩家直接屠宰位于河流中的鱼篓陷阱中的鱼的bug。\n- 修复了导致黑麦磨成黑麦粉时会转移过多腐败值的bug。\n- 修复了导致河流 + 火炬互动亮起的bug。\n- 为之前缺失工作间加成的屠宰操作添加了工作间减少工作时间的加成。\n- 荨麻茎现在也可以用来制作泥砖。\n- 在营火/火过滤器中添加了干松针。\n- 现在可以看到乌头的成熟度。\n- 现在，如果您在秋季（而非仅在春季）与商人互动，基础交易任务也会显示/完成。\n- 修复了导致狼群无法生成的bug。\n- 修复了导致春季觅食时北部湍流有时会掉落松果的bug。\n- 现在可以在您的泥屋内建造鱼篓陷阱。\n- 种植在菜园中的黑麦在低水分时不再损失健康度。\n- 雪靴现在在装备时会损失耐久度。\n- 伸张架现在在被摧毁时会掉落其内容物。\n- 修复了导致黑麦在玩家不在场时不会增加水分含量的bug。\n- 简易箭现在在研究模式下可以更早解锁。\n- 提高了大多数蓝图的研究成本。\n- 调整了商人价格的平衡，并更改了可交易的物品。\n- 您现在无法再同时携带多辆雪橇旅行。\n- 您无法再向商人提出盐请求，但现在他的d每次拜访都会带来更多的盐。\n- 小陶罐的容量减半，可以更精确地浇灌菜园。\n- 增加了袋子。\n- 小陶罐和袋子是一种新型容器，可以容纳某些类型的粉末，非常适合用于调味食物或泡茶。\n- 商人现在会以更高的速率增加信任度，具体取决于您选择的角色特质。\n- 添加了可双向建造的道路。\n- 谷物厌倦度现在可在玩家厌倦度状态列表中查看。\n- 夹板不再提升储存它的篮篓的品质。\n- 修复了导致附魔武器不会随时间推移而失去附魔的bug。\n- 煮沸圣水现在会将其变成普通水。\n- 调整了布质衬衫的品质判定方式。\n- 燧石箭被摧毁时不再掉落细线。\n\n目前就这些。\n\n祝大家度过愉快的一周，我们下次发布公告再见！
 Bp_CopperArrowHeadQWE__CardName,Forged Arrow Head,锻造箭头
 Bp_CopperArrowHeadQWE__CardDescription,A metal arrow head.,一个金属箭头。
-Bp_CopperArrowHeadQWE__UnlockConditionsDesc,Copper Nugget Needed,需要铜块
 Bp_CopperBladeQWE_CardName,Forged Knife Blade,锻造刀刃片
 Bp_CopperBladeQWE_CardDescription,A metal knife blade.,一个铜刀刃片。
-Bp_CopperBladeQWE_UnlockConditionsDesc,Finished Lump of Copper Needed,需要成品大块铜
 Bp_CopperSpearHeadQWE_CardName,Forged Spear Head,锻造矛头
 Bp_CopperSpearHeadQWE_CardDescription,A metal spear head.,一个铜矛头。
-Bp_CopperSpearHeadQWE_UnlockConditionsDesc,Finished Lump of Copper Needed,需要成品大块铜
 Bp_LumpOfCopperQWE_CardName,Metal Bar,金属锭
 Bp_LumpOfCopperQWE_CardDescription,Required for forging metal tools.,用于锻造金属工具。
 Bp_LumpOfCopperQWE_UnlockConditionsDesc,Metal Nuggets Needed,需要金属块
 Bp_Arrow_CopperQWE_CardName,Metal Arrow,金属箭
 Bp_Arrow_CopperQWE_CardDescription,Sharp enough to pierce through the hides of larger animal.,锋利无比，足以穿透大型动物的毛皮。
-Bp_Arrow_CopperQWE_UnlockConditionsDesc,Arrow Head Needed,需要箭头
+Bp_Arrow_CopperQWE_UnlockConditionsDesc,Metal Nugget Needed\n,需要金属块\n
 Bp_CopperAxe_CardName,Metal Axe,金属斧
 Bp_CopperAxe_CardDescription,A sharp metal tool for cutting wood. Can be resharpened and reforged.,用于切割木材的锋利金属工具。可重新磨利和锻造。
-Bp_CopperAxe_UnlockConditionsDesc,Axe Head Needed,需要斧刃头
+Bp_CopperAxe_UnlockConditionsDesc,Finished Lump of Metal Needed,需要成品金属块
 Bp_FurnaceQWE_CardName,Furnace,熔炉
 Bp_FurnaceQWE_CardDescription,A furnace hot enough to smelt copper.\n\nRequires bellows or a windy location to reach high enough temperatures.,温度足够高，足以熔炼铜的熔炉。\n\n需要风箱或在多风的区域才能达到足够高的温度。
 Bp_FurnaceQWE_UnlockConditionsDesc,Kiln Needed,需要窑炉
 Bp_Knife_CopperQWE_CardName,Metal Knife,金属刀
-Bp_Knife_CopperQWE_UnlockConditionsDesc,Knife Blade Needed,需要刀刃片
+Bp_Knife_CopperQWE_UnlockConditionsDesc,Finished Lump of Metal Needed,需要成品金属块
 Bp_CopperSpear_CardName,Metal Spear,金属矛
 Bp_CopperSpear_CardDescription,A close combat metal weapon with good reach. Good for hunting large game and defending yourself from predators.\n\nSharp enough to pierce through thick animal hides.,一种长距近战金属武器，适合狩猎大型猎物和抵御掠食者。\n\n锋利到足以刺穿厚重的兽皮。
-Bp_CopperSpear_UnlockConditionsDesc,Spear Head Needed,需要矛头
+Bp_CopperSpear_UnlockConditionsDesc,Finished Lump of Metal Needed,需要成品金属块
 Bp_Bellows_CardName,Bellows,风箱
 Bp_Bellows_CardDescription,Needed for reaching high temperatures in furnaces.,使熔炉达到高温的必需品。
 Bp_Bellows_UnlockConditionsDesc,Kiln Needed,需要窑炉
@@ -11738,29 +11729,22 @@ AutoNews1_PageTitle,"Peas, Fields and Hunting Improvements and Patch Notes #39",
 AutoNews1_Content,"Hello everyone!\n\nHope you had a good week.\nHere's what we've added for today's patch:\n\n\n<size=150%>Peas and Field Improvements:</size>\n\nFirst we're adding a new crop: Peas!\nPeas can be purchased from the trader, are a pretty good source of calories, last quite a bit when dry, act as a source of proteins and can restore nutrients to the soil. \nPeas cannot be planted in garden plots as of now, but we'll be pushing a hotfix for this tomorrow. ;)\n\nWe've given a balance pass to all fields and made many tweaks to make crop rotations work properly now that we have enough different crops. Planting crops in the right order will reward you with better yields and health for your plants. \nWe've also made field crops a bit more robust and made their yields also get affected by seasons and nutrient levels.\n\n\n\n<size=150%>Hunting Improvements and Rebalancing:</size>\n\nAnimals now slowly heal their wounds over time, making the ""death by a thousand cuts"" tactic no longer viable. \nIn addition to this, animals will now also stop treading their usual paths when wounded. \nThis will change the dynamics of hunting large game making hunts more realistic. Ambushing and pursuing your wounded prey should now be the only viable way of hunting.\n\nThis new animal behaviour will only be available for the Doe for now, but we'll be pushing a hotfix tomorrow that will enable it for all other animals. (it's been a busy week!)\n\nThat said. We have introduced some things to make ambushes easier. In addition to the improvements to stealth from last week's patch, players can now further increase their stealth by building a new hideout structure which should make ambushes easier. We have also added some stealth bonuses to reed clothing and to applying mud to your skin.\nAnimals now also have some new behaviours when tired, which should make chasing them a bit easier, and give you more opportunities to strike at them.\n\n\n\n<size=150%>Balancing Pass:</size>\n\nWe're in the process of going through a big balance pass. We have been adding a lot of content over the last few months and we're trying to make a push to get things to a better place in terms of challenge and reward.\n\nSome of the balance changes we have done this week are:\n- Made wounds consume more calories.\n- Made immune system enchantments a bit weaker.\n- Made hunting large game more difficult.\n- Made ambushing and pursuing easier.\n\nWe will be balancing things further over the following weeks, making things easier if they got too hard and vice versa.\n\n\n<size=150%>What's Next:</size>\n\nWe have been working on many new things lately and things have been coming along nicely, \nNext week we'll be releasing metal casting, slag recycling and the first alloys along with a bit of new territory.\n\nAfter that we'll start releasing swamp areas, improve the players physiological system (which is not in the best place at the moment), release an improved butchering system and the new system for storing food recipes.\n\n\nAnd now let's get to the patch notes:\n\n\n<size=150%>Version EA_0.44 + hotifxes since the last patch</size>\n\n- The construction menu system (for expanding the mudhut for example) has been improved.\n- Added a button linking to the instructions of how to play the beta in the news announcement screen of the main branch.\n- Added Peas.\n- Tilled fields now start with maximum structure.\n- Tilled fields now take longer to craft and longer to dissappear.\n- Tilled and fallow fields now recover nutrients faster.\n- All crops have received a balance pass and now increase or decrease structure and nutrients at different rates.\n- Crops are now a bit more resistant but their yield is more sensitive to both nutrient levels and season.\n- Some crops have become considerably more resistant to winter (clover, meadowgrass, heather).\n- Added Hideout structure.\n- Reed clothes now add a bit of cammouflage.\n- Applying Mud to your body now improves your stealth profile.\n- Does can now heal wounds and will no longer follow their usual path when wounded.\n- Does have a new tired behaviour when they run out of stamina.\n- Wound durations have been standarized and their calorie consumption has been adjusted to better match the current weight system.\n- Tweaked and balanced some enchantments to make their less overpowered.\n- Single portions of Billberry and Springberry Syrups used as seasoning no longer taste too sweet. \n- Fixed a bug which caused boiling dried turnroot to increase spoilage instead of reducing it.\n- Fixed a bug which caused dried turnroots and some other food items to not work as omnivorous bait for Boars in pit traps.\n- HandStone, Saddle Quern, Rottary Quern and Stone Mortar and Pestle are now safe from floods.\n- Copper items can now be enchanted with Spirits.\n- Urine, Nettle Solution and Dyes can no longer be used for cleaning Wounds.\n- Urine, Nettle Solution and Dyes are no longer considered a source for Fresh water for things like watering Crops.\n- Urine, Nettle Solution and Dyes are no longer considered a source of Safe water for things like making a Dough or Fermenting items inside Fermentation bin.\n- Fixed a bug which caused nettle stems to gain quality under the wrong conditions\n- Knife bought from trader now has 50% quality but its also more expensive as a result.\n- Removed the tanning water blueprint. Tanning water can be instead made by soaking bark in water and then waiting 24 hours or boiling it for 1 hour.\n- Fixed some issues with foxes and badgers being caught in traps in the wrong locations.\n- Updated card texts related to dyes to make the process more clear.\n- Wood carving direct card interaction now receives a workplace bonus and dexterity penalties just like the blueprint does.\n- Fixed Flavours for Rye Flatbread and Rye Bread Slice.\n-Leather and Fur clothing now loses colour faster than Fiber clothing.\n- Fixed a bug which made the Hackler blueprint invisible.\n- Willow Bark can no longer be put inside a Garden Plot\n- Hoe no longer drops Flint when it breaks.\n- Fixed Wolfsbane description to match the Help Section.\n- Malted and Malting Rye can now be properly placed in the Smokehouse.\n- Fur Coat now properly offers protection from rain.\n- Fixed fireroot, turnroot and fairyweed descriptions to match the Help Section.\n- Added Knife fighting moves to Copper Knife.\n- It is now possible to wet soap on the River, Pond, Ice hole, Flooded Tunnel location card and the Waterfall.\n- Fixed a bug which caused blizzards to spawn ""winds are too strong"" events after the blizzard is over.\n- Fixed a bug which was causing Ash Waternot to boil into Lye if the player wasn't present.\n- Appleweed now properly lowers grain saturation.\n- Actions which reduce tool usage now also reduce tool sharpness.\n- Significantly reduced the usage and sharpness loss when working with softer materials.\n\n\nThat's all for now.\nSee you all for next week's patch!\n\n\nReminder: All fixes and new content are added to the public beta branch first.\nIf you want to access them you can find the instructions on the link below. Be warned though, things are less stable there and are likely to undergo balance changes quite frequently! :)\nhttps://steamcommunity.com/app/2868860/discussions/0/600774299444324511/\n",大家好！\n\n希望大家度过了愉快的一周。\n以下是我们本次更新新增的内容：\n\n<size=150%>豌豆和田野改进：</size>\n\n首先，我们新增了一种作物：豌豆！\n豌豆可以从商人处购买，它富含卡路里，干燥后可保存挺长时间，还能作为蛋白质来源，并能恢复土壤养分。\n目前豌豆还不能种植在菜园中，但我们明天会推送一个与此相关的热修。;)\n\n我们已经对所有田地进行了平衡性调整，并且因为我们现在拥有足够多的作物，我们还调整了作物轮作。现在按正确的顺序种植作物将带来更高的产量和更健康的作物。\n我们还略微增强了田间作物的健康值，并使其产量也受到季节和养分水平的影响。\n\n<size=150%>狩猎改进与平衡性调整：</size>\n\n动物现在会随着时间的推移缓慢愈合伤口，使“千刀万剐”的策略不再可行。\n此外，动物受伤后将不会按原有的巡逻路径行动。\n这将使狩猎更加逼真并改变狩猎大型猎物的策略。现在伏击和追击受伤的猎物应该是唯一可行的狩猎方式。\n\n这种新的动物行为目前仅适用于母鹿，但明天我们将发布一个热修，使所有其他动物也使用这种新行为。（这周真是忙得不可开交！）\n\n话虽如此，我们还是引入了一些让伏击变得更容易的机制。除了上次更新中对潜行能力的改进外，玩家现在可以通过建造新的藏身建筑物来进一步提升潜行能力，这将使伏击更容易。我们还为芦苇衣服和在皮肤上涂抹泥巴增加了一些潜行加成。\n动物在疲劳时也会表现出一些新的行为，这应该会使追逐它们变得更容易，也让你有更多机会攻击它们。\n\n<size=150%>其他平衡性调整：</size>\n\n我们正在进行一次大规模的平衡性调整。在过去的几个月里，我们一直在添加大量内容，并努力在提供挑战和给予奖励方面提升游戏体验。\n\n本周我们进行的一些平衡性调整包括：\n- 伤口消耗的卡路里增加。\n- 免疫系统附魔略微削弱。\n- 狩猎大型猎物更加困难。\n- 伏击和追击更加容易。\n\n我们将在接下来的几周内进一步平衡游戏内容，使过于困难的战斗变得更容易，反之亦然。\n\n<size=150%>后续更新：</size>\n\n我们最近一直在开发许多新内容，进展顺利。\n下周我们将发布金属铸造、炉石回收和首批合金，以及一些新区域。\n\n之后，我们将开始发布沼泽区域，改进玩家的生理系统（目前情况并非最佳），发布改进的屠宰系统和新的食物配方存储系统。\n\n现在让我们来看看更新日志：\n\n<size=150%> 版本EA_0.44 + 自上一次更新以来的更新日志</size>\n\n- 建造菜单系统（例如用于扩建泥屋）已得到改进。\n- 在主分支的新闻公告界面中添加了一个按钮，指引玩家如何游玩测试分支。\n- 添加了豌豆。\n- 现在耕地一开始就是满土质。\n- 现在耕地需要更长时间才能制作，消失也更慢。\n- 耕地和休耕地现在恢复养分的速度更快。\n- 所有作物都进行了平衡性改进，现在会以不同的速率增加或减少土质和养分。\n- 作物的总体抗性有所增强，但其产量对养分和季节的影响也更加敏感。\n- 一些作物（三叶草、牧草、帚石南）的抗寒能力显著增强。\n- 增加了 “藏身处” 建筑物。\n- 为芦苇衣服增加了一些伪装效果。\n- 现在往身上涂抹泥巴可以提升你的潜行能力。\n- 母鹿现在可以自行治愈伤口，受伤时不再遵循一般巡逻路径。\n- 母鹿在体力耗尽时会表现出新的疲倦行为。\n- 伤口持续时间已标准化，其卡路里消耗也已调整，以更好地匹配当前的体重系统。\n- 调整并平衡了一些附魔，使其不那么过于强大。\n- 单份用作调味品的越橘和春莓糖浆味道不再过甜。\n- 修复了导致水煮干翻根时增加腐败而不是减少腐败的bug。\n- 修复了导致干翻根和其他一些食物无法用作陷阱中针对野猪的杂食性诱饵的bug。\n- 手磨盘、大石臼、石磨、石臼和石杵现在不会受到洪水的影响。\n- 现在铜制物品可以用精魄附魔。\n- 尿液、荨麻溶液和染料不再能用于清洁伤口。\n- 尿液、荨麻溶液和染料不再被视为用于浇灌作物等的淡水。\n- 尿液、荨麻溶液和染料不再被视为用于制作面团或在发酵箱内发酵物品等的安全水。\n- 修复了导致荨麻茎在错误条件下获得品质的bug。\n- 现在从商人处购买的刀的品质提升 50%，但价格也因此上涨。\n- 移除了鞣液的蓝图。现在鞣液可以通过将树皮浸泡在水中，然后等待 24 小时或煮沸 1 小时来制作。\n- 修复了狐狸和獾在错误的地点被陷阱捕获的bug。\n- 更新了与染料相关的卡牌描述，使流程更加清晰易懂。\n- 现在直接进行卡牌互动来雕刻木头会受到工作间加成和敏捷惩罚了。\n- 修复了黑麦面饼和黑麦面包片的风味问题。\n- 皮革和毛皮服饰现在比纤维服装褪色更快。\n- 修复了导致梳理器蓝图不可见的bug。\n- 柳树皮无法再放入菜园。\n- 锄头损坏后不再掉落燧石。\n- 修复了乌头的描述，使其与帮助页面一致。\n- 现在黑麦麦芽和发芽中的黑麦可以正确地放置在烟熏屋中。\n- 毛皮大衣现在可以正确地提供防雨保护。\n- 修复了火根、翻根和仙灵草的描述，使其与帮助页面一致。\n- 为铜刀添加了刀战动作。\n- 现在可以在河流、池塘、冰洞、覆溺隧道和瀑布的地点卡上弄湿肥皂。\n- 修复了暴风雪结束后仍触发 “风太大了！” 事件的bug。\n- 修复了玩家不在场时灰水不会煮沸成碱液的bug。\n- 柰草现在可以正确地降低谷物厌倦度。\n- 减少工具耐久度的操作现在也会降低工具锋利度。\n- 显著降低了加工较软的材料时工具降低的耐久度和锋利度。\n\n目前就这些。\n下周更新再见！\n\n贴心提示：所有修复和新内容都会先添加到测试分支。但是请注意，该分支下的内容极度不稳定，随时变化。：）\n如果您想访问该分支，可以在此处找到说明：\nhttps://steamcommunity.com/app/2868860/discussions/0/600774299444324511/  \n
 Bp_Cast_BlankArrowHeadsQWE_CardName,Cast Arrow Heads,铸造箭头
 Bp_Cast_BlankArrowHeadsQWE_CardDescription,Metal arrow heads.,金属箭头。
-Bp_Cast_BlankArrowHeadsQWE_UnlockConditionsDesc,Small Crucible Needed,需要小型坩埚
 Bp_BlankAxeHeadCastQWE_CardName,Cast Axe Head,铸造斧刃头
 Bp_BlankAxeHeadCastQWE_CardDescription,A metal axe head.,一个金属斧刃头。
-Bp_BlankAxeHeadCastQWE_UnlockConditionsDesc,Large Crucible Needed,需要大型坩埚
 Bp_Cast_BlankKnifeBladeQWE_CardName,Cast Knife Blade,铸造刀刃片
 Bp_Cast_BlankKnifeBladeQWE_CardDescription,A metal knife blade.,一个金属刀刃片。
-Bp_Cast_BlankKnifeBladeQWE_UnlockConditionsDesc,Small Crucible Needed,需要小型坩埚
 Bp_Cast_BlankShovelHeadQWE_CardName,Cast Shovel Head,铸造铲子头
 Bp_Cast_BlankShovelHeadQWE_CardDescription,A metal shovel head.,一个金属铲子头
-Bp_Cast_BlankShovelHeadQWE_UnlockConditionsDesc,Large Crucible Needed,需要大型坩埚
 Bp_Cast_BlankSpearHeadQWE_CardName,Cast Spear Head,铸造矛头
 Bp_Cast_BlankSpearHeadQWE_CardDescription,A metal spear head.,一个金属矛头。
-Bp_Cast_BlankSpearHeadQWE_UnlockConditionsDesc,Small Crucible Needed,需要小型坩埚
 Bp_PreparedCopperCrucibleLargeQWE_CardName,Copper,铜
 Bp_PreparedCopperCrucibleSmallQWE_CardName,Copper,铜
 Bp_PreparedGhostBronzeCrucibleLargeQWE_CardName,Ghost Bronze,鬼铜
 Bp_PreparedGhostBronzeCrucibleSmallQWE_CardName,Ghost Bronze,鬼铜
 Bp_BlankAxeHeadSmithedQWE_CardName,Forged Axe Head,锻造斧刃头
 Bp_BlankAxeHeadSmithedQWE_CardDescription,A metal axe head.,一个金属斧刃头。
-Bp_BlankAxeHeadSmithedQWE_UnlockConditionsDesc,Finished Lump of Copper Needed,需要成品大块铜
 Bp_Smithed_BlankShovelHeadQWE_CardName,Forged Shovel Head,锻造铲子头
 Bp_Smithed_BlankShovelHeadQWE_CardDescription,A metal shovel head.,一个金属铲子头
-Bp_Smithed_BlankShovelHeadQWE_UnlockConditionsDesc,Finished Lump of Copper Needed,需要成品大块铜
 Bp_CrucibleLargeQWE_CardName,Large Crucible,大型坩埚
 Bp_CrucibleLargeQWE_CardDescription,A clay container for alloying and casting metals.,用于熔炼合金和铸造金属的粘土容器。
 Bp_CrucibleLargeQWE_UnlockConditionsDesc,Metal Blank Needed,需要金属坯
@@ -11768,7 +11752,7 @@ Bp_CrucibleSmallQWE_CardName,Small Crucible,小型坩埚
 Bp_CrucibleSmallQWE_CardDescription,A clay container for alloying and casting metals.,用于熔炼合金和铸造金属的粘土容器。
 Bp_CrucibleSmallQWE_UnlockConditionsDesc,Metal Blank Needed,需要金属坯
 Bp_ToolOrWeapon_Shovel_MetalQWE_CardName,Metal Shovel,金属铲
-Bp_ToolOrWeapon_Shovel_MetalQWE_UnlockConditionsDesc,Shovel Head Needed,需要铲子头
+Bp_ToolOrWeapon_Shovel_MetalQWE_UnlockConditionsDesc,Finished Lump of Metal Needed,需要成品金属块
 Combat_EncounterBoar_EnemyActions[5].ActionLog.LogText,It stops to catch its breath...,它停下来喘气......
 Env_ClearingPine_DeadHollowQWR_CardName,Dead Hollow,死亡幽谷
 Env_DeathCrack_DeathChamberQWR_CardName,Death Chamber,死亡洞室
@@ -11967,9 +11951,9 @@ SolidifiedCrucibleSmallQWE_Progress.OnFull.ActionDescription,Crucible smelted!,�
 SolidifiedCrucibleSmallQWE_SpecialDurability2.CardStatName,Metal Quality,总金属品质
 SolidifiedCrucibleSmallQWE_SpecialDurability3.CardStatName,Quality,品质
 SolidifiedCrucibleSmallQWE_SpecialDurability4.CardStatName,Metal Type,金属类型
-Blank_ArrowHeadQWE_AlternateNames[0].Name,Copper Arrow Head Blank,铜箭头坯
-Blank_ArrowHeadQWE_AlternateNames[1].Name,Copper Arrow Head Blank,铜箭头坯
-Blank_ArrowHeadQWE_AlternateNames[2].Name,White Bronze Arrow Head Blank,白铜箭头坯
+Blank_ArrowHeadQWE_AlternateNames[0].Name,Copper Arrowhead Blank,铜箭头坯
+Blank_ArrowHeadQWE_AlternateNames[1].Name,Copper Arrowhead Blank,铜箭头坯
+Blank_ArrowHeadQWE_AlternateNames[2].Name,White Bronze Arrowhead Blank,白铜箭头坯
 Blank_ArrowHeadQWE_FuelCapacity.CardStatName,Temperature,温度
 Blank_ArrowHeadQWE_Progress.CardStatName,Smelted,熔炼
 Blank_ArrowHeadQWE_Progress.OnFull.ActionDescription,Arrow Head smelted!,箭头熔炼完成！
@@ -12243,7 +12227,6 @@ WitchstoneVein_CardInteractions[1].ActionName,Mine,采掘
 WitchstoneVeinInfinite_CardName,Witchstone Vein,巫石矿脉
 WitchstoneVeinInfinite_CardDescription,Can be mined for witchstone. Highly toxic.,可采巫石。剧毒。
 WitchstoneVeinInfinite_CardInteractions[0].ActionName,Mine,采掘
-WitchstoneVeinInfinite_CardInteractions[1].ActionName,Mine,采掘
 HandProtection_Description,Protects your hands from different types of damage.,保护你的手免受不同类型的伤害。
 WitchstonePoisoningQWE_GameName,Witchstone Poisoning,巫石中毒
 WitchstonePoisoningQWE_Description,"Caused by exposure to witchstone. Causes nausea, headaches, pain, confusion and death.",因接触巫石而引起。会导致恶心、头痛、疼痛、迷乱甚至死亡。
@@ -13373,16 +13356,12 @@ Sanctuary_Statuses[6].GameName,Maximum Sanctuary,完美庇护
 GpTag_Chinking_TabName,Chinking,填缝料
 Bp_Cast_BlankArrowBroadheadQQQ_CardName,Cast Broadhead Arrows,铸造宽头箭头
 Bp_Cast_BlankArrowBroadheadQQQ_CardDescription,Metal arrow heads.,金属箭头。
-Bp_Cast_BlankArrowBroadheadQQQ_UnlockConditionsDesc,More Archery Needed,需要更高的箭术技能。
 Bp_Cast_BlankHuntingSpearHeadQQQ_CardName,Cast Hunting Spearhead,铸造狩猎长矛头
 Bp_Cast_BlankHuntingSpearHeadQQQ_CardDescription,A metal spearhead.,一个金属矛头。
-Bp_Cast_BlankHuntingSpearHeadQQQ_UnlockConditionsDesc,Regular Spearhead Cast Needed,需要普通矛头模具
 Bp_Smithed_BlankArrowBroadheadQQQ__CardName,Forged Broadhead Arrow,锻造宽头箭头
 Bp_Smithed_BlankArrowBroadheadQQQ__CardDescription,A metal arrow head.,一个金属箭头。
-Bp_Smithed_BlankArrowBroadheadQQQ__UnlockConditionsDesc,More Archery Needed,需要更高的箭术技能。
 Bp_Smithed_BlankHuntingSpearHeadQQQ_CardName,Forged Hunting Spearhead,锻造狩猎长矛头
 Bp_Smithed_BlankHuntingSpearHeadQQQ_CardDescription,A metal spear head.,一个金属矛头。
-Bp_Smithed_BlankHuntingSpearHeadQQQ_UnlockConditionsDesc,Regular Spearhead Needed,需要普通矛头
 Bp_StomachPouch_CardName,Stomach Pouch,胃袋
 Bp_StomachPouch_CardDescription,"A small leather container, ideal for preserving spices. ",一个小型皮革容器，非常适合用于保存香料。
 Bp_StomachPouch_UnlockConditionsDesc,Clean Stomach Needed,需要干净的胃
@@ -13396,7 +13375,7 @@ Bp_ToolOrWeapon_ArrowBroadhead_MetalQQQ_CardDescription,Wide bladed arrows desig
 Bp_ToolOrWeapon_ArrowBroadhead_MetalQQQ_UnlockConditionsDesc,More Archery Needed,需要更高的箭术技能。
 Bp_ToolOrWeapon_SpearHunting_MetalQQQ_CardName,Hunting Spear,狩猎长矛
 Bp_ToolOrWeapon_SpearHunting_MetalQQQ_CardDescription,"A strong metal spear fitted with a crossbar, designed to hold prey at bay and cause deep wounds and heavy bleeding.\n\nSharp enough to pierce through thick hides and Ideal for hunting large and dangerous game.",一种装有横档的坚固金属矛，用于限制猎物行动并造成深伤口和大出血。\n\n锋利到可以刺穿厚厚的兽皮，非常适合猎杀大型危险的猎物。
-Bp_ToolOrWeapon_SpearHunting_MetalQQQ_UnlockConditionsDesc,Metal Spear Needed,需要金属矛头
+Bp_ToolOrWeapon_SpearHunting_MetalQQQ_UnlockConditionsDesc,Regular Spearhead Needed,需要普通矛头
 PartridgeFreeChick_CardInteractions[1].ActionName,Kill,屠宰
 PartridgeFreeMale_CardInteractions[1].ActionName,Kill,屠宰
 PartridgeTiedFemale_CardInteractions[1].ActionName,Kill,屠宰
@@ -13665,7 +13644,7 @@ MeatHeartRawQQQ_SpecialDurability2.CardStatName,Quality,品质
 MeatHeartRawQQQ_SpecialDurability4.CardStatName,Boil,烹煮
 MeatHeartRawQQQ_OnStatsChangeActions[0].ActionName,Add Regular Meat Quality Bonus,添加常规肉类品质加成
 MeatHeartRawQQQ_DismantleActions[0].ActionName,Eat,吃掉
-MeatIntestinesRawDirtyQQQ_CardName,Intestines,肠子
+MeatIntestinesRawDirtyQQQ_CardName,Dirty Intestines,血污肠子
 MeatIntestinesRawDirtyQQQ_CardDescription,Must be cleaned first.,需要先洗干净
 MeatIntestinesRawDirtyQQQ_SpoilageTime.CardStatName,Spoilage,变质
 MeatIntestinesRawDirtyQQQ_SpoilageTime.OnFull.ActionDescription,Stomach Spoiled!,胃变质了！
@@ -13684,7 +13663,7 @@ MeatIntestinesRawQQQ_SpecialDurability1.CardStatName,Cook,烹饪
 MeatIntestinesRawQQQ_SpecialDurability2.CardStatName,Quality,品质
 MeatIntestinesRawQQQ_SpecialDurability4.CardStatName,Boil,烹煮
 MeatIntestinesRawQQQ_DismantleActions[0].ActionName,Eat,吃掉
-MeatKidneyRawDirtyQQQ_CardName,Kidney,肾脏
+MeatKidneyRawDirtyQQQ_CardName,Dirty Kidney,血污肾脏
 MeatKidneyRawDirtyQQQ_CardDescription,Must be cleaned first.,需要先洗干净
 MeatKidneyRawDirtyQQQ_SpoilageTime.CardStatName,Spoilage,变质
 MeatKidneyRawDirtyQQQ_SpoilageTime.OnFull.ActionDescription,Kidney Spoiled!,肾脏变质了！
@@ -13766,7 +13745,7 @@ MeatSausageRaw_SpecialDurability1.CardStatName,Cook,烹饪
 MeatSausageRaw_SpecialDurability2.CardStatName,Quality,品质
 MeatSausageRaw_SpecialDurability4.CardStatName,Boil,烹煮
 MeatSausageRaw_DismantleActions[0].ActionName,Eat,吃掉
-MeatStomachRawDirtyQQQ_CardName,Stomach,胃
+MeatStomachRawDirtyQQQ_CardName,Dirty Stomach,血污胃
 MeatStomachRawDirtyQQQ_CardDescription,Must be cleaned first.,需要先洗干净
 MeatStomachRawDirtyQQQ_SpoilageTime.CardStatName,Spoilage,变质
 MeatStomachRawDirtyQQQ_SpoilageTime.OnFull.ActionDescription,Stomach Spoiled!,胃变质了！
@@ -14906,13 +14885,13 @@ Blank_MetalArrowBroadheadQQQ_AlternateNames[6].Name,Ghost Bronze Broadhead Blank
 Blank_MetalArrowBroadheadQQQ_AlternateNames[7].Name,Tin Broadhead Blank,锡宽头箭头坯
 Blank_MetalArrowBroadheadQQQ_AlternateNames[8].Name,Tin Bronze Broadhead Blank,青铜宽头箭头坯
 Blank_MetalArrowBroadheadQQQ_AlternateNames[9].Name,White Bronze Broadhead Blank,白铜宽头箭头坯
-Blank_MetalArrowHead_AlternateNames[1].Name,Ghost Bronze Arrow Head Blank,鬼铜箭头坯
-Blank_MetalArrowHead_AlternateNames[2].Name,Tin Arrow Head Blank,锡箭头坯
-Blank_MetalArrowHead_AlternateNames[3].Name,Tin Bronze Arrow Head Blank,青铜箭头坯
-Blank_MetalArrowHead_AlternateNames[6].Name,Ghost Bronze Arrow Head Blank,鬼铜箭头坯
-Blank_MetalArrowHead_AlternateNames[7].Name,Tin Arrow Head Blank,锡箭头坯
-Blank_MetalArrowHead_AlternateNames[8].Name,Tin Bronze Arrow Head Blank,青铜箭头坯
-Blank_MetalArrowHead_AlternateNames[9].Name,White Bronze Arrow Head Blank,白铜箭头坯
+Blank_MetalArrowHead_AlternateNames[1].Name,Ghost Bronze Arrowhead Blank,鬼铜箭头坯
+Blank_MetalArrowHead_AlternateNames[2].Name,Tin Arrowhead Blank,锡箭头坯
+Blank_MetalArrowHead_AlternateNames[3].Name,Tin Bronze Arrowhead Blank,青铜箭头坯
+Blank_MetalArrowHead_AlternateNames[6].Name,Ghost Bronze Arrowhead Blank,鬼铜箭头坯
+Blank_MetalArrowHead_AlternateNames[7].Name,Tin Arrowhead Blank,锡箭头坯
+Blank_MetalArrowHead_AlternateNames[8].Name,Tin Bronze Arrowhead Blank,青铜箭头坯
+Blank_MetalArrowHead_AlternateNames[9].Name,White Bronze Arrowhead Blank,白铜箭头坯
 Blank_MetalAxeHead_AlternateNames[1].Name,Ghost Bronze Axe Blank,鬼铜斧坯
 Blank_MetalAxeHead_AlternateNames[2].Name,Tin Axe Blank,锡斧坯
 Blank_MetalAxeHead_AlternateNames[3].Name,Tin Bronze Axe Blank,青铜斧坯
@@ -15040,16 +15019,16 @@ Shape_MetalArrowBroadHeadQQQ_AlternateNames[6].Name,Ghost Bronze Broadhead,加�
 Shape_MetalArrowBroadHeadQQQ_AlternateNames[7].Name,Tin Broadhead,锡宽头箭头
 Shape_MetalArrowBroadHeadQQQ_AlternateNames[8].Name,Tin Bronze Broadhead,青铜宽头箭头
 Shape_MetalArrowBroadHeadQQQ_AlternateNames[9].Name,White Bronze Broadhead,白铜宽头箭头
-Shape_MetalArrowHead_AlternateNames[0].Name,Copper Arrow Head,铜箭头
-Shape_MetalArrowHead_AlternateNames[1].Name,Ghost Bronze Arrow Head,鬼铜箭头
-Shape_MetalArrowHead_AlternateNames[2].Name,Tin Arrow Head,锡箭头
-Shape_MetalArrowHead_AlternateNames[3].Name,Tin Bronze Arrow Head,青铜箭头
-Shape_MetalArrowHead_AlternateNames[4].Name,White Bronze Arrow Head,白铜箭头
-Shape_MetalArrowHead_AlternateNames[5].Name,Copper Arrow Head,铜箭头
-Shape_MetalArrowHead_AlternateNames[6].Name,Ghost Bronze Arrow Head,鬼铜箭头
-Shape_MetalArrowHead_AlternateNames[7].Name,Tin Arrow Head,锡箭头
-Shape_MetalArrowHead_AlternateNames[8].Name,Tin Bronze Arrow Head,青铜箭头
-Shape_MetalArrowHead_AlternateNames[9].Name,White Bronze Arrow Head,白铜箭头
+Shape_MetalArrowHead_AlternateNames[0].Name,Copper Arrowhead,铜箭头
+Shape_MetalArrowHead_AlternateNames[1].Name,Ghost Bronze Arrowhead,鬼铜箭头
+Shape_MetalArrowHead_AlternateNames[2].Name,Tin Arrowhead,锡箭头
+Shape_MetalArrowHead_AlternateNames[3].Name,Tin Bronze Arrowhead,青铜箭头
+Shape_MetalArrowHead_AlternateNames[4].Name,White Bronze Arrowhead,白铜箭头
+Shape_MetalArrowHead_AlternateNames[5].Name,Copper Arrowhead,铜箭头
+Shape_MetalArrowHead_AlternateNames[6].Name,Ghost Bronze Arrowhead,鬼铜箭头
+Shape_MetalArrowHead_AlternateNames[7].Name,Tin Arrowhead,锡箭头
+Shape_MetalArrowHead_AlternateNames[8].Name,Tin Bronze Arrowhead,青铜箭头
+Shape_MetalArrowHead_AlternateNames[9].Name,White Bronze Arrowhead,白铜箭头
 Shape_MetalAxeHead_AlternateNames[0].Name,Copper Axe Head,铜斧刃头
 Shape_MetalAxeHead_AlternateNames[1].Name,Ghost Bronze Axe Head,鬼铜斧刃头
 Shape_MetalAxeHead_AlternateNames[2].Name,Tin Axe Head,锡斧刃头
@@ -15349,41 +15328,29 @@ TraderTalk_Bring Tin_Line,He says he will try to bring more tin on his next visi
 TraderTalk_Bring Forge Hammer_Line,He says he will try to find a good forge hammer and bring it on his next visit.,他说他会试着找个锻造锤，下次来的时候带上它。
 Bp_Cast_BlankButcheringKnifeBlade_CardName,Cast Butchering Knife Blade,铸造屠宰刀刃片
 Bp_Cast_BlankButcheringKnifeBlade_CardDescription,A metal butchering knife blade.,一个金属屠宰刀刃片。
-Bp_Cast_BlankButcheringKnifeBlade_UnlockConditionsDesc,More Smithing or Butchering Needed,需要更高的金工或屠宰技能
 Bp_Cast_BlankChiselBlade_CardName,Cast Chisel Blade,铸造凿刃
 Bp_Cast_BlankChiselBlade_CardDescription,A metal chisel blade.,一个金属凿刃。
-Bp_Cast_BlankChiselBlade_UnlockConditionsDesc,More Smithing or Woodworking Needed,需要更高的金工或木工技能
 Bp_Cast_BlankDrawknifeBlade_CardName,Cast Drawknife Blade,铸造拉刀刃片
 Bp_Cast_BlankDrawknifeBlade_CardDescription,A metal drawknife blade.,一个金属拉刀刃片。
-Bp_Cast_BlankDrawknifeBlade_UnlockConditionsDesc,More Smithing or Woodworking Needed,需要更高的金工或木工技能
 Bp_Cast_BlankMeatHook_CardName,Cast Meat Hook,铸造肉钩
 Bp_Cast_BlankMeatHook_CardDescription,A metal meat hook.,一个金属肉钩。
-Bp_Cast_BlankMeatHook_UnlockConditionsDesc,More Smithing or Butchering Needed,需要更高的金工或屠宰技能
 Bp_Cast_BlankSkinningKnifeBlade_CardName,Cast Skinning Knife Blade,铸造剥皮刀刃片
 Bp_Cast_BlankSkinningKnifeBlade_CardDescription,A metal skinning knife blade.,一个金属剥皮刀刃片。
-Bp_Cast_BlankSkinningKnifeBlade_UnlockConditionsDesc,More Smithing or Leatherworking Needed,需要更高的金工或制革技能
 Bp_Cast_BlankSpoonBit_CardName,Cast Spoon Bit,铸造勺型钻头
 Bp_Cast_BlankSpoonBit_CardDescription,A metal spoon bit. ,一个金属勺型钻头。
-Bp_Cast_BlankSpoonBit_UnlockConditionsDesc,More Smithing or Woodworking Needed,需要更高的金工或木工技能
 Bp_PreparedCopperCrucibleSmallRefining_CardName,Copper Refining,精炼铜
 Bp_Smithed_BlankButcheringKnifeBlade_CardName,Forged Butchering Knife Blade,锻造屠宰刀刃片
 Bp_Smithed_BlankButcheringKnifeBlade_CardDescription,A metal butchering knife blade.,一个金属屠宰刀刃片。
-Bp_Smithed_BlankButcheringKnifeBlade_UnlockConditionsDesc,More Smithing or Butchering Needed,需要更高的金工或屠宰技能
 Bp_Smithed_BlankChiselBlade_CardName,Forged Chisel Blade,锻造凿刃
 Bp_Smithed_BlankChiselBlade_CardDescription,A metal chisel blade. ,一个金属凿刃。
-Bp_Smithed_BlankChiselBlade_UnlockConditionsDesc,More Smithing or Woodworking Needed,需要更高的金工或木工技能
 Bp_Smithed_BlankDrawknifeBlade_CardName,Forged Drawknife Blade,锻造拉刀刃片
 Bp_Smithed_BlankDrawknifeBlade_CardDescription,A metal drawknife blade.,一个金属拉刀刃片。
-Bp_Smithed_BlankDrawknifeBlade_UnlockConditionsDesc,More Smithing or Woodworking Needed,需要更高的金工或木工技能
 Bp_Smithed_BlankMeatHook_CardName,Forged Meat Hook,锻造肉钩
 Bp_Smithed_BlankMeatHook_CardDescription,A metal meat hook.,一个金属肉钩。
-Bp_Smithed_BlankMeatHook_UnlockConditionsDesc,More Smithing or Butchering Needed,需要更高的金工或屠宰技能
 Bp_Smithed_BlankSkinningKnifeBlade_CardName,Forged Skinning Knife Blade,锻造剥皮刀刃片
 Bp_Smithed_BlankSkinningKnifeBlade_CardDescription,A metal skinning knife blade.,一个金属剥皮刀刃片。
-Bp_Smithed_BlankSkinningKnifeBlade_UnlockConditionsDesc,More Smithing or Leatherworking Needed,需要更高的金工或制革技能
 Bp_Smithed_BlankSpoonBit_CardName,Forged Spoon Bit,锻造勺型钻头
 Bp_Smithed_BlankSpoonBit_CardDescription,A metal spoon bit. ,一个金属勺型钻头。
-Bp_Smithed_BlankSpoonBit_UnlockConditionsDesc,More Smithing or Woodworking Needed,需要更高的金工或木工技能
 Bp_ButcheringMat_CardName,Butchering Mat,屠宰垫
 Bp_ButcheringMat_CardDescription,A mat that helps keep things clean while butchering.,一种有助于在屠宰过程中保持干净的垫子。
 Bp_ButcheringMat_UnlockConditionsDesc,Reeds Needed,需要芦苇
@@ -15401,21 +15368,21 @@ Bp_Sawhorses_CardDescription,A pair of sturdy stands for holding wood steady whi
 Bp_Sawhorses_UnlockConditionsDesc,Planks Needed,需要木板
 Bp_ToolOrWeapon_ButcheringKnife_Metal_CardName,Butchering Knife,屠宰刀
 Bp_ToolOrWeapon_ButcheringKnife_Metal_CardDescription,A specialized knife for butchering animals and processing meat.,一种专门用于屠宰动物和加工肉类的刀具。
-Bp_ToolOrWeapon_ButcheringKnife_Metal_UnlockConditionsDesc,Butchering Knife Blade Needed,需要屠宰刀刃片
+Bp_ToolOrWeapon_ButcheringKnife_Metal_UnlockConditionsDesc,More Smithing or Butchering Needed,需要更高的金工或屠宰技能
 Bp_ToolOrWeapon_Chisel_Metal_CardName,Chisel,凿子
 Bp_ToolOrWeapon_Chisel_Metal_CardDescription,A specialized tool for carving wood.,一种专门用于雕刻木头的工具。
-Bp_ToolOrWeapon_Chisel_Metal_UnlockConditionsDesc,Chisel Blade Needed,需要凿刃
+Bp_ToolOrWeapon_Chisel_Metal_UnlockConditionsDesc,More Smithing or Woodworking Needed,需要更高的金工或木工技能
 Bp_ToolOrWeapon_Drawknife_Metal_CardName,Drawknife,拉刀
 Bp_ToolOrWeapon_Drawknife_Metal_CardDescription,A specialized tool for shaving wood and scraping skins.,一种专门用于刨削木头和刮皮的工具。
-Bp_ToolOrWeapon_Drawknife_Metal_UnlockConditionsDesc,Drawknife Blade Needed,需要拉刀刃片
+Bp_ToolOrWeapon_Drawknife_Metal_UnlockConditionsDesc,More Smithing or Woodworking Needed,需要更高的金工或木工技能
 Bp_ToolOrWeapon_MeatHook_Metal_CardName,Meat Hook,肉钩
-Bp_ToolOrWeapon_MeatHook_Metal_UnlockConditionsDesc,Metal Meat Hook Needed,需要金属肉钩
+Bp_ToolOrWeapon_MeatHook_Metal_UnlockConditionsDesc,More Smithing or Butchering Needed,需要更高的金工或屠宰技能
 Bp_ToolOrWeapon_SkinningKnife_Metal_CardName,Skinning Knife,剥皮刀
 Bp_ToolOrWeapon_SkinningKnife_Metal_CardDescription,A specialized tool for skinning animals.,一种专门用于剥动物皮的工具。
-Bp_ToolOrWeapon_SkinningKnife_Metal_UnlockConditionsDesc,Skinning Knife Blade Needed,需要剥皮刀刃片
+Bp_ToolOrWeapon_SkinningKnife_Metal_UnlockConditionsDesc,More Smithing or Leatherworking Needed,需要更高的金工或制革技能
 Bp_ToolOrWeapon_SpoonAuger_Metal_CardName,Spoon Auger,勺型钻
 Bp_ToolOrWeapon_SpoonAuger_Metal_CardDescription,A specialized tool for drilling holes.,一种专门用于钻孔的工具。
-Bp_ToolOrWeapon_SpoonAuger_Metal_UnlockConditionsDesc,Spoon Bit Needed,需要勺型钻头
+Bp_ToolOrWeapon_SpoonAuger_Metal_UnlockConditionsDesc,More Smithing or Woodworking Needed,需要更高的金工或木工技能
 Bp_Workbench_CardName,Workbench,工作台
 Bp_Workbench_CardDescription,A specialized table for crafting tools and shaping materials.,一张专门用于制作工具和加工材料的桌子。
 Bp_Workbench_UnlockConditionsDesc,Planks Needed,需要木板
@@ -15745,14 +15712,10 @@ Shape_MetalMeatHook_AlternateNames[6].Name,Ghost Bronze Meat Hook,鬼铜肉钩
 Shape_MetalMeatHook_AlternateNames[7].Name,Tin Meat Hook,锡肉钩
 Shape_MetalMeatHook_AlternateNames[8].Name,Tin Bronze Meat Hook,青铜肉钩
 Shape_MetalMeatHook_AlternateNames[9].Name,White Bronze Meat Hook,白铜肉钩
-Shape_MetalMeatHook_FuelCapacity.CardStatName,Temperature,温度
 Shape_MetalMeatHook_Progress.CardStatName,Smelted,熔炼
 Shape_MetalMeatHook_Progress.OnFull.ActionDescription,Meat Hook smelted!,肉钩熔炼完成！
-Shape_MetalMeatHook_SpecialDurability1.CardStatName,Strikes,捶打
 Shape_MetalMeatHook_SpecialDurability2.CardStatName,Metal Quality,总金属品质
-Shape_MetalMeatHook_SpecialDurability3.CardStatName,Quality,品质
 Shape_MetalMeatHook_SpecialDurability4.CardStatName,Metal Type,金属类型
-Shape_MetalMeatHook_CardInteractions[0].ActionName,Smith,锻造
 Shape_MetalSkinningKnifeBlade_CardName,Metal Skinning Knife Blade,金属剥皮刀刃片
 Shape_MetalSkinningKnifeBlade_CardDescription,Can be used to make a skinning knife.,可用于制作剥皮刀。
 Shape_MetalSkinningKnifeBlade_AlternateNames[0].Name,Copper Skinning Knife Blade,铜剥皮刀刃片
@@ -15944,15 +15907,8 @@ ToolOrWeapon_MeatHook_Metal_AlternateNames[1].Name,Ghost Bronze Meat Hook,鬼铜
 ToolOrWeapon_MeatHook_Metal_AlternateNames[2].Name,Tin Meat Hook,锡肉钩
 ToolOrWeapon_MeatHook_Metal_AlternateNames[3].Name,Tin Bronze Meat Hook,青铜肉钩
 ToolOrWeapon_MeatHook_Metal_AlternateNames[4].Name,White Bronze Meat Hook,白铜肉钩
-ToolOrWeapon_MeatHook_Metal_SpoilageTime.CardStatName,Sharpness,锋利
-ToolOrWeapon_MeatHook_Metal_FuelCapacity.CardStatName,Recently Sharpened,近期磨利
-ToolOrWeapon_MeatHook_Metal_Progress.CardStatName,Beauty,美观
 ToolOrWeapon_MeatHook_Metal_SpecialDurability2.CardStatName,Metal Quality,总金属品质
-ToolOrWeapon_MeatHook_Metal_SpecialDurability3.CardStatName,Quality,品质
 ToolOrWeapon_MeatHook_Metal_SpecialDurability4.CardStatName,Metal Type,金属类型
-ToolOrWeapon_MeatHook_Metal_CardInteractions[0].ActionName,Sharpen,磨利
-ToolOrWeapon_MeatHook_Metal_CardInteractions[1].ActionName,Sharpen,磨利
-ToolOrWeapon_MeatHook_Metal_CardInteractions[2].ActionName,Sharpen,磨利
 ToolOrWeapon_MeatHook_Metal_DismantleActions[0].ActionName,Dismantle,拆解
 ToolOrWeapon_SkinningKnife_Metal_CardName,Metal Skinning Knife,金属剥皮刀
 ToolOrWeapon_SkinningKnife_Metal_CardDescription,A specialized tool for skinning animals.,一种专门用于剥动物皮的工具。
@@ -16036,11 +15992,7 @@ ToolOrWeapon_MeatHook_MetalItem_AlternateNames[1].Name,Ghost Bronze Meat Hook,�
 ToolOrWeapon_MeatHook_MetalItem_AlternateNames[2].Name,Tin Meat Hook,锡肉钩
 ToolOrWeapon_MeatHook_MetalItem_AlternateNames[3].Name,Tin Bronze Meat Hook,青铜肉钩
 ToolOrWeapon_MeatHook_MetalItem_AlternateNames[4].Name,White Bronze Meat Hook,白铜肉钩
-ToolOrWeapon_MeatHook_MetalItem_SpoilageTime.CardStatName,Sharpness,锋利度
-ToolOrWeapon_MeatHook_MetalItem_FuelCapacity.CardStatName,Recently Sharpened,近期磨利
-ToolOrWeapon_MeatHook_MetalItem_Progress.CardStatName,Beauty,美观
 ToolOrWeapon_MeatHook_MetalItem_SpecialDurability2.CardStatName,Metal Quality,总金属品质
-ToolOrWeapon_MeatHook_MetalItem_SpecialDurability3.CardStatName,Quality,品质
 ToolOrWeapon_MeatHook_MetalItem_SpecialDurability4.CardStatName,Metal Type,金属类型
 ToolOrWeapon_MeatHook_MetalItem_DismantleActions[0].ActionName,Place,放置
 ToolOrWeapon_MeatHook_MetalItem_DismantleActions[1].ActionName,Dismantle,拆解
@@ -16242,12 +16194,10 @@ SaunaStoveExtinguished_CardInteractions[2].ActionName,Feed Fuel,添入燃料
 SaunaStoveExtinguished_CardInteractions[3].ActionName,Feed Charcoal,添入木炭
 SaunaStoveExtinguished_CardInteractions[4].ActionName,Feed Leaves,添入树叶
 SaunaStoveExtinguished_CardInteractions[5].ActionName,Feed Embers,添入火炭
-SaunaStoveExtinguished_CardInteractions[6].ActionName,Feed Husk,添入椰子皮
 SaunaStoveExtinguished_CardInteractions[7].ActionName,Light Fire,点燃
 SaunaStoveExtinguished_CardInteractions[7].RequiredReceivingDurabilities.FailMessage,Not Enough Fuel,燃料不足
 SaunaStoveExtinguished_CardInteractions[8].ActionName,Light Fire,点燃
 SaunaStoveExtinguished_CardInteractions[8].RequiredReceivingDurabilities.FailMessage,Not Enough Fuel,燃料不足
-SaunaStoveExtinguished_CardInteractions[9].ActionName,Place Alembic,放置蒸馏器
 SaunaStoveExtinguished_DismantleActions[0].ActionName,Take Charcoal and Ash,取出木炭和灰烬
 SaunaStoveExtinguished_DismantleActions[0].RequiredReceivingDurabilities.FailMessage,Charcoal not ready yet.,木炭尚未完成。
 SpiritShrine_Frost_FrostShrine_CardName,Frost Shrine,霜冻祭坛
@@ -17465,25 +17415,19 @@ Agent_Wolf_Interactions[0].ButtonName,Approach,接近
 Agent_WolfPack_Interactions[0].ButtonName,Approach,接近
 Bp_Cast_BlankHoeHead_CardName,Cast Hoe Head,铸造锄头
 Bp_Cast_BlankHoeHead_CardDescription,A metal hoe head.,一个金属锄的头。
-Bp_Cast_BlankHoeHead_UnlockConditionsDesc,Flint Hoe and Metal Nugget Needed,需要燧石锄和金属块
 Bp_Cast_BlankScytheBlade_CardName,Cast Scythe Blade,铸造大镰刀头
 Bp_Cast_BlankScytheBlade_CardDescription,A metal scythe blade.,一个大镰刀头。
-Bp_Cast_BlankScytheBlade_UnlockConditionsDesc,More Smithing or Herbalism Needed,需要更高的金工或药草学技能
 Bp_Cast_BlankSickleBlade_CardName,Cast Sickle Blade,铸造镰刀头
 Bp_Cast_BlankSickleBlade_CardDescription,A metal sickle blade.,一个金属镰刀头。
-Bp_Cast_BlankSickleBlade_UnlockConditionsDesc,More Smithing or Herbalism Needed,需要更高的金工或药草学技能
 Bp_Levee_CardName,Levee,堤坝
 Bp_Levee_CardDescription,A raised barrier meant to protect against floods.,用于抵御洪水的加高屏障。
 Bp_Levee_UnlockConditionsDesc,Needs Shovel,需要铲子
 Bp_Smithed_BlankHoeHead_CardName,Forged Hoe Head,锻造锄头
 Bp_Smithed_BlankHoeHead_CardDescription,A metal hoe head.,一个金属锄的头。
-Bp_Smithed_BlankHoeHead_UnlockConditionsDesc,Flint Hoe and Metal Nugget Needed,需要燧石锄和金属块
 Bp_Smithed_BlankScytheBlade_CardName,Forged Scythe Blade,锻造大镰刀头
 Bp_Smithed_BlankScytheBlade_CardDescription,A metal scythe blade.,一个大镰刀头。
-Bp_Smithed_BlankScytheBlade_UnlockConditionsDesc,More Smithing or Herbalism Needed,需要更高的金工或药草学技能
 Bp_Smithed_BlankSickleBlade_CardName,Forged Sickle Blade,锻造镰刀头
 Bp_Smithed_BlankSickleBlade_CardDescription,A metal sickle blade.,一个金属镰刀头。
-Bp_Smithed_BlankSickleBlade_UnlockConditionsDesc,More Smithing or Herbalism Needed,需要更高的金工或药草学技能
 Bp_Plaster_CardDescription,"Made by combining milk of lime with clay. \n\nQuicklime can be obtained from firing stones in a kiln, while milk of lime can be obtained by saturating water with quicklime.",由石灰乳与粘土混合制成。\n\n生石灰可通过在窑中烧制石头获得，然后浸泡在水中至饱和制成石灰乳。
 Bp_Thresher_CardName,Thresher,脱粒机
 Bp_Thresher_CardDescription,A farming tool for threshing grain faster.,一种用于加快谷物脱粒速度的农具。
@@ -17493,10 +17437,10 @@ Bp_ToolOrWeapon_Hoe_Metal_CardDescription,A farming tool for tilling fields and 
 Bp_ToolOrWeapon_Hoe_Metal_UnlockConditionsDesc,Flint Hoe and Metal Nugget Needed,需要燧石锄和金属块
 Bp_ToolOrWeapon_Scythe_Metal_CardName,Metal Scythe,金属大镰刀
 Bp_ToolOrWeapon_Scythe_Metal_CardDescription,A farming tool for harvesting fields faster and more efficiently.,一种能更快、更高效地收割农作物的农用工具。
-Bp_ToolOrWeapon_Scythe_Metal_UnlockConditionsDesc,Scythe Blade Needed,需要大镰刀刃片
+Bp_ToolOrWeapon_Scythe_Metal_UnlockConditionsDesc,More Smithing or Herbalism Needed,需要更高的金工或草药学技能
 Bp_ToolOrWeapon_Sickle_Metal_CardName,Metal Sickle,金属镰刀
 Bp_ToolOrWeapon_Sickle_Metal_CardDescription,A farming tool for harvesting plants from gardens faster.,一种能更快地从菜园里收割植物的农具。
-Bp_ToolOrWeapon_Sickle_Metal_UnlockConditionsDesc,Sickle Blade Needed,需要镰刀刃片
+Bp_ToolOrWeapon_Sickle_Metal_UnlockConditionsDesc,More Smithing or Herbalism Needed,需要更高的金工或草药学技能
 Bp_WheatField_CardName,Wheat,小麦
 Bp_WheatField_CardDescription,"Bought from traders; needs medium acidity, medium hydration and high nutrients.\n\nEdible grain, long lasting and useful for making bread and beer.",从商人处购得；需要中等酸度、中等湿度和高养分。\n\n可持久耐储的可食用谷物，可用于制作面包和啤酒。
 Bp_WheatField_UnlockConditionsDesc,Rye Grains Needed,需要小麦粒
@@ -21941,7 +21885,7 @@ BoarFreePiglet_FuelCapacity.OnZero.ActionDescription,Piglet Escaped,猪崽逃跑
 BoarFreePiglet_SpecialDurability3.OnZero.ActionDescription,Boar died!,野猪死了！
 CowFreeCalf_CardName,Calf,小牛
 CowFreeCalf_CardDescription,Could slaughter it for its meat and leather or wait for it to grow into an adult.,可以屠宰它以获取肉和皮革，或者让其长大。
-CowFreeCalf_SpoilageTime.CardStatName,Hunger,饥饿
+CowFreeCalf_SpoilageTime.CardStatName,Satiation,饱食度
 CowFreeCalf_UsageDurability.CardStatName,Happiness,幸福感
 CowFreeCalf_FuelCapacity.CardStatName,Trust,信任
 CowFreeCalf_FuelCapacity.OnZero.ActionName,Escape,跑路
@@ -21963,7 +21907,7 @@ CowFreeCalf_CardInteractions[4].ActionName,Kill,屠宰
 CowFreeCalf_DismantleActions[0].ActionName,Care,照料
 CowFreeFemale_CardName,Cow,牛
 CowFreeFemale_CardDescription,Can slaughter it for its meat and leather or breed it with a bull.\n\nCan also be milked for milk while it's lactating.,可以屠宰它以获取肉和皮革，或让其与公牛繁殖。\n\n泌乳期间还可以挤奶。
-CowFreeFemale_SpoilageTime.CardStatName,Hunger,饥饿
+CowFreeFemale_SpoilageTime.CardStatName,Satiation,饱食度
 CowFreeFemale_SpoilageTime.OnZero.ActionName,Oh no!,噢不……
 CowFreeFemale_SpoilageTime.OnZero.ActionDescription,Cow died of starvation!,母牛死于饥饿！
 CowFreeFemale_UsageDurability.CardStatName,Happiness,幸福感
@@ -21989,7 +21933,7 @@ CowFreeFemale_CardInteractions[4].ActionName,Kill,屠宰
 CowFreeFemale_DismantleActions[0].ActionName,Care,照料
 CowFreeMale_CardName,Bull,公牛
 CowFreeMale_CardDescription,Could slaughter it for its meat and leather or let it impregnate cows.,可以屠宰它以获取肉和皮革，或者让它使母牛受孕。
-CowFreeMale_SpoilageTime.CardStatName,Hunger,饥饿
+CowFreeMale_SpoilageTime.CardStatName,Satiation,饱食度
 CowFreeMale_UsageDurability.CardStatName,Happiness,幸福感
 CowFreeMale_FuelCapacity.CardStatName,Trust,信任
 CowFreeMale_FuelCapacity.OnZero.ActionName,Escape,跑路
@@ -22010,7 +21954,7 @@ CowFreeMale_CardInteractions[4].ActionName,Kill,屠宰
 CowFreeMale_DismantleActions[0].ActionName,Care,照料
 ChickenFreeChick_CardName,Chicken Chick,鸡仔
 ChickenFreeChick_CardDescription,Feeds on its own provided there's enough to forage. Might escape if the area is not secured and its trust is low.,只要有足够的食物，它就会自己觅食。如果该区域不安全且信任度低，它可能会逃跑。
-ChickenFreeChick_SpoilageTime.CardStatName,Hunger,饥饿
+ChickenFreeChick_SpoilageTime.CardStatName,Satiation,饱食度
 ChickenFreeChick_UsageDurability.CardStatName,Happiness,幸福感
 ChickenFreeChick_FuelCapacity.CardStatName,Trust,信任
 ChickenFreeChick_FuelCapacity.OnZero.ActionName,Escape,跑路
@@ -22026,7 +21970,7 @@ ChickenFreeChick_DismantleActions[0].ActionName,Care,照料
 ChickenFreeChick_DismantleActions[1].ActionName,Kill,屠宰
 ChickenFreeFemale_CardName,Chicken,母鸡
 ChickenFreeFemale_CardDescription,Feeds on its own provided there's enough to forage. Might escape if the area is not secured and its trust is low.\n\nLays eggs if a nesting box is present; fertilized eggs if a male is present.,只要有足够的食物，它就会自己觅食。如果该区域不安全且信任度低，它可能会逃跑。\n\n如果有巢箱，它会下蛋；如果有雄性，它会产下受精卵。
-ChickenFreeFemale_SpoilageTime.CardStatName,Hunger,饥饿
+ChickenFreeFemale_SpoilageTime.CardStatName,Satiation,饱食度
 ChickenFreeFemale_UsageDurability.CardStatName,Happiness,幸福感
 ChickenFreeFemale_FuelCapacity.CardStatName,Trust,信任
 ChickenFreeFemale_FuelCapacity.OnZero.ActionDescription,Chicken Escaped,鸡逃跑了！
@@ -22043,7 +21987,7 @@ ChickenFreeFemale_DismantleActions[0].ActionName,Care,照料
 ChickenFreeFemale_DismantleActions[1].ActionName,Kill,屠宰
 ChickenFreeMale_CardName,Cock,公鸡
 ChickenFreeMale_CardDescription,Feeds on its own provided there's enough to forage. Might escape if the area is not secured and its trust is low.,只要有足够的食物，它就会自己觅食。如果该区域不安全且信任度低，它可能会逃跑。
-ChickenFreeMale_SpoilageTime.CardStatName,Hunger,饥饿
+ChickenFreeMale_SpoilageTime.CardStatName,Satiation,饱食度
 ChickenFreeMale_UsageDurability.CardStatName,Happiness,幸福感
 ChickenFreeMale_FuelCapacity.CardStatName,Trust,信任
 ChickenFreeMale_FuelCapacity.OnZero.ActionName,Escape,跑路
@@ -22171,7 +22115,7 @@ WoodSorrelDry_SpoilageTime.CardStatName,Spoilage,变质
 WoodSorrelDry_SpoilageTime.OnFull.ActionDescription,Wood Sorrel Spoiled!,酢浆草变质了！
 WoodSorrelDry_Progress.CardStatName,Nutrition,营养
 WoodSorrelDry_DismantleActions[0].ActionName,Eat,吃掉
-WoodSorrelRaw_FuelCapacity.OnZero.ActionDescription,Clover dried!,三叶草晾干了！
+WoodSorrelRaw_FuelCapacity.OnZero.ActionDescription,Wood Sorrel dried!,酢浆草晾干了！
 CheeseAged_CardName,Aged Cheese,陈年奶酪
 CheeseAged_CardDescription,Tasty and long lasting. Needs to be cut into wedges to be eaten.,美味且耐存放。需要切成楔块后才能食用。
 CheeseAged_SpoilageTime.CardStatName,Spoilage,变质
@@ -22270,7 +22214,7 @@ MeatStomachCalfRaw_SpecialDurability2.CardStatName,Quality,品质
 MeatStomachCalfRaw_SpecialDurability3.CardStatName,Rennet,凝乳酶
 MeatStomachCalfRaw_SpecialDurability4.CardStatName,Boil,烹煮
 MeatStomachCalfRaw_DismantleActions[0].ActionName,Eat,吃掉
-MeatStomachCalfRawDirty_CardName,Calf Stomach,小牛胃
+MeatStomachCalfRawDirty_CardName,Dirty Calf Stomach,血污小牛胃
 MeatStomachCalfRawDirty_CardDescription,Must be cleaned first.,需要先洗干净
 MeatStomachCalfRawDirty_SpoilageTime.CardStatName,Spoilage,变质
 MeatStomachCalfRawDirty_SpoilageTime.OnFull.ActionDescription,Stomach Spoiled!,胃变质了！
@@ -22608,7 +22552,7 @@ PieRaw_CardDescription,Best if baked in an oven. Can be filled with up to 4 ingr
 PieRaw_SpoilageTime.CardStatName,Spoilage,变质
 PieRaw_SpoilageTime.OnFull.ActionDescription,Pie Spoiled!,派变质了！
 PieRaw_UsageDurability.CardStatName,Vitamins,维生素
-PieRaw_FuelCapacity.CardStatName,Ingridients,配料
+PieRaw_FuelCapacity.CardStatName,Filling,填料
 PieRaw_Progress.CardStatName,Calories,卡路里
 PieRaw_SpecialDurability1.CardStatName,Cook,烹饪
 PieRaw_SpecialDurability2.CardStatName,Quality,品质
@@ -23024,10 +22968,8 @@ Bp_RemakeIronBar_CardDescription,Required for forging metal tools.,用于锻造�
 Bp_RemakeIronBar_UnlockConditionsDesc,Iron Blank Needed,需要铁坯
 Bp_Smithed_BlankHammerHead_CardName,Forged Hammer Head,锻造锤头
 Bp_Smithed_BlankHammerHead_CardDescription,A metal hammer head. ,金属锤头。
-Bp_Smithed_BlankHammerHead_UnlockConditionsDesc,Iron Bar Needed,需要铁锭
 Bp_Smithed_BlankPickaxeHead_CardName,Forged Pickaxe Head,锻造镐头
 Bp_Smithed_BlankPickaxeHead_CardDescription,A metal pickaxe head.,金属镐头。
-Bp_Smithed_BlankPickaxeHead_UnlockConditionsDesc,Iron Bar Needed,需要铁锭
 Bp_SplitIntoIronBars_CardName,Split into Iron Bars,分割成铁锭
 Bp_SplitIntoIronBars_CardDescription,Required for forging metal tools.,用于锻造金属工具。
 Bp_SplitIntoIronBars_UnlockConditionsDesc,Iron Blank Needed,需要铁坯
@@ -23041,10 +22983,10 @@ Bp_Forge_CardDescription,A station for working hot metal. Only accepts coal as f
 Bp_Forge_UnlockConditionsDesc,More Smithing Needed,需要更高的金工技能
 Bp_ToolOrWeapon_Hammer_Metal_CardName,Forge Hammer,锻造锤
 Bp_ToolOrWeapon_Hammer_Metal_CardDescription,A sturdy tool for shaping metal more easily. Essential for working iron tools.,用于更轻松塑形金属的坚固工具。制作铁制工具的必备品。
-Bp_ToolOrWeapon_Hammer_Metal_UnlockConditionsDesc,Hammer Head Needed,需要锤头
+Bp_ToolOrWeapon_Hammer_Metal_UnlockConditionsDesc,Iron Bar Needed,需要铁锭
 Bp_ToolOrWeapon_Pickaxe_Metal_CardName,Metal Pickaxe,金属镐
 Bp_ToolOrWeapon_Pickaxe_Metal_CardDescription,A specialized tool for mining.,用于挖矿的专用工具。
-Bp_ToolOrWeapon_Pickaxe_Metal_UnlockConditionsDesc,Pickaxe Head Needed,需要镐头
+Bp_ToolOrWeapon_Pickaxe_Metal_UnlockConditionsDesc,Iron Bar Needed,需要铁锭
 Bp_Appeasement_CardName,Appeasement,供奉
 Bp_Appeasement_BuildingContainerDurabilitiesConditions.FailMessage,Carcass has no spirit.,尸体没有精魄。
 Combat_ BTBeaver_Head.UnharmedResults[0].CombatLog.LogText,"Unfortunately, you didn't manage to harm {0}.",不幸的是，你没能伤害到{0}。
@@ -24056,8 +23998,8 @@ AlderBark_CardInteractions[1].RequiredReceivingDurabilities.SpecificFailMessages
 Blank_MetalArrowBroadheadQQQ_AlternateNames[10].Name,Iron Broadhead Blank,铁宽头箭头坯
 Blank_MetalArrowBroadheadQQQ_AlternateNames[11].Name,Iron Broadhead Blank,铁宽头箭头坯
 Blank_MetalArrowBroadhead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,如果材料是铁（金属类型 200）且品质 50% 或更高，将打击次数设为 +1
-Blank_ArrowHeadQWE_AlternateNames[3].Name,Iron Arrow Head Blank,铁箭头坯
-Blank_MetalArrowHead_AlternateNames[10].Name,Iron Arrow Head Blank,铁箭头坯
+Blank_ArrowHeadQWE_AlternateNames[3].Name,Iron Arrowhead Blank,铁箭头坯
+Blank_MetalArrowHead_AlternateNames[10].Name,Iron Arrowhead Blank,铁箭头坯
 MetalAxeHeadBlankQWE_AlternateNames[4].Name,Iron Axe Blank,铁斧坯
 MetalAxeHeadBlankQWE_AlternateNames[5].Name,Iron Axe Blank,铁斧坯
 Blank_MetalAxeHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),如果材料是铁（金属类型 200），将打击次数设为 4
@@ -24374,8 +24316,8 @@ PeatTurfWet_FuelCapacity.OnZero.ActionDescription,Peat Turf dried!,泥煤块已�
 Plank_AlternateNames[4].Name,Alder Plank,桤木板
 Shape_MetalArrowBroadHeadQQQ_AlternateNames[10].Name,Iron Broadhead,铁宽头箭头
 Shape_MetalArrowBroadHeadQQQ_AlternateNames[11].Name,Iron Broadhead,铁宽头箭头
-Shape_MetalArrowHead_AlternateNames[10].Name,Iron Arrow Head,铁箭头
-Shape_MetalArrowHead_AlternateNames[11].Name,Iron Arrow Head,铁箭头
+Shape_MetalArrowHead_AlternateNames[10].Name,Iron Arrowhead,铁箭头
+Shape_MetalArrowHead_AlternateNames[11].Name,Iron Arrowhead,铁箭头
 Shape_MetalArrowHead_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
 Shape_MetalArrowHead_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
 Shape_MetalArrowHead_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
@@ -24480,14 +24422,6 @@ Shape_MetalKnifeBlade_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and in
 Shape_MetalKnifeBlade_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalMeatHook_AlternateNames[10].Name,Iron Meat Hook,铁肉钩
 Shape_MetalMeatHook_AlternateNames[11].Name,IIron Meat Hook,铁肉钩
-Shape_MetalMeatHook_OnStatsChangeActions[0].ActionName,Set Strikes to 4 if Material is Iron ( metal type 200 ),若材质为铁（金属类型 200），将打击次数设为 4
-Shape_MetalMeatHook_OnStatsChangeActions[1].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 30% quality or higher,若材质为铁（金属类型 200）且品质 30% 或以上，将打击次数 +1
-Shape_MetalMeatHook_OnStatsChangeActions[2].ActionName,Set Strikes to +1 if Material is Iron ( metal type 200 ) of 50% quality or higher,若材质为铁（金属类型 200）且品质 50% 或以上，将打击次数 +1
-Shape_MetalMeatHook_OnStatsChangeActions[3].ActionName,Set Strikes to 2 and increase quality by up to 10  if Material is Copper ( metal type 100 ),若材质为铜（金属类型 100），将打击次数设为 2 并最多提升品质 10
-Shape_MetalMeatHook_OnStatsChangeActions[4].ActionName,Set Strikes to 3 and increase quality by up to 6  if Material is Ghost Bronze ( metal type 110 ),若材质为鬼铜（金属类型 110），将打击次数设为 3 并最多提升品质 6
-Shape_MetalMeatHook_OnStatsChangeActions[5].ActionName,Set Strikes to 1 and increase quality by up to 14 if Material is Tin ( metal type 120 ),若材质为锡（金属类型 120），将打击次数设为 1 并最多提升品质 14
-Shape_MetalMeatHook_OnStatsChangeActions[6].ActionName,Set Strikes to 3 and increase quality by up to 6 if Material is Tin Bronze ( metal type 130 ),若材质为青铜（金属类型 130），将打击次数设为 3 并最多提升品质 6
-Shape_MetalMeatHook_OnStatsChangeActions[7].ActionName,Set Strikes to 2 and increase quality by up to 10 if Material is White Bronze ( metal type 140 ),若材质为白铜（金属类型 140），将打击次数设为 2 并最多提升品质 10
 Shape_MetalMeatHook_OnStatsChangeActions[8].ActionName,Backwards Comptability - if Metal Type is 0 put it to 100,回落兼容 - 金属类型是0的话改为100
 Shape_MetalPickaxeHead_CardName,Metal Pickaxe Head,金属镐头
 Shape_MetalPickaxeHead_CardDescription,Required for crafting metal pickaxes.,用于制作金属镐。
@@ -24639,7 +24573,7 @@ ToolOrWeapon_TwistedRing_Metal_AlternateNames[5].Name,Iron Twisted Ring,铁扭�
 ToolOrWeapon_ArrowBroadhead_MetalQQQ_AlternateNames[5].Name,Iron Broadhead Arrow,铁制宽头箭
 ToolOrWeapon_Arrow_Metal_AlternateNames[5].Name,Iron Arrow,铁箭
 ToolOrWeapon_SpearHunting_MetalQQQ_AlternateNames[5].Name,Iron Hunting Spear,铁制狩猎长矛
-ToolOrWeapon_Spear_Metal_AlternateNames[5].Name,Iron Bronze Spear,铁青铜矛
+ToolOrWeapon_Spear_Metal_AlternateNames[5].Name,Iron Spear,铁矛
 FairyweedTea_Progress.CardStatName,Thickness,浓稠度
 FairyweedTea_DismantleActions[0].ActionName,Drink,饮用
 LQ_AlderTanningLiquor_CardName,Alder Tanning Liquor,桤木鞣液
@@ -25087,12 +25021,11 @@ Bp_Smithed_BlankFireStriker_CardDescription,A metal fire striker.,一个金属�
 Bp_Smithed_BlankFireStriker_UnlockConditionsDesc,Iron Bar Needed,需要铁锭
 Bp_Smithed_BlankHandsawBlade_CardName,Forged Handsaw Blade,锻造手锯刀片
 Bp_Smithed_BlankHandsawBlade_CardDescription,A metal handsaw blade. \n\nUsed to cut wood into precise shapes and planks. Essential for advanced woodworking.,一个金属手锯刃片。\n\n用于将木材切割成精确的形状和板材。是高级木工的必备工具。
-Bp_Smithed_BlankHandsawBlade_UnlockConditionsDesc,Iron Bar Needed,需要铁锭
 Bp_CharcoalMound_CardName,Charcoal Mound,炭堆
 Bp_CharcoalMound_UnlockConditionsDesc,Kiln Needed,需要窑炉
 Bp_ClothLargeTreadle_CardName,Large cloth,大块的布
 Bp_ClothMediumTreadle_CardName,Cloth,布
-Bp_ClothSack_CardName,Cloth SAck,布袋
+Bp_ClothSack_CardName,Cloth Sack,布袋
 Bp_ClothSack_CardDescription,"A cloth sack, good for carrying stuff around.",一个布制的袋子，很适合装东西。
 Bp_ClothSack_UnlockConditionsDesc,Large Cloth Needed,需要大块的布
 Bp_ClothSmallTreadle_CardName,Small Cloth,布片
@@ -25117,7 +25050,7 @@ Bp_SpinningWheel_CardDescription,Used for spinning fibers into twine or yarn muc
 Bp_SpinningWheel_UnlockConditionsDesc,More Weaving Needed,需要更高的编织技能
 Bp_ToolOrWeapon_Handsaw_Metal_CardName,Metal Handsaw,金属手锯
 Bp_ToolOrWeapon_Handsaw_Metal_CardDescription,Used to cut wood into precise shapes and planks. Essential for advanced woodworking.,用于将木材切割成精确的形状和板材。是高级木工的必备工具。
-Bp_ToolOrWeapon_Handsaw_Metal_UnlockConditionsDesc,Handsaw Blade Needed,需要手锯刀片
+Bp_ToolOrWeapon_Handsaw_Metal_UnlockConditionsDesc,Iron Bar Needed,需要铁锭
 Bp_TreadleLoom_CardName,Treadle Loom,踏板织机
 Bp_TreadleLoom_CardDescription,Used for weaving cloth of different sizes more efficiently.,用于更高效的纺织不同尺寸的布。
 Bp_TreadleLoom_UnlockConditionsDesc,More Weaving Needed,需要更高的编织技能
@@ -25402,12 +25335,9 @@ Wheelbarrow_CardDescription,A device for carrying heavy loads across roads.,用�
 Wheelbarrow_SpoilageTime.CardStatName,Spoilage,变质
 Wheelbarrow_CardInteractions[0].ActionName,Repair,修复
 TreadleLoom_CardName,Treadle Loom,踏板织机
-TreadleLoom_CardDescription,Used for weaving cloth of different sizes more efficiently.,用于更高效的纺织不同尺寸的布。
-TreadleLoom_DismantleActions[0].ActionName,Disassemble Loom,拆卸织布机
+TreadleLoom_CardDescription,Used for weaving cloth of different sizes more efficiently.\n\nNeeds to be placed to work.,用于更高效的纺织不同尺寸的布。\n\n需要放置后才能使用。
 FiberBreak_CardName,Fiber Break,纤维破碎架
-FiberBreak_CardDescription,Used for extracting fibers more effectively.,用于更有效地提取纤维。
-FiberBreak_SpecialDurability2.CardStatName,Quality,品质
-FiberBreak_DismantleActions[0].ActionName,Disassemble Spinning Wheel,拆解纺车
+FiberBreak_CardDescription,Used for extracting fibers more effectively.\n\nNeeds to be placed to work.,用于更有效地提取纤维。\n\n需要放置后才能使用。
 PotteryWheelItem_CardName,Pottery Wheel,陶轮
 PotteryWheelItem_CardDescription,A device for working clay more efficiently.\n\nNeeds to be placed to work.,一种能更高效地加工黏土的装置。\n\n需要放置后才能使用。
 PotteryWheelItem_DismantleActions[0].ActionName,Place,放置
@@ -25415,9 +25345,7 @@ PotteryWheelLocation_CardName,Pottery Wheel,陶轮
 PotteryWheelLocation_CardDescription,A device for working clay more efficiently.,一种能更高效地加工黏土的装置。
 PotteryWheelLocation_DismantleActions[0].ActionName,Pick up,拿起
 SpinningWheel_CardName,Spinning Wheel,纺车
-SpinningWheel_CardDescription,Used for spinning fibers into twine or yarn much more effectively.,用于非常高效地将纤维缠成细线或线团。
-SpinningWheel_SpecialDurability2.CardStatName,Quality,品质
-SpinningWheel_DismantleActions[0].ActionName,Disassemble Spinning Wheel,拆解纺车
+SpinningWheel_CardDescription,Used for spinning fibers into twine or yarn much more effectively.\n\nNeeds to be placed to work.,用于非常高效地将纤维缠成细线或线团。\n\n需要放置后才能使用。
 ToolOrWeaponBlunt_Handsaw_Metal_CardName,Blunt Metal Handsaw,钝金属手锯
 ToolOrWeaponBlunt_Handsaw_Metal_CardDescription,Should sharpen it with a stone before it can be used again.,先用石头将其磨利，然后才能再次使用。
 ToolOrWeaponBlunt_Handsaw_Metal_AlternateNames[0].Name,Blunt Iron Handsaw,钝铁手锯
@@ -25655,3 +25583,1010 @@ HollownessLevel_Statuses[1].GameName,High,高
 HollownessStatus_GameName,Hollowness Status,空壳化状态
 HollownessStatus_Statuses[0].GameName,Intermediate,中级
 HollownessStatus_Statuses[1].GameName,High,高
+USED_BY,Used by {1},被{1}使用
+CANNOT_TRADE_EQUIPPED_CARDS,{0} is wearing {1}!,{0}正在穿着{1}！
+CARD_USED_BY,{0} is being used by {1},{0}正在被{1}使用
+CUSTOM_NPC_TAB,Custom Companions,自定义伙伴
+DEFAULT_NPC,Companion,伙伴
+EDIT_AND_CONFIRM,Edit and Confirm,编辑并确认
+PREMADE_NPC_TAB,Companions,伙伴
+SELECT_NPC,Select {0},选择{0}
+EARLY_ACCESS,EARLY ACCESS,抢先体验
+I_UNDERSTAND,I Understand,我明白了
+EA_DISCLAIMER,"This game is still in Early Access. We are working to continuously improve it and add new content, but this also means that some features are still incomplete or unbalanced and, most importantly, that you might encounter bugs in your playthrough. This is even more true in the Beta branch!\n\n\nIf you do encounter an issue, please let us know about it. You can either use the in-game bug report tool (press F2), or report it on the Steam forums or the Discord server. Every report helps making Card Survival: Fantasy Forest a more stable experience. Thank you for your support!",本游戏目前仍处于抢先体验阶段。我们正在努力持续改进并添加新内容，但这同时也意味着部分功能尚未完善或平衡性存在问题，更重要的是，您在游戏过程中可能会遇到一些bug。在Beta测试版中，这种情况尤为常见！\n\n\n如果您遇到任何问题，请务必告知我们。您可以使用游戏内的bug报告工具（按F2键），也可以在Steam论坛或Discord服务器上提交报告。您的每一份报告都有助于我们改进《卡牌生存：奇幻森林》，使其更加稳定可靠。感谢您的支持！
+EXIT_NPC_CREATOR_UNIQUE_NAME,Please enter a unique name for your character,请为你的角色取个独特的名字
+PURCHASE_TO_UNLOCK,Purchase to unlock,购买以解锁
+COPY_AND_EDIT,Copy and Edit,复制并编辑
+Expression Hub 1_Line,Your partner listens.,你的同伴正在听从。
+Expression Hub 1_PossibleAnswers[0].Answer,Step Back,退后
+Expression Hub 1_PossibleAnswers[1].Answer,Express Care,表达关心
+Expression Hub 1_PossibleAnswers[2].Answer,Express Gratitude,表达感激
+Expression Hub 1_PossibleAnswers[3].Answer,Express Attraction,表达好感
+Expression Hub 1_PossibleAnswers[4].Answer,Express Happiness,表达幸福
+Expression Hub 1_PossibleAnswers[5].Answer,Express Sadness,表达悲伤
+Expression Hub 1_PossibleAnswers[6].Answer,Express Emotions,表达情绪
+Expression Hub_Line,Your partner listens.,你的同伴正在听从。
+Expression Hub_PossibleAnswers[0].Answer,Step Back,退后
+Expression Hub_PossibleAnswers[1].Answer,Express Care,表达关心
+Expression Hub_PossibleAnswers[2].Answer,Express Gratitude,表达感激
+Expression Hub_PossibleAnswers[3].Answer,Express Attraction,表达好感
+Expression Hub_PossibleAnswers[4].Answer,Express Happiness,表达幸福
+Expression Hub_PossibleAnswers[5].Answer,Express Sadness,表达悲伤
+PartnerDialog_Directions_Directions Hub_Line,Your partner listens.,你的同伴正在听从。
+PartnerDialog_Directions_Directions Hub_PossibleAnswers[0].Answer,Step Back,退后
+PartnerDialog_Directions_Directions Hub_PossibleAnswers[1].Answer,Follow,跟随
+PartnerDialog_Directions_Directions Hub_PossibleAnswers[2].Answer,Stop Following,停止跟随
+PartnerDialog_Directions_Directions Hub_PossibleAnswers[3].Answer,Mark place as home,标记居住点
+PartnerDialog_Directions_Directions Hub_PossibleAnswers[4].Answer,Return Home,回家
+PartnerDialog_Directions_Directions Hub_PossibleAnswers[5].Answer,Stop Processing Inventory,停止整理物品
+PartnerDialog_Directions_Directions Hub_PossibleAnswers[6].Answer,Process Inventory,整理物品
+PartnerDialog_ExpressAttraction_Express Attraction_Line,Your partner approaches you and expresses attraction.,你的同伴靠近你并表达了好感。
+PartnerDialog_ExpressAttraction_Express Attraction_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_ExpressGratitude_Express Gratitude_Line,Your partner approaches you and expresses gratitude.,你的同伴靠近你并表达了感激。
+PartnerDialog_ExpressGratitude_Express Gratitude_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_Expression_Expression Hub_PossibleAnswers[0].Answer,Step Back,退后
+PartnerDialog_Expression_Expression Hub_PossibleAnswers[1].Answer,Casual Talk,闲谈
+PartnerDialog_Expression_Expression Hub_PossibleAnswers[2].Answer,Express Care,表达关心
+PartnerDialog_Expression_Expression Hub_PossibleAnswers[3].Answer,Express Attraction,表达好感
+PartnerDialog_Expression_Expression Hub_PossibleAnswers[4].Answer,Express Needs,表达需求
+PartnerDialog_Expression_Express Affection - Success_Line,You make conversation fueled by the affection you feel.\nThe reaction is positive.,你满怀兴致地表述了内心。\n得到了积极的回应。
+PartnerDialog_Expression_Express Gratitude - Success_Line,You make conversation fueled by the gratitude you feel.\nThe reaction is positive.,你满怀感激地表述了内心。\n得到了积极的回应。
+PartnerDialog_Expression_Express Attraction - Success_Line,You make conversation fueled by the attraction you feel.\nThe reaction is positive.,你满怀好感地表述了内心。\n得到了积极的回应。
+PartnerDialog_Expression_Express Attraction - Success_PossibleAnswers[0].Answer,Back,返回
+PartnerDialog_Expression_Express Attraction - Success_PossibleAnswers[1].Answer,Express Intimacy,表达亲近
+PartnerDialog_Expression_Express Attraction - Failure_Line,You make conversation fueled by the attraction you feel.\nThe reaction is negative.,你满怀好感地表述了内心。\n得到了消极的回应。
+PartnerDialog_Expression_Express Affection - Failure_Line,You make conversation fueled by the affection you feel.\nThe reaction is negative.,你满怀兴致地表述了内心。\n得到了消极的回应。
+PartnerDialog_Expression_Express Gratitude - Failure_Line,You make conversation fueled by the gratitude you feel.\nThe reaction is negative.,你满怀感激地表述了内心。\n得到了消极的回应。
+PartnerDialog_Expression_Express Happiness - Success_Line,You make conversation fueled by the happiness you feel.\nThe reaction is positive.,你满怀幸福地表述了内心。\n得到了积极的回应。
+PartnerDialog_Expression_Express Happiness - Failure_Line,You make conversation fueled by the happiness you feel.\nThe reaction is negative.,你满怀幸福地表述了内心。\n得到了消极的回应。
+PartnerDialog_Expression_Express Sadness - Success_Line,You make conversation fueled by the need for emotional support you feel.\nThe reaction is positive.,你满怀对情绪的渴求并表述了内心。\n得到了积极的回应。
+PartnerDialog_Expression_Express Sadness - Failure_Line,You make conversation fueled by the  need for emotional support you feel.\nThe reaction is negative.,你满怀对情绪的渴求并表述了内心。\n得到了消极的回应。
+PartnerDialog_Expression_Express Intimacy - Success_Line,You initiate an intimate moment.\nThe reaction is positive.,你营造了暧昧的氛围。\n得到了积极的回应。
+PartnerDialog_Expression_Express Intimacy - Failure_Line,You initiate an intimate moment.\nThe reaction is negative.,你营造了暧昧的氛围。\n得到了消极的回应。
+PartnerDialog_Expression_Needs Hub_Line,Your partner is ready to engage.,你的同伴已经准备好了。
+PartnerDialog_Expression_Needs Hub_PossibleAnswers[0].Answer,Back,返回
+PartnerDialog_Expression_Needs Hub_PossibleAnswers[1].Answer,Express Need fo Help,表达需要帮助
+PartnerDialog_Expression_Needs Hub_PossibleAnswers[2].Answer,Express need for Emotional Support,表达情感渴求
+PartnerDialog_Expression_Express Need for Help - Success_Line,You make conversation fueled by the need for help you feel.\nThe reaction is positive.,你满怀对帮助的需要并表述了内心。\n得到了积极的回应。
+PartnerDialog_Expression_Express Need for Help - Failure_Line,You make conversation fueled by the need for help you feel.\nThe reaction is negative.,你满怀对帮助的需要并表述了内心。\n得到了消极的回应。
+PartnerDialog_Expression_Care Hub_Line,Your partner is ready to engage.,你的同伴已经准备好了。
+PartnerDialog_Expression_Care Hub_PossibleAnswers[0].Answer,Back,返回
+PartnerDialog_Expression_Care Hub_PossibleAnswers[1].Answer,Listen,听从
+PartnerDialog_Expression_Care Hub_PossibleAnswers[2].Answer,Express Gratitude,表达感激
+PartnerDialog_Expression_Care Hub_PossibleAnswers[3].Answer,Express Affection,表达兴致
+PartnerDialog_Expression_Listen - Successful_Line,"You listen to your partner attentively, giving them your attention.\nThe reaction is positive.",你认真倾听并关注了伙伴。得到了积极的回应。
+PartnerDialog_Expression_Listen - Failure_Line,"You listen to your partner attentively, giving them your attention.\nThe reaction is negative.",你认真倾听并关注了伙伴。得到了消极的回应。
+PartnerDialog_Expression_Casual Talk - Success_Line,You make light conversation with the intention of keeping each other company\nThe reaction is positive.,你们出于彼此相伴的目的经进行了闲聊。\n得到了积极的回应。
+PartnerDialog_Expression_Casual Talk - Failure_Line,You make light conversation with the intention of keeping each other company\nThe reaction is negative.,你们出于彼此相伴的目的经进行了闲聊。\n得到了消极的回应。
+PartnerDialog_ExpressNeedAttention_Express Need Attention_Line,Your partner approaches you and expresses the need for attention.,你的同伴靠近你并表达需要关注。
+PartnerDialog_ExpressNeedAttention_Express Need Attention_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_ExpressNeedFood_Express Need Food_Line,Your partner approaches you and expresses the urgent need for food.,你的同伴靠近你并表达急切需要食物。
+PartnerDialog_ExpressNeedFood_Express Need Food_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_ExpressNeedTrust_Express Need Trust_Line,Your partner approaches you and expresses the urgent need for trust.,你的同伴靠近你并表达急切需要信任。
+PartnerDialog_ExpressNeedTrust_Express Need Trust_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_ExpressNeedWarmth_Express Need Warmth_Line,Your partner approaches you and expresses the urgent need for warmth.,你的同伴靠近你并表达急切需要保暖。
+PartnerDialog_ExpressNeedWarmth_Express Need Warmth_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_ExpressUltimatum_Express Ultimatum_Line,Your partner has lost all trust in you and now approaches with the intention of leaving you.,你的同伴失去了对你的所有信任并可能打算离开你。
+PartnerDialog_ExpressUltimatum_Express Ultimatum_PossibleAnswers[0].Answer,Part Ways,分道扬镳
+PartnerDialog_ExpressUltimatum_Express Ultimatum_PossibleAnswers[1].Answer,Convince to Stay,说服留下
+PartnerDialog_ExpressUltimatum_Convince to Stay - Success_Line,You attempt to convince your partner to stay.\n\n...\n...\n...\n\nThe reaction is positive.,你尝试说服你的同伴留下。\n\n……\n……\n……\n\n得到了积极的回应。
+PartnerDialog_ExpressUltimatum_Convince to Stay - Failure_Line,You attempt to convince your partner to stay.\n\n...\n...\n...\n\nThe reaction is negative.,你尝试说服你的同伴留下。\n\n……\n……\n……\n\n得到了消极的回应。
+PartnerDialog_ExpressUltimatum_Partner Leaves_Line,Your partner leaves you.\n\nThings did not work out between you.,你的同伴离开了你。\n\n你们之间的尝试没有成功。
+PartnerDialog_ExpressUltimatum_Partner Leaves_ActionToPerform.DeleteNPCS[0].MessageToPlayer.Text,Your partner has left you.,你的同伴已经离开了你。
+TraderTalk_Request Hub_PossibleAnswers[8].Answer,Request a Partner,请求同伴
+TraderTalkGeneral_Bring Partner_Line,He asks you to describe what kind of partner you are looking for.,他询问你需要什么样的伙伴。
+TraderTalkGeneral_Bring Partner_PossibleAnswers[0].Answer,Cancel,取消
+TraderTalkGeneral_Bring Partner_PossibleAnswers[1].Answer,Describe Partner,描述伙伴
+TraderTalkGeneral_Partner Confirmed_Line,"He says he will try to find such a person for his next forest visit, and that you should let him know if you change your mind.",他说他会试着找到这么个人，下次来的时候带上他。如果你改变主意了得告诉他。
+DutyTag_Creative_InGameName,Relaxed,小菜一碟的
+DutyTag_Methodical_InGameName,Methodical,有条不紊的
+DutyTag_Nature_InGameName,Relaxed,小菜一碟的
+DutyTag_Nurturing_InGameName,Relaxed,小菜一碟的
+DutyTag_Physical_InGameName,Physical,锻炼
+PartnerDuty_BaitFishing_DutyName,Add bait to fishing line,在鱼线上添加诱饵
+PartnerDuty_Bedkeeping_DutyName,Bed keeping,维护床铺
+PartnerDuty_BrainTan_DutyName,Brain Tan,脑鞣
+PartnerDuty_ButcherLarge_DutyName,Butcher Large Animal,屠宰大型动物
+PartnerDuty_ButcherMedium_DutyName,Butcher Medium Animal,屠宰中型动物
+PartnerDuty_ButcherSmall_DutyName,Butcher Small Animal,屠宰小型动物
+PartnerDuty_ButcherTiny_DutyName,Butcher Tiny Animal,屠宰极小动物
+PartnerDuty_ButcherVeryLarge_DutyName,Butcher Very Large Animal,屠宰特大动物
+PartnerDuty_ClayVaseFillWithWater_DutyName,Fill Water,加水
+PartnerDuty_Clean_DutyName,Clean,打扫
+PartnerDuty_CordMaking_DutyName,Cord Making,制线
+PartnerDuty_CreateIceHole_DutyName,Create Hole,凿洞
+PartnerDuty_CutDownTree_DutyName,Cut Down Tree,砍树
+PartnerDuty_DigMud_DutyName,Dig Mud,挖泥
+PartnerDuty_DrinkFree_DutyName,Drink,饮用
+PartnerDuty_Eat_DutyName,Eat,吃饭
+PartnerDuty_EatFree_DutyName,Eat,吃饭
+PartnerDuty_ExpressAttraction_DutyName,Express Attraction,表达好感
+PartnerDuty_ExpressGratitude_DutyName,Express Gratitude,表达感激
+PartnerDuty_ExpressNeedAttention_DutyName,Express Need for Attention,表达关照
+PartnerDuty_ExpressNeedFood_DutyName,Express Need for Food,表达需要食物
+PartnerDuty_ExpressNeedTrust_DutyName,Express Need for Trust,表达需要信任
+PartnerDuty_ExpressNeedWarmth_DutyName,Express Need for Food,表达需要食物
+PartnerDuty_ExpressUltimatum_DutyName,Express Ultimatum,表达最后通牒
+PartnerDuty_Firekeeping_DutyName,Fire keeping,护火
+PartnerDuty_FleshSkin_DutyName,Flesh Skin,刮皮
+PartnerDuty_Follow_DutyName,Follow,跟随
+PartnerDuty_Forage_DutyName,Forage,觅食
+PartnerDuty_GardenHighAcidity_DutyName,High Acidity,高酸度
+PartnerDuty_GardenHighHydration_DutyName,High Hydration,高水分
+PartnerDuty_GardenHIghNutrients_DutyName,High Nutrients,高肥力
+PartnerDuty_GardenInspect_DutyName,Inspect Garden,检查菜园
+PartnerDuty_GardenLowAcidity_DutyName,Low Acidity,低酸度
+PartnerDuty_GardenMediumAcidityAcidify_DutyName,Acidify to Medium,酸化至中等
+PartnerDuty_GardenMediumAcidityNeutralize_DutyName,Neutralize to Medium,中和至中等
+PartnerDuty_GardenMediumHydration_DutyName,Medium Hydration,中水分
+PartnerDuty_GardenMediumNutrients_DutyName,Medium Nutrients,中肥力
+PartnerDuty_GatherBark_DutyName,Gather Bark,收集树皮
+PartnerDuty_GatherWood_DutyName,Gather Wood,收集木材
+PartnerDuty_GrindWithHammeringTool_DutyName,Grind with Hammering Tool,用锤击工具研磨
+PartnerDuty_GrindWithMortarAndPestle_DutyName,Grind with Mortar and Pestle,用臼和杵研磨
+PartnerDuty_GutFish_DutyName,Gut Fish,剖鱼
+PartnerDuty_HarvestBogIron_DutyName,Harvest Bog Iron,收获沼铁
+PartnerDuty_HarvestClover_DutyName,Harvest Clover,收获三叶草
+PartnerDuty_HarvestFlax_DutyName,Harvest Flax,收获亚麻
+PartnerDuty_HarvestHeather_DutyName,Harvest Heather,收获帚石南
+PartnerDuty_HarvestKingcup_DutyName,Harvest Kingcup,收获驴蹄草
+PartnerDuty_HarvestMeadowgrass_DutyName,Harvest Meadowgrass,收获牧草
+PartnerDuty_HarvestNettle_DutyName,Harvest Nettle,收获荨麻
+PartnerDuty_HarvestPeas_DutyName,Harvest Peas,收获豌豆
+PartnerDuty_HarvestPineRoots_DutyName,Harvest Pine Roots,收获松树根
+PartnerDuty_HarvestReeds_DutyName,Harvest Reeds,收获芦苇
+PartnerDuty_HarvestRye_DutyName,Harvest Rye,收获黑麦
+PartnerDuty_HarvestTurnroot_DutyName,Harvest Turnroot,收获翻根
+PartnerDuty_HarvestWheat_DutyName,Harvest Wheat,收获小麦
+PartnerDuty_Idle_DutyName,Idle,闲逛
+PartnerDuty_IdleReturn_DutyName,Return Home,回家
+PartnerDuty_InspectField_DutyName,Inspect Field,检查耕地
+PartnerDuty_LineFishing_DutyName,Cut Down Tree,砍树
+PartnerDuty_MakeBrick_DutyName,Make Brick,制砖
+PartnerDuty_MakeClay_DutyName,Make Clay,制作粘土
+PartnerDuty_MakeFilling_DutyName,Mince Meat,绞肉
+PartnerDuty_MakeTwineFromPineRoots_DutyName,Make Twine from Pine Roots,用松树根制线
+PartnerDuty_MilkTheCow_DutyName,Milk the Cow,挤奶
+PartnerDuty_MinceMeat_DutyName,Mince Meat,绞肉
+PartnerDuty_NettleFiber_DutyName,Extract nettle fibers,提取荨麻纤维
+PartnerDuty_PoundSinew_DutyName,Pound Sinew,捶打肌腱
+PartnerDuty_PressCheese_DutyName,Press Cheese,压制奶酪
+PartnerDuty_ReturnHome_DutyName,Return Home,回家
+PartnerDuty_SeekDrink_DutyName,Seek Drink,寻找饮水
+PartnerDuty_SeekFire_DutyName,Seek Fire,寻找火源
+PartnerDuty_SinewCord_DutyName,Make Sinew Cord,制作肌腱绳
+PartnerDuty_SkinLarge_DutyName,Skin Large Animal,剥取大型动物
+PartnerDuty_SkinMedium_DutyName,Skin Medium Animal,剥取中型动物
+PartnerDuty_SkinVeryLarge_DutyName,Skin Very Large Animal,剥取特大动物
+PartnerDuty_Sleep_DutyName,Sleep,睡觉
+PartnerDuty_SleepRough_DutyName,Sleep Rough,小睡
+PartnerDuty_Spearfish_DutyName,SpearFish,叉鱼
+PartnerDuty_StoreFood_DutyName,Store Food,储存食物
+PartnerDuty_WarmUp_DutyName,Warm Up,取暖
+NPCPkTab0_Internal_TabName,Internal,身体内部
+NPCPkTab1_Body_TabName,Body,身体
+NPCPkTab2_Face_TabName,Face,脸部
+NPCPkTab3_Personality_TabName,Personality,个性
+NPCPkTab4_Knowledge_TabName,Knowledge,知识
+NPCPkTab4_Situational_TabName,Situational,情境
+PartnerPreset_Man_AgentName,The Untamed,男性
+PartnerPreset_ManCraftsman_AgentName,The Provider,供应商
+PartnerPreset_ManCraftsman_AgentDescription,"Steady and dependable, he finds purpose in building, maintaining and providing, quietly ensuring those he loves never face hardship alone.",他坚实可靠，在建造维护和提供帮助的过程中找到了生命的意义，默默地确保着所爱之人永远不会独自面对困难。
+PartnerPreset_ManDreamer_AgentName,The Dreamer,梦想家
+PartnerPreset_ManDreamer_AgentDescription,"Imaginative, open-hearted and fiercely romantic, he finds beauty where others see only the ordinary, reminding those around him that the world still holds wonder.",他充满想象力，胸襟宽广且浪漫非常，能在平凡之处发现美的存在，并以此告知身边之人世界仍充满奇迹。
+PartnerPreset_ManUntamed_AgentName,The Untamed,不羁者
+PartnerPreset_ManUntamed_AgentDescription,"Strong, self-reliant and fiercely independent, he commands respect without seeking it, and is difficult to truly know.",他遗世独立，随心所欲便能赢得尊重，令人难以看透。
+PartnerPreset_Woman_AgentName,Woman,女性
+PartnerPreset_WomanHearthwife_AgentName,The Hearthwife,家庭主妇
+PartnerPreset_WomanHearthwife_AgentDescription,"Patient and caring, she has the power to turn any place into a home, quietly weaving comfort into everyday life.",她耐心且乐于助人，有能力将任何地方充满家的味道，默默地将舒适时光带入日常生活。
+PartnerPreset_WomanMuse_AgentName,The Muse,女郎
+PartnerPreset_WomanMuse_AgentDescription,"Graceful and self-assured, she inspires admiration and awakens the desire to become better, though winning her heart is never taken for granted.",她举止优雅且自信，总能激发人们的钦佩之情并唤醒他们对于追求卓越的渴望，尽管赢得她的芳心绝非易事。
+PartnerPreset_WomanSpirited_AgentName,The Spirited One,元气少女
+PartnerPreset_WomanSpirited_AgentDescription,"Bold and full of life, she meets every challenge with laughter and curiosity, encouraging others to embrace the world with the same boundless enthusiasm.",她勇敢且活力满满，总是带着笑容和好奇心迎接每一个挑战，并用无拘无束的永恒热情感染人们去拥抱整个世界。
+PartnerPerkGroup_Appetite_GroupName,Appetite,食欲
+PartnerPerkGroup_Bust_GroupName,Bust,胸围
+PartnerPerkGroup_Connection_GroupName,Connection,联结度
+PartnerPerkGroup_Estrogen_GroupName,Estrogen,雌激素
+PartnerPerkGroup_EyeColour_GroupName,Eye Colour,瞳色
+PartnerPerkGroup_EyeDistance_GroupName,Eye Distance,眼距
+PartnerPerkGroup_EyeSize_GroupName,Eye Size,眼睛尺寸
+PartnerPerkGroup_FacialHairLength_GroupName,Facial Hair Length,面部毛发长度
+PartnerPerkGroup_Features_GroupName,Features,特性
+PartnerPerkGroup_Focus_GroupName,Focus,专注度
+PartnerPerkGroup_HairColour_GroupName,Hair Colour,发色
+PartnerPerkGroup_HairLength_GroupName,Hair Length,毛发长度
+PartnerPerkGroup_HairType_GroupName,Hair Type,发型
+PartnerPerkGroup_Height_GroupName,Height,身高
+PartnerPerkGroup_ImmuneSystem_GroupName,Immune System,免疫系统
+PartnerPerkGroup_LifeOutlook_GroupName,Life Outlook,人生观
+PartnerPerkGroup_Metabolism_GroupName,Metabolism,代谢
+PartnerPerkGroup_NoseSize_GroupName,Nose Size,鼻子尺寸
+PartnerPerkGroup_NoseType_GroupName,Nose Type,鼻子类型
+PartnerPerkGroup_SexualOrgans_GroupName,Sexual Organs,性器官
+PartnerPerkGroup_SexualPreference_GroupName,Sexual Preference,性特征
+PartnerPerkGroup_SkinColour_GroupName,Hair Type,发型
+PartnerPerkGroup_Testosterone_GroupName,Testosterone,雄激素
+PartnerPerkGroup_Trust_GroupName,Trust,信任度
+PartnerPerkGroup_Weight_GroupName,Weight,体重
+PartnerPerk_BasicTools_PerkName,Basic Tools,基础工具
+PartnerPerk_BasicTools_PerkDescription,Makes your partner start with a flint axe and knife.,开局同伴拥有燧石斧和燧石刀。
+PartnerPerk_BeardFull_PerkName,Full Beard,络腮胡
+PartnerPerk_BeardFull_PerkDescription,Makes your partner start with a full manly beard.,开局同伴拥有充满男人味的络腮胡。
+PartnerPerk_BeardLong_PerkName,Long Beard,长须
+PartnerPerk_BeardLong_PerkDescription,Makes your partner start with a long wise beard.,开局同伴拥有饱含智慧的长须
+PartnerPerk_BustFuller_PerkName,Fuller Bust,胸部丰满
+PartnerPerk_BustFuller_PerkDescription,Makes yor partner have a fuller bust.,让你的同伴有丰满的胸部。
+PartnerPerk_BustSmaller_PerkName,Smaller Bust,胸围较小
+PartnerPerk_BustSmaller_PerkDescription,Makes yor partner have a smaller bust.,让你的同伴有较小的胸围。
+PartnerPerk_ClothesFemale_PerkName,Female Clothes,女装
+PartnerPerk_ClothesFemale_PerkDescription,Makes yor partner start with female clothes.,同伴开局穿着女装。
+PartnerPerk_ClothesMale_PerkName,Male Clothes,男装
+PartnerPerk_ClothesMale_PerkDescription,Makes yor partner start with male clothes.,同伴开局穿着男装。
+PartnerPerk_EyesBlue_PerkName,Blue Eyes,蓝色眼睛
+PartnerPerk_EyesBlue_PerkDescription,Makes yor partner start with blue eyes.,同伴开局拥有蓝色眼睛。
+PartnerPerk_EyesBrown_PerkName,Brown Eyes,棕色眼睛
+PartnerPerk_EyesBrown_PerkDescription,Makes yor partner start with brown eyes.,同伴开局拥有棕色眼睛。
+PartnerPerk_EyesDarkBrown_PerkName,Dark Brown Eyes,深棕色眼睛
+PartnerPerk_EyesDarkBrown_PerkDescription,Makes yor partner start with dark brown eyes.,同伴开局拥有棕黑色眼睛。
+PartnerPerk_EyesGreen_PerkName,Green Eyes,绿色眼睛
+PartnerPerk_EyesGreen_PerkDescription,Makes yor partner start with green eyes.,同伴开局拥有绿色眼睛。
+PartnerPerk_EyesGrey_PerkName,Grey Eyes,灰色眼睛
+PartnerPerk_EyesGrey_PerkDescription,Makes yor partner start with grey eyes.,同伴开局拥有灰色眼睛。
+PartnerPerk_EyesHazel_PerkName,Hazel Eyes,淡褐色眼睛
+PartnerPerk_EyesHazel_PerkDescription,Makes yor partner start with hazel eyes.,同伴开局拥有淡褐色眼睛。
+PartnerPerk_EyesLarge_PerkName,Large Eyes,大眼睛
+PartnerPerk_EyesLarge_PerkDescription,Makes yor partner start with large eyes.,同伴开局眼睛大大的。
+PartnerPerk_EyesLightBlue_PerkName,Light Blue Eyes,浅蓝色眼睛
+PartnerPerk_EyesLightBlue_PerkDescription,Makes yor partner start with light blue eyes.,同伴开局拥浅蓝色眼睛。
+PartnerPerk_EyesNarrowSet_PerkName,Narrow-Set Eyes,窄眼距
+PartnerPerk_EyesNarrowSet_PerkDescription,Makes yor partner start with narrow-set eyes.,同伴开局的眼距较窄。
+PartnerPerk_EyesSmall_PerkName,Small Eyes,小眼睛
+PartnerPerk_EyesSmall_PerkDescription,Makes yor partner start with small eyes.,同伴开局眼睛小小的。
+PartnerPerk_EyesWideSet_PerkName,Wide-Set Eyes,宽眼距
+PartnerPerk_EyesWideSet_PerkDescription,Makes yor partner start with wide-set eyes.,同伴开局的眼距较宽。
+PartnerPerk_FeaturesFine_PerkName,Fine Features,五官精致
+PartnerPerk_FeaturesFine_PerkDescription,"Increases facial harmony, improving general attractiveness.",增强面部和谐感，提升整体吸引力。
+PartnerPerk_FeaturesIrregular_PerkName,Irregular Features,五官粗糙
+PartnerPerk_FeaturesIrregular_PerkDescription,"Decreases facial harmony, lowering general attractiveness.",削弱面部和谐度，降低整体吸引力。
+PartnerPerk_FocusSingular_PerkName,Singular Focus,专心致志
+PartnerPerk_FocusSingular_PerkDescription,Increases preference for methodical tasks while decreasing it for creative ones. ,增加对条理性的任务的偏好，降低对创造性任务的偏好。
+PartnerPerk_FocusWandering_PerkName,Wandering Focus,兴趣广泛
+PartnerPerk_FocusWandering_PerkDescription,Decreases preference for methodical tasks while increasing it for creative ones. ,降低对条理性任务的偏好，提高对创造性任务的偏好。
+PartnerPerk_Freckles_PerkName,Freckles,雀斑
+PartnerPerk_Freckles_PerkDescription,Makes yor partner start with freckles.,同伴开局拥有雀斑。
+PartnerPerk_HairColourAuburn_PerkName,Auburn Hair,红棕色头发
+PartnerPerk_HairColourAuburn_PerkDescription,Makes yor partner start with auburn hair.,同伴开局拥有红棕色头发。
+PartnerPerk_HairColourBlack_PerkName,Black Hair,黑发
+PartnerPerk_HairColourBlack_PerkDescription,Makes yor partner start with black hair.,同伴开局拥有黑发。
+PartnerPerk_HairColourBlonde_PerkName,Blonde Hair,金发
+PartnerPerk_HairColourBlonde_PerkDescription,Makes yor partner start with blonde hair.,同伴开局拥有金发。
+PartnerPerk_HairColourBrown_PerkName,Brown Hair,棕色头发
+PartnerPerk_HairColourBrown_PerkDescription,Makes yor partner start with brown hair.,同伴开局拥有棕色头发。
+PartnerPerk_HairColourDarkBrown_PerkName,Dark Brown Hair,深棕色头发
+PartnerPerk_HairColourDarkBrown_PerkDescription,Makes yor partner start with dark brown hair.,同伴开局拥有黑棕色头发。
+PartnerPerk_HairColourGinger_PerkName,Ginger Hair,姜黄色头发
+PartnerPerk_HairColourGinger_PerkDescription,Makes yor partner start with ginger hair.,同伴开局拥有姜黄色头发。
+PartnerPerk_HairColourGrey_PerkName,Grey Hair,灰色头发
+PartnerPerk_HairColourGrey_PerkDescription,Makes yor partner start with grey hair.,同伴开局拥有灰色头发。
+PartnerPerk_HairColourLightBlonde_PerkName,Light Blonde Hair,浅金色头发
+PartnerPerk_HairColourLightBlonde_PerkDescription,Makes yor partner start with light blonde hair.,同伴开局拥有浅金色头发。
+PartnerPerk_HairColourLightBrown_PerkName,Light Brown Hair,浅棕色头发
+PartnerPerk_HairColourLightBrown_PerkDescription,Makes yor partner start with light brown hair.,同伴开局拥有浅棕色头发。
+PartnerPerk_HairColourPlatinumBlonde_PerkName,Platinum Blonde Hair,铂金色头发
+PartnerPerk_HairColourPlatinumBlonde_PerkDescription,Makes yor partner start with platinum blonde hair.,同伴开局拥有铂金色头发。
+PartnerPerk_HairColourStrawberryBlonde_PerkName,Strawberry Blonde Hair,草莓金色头发
+PartnerPerk_HairColourStrawberryBlonde_PerkDescription,Makes yor partner start with strawberry blonde hair.,同伴开局拥有草莓金色头发。
+PartnerPerk_HairColourWhite_PerkName,White Hair,白发
+PartnerPerk_HairColourWhite_PerkDescription,Makes yor partner start with white hair.,同伴开局拥有白色头发。
+PartnerPerk_HairCurly_PerkName,Curly Hair,大卷发
+PartnerPerk_HairCurly_PerkDescription,Makes yor partner start with curly hair.,同伴开局拥有大卷发
+PartnerPerk_HairKinky_PerkName,Kinky Hair,羊毛卷
+PartnerPerk_HairKinky_PerkDescription,Makes yor partner start with kinky hair.,同伴开局拥有羊毛卷
+PartnerPerk_HairLong_PerkName,Long Hair,长发
+PartnerPerk_HairLong_PerkDescription,Makes yor partner start with long hair.,同伴开局拥有长头发。
+PartnerPerk_HairShort_PerkName,Short Hair,短发
+PartnerPerk_HairShort_PerkDescription,Makes yor partner start with short hair.,同伴开局拥有短头发。
+PartnerPerk_HairStraight_PerkName,Straight Hair,直发
+PartnerPerk_HairStraight_PerkDescription,Makes yor partner start with straight hair.,同伴开局拥有直发。
+PartnerPerk_HairVeryLong_PerkName,Very Long Hair,长发飘飘
+PartnerPerk_HairVeryLong_PerkDescription,Makes yor partner start with very long hair.,同伴开局拥有很长的头发。
+PartnerPerk_HairWavy_PerkName,Wavy Hair,大波浪
+PartnerPerk_HairWavy_PerkDescription,Makes yor partner start with wavy hair.,同伴开局拥有大波浪
+PartnerPerk_HighAppetite_PerkName,High Apetite,食欲旺盛
+PartnerPerk_HighAppetite_PerkDescription,"Inceases hunger faster, making eating easier so it's harder to become malnourished.",增加饥饿感更快，进食变得更容易，因此更难出现营养不良的情况。
+PartnerPerk_HighEstrogen_PerkName,High Estrogen,高雌激素水平
+PartnerPerk_HighEstrogen_PerkDescription,"Increases empathy and female physical traits such as breast size and hip width, increasing overall femininity.",强化同理心和女性身体特征，例如更宽的臀部和更丰满的乳房，增加整体女性气质。
+PartnerPerk_HighMetabolism_PerkName,High Metabolism,高代谢
+PartnerPerk_HighMetabolism_PerkDescription,Makes them burn through their fat reserves faster and have a higher body temperature.,让他们更快地消耗脂肪储备，体温更高。
+PartnerPerk_HighTestosterone_PerkName,High Testosterone,高雄激素
+PartnerPerk_HighTestosterone_PerkDescription,"Increases assertiveness and male physical traits such as body hair, larger stature and greater muscle mass.",强化自信和男性身体特征，例如体毛增加、身材更高以及肌肉密度更大。
+PartnerPerk_ImmuneSystemStrong_PerkName,Strong Immune System,强免疫系统
+PartnerPerk_ImmuneSystemStrong_PerkDescription,Increases resistance to disease and infection,增强对疾病和感染的免疫力
+PartnerPerk_ImmuneSystemWeak_PerkName,Weak Immune System,弱免疫力
+PartnerPerk_ImmuneSystemWeak_PerkDescription,Decreases resistance to disease and infection,减弱对疾病和感染的抵抗力
+PartnerPerk_KnowledgeArcher_PerkName,Archer,弓箭手
+PartnerPerk_KnowledgeAwakened_PerkName,Awakened\n,觉醒者\n
+PartnerPerk_KnowledgeButcher_PerkName,Butcher,屠夫
+PartnerPerk_KnowledgeClimber_PerkName,Climber,攀岩者
+PartnerPerk_KnowledgeCook_PerkName,Cook,厨师
+PartnerPerk_KnowledgeFarmer_PerkName,Farmer,农夫
+PartnerPerk_KnowledgeFisher_PerkName,Fisher,钓鱼佬
+PartnerPerk_KnowledgeKnapper_PerkName,Knapper,石匠
+PartnerPerk_KnowledgeLeatherworker_PerkName,Leatherworker,制革师
+PartnerPerk_KnowledgeMusician_PerkName,Musician,音乐家
+PartnerPerk_KnowledgeScribe_PerkName,Scribe,绘图师
+PartnerPerk_KnowledgeSmith_PerkName,Smith,铁匠
+PartnerPerk_KnowledgeSpearFighter_PerkName,Spear Fighter,矛战士
+PartnerPerk_KnowledgeStalker_PerkName,Stalker,潜行者
+PartnerPerk_KnowledgeTracker_PerkName,Tracker,追踪者
+PartnerPerk_KnowledgeTrapper_PerkName,Trapper,设陷者
+PartnerPerk_KnowledgeWeaver_PerkName,Weaver,编织者
+PartnerPerk_KnowledgeWoodworker_PerkName,Woodworker,木匠
+PartnerPerk_LikesCreative_PerkName,Creative,创作者
+PartnerPerk_LikesCreative_PerkDescription,"Likes performing creative tasks, such as carving, playing music or working clay.",喜欢进行创意性工作，如雕刻、演奏音乐或捏陶。
+PartnerPerk_LikesFemaleTraits_PerkName,Likes Female Traits,性取向女
+PartnerPerk_LikesFemaleTraits_PerkDescription,Makes yor partner be attracted to female traits.,让你的伴侣被女性特质所吸引。
+PartnerPerk_LikesMaleTraits_PerkName,Likes Male Traits,性取向男
+PartnerPerk_LikesMaleTraits_PerkDescription,Makes yor partner be attracted to male traits.,让你的伴侣被男性特质所吸引。
+PartnerPerk_LikesMethodical_PerkName,Methodical,有条不紊的
+PartnerPerk_LikesMethodical_PerkDescription,"Likes performing methodical tasks, such as weaving, grinding or fleshing.",喜欢执行有条理的工作，如编织、研磨或刮皮。
+PartnerPerk_LikesNature_PerkName,Nature Loving,热爱自然
+PartnerPerk_LikesNature_PerkDescription,"Likes performing nature tasks, such as foraging, gathering wood, or walking.",喜欢执行自然工作，如觅食、拾柴或散步。
+PartnerPerk_LikesNurturing_PerkName,Nurturing,养护工作
+PartnerPerk_LikesNurturing_PerkDescription,"Likes performing nurturing tasks, such as cooking, gardening, cleaning and taking care of animals.",喜欢从事养护性的工作，如烹饪、园艺、清洁和照顾动物。
+PartnerPerk_LikesPhysical_PerkName,Physical,体力劳动
+PartnerPerk_LikesPhysical_PerkDescription,"Likes performing physical tasks, such as felling trees, chopping wood or smithing.",喜欢从事体力劳动，如伐木、劈柴或锻造。
+PartnerPerk_LowAppetite_PerkName,Low Apetite,食欲低下
+PartnerPerk_LowAppetite_PerkDescription,"Delays hunger, making it harder to eat and easier to get malnourished.",延缓饥饿感，更难进食，更容易营养不良。
+PartnerPerk_LowEstrogen_PerkName,Low Estrogen,低雌激素水平
+PartnerPerk_LowEstrogen_PerkDescription,"Reduces female physical traits such as breast size and hip width, decreasing overall femininity.",弱化女性身体特征，如乳房大小和臀部宽度，并削弱整体女性气质。
+PartnerPerk_LowMetabolism_PerkName,Low Metabolism,低代谢
+PartnerPerk_LowMetabolism_PerkDescription,Makes them burn through their fat reserves slower and have a lower body temperature.,让他们更慢地消耗脂肪储备，体温更低。
+PartnerPerk_LowTestosterone_PerkName,Low Testosterone,低雄激素
+PartnerPerk_LowTestosterone_PerkDescription,"Reduces male physical traits, leading to a more youthful appearance, smaller stature, and less muscle mass.",弱化男性身体特征，导致外观更年轻、身材更小以及肌肉密度更低。
+PartnerPerk_NoseDownturned_PerkName,Downturned Nose,鹰钩鼻
+PartnerPerk_NoseDownturned_PerkDescription,Makes yor partner start with a downturned nose.,同伴开局拥有鹰钩鼻
+PartnerPerk_NoseHooked_PerkName,Hooked Nose,驼峰鼻
+PartnerPerk_NoseHooked_PerkDescription,Makes yor partner start with a hooked nose.,同伴开局拥有驼峰鼻
+PartnerPerk_NoseLarge_PerkName,Large Nose,大鼻子
+PartnerPerk_NoseLarge_PerkDescription,Makes yor partner start with a large nose.,同伴开局拥有大鼻子
+PartnerPerk_NoseSmall_PerkName,Small Nose,小鼻子
+PartnerPerk_NoseSmall_PerkDescription,Makes yor partner start with a small nose.,同伴开局拥有小鼻子
+PartnerPerk_NoseUpturned_PerkName,Upturned Nose,朝天鼻
+PartnerPerk_NoseUpturned_PerkDescription,Makes yor partner start with an upturned nose.,同伴开局拥有朝天鼻
+PartnerPerk_OrgansFemale_PerkName,Female Organs,女性器官
+PartnerPerk_OrgansFemale_PerkDescription,Boosts estrogen levels and confers the capacity to conceive and bear children.,提高雌激素水平并获得怀孕和生育孩子的能力。
+PartnerPerk_OrgansMale_PerkName,Male Organs,男性器官
+PartnerPerk_OrgansMale_PerkDescription,Boosts testosterone levels and confers the ability to impregnate.,提高雄激素水平并获得使别人怀孕的能力。
+PartnerPerk_PersonalityAffectionate_PerkName,Affectionate,深情
+PartnerPerk_PersonalityAffectionate_PerkDescription,Gains affection more quickly and finds it easier to be grateful.,更快地累计兴致，并更容易心怀感激。
+PartnerPerk_PersonalityAnxious_PerkName,Anxious,焦虑
+PartnerPerk_PersonalityAnxious_PerkDescription,Gains stress more easily and has more difficulty trusting.,更快地累计压力，并更难获得信任。
+PartnerPerk_PersonalityCalm_PerkName,Calm,冷静
+PartnerPerk_PersonalityCalm_PerkDescription,Finds it harder to get stressed.,更难累计压力。
+PartnerPerk_PersonalityCold_PerkName,Cold,冷峻
+PartnerPerk_PersonalityCold_PerkDescription,Gains affection more slowly and finds it harder to be grateful.,更难累计兴致，并更难心怀感激。
+PartnerPerk_PersonalityConfident_PerkName,Confident,自信
+PartnerPerk_PersonalityConfident_PerkDescription,Appears more attractive and assertive and recovers from awkwardness more quickly.,更有吸引力且自信并更快地从尴尬中恢复。
+PartnerPerk_PersonalityConventional_PerkName,Conventional,守旧
+PartnerPerk_PersonalityConventional_PerkDescription,"Feels more comfortable with methodical, rather than creative activities.",更习惯重复性劳动而非创造性劳动。
+PartnerPerk_PersonalityEasygoing_PerkName,Easygoing,随和
+PartnerPerk_PersonalityEasygoing_PerkDescription,Feels comfortable with leisure and stresses less easily.,在休闲时感觉更舒适，不易累计压力。
+PartnerPerk_PersonalityEnergyEfficient_PerkName,Energy Efficient,高效
+PartnerPerk_PersonalityEnergyEfficient_PerkDescription,"Feels more comfortable with methodical, rather than physical activities.",更习惯重复性劳动而非体力劳动。
+PartnerPerk_PersonalityExtrovert_PerkName,Extrovert,外向
+PartnerPerk_PersonalityExtrovert_PerkDescription,Likes socializing.,喜欢社交。
+PartnerPerk_PersonalityHighStandards_PerkName,High Standards,严格
+PartnerPerk_PersonalityHighStandards_PerkDescription,Appears harder to impress.,难以被感到印象深刻。
+PartnerPerk_PersonalityImpulsive_PerkName,Impulsive,浮躁
+PartnerPerk_PersonalityImpulsive_PerkDescription,"Feels more comfortable with physical and creative, rather than methodical or nurturing activities.",更喜欢体力劳动和创造性劳动，而不是重复性劳动或培育性劳动。
+PartnerPerk_PersonalityIndependent_PerkName,Independent,独立
+PartnerPerk_PersonalityIndependent_PerkDescription,Loses connection more slowly and relies less on others for emotional stability.,连结度的减少速度更慢，对别人的情绪依赖更低。
+PartnerPerk_PersonalityIndustrious_PerkName,Industrious,勤奋
+PartnerPerk_PersonalityIndustrious_PerkDescription,"Enjoys working and feels comfortable with most tasks, but sacrifices some creativity and stresses more easily.",喜欢工作并对大多数任务感到自如，但会牺牲一些创造力，且更容易累计压力。
+PartnerPerk_PersonalityInsecure_PerkName,Insecure,莽撞
+PartnerPerk_PersonalityInsecure_PerkDescription,Appears less attractive and recovers from awkwardness more slowly.,更低吸引力并更慢地从尴尬中恢复。
+PartnerPerk_PersonalityInterdependent_PerkName,Interdependent,依存
+PartnerPerk_PersonalityInterdependent_PerkDescription,Loses connection faster and relies more on others for emotional stability.,更容易失去连结度，并在情绪上更依赖他人。
+PartnerPerk_PersonalityIntrovert_PerkName,Introvert,内向
+PartnerPerk_PersonalityIntrovert_PerkDescription,Doesn't need to socialize as much.,不太需要社交。
+PartnerPerk_PersonalityMeatLover_PerkName,Meat Lover,肉食脑袋
+PartnerPerk_PersonalityMeatLover_PerkDescription,Gets additional enjoyment from eating meat.,吃肉会获得更多快乐。
+PartnerPerk_PersonalityOptimist_PerkName,Optimist,乐观
+PartnerPerk_PersonalityOptimist_PerkDescription,Finds it harder to be sad and easier to be grateful.,更难情绪低落并更易心怀感激。
+PartnerPerk_PersonalityPessimist_PerkName,Pesimist,悲观
+PartnerPerk_PersonalityPessimist_PerkDescription,Finds it easier to be sad and harder to be grateful.,更易情绪低落并更难心怀感激。
+PartnerPerk_PersonalityReserved_PerkName,Reserved,内向
+PartnerPerk_PersonalityReserved_PerkDescription,Gains trust more slowly and is quicker to become suspicious of others.,更难累计信任，并更易怀疑他人。
+PartnerPerk_PersonalityRestless_PerkName,Restless,焦虑
+PartnerPerk_PersonalityRestless_PerkDescription,"Feels more comfortable with physical, rather than methodical activities.",更习惯体力劳动而非脑力劳动。
+PartnerPerk_PersonalityRomantic_PerkName,Romantic,浪漫
+PartnerPerk_PersonalityRomantic_PerkDescription,Finds it easier to see beauty.,更易观察到事物之美。
+PartnerPerk_PersonalitySaladLover_PerkName,Salad Lover,沙拉脑袋
+PartnerPerk_PersonalitySaladLover_PerkDescription,Gets additional enjoyment from eating vegetables.,吃素会获得更多快乐。
+PartnerPerk_PersonalitySweetTooth_PerkName,Sweet Tooth,甜品脑袋
+PartnerPerk_PersonalitySweetTooth_PerkDescription,Gets additional enjoyment from eating sweet food.,吃甜食会获得更多快乐。
+PartnerPerk_PersonalityTrusting_PerkName,Trusting,信任
+PartnerPerk_PersonalityTrusting_PerkDescription,Gains trust more quickly and is slower to become suspicious of others.,更易累计信任，并更难怀疑他人。
+PartnerPerk_Short_PerkName,Short Stature,身材矮小
+PartnerPerk_Short_PerkDescription,"Decreases size and combat reach, decreases caloric needs and enhances stealth capabilities.",减小体型和攻击距离，降低能量消耗并提高潜行能力。
+PartnerPerk_SkinDark_PerkName,Dark Skin,黝黑皮肤
+PartnerPerk_SkinDark_PerkDescription,Makes yor partner start with dark skin.,同伴开局拥有黝黑皮肤。
+PartnerPerk_SkinFair_PerkName,Fair Skin,白皙皮肤
+PartnerPerk_SkinFair_PerkDescription,Makes yor partner start with fair skin.,同伴开局拥有白皙皮肤。
+PartnerPerk_SkinMedium_PerkName,Medium Skin,自然肤色
+PartnerPerk_SkinMedium_PerkDescription,Makes yor partner start with medium skin.,同伴开局拥有自然肤色。
+PartnerPerk_SkinVeryDark_PerkName,Very Dark Skin,深黑皮肤
+PartnerPerk_SkinVeryDark_PerkDescription,Makes yor partner start with very dark skin.,同伴开局拥有黑色皮肤。
+PartnerPerk_SkinVeryFair_PerkName,Very Fair Skin,雪白皮肤
+PartnerPerk_SkinVeryFair_PerkDescription,Makes yor partner start with very fair skin.,同伴开局拥有雪白皮肤。
+PartnerPerk_Tall_PerkName,Tall Stature,身材高大
+PartnerPerk_Tall_PerkDescription,"Increases  size and combat reach, reduces stealth, and raises  caloric needs.",增大体型和攻击距离、降低潜行能力并提高能量消耗。
+PartnerPerk_VeryShort_PerkName,Very Short Stature,侏儒血统
+PartnerPerk_VeryShort_PerkDescription,"Dramatically decreases size and combat reach, decreases caloric needs and enhances stealth capabilities.",大幅缩小体型和攻击距离，降低能量消耗并增强潜行能力。
+PartnerPerk_VeryTall_PerkName,Very Tall Stature,巨人血统
+PartnerPerk_VeryTall_PerkDescription,"Dramatically increases size and combat reach, reduces stealth, and raises caloric needs.",大幅增大体型和攻击距离、提高能量消耗并降低潜行能力。
+PartnerPerk_WeightEmaciated_PerkName,Dangerously Low Weight,致命的过轻体重
+PartnerPerk_WeightEmaciated_PerkDescription,"Dangerously reduces body weight, compromising immune system, energy levels and insulation.",减轻致命量的体重，会削弱免疫系统、影响耐力水平和保暖能力。
+PartnerPerk_WeightFat_PerkName,High Weight,过重
+PartnerPerk_WeightFat_PerkDescription,"Increase body weight, slightly boosting fat reserves and insulation while reducing stamina by a small amount.",增加体重，略微增加脂肪储备和保温，同时少量降低耐力。
+PartnerPerk_WeightOverweight_PerkName,Moderately High Weight,中等偏重
+PartnerPerk_WeightOverweight_PerkDescription,"Increase body weight, slightly boosting fat reserves and insulation while reducing stamina by a small amount.",增加体重，略微增加脂肪储备和保温，同时少量降低耐力。
+PartnerPerk_WeightThin_PerkName,Low Weight,体重过轻
+PartnerPerk_WeightThin_PerkDescription,"Reduces body weight, lowering fat reserves and slightly impairing immune system and thermal insulation.",减轻体重，减少脂肪储备，略微削弱免疫系统和保温。
+PartnerPerk_WeightVeryFat_PerkName,Very High Weight,超重
+PartnerPerk_WeightVeryFat_PerkDescription,"Increase body weight, slightly boosting fat reserves and insulation while reducing stamina by a small amount.",增加体重，略微增加脂肪储备和保温，同时少量降低耐力。
+PartnerPerk_WeightVeryThin_PerkName,Very Low Weight,非常瘦弱
+PartnerPerk_WeightVeryThin_PerkDescription,"Reduces body weight, lowering fat reserves and slightly impairing immune system and thermal insulation.",减轻体重，减少脂肪储备，略微削弱免疫系统和保温。
+PartnerPerk_WeightWellFed_PerkName,Slightly High Weight,略微偏重
+PartnerPerk_WeightWellFed_PerkDescription,"Increase body weight, slightly boosting fat reserves and insulation while reducing stamina by a small amount.",增加体重，略微增加脂肪储备和保温，同时少量降低耐力。
+Partner_EyeType_Statuses[0].GameName,Has small narrow-set red eyes.,有窄眼距的红色小眼睛。
+Partner_EyeType_Statuses[1].GameName,Has narrow-set red eyes.,有窄眼距的红色眼睛。
+Partner_EyeType_Statuses[2].GameName,Has large narrow-set red eyes.,有窄眼距的红色大眼睛。
+Partner_EyeType_Statuses[3].GameName,Has small red eyes.,有红色小眼睛。
+Partner_EyeType_Statuses[4].GameName,Has red eyes.,有红色眼睛。
+Partner_EyeType_Statuses[5].GameName,Has large red eyes.,有红色大眼睛。
+Partner_EyeType_Statuses[6].GameName,Has small wide-set red eyes.,有宽眼距的红色小眼睛。
+Partner_EyeType_Statuses[7].GameName,Has wide-set red eyes.,有宽眼距的红色眼睛。
+Partner_EyeType_Statuses[8].GameName,Has large wide-set red eyes.,有宽眼距的红色大眼睛。
+Partner_EyeType_Statuses[9].GameName,Has small narrow-set grey eyes.,有窄眼距的灰色小眼睛。
+Partner_EyeType_Statuses[10].GameName,Has narrow-set grey eyes.,有窄眼距的灰色眼睛。
+Partner_EyeType_Statuses[11].GameName,Has large narrow-set grey eyes.,有窄眼距的灰色大眼睛。
+Partner_EyeType_Statuses[12].GameName,Has small grey eyes.,有灰色小眼睛。
+Partner_EyeType_Statuses[13].GameName,Has grey eyes.,有灰色眼睛
+Partner_EyeType_Statuses[14].GameName,Has large grey eyes.,有灰色大眼睛。
+Partner_EyeType_Statuses[15].GameName,Has small wide-set grey eyes.,有宽眼距的灰色小眼睛。
+Partner_EyeType_Statuses[16].GameName,Has wide-set grey eyes.,有宽眼距的灰色眼睛。
+Partner_EyeType_Statuses[17].GameName,Has large wide-set grey eyes.,有宽眼距的灰色大眼睛。
+Partner_EyeType_Statuses[18].GameName,Has small narrow-set light blue eyes.,有窄眼距的浅蓝色小眼睛。
+Partner_EyeType_Statuses[19].GameName,Has narrow-set light blue eyes.,有窄眼距的浅蓝色眼睛。
+Partner_EyeType_Statuses[20].GameName,Has large narrow-set light blue eyes.,有窄眼距的浅蓝色大眼睛。
+Partner_EyeType_Statuses[21].GameName,Has small light blue eyes.,有浅蓝色小眼睛。
+Partner_EyeType_Statuses[22].GameName,Has light blue eyes.,有着浅蓝色眼睛。
+Partner_EyeType_Statuses[23].GameName,Has large light blue eyes.,有着大大的浅蓝色眼睛。
+Partner_EyeType_Statuses[24].GameName,Has small wide-set light blue eyes.,有宽眼距的浅蓝色小眼睛。
+Partner_EyeType_Statuses[25].GameName,Has wide-set light blue eyes.,有宽眼距的浅蓝色眼睛。
+Partner_EyeType_Statuses[26].GameName,Has large wide-set light blue eyes.,有宽眼距的浅蓝色大眼睛。
+Partner_EyeType_Statuses[27].GameName,Has small narrow-set blue eyes.,有窄眼距的蓝色小眼睛。
+Partner_EyeType_Statuses[28].GameName,Has narrow-set blue eyes.,有窄眼距的蓝色眼睛。
+Partner_EyeType_Statuses[29].GameName,Has large narrow-set blue eyes.,有窄眼距的蓝色大眼睛。
+Partner_EyeType_Statuses[30].GameName,Has small blue eyes.,有蓝色小眼睛。
+Partner_EyeType_Statuses[31].GameName,Has blue eyes.,有蓝色眼睛
+Partner_EyeType_Statuses[32].GameName,Has large blue eyes.,有浅蓝色的大眼睛。
+Partner_EyeType_Statuses[33].GameName,Has small wide-set blue eyes.,有宽眼距的蓝色小眼睛。
+Partner_EyeType_Statuses[34].GameName,Has wide-set blue eyes.,有宽眼距的蓝色眼睛。
+Partner_EyeType_Statuses[35].GameName,Has large wide-set blue eyes.,有宽眼距的蓝色大眼睛。
+Partner_EyeType_Statuses[36].GameName,Has small narrow-set green eyes.,有窄眼距的绿色小眼睛。
+Partner_EyeType_Statuses[37].GameName,Has narrow-set green eyes.,有窄眼距的绿色眼睛。
+Partner_EyeType_Statuses[38].GameName,Has large narrow-set green eyes.,有窄眼距的绿色大眼睛。
+Partner_EyeType_Statuses[39].GameName,Has small green eyes.,有绿色小眼睛。
+Partner_EyeType_Statuses[40].GameName,Has green eyes.,有绿色眼睛。
+Partner_EyeType_Statuses[41].GameName,Has large green eyes.,有个大大的绿色眼睛。
+Partner_EyeType_Statuses[42].GameName,Has small wide-set green eyes.,有宽眼距的绿色小眼睛。
+Partner_EyeType_Statuses[43].GameName,Has wide-set green eyes.,有宽眼距的绿色眼睛。
+Partner_EyeType_Statuses[44].GameName,Has large wide-set green eyes.,有宽眼距的绿色大眼睛。
+Partner_EyeType_Statuses[45].GameName,Has small narrow-set hazel eyes.,有窄眼距的淡褐色小眼睛。
+Partner_EyeType_Statuses[46].GameName,Has narrow-set hazel eyes.,有窄眼距的淡褐色眼睛。
+Partner_EyeType_Statuses[47].GameName,Has large narrow-set hazel eyes.,有窄眼距的淡褐色大眼睛。
+Partner_EyeType_Statuses[48].GameName,Has small hazel eyes.,有淡褐色小眼睛
+Partner_EyeType_Statuses[49].GameName,Has hazel eyes.,有淡褐色眼睛
+Partner_EyeType_Statuses[50].GameName,Has large hazel eyes.,有淡褐色大眼睛
+Partner_EyeType_Statuses[51].GameName,Has small wide-set hazel eyes.,有宽眼距的淡褐色小眼睛。
+Partner_EyeType_Statuses[52].GameName,Has wide-set hazel eyes.,有宽眼距的淡褐色眼睛。
+Partner_EyeType_Statuses[53].GameName,Has large wide-set hazel eyes.,有宽眼距的淡褐色大眼睛。
+Partner_EyeType_Statuses[54].GameName,Has small narrow-set brown eyes.,有窄眼距的棕色小眼睛。
+Partner_EyeType_Statuses[55].GameName,Has narrow-set brown eyes.,有窄眼距的棕色眼睛。
+Partner_EyeType_Statuses[56].GameName,Has large narrow-set brown eyes.,有窄眼距的棕色大眼睛。
+Partner_EyeType_Statuses[57].GameName,Has small brown eyes.,有棕色小眼睛。
+Partner_EyeType_Statuses[58].GameName,Has brown eyes.,有棕色眼睛。
+Partner_EyeType_Statuses[59].GameName,Has large brown eyes.,有棕色大眼睛。
+Partner_EyeType_Statuses[60].GameName,Has small wide-set brown eyes.,有宽眼距的棕色小眼睛。
+Partner_EyeType_Statuses[61].GameName,Has wide-set brown eyes.,有宽眼距的棕色眼睛。
+Partner_EyeType_Statuses[62].GameName,Has large wide-set brown eyes.,有宽眼距的棕色大眼睛。
+Partner_EyeType_Statuses[63].GameName,Has small narrow-set dark brown eyes.,有窄眼距的深棕色小眼睛。
+Partner_EyeType_Statuses[64].GameName,Has narrow-set dark brown eyes.,有窄眼距的深棕色眼睛。
+Partner_EyeType_Statuses[65].GameName,Has large narrow-set dark brown eyes.,有窄眼距的深棕色大眼睛。
+Partner_EyeType_Statuses[66].GameName,Has small dark brown eyes.,有深棕色小眼睛。
+Partner_EyeType_Statuses[67].GameName,Has dark brown eyes.,有深棕色眼睛
+Partner_EyeType_Statuses[68].GameName,Has large dark brown eyes.,有深棕色大眼睛。
+Partner_EyeType_Statuses[69].GameName,Has small wide-set dark brown eyes.,有宽眼距的深棕色小眼睛。
+Partner_EyeType_Statuses[70].GameName,Has wide-set dark brown eyes.,有宽眼距的深棕色眼睛。
+Partner_EyeType_Statuses[71].GameName,Has large wide-set dark brown eyes.,有宽眼距的深棕色大眼睛。
+Partner_FemaleTraits_Statuses[0].GameName,Very Pronounced,十分显著
+Partner_FemaleTraits_Statuses[1].GameName,Pronounced,显著
+Partner_FemaleTraits_Statuses[2].GameName,Balanced,均衡
+Partner_FemaleTraits_Statuses[3].GameName,Subtle,微妙
+Partner_FemaleTraits_Statuses[4].GameName,Minimal,最低
+Partner_Freckles_Statuses[0].GameName,Has freckles.,有雀斑
+Partner_HairColour_Statuses[0].GameName,Has white hair.,有白发
+Partner_HairColour_Statuses[1].GameName,Has platinum blonde hair.,有铂金色头发
+Partner_HairColour_Statuses[2].GameName,Has strawberry blonde hair.,有草莓金色头发
+Partner_HairColour_Statuses[3].GameName,Has light blonde hair.,有浅金色头发
+Partner_HairColour_Statuses[4].GameName,Has ginger hair.,有姜黄色头发
+Partner_HairColour_Statuses[5].GameName,Has blonde hair.,有金发
+Partner_HairColour_Statuses[6].GameName,Has auburn hair.,有红棕色头发
+Partner_HairColour_Statuses[7].GameName,Has light brown hair.,有浅棕色头发
+Partner_HairColour_Statuses[8].GameName,Has brown hair.,有棕色头发
+Partner_HairColour_Statuses[9].GameName,Has dark brown hair.,有深棕色头发
+Partner_HairColour_Statuses[10].GameName,Has black hair.,有黑发
+Partner_HairColour_Statuses[11].GameName,Has grey hair.,有灰色头发
+Partner_HairFacialLength_Statuses[1].GameName,Has a stubble.,有胡茬。
+Partner_HairFacialLength_Statuses[2].GameName,Has a short beard.,有短须。
+Partner_HairFacialLength_Statuses[3].GameName,Has a full beard.,有络腮胡。
+Partner_HairFacialLength_Statuses[4].GameName,Has a long beard.,有长须。
+Partner_HairLength_Statuses[0].GameName,Looks Bald.,几乎秃头。
+Partner_HairLength_Statuses[1].GameName,Has short hair.,有短发。
+Partner_HairLength_Statuses[2].GameName,Has neck-length hair.,有齐颈发。
+Partner_HairLength_Statuses[3].GameName,Has shoulder-length hair.,有齐肩发。
+Partner_HairLength_Statuses[4].GameName,Has back-length hair.,有及背发。
+Partner_HairLength_Statuses[5].GameName,Has waist-length hair.,有及腰发。
+Partner_HairLength_Statuses[6].GameName,Has hip-length hair.,有齐臀发。
+Partner_HairType_Statuses[0].GameName,Has straight hair.,有直发。
+Partner_HairType_Statuses[1].GameName,Has wavy hair.,有大波浪。
+Partner_HairType_Statuses[2].GameName,Has curly hair.,有大卷发。
+Partner_HairType_Statuses[3].GameName,Has kinky hair.,有羊毛卷。
+Partner_LikesCreativeTasks_Statuses[0].GameName,Really Likes,很喜欢
+Partner_LikesCreativeTasks_Statuses[1].GameName, Likes,喜欢
+Partner_LikesCreativeTasks_Statuses[2].GameName,Dislikes,不喜欢
+Partner_LikesCreativeTasks_Statuses[3].GameName,Really Dislikes,很不喜欢
+Partner_LikesFemaleTraits_Statuses[0].GameName,Very High,非常高
+Partner_LikesFemaleTraits_Statuses[1].GameName,High,高
+Partner_LikesFemaleTraits_Statuses[2].GameName,Average,无倾向性
+Partner_LikesFemaleTraits_Statuses[3].GameName,Negative,不倾向
+Partner_LikesFemaleTraits_Statuses[4].GameName,Very Negative,很不倾向
+Partner_LikesMaleTraits_Statuses[0].GameName,Very High,非常高
+Partner_LikesMaleTraits_Statuses[1].GameName,High,高
+Partner_LikesMaleTraits_Statuses[2].GameName,Average,无倾向性
+Partner_LikesMaleTraits_Statuses[3].GameName,Negative,不倾向
+Partner_LikesMaleTraits_Statuses[4].GameName,Very Negative,很不倾向
+Partner_LikesMethodicalTasks_Statuses[0].GameName,Really Likes,很喜欢
+Partner_LikesMethodicalTasks_Statuses[1].GameName, Likes,喜欢
+Partner_LikesMethodicalTasks_Statuses[2].GameName,Dislikes,不喜欢
+Partner_LikesMethodicalTasks_Statuses[3].GameName,Really Dislikes,很不喜欢
+Partner_LikesNatureTasks_Statuses[0].GameName,Really Likes,很喜欢
+Partner_LikesNatureTasks_Statuses[1].GameName, Likes,喜欢
+Partner_LikesNatureTasks_Statuses[2].GameName,Dislikes,不喜欢
+Partner_LikesNatureTasks_Statuses[3].GameName,Really Dislikes,很不喜欢
+Partner_LikesNurturingTasks_Statuses[0].GameName,Really Likes,很喜欢
+Partner_LikesNurturingTasks_Statuses[1].GameName, Likes,喜欢
+Partner_LikesNurturingTasks_Statuses[2].GameName,Dislikes,不喜欢
+Partner_LikesNurturingTasks_Statuses[3].GameName,Really Dislikes,很不喜欢
+Partner_LikesPhysicalTasks_Statuses[0].GameName,Really Likes,很喜欢
+Partner_LikesPhysicalTasks_Statuses[1].GameName, Likes,喜欢
+Partner_LikesPhysicalTasks_Statuses[2].GameName,Dislikes,不喜欢
+Partner_LikesPhysicalTasks_Statuses[3].GameName,Really Dislikes,很不喜欢
+Partner_MaleTraits_Statuses[0].GameName,Very Pronounced,十分显著
+Partner_MaleTraits_Statuses[1].GameName,Pronounced,显著
+Partner_MaleTraits_Statuses[2].GameName,Balanced,均衡
+Partner_MaleTraits_Statuses[3].GameName,Subtle,微妙
+Partner_MaleTraits_Statuses[4].GameName,Minimal,最低
+Partner_SexualOrgans_Statuses[0].GameName,Female,女性
+Partner_SexualOrgans_Statuses[1].GameName,Male,男性
+Partner_SexualOrgans_Statuses[2].GameName,Both,双性
+Partner_SkinColour_Statuses[0].GameName,Has very fair skin.,有着雪白的皮肤。
+Partner_SkinColour_Statuses[1].GameName,Has fair skin.,有着白皙的皮肤
+Partner_SkinColour_Statuses[2].GameName,Has medium-toned skin.,有一般色调的皮肤。
+Partner_SkinColour_Statuses[3].GameName,Has dark skin.,有深色的皮肤
+Partner_SkinColour_Statuses[4].GameName,Has very dark skin.,有黝黑的皮肤
+Partner_Affection_Statuses[0].GameName,Looks very fond of you.,看上去非常喜欢你。
+Partner_Affection_Statuses[1].GameName,Looks fond of you.,看上去很喜欢你。
+Partner_Affection_Statuses[2].GameName,Looks neutral towards you.,看上去对你无感。
+Partner_Affection_Statuses[3].GameName,Looks cold towards you.,看上去对你很冷淡。
+Partner_Affection_Statuses[4].GameName,Looks hostile towards you.,看上去对你心怀敌意。
+Partner_Affection_Statuses[5].GameName,Looks hateful towards you.,看上去对你心怀恨意。
+Partner_Appetite_Statuses[0].GameName,Small,食欲低
+Partner_Appetite_Statuses[1].GameName,Medium,食欲尚可
+Partner_Appetite_Statuses[2].GameName,Large,食欲良好
+Partner_Appetite_Statuses[3].GameName,Huge,食欲高涨
+Partner_AttractionToPlayer_Statuses[0].GameName,Looks very attracted to you.,看上去对你很感兴趣。
+Partner_AttractionToPlayer_Statuses[1].GameName,Looks attracted to you.,看上去对你感兴趣。
+Partner_AttractionToPlayer_Statuses[2].GameName,Doesn't look particularly attracted to you.,看上去对你不是很感兴趣。
+Partner_AttractionToPlayer_Statuses[3].GameName,Looks unnatracted to you.,看上去没被你吸引。
+Partner_AttractionToPlayer_Statuses[4].GameName,Looks very unnatracted to you.,看上去完全没被你吸引。
+Partner_Awkwardness_Statuses[0].GameName,Feels very awkward.,感到十分尴尬。
+Partner_Awkwardness_Statuses[1].GameName,Feels awkward.,感到尴尬。
+Partner_Awkwardness_Statuses[2].GameName,Feels a bit awkward.,感到有点尴尬。
+Partner_BodyTemperature_Statuses[0].GameName,Looks dead of a heatstroke.,看上去要热死了。
+Partner_BodyTemperature_Statuses[0].DeleteAgentMessage.Text,Your partner has died of a heatrstroke.,你的同伴死于中暑。
+Partner_BodyTemperature_Statuses[1].GameName,Looks uncomfortably hot and sweaty.,看起来热得难受且满身是汗。
+Partner_BodyTemperature_Statuses[2].GameName,Looks sweaty.,看上去出汗了。
+Partner_BodyTemperature_Statuses[3].GameName,Looks comfortable.,看上去温度很舒服。
+Partner_BodyTemperature_Statuses[4].GameName,Looks cold.,看上去冷。
+Partner_BodyTemperature_Statuses[5].GameName,Looks very cold.,看上去很冷。
+Partner_BodyTemperature_Statuses[6].GameName,Looks hypothermic.,看起来体温过低了。
+Partner_BodyTemperature_Statuses[7].GameName,Looks frozen to death.,看上去要冻死了。
+Partner_BodyTemperature_Statuses[7].DeleteAgentMessage.Text,Your partner has died of a hypothermia.,你的同伴死于低温。
+Partner_BreastSize_Statuses[0].GameName,Has minimal breasts.,有着平坦的胸部。
+Partner_BreastSize_Statuses[1].GameName,Has small breasts.,有着小巧的胸部。
+Partner_BreastSize_Statuses[2].GameName,Has medium-sized breasts.,有着适中的胸部。
+Partner_BreastSize_Statuses[3].GameName,Has large breasts.,有着丰满的胸部。
+Partner_BreastSize_Statuses[4].GameName,Has very large breasts.,有着傲人的胸部。
+Partner_Comfort_Statuses[0].GameName,Looks very comfortable,看上去十分舒服
+Partner_Comfort_Statuses[1].GameName,Looks comfortable,看上去舒服
+Partner_Comfort_Statuses[2].GameName,Looks uncomfortable,看上去不太舒适
+Partner_Comfort_Statuses[3].GameName,Looks very uncomfortable,看上去非常不舒服
+Partner_Comfort_Statuses[4].GameName,Looks terribly uncomfortable,看上去极其不舒服
+Partner_Connection_Statuses[0].GameName,Feels important.,感觉被重视。
+Partner_Connection_Statuses[1].GameName,Wants attention.,渴求关注。
+Partner_Connection_Statuses[2].GameName,Feels neglected.,感觉被忽视。
+Partner_Empathy_Statuses[0].GameName,Very Low,非常低
+Partner_Empathy_Statuses[1].GameName,Low,低
+Partner_Empathy_Statuses[2].GameName,High,高
+Partner_Empathy_Statuses[3].GameName,Very High,非常高
+Partner_Energy_Statuses[0].GameName,Looks exhausted.,看上去筋疲力尽。
+Partner_Energy_Statuses[1].GameName,Looks very tired.,看上去十分疲惫。
+Partner_Energy_Statuses[2].GameName,Looks tired.,看上去累了。
+Partner_Energy_Statuses[3].GameName,Looks full of energy.,看上去精力充沛。
+Partner_Estrogen_Statuses[0].GameName,Minimal Estrogen,微雌激素水平
+Partner_Estrogen_Statuses[1].GameName,Low Estrogen,低雌激素水平
+Partner_Estrogen_Statuses[2].GameName,Moderate Estrogen,中雌激素水平
+Partner_Estrogen_Statuses[3].GameName,High Estrogen,高雌激素水平
+Partner_FacialHarmony_Statuses[0].GameName,Has an asymmetric face.,有不对称的脸。
+Partner_FacialHarmony_Statuses[1].GameName,Has an uneven face.,有不平整的脸。
+Partner_FacialHarmony_Statuses[2].GameName,Has a harmonious face.,有端正的脸。
+Partner_FacialHarmony_Statuses[3].GameName,Has a very harmonious face.,有极其端正的脸。
+Partner_FatDistribution_Statuses[0].GameName,Android Emaciated,男性型消瘦
+Partner_FatDistribution_Statuses[1].GameName,Mixed Emaciated,混合型消瘦
+Partner_FatDistribution_Statuses[2].GameName,Gynecoid Emaciated,女性型消瘦
+Partner_FatDistribution_Statuses[3].GameName,Android Very Thin,男性型极度消瘦
+Partner_FatDistribution_Statuses[4].GameName,Mixed Very Thin,混合型极度消瘦
+Partner_FatDistribution_Statuses[5].GameName,Gynecoid Very Thin,女性型极度消瘦
+Partner_FatDistribution_Statuses[6].GameName,Android Thin,男性型偏瘦
+Partner_FatDistribution_Statuses[7].GameName,Mixed Thin,混合型偏瘦
+Partner_FatDistribution_Statuses[8].GameName,Gynecoid Thin,女性型偏瘦
+Partner_FatDistribution_Statuses[9].GameName,Android Average,男性型正常体型
+Partner_FatDistribution_Statuses[10].GameName,Mixed Average,混合型正常体型
+Partner_FatDistribution_Statuses[11].GameName,Gynecoid Average,女性型正常体型
+Partner_FatDistribution_Statuses[12].GameName,Android Well-Fed,男性型壮实
+Partner_FatDistribution_Statuses[13].GameName,Mixed Well-Fed,混合型壮实
+Partner_FatDistribution_Statuses[14].GameName,Gynecoid Well-Fed,女性型壮实
+Partner_FatDistribution_Statuses[15].GameName,Android Bit Fat,男性型微胖
+Partner_FatDistribution_Statuses[16].GameName,Mixed Bit Fat,混合型微胖
+Partner_FatDistribution_Statuses[17].GameName,Gynecoid Bit Fat,女性型微胖
+Partner_FatDistribution_Statuses[18].GameName,Android Fat,男性型肥胖
+Partner_FatDistribution_Statuses[19].GameName,Mixed Fat,混合型肥胖
+Partner_FatDistribution_Statuses[20].GameName,Gynecoid Fat,女性型肥胖
+Partner_FatDistribution_Statuses[21].GameName,Android Very Fat,男性型超重
+Partner_FatDistribution_Statuses[22].GameName,Mixed Very Fat,混合型超重
+Partner_FatDistribution_Statuses[23].GameName,Gynecoid Very Fat,女性型超重
+Partner_Favour_Statuses[0].GameName,Looks very grateful.,看上去十分心怀感激。
+Partner_Favour_Statuses[1].GameName,Looks grateful.,看上去心怀感激。
+Partner_Favour_Statuses[2].GameName,Neutral.,中立。
+Partner_Favour_Statuses[3].GameName,Looks a bit resentful.,看上去有点不满。
+Partner_Favour_Statuses[4].GameName,Looks resentful.,看上去不满。
+Partner_Favour_Statuses[5].GameName,Looks very resentful.,看上去非常不满。
+Partner_FeetSize_Statuses[0].GameName,Has small feet.,有双小脚。
+Partner_FeetSize_Statuses[1].GameName,Has medium-sized feet.,有双一般尺寸的脚。
+Partner_FeetSize_Statuses[2].GameName,Has large feet.,有双大脚。
+Partner_Filth_Statuses[0].GameName,Small,少量脏污
+Partner_Filth_Statuses[1].GameName,Medium,中等脏污
+Partner_Filth_Statuses[2].GameName,Large,大量脏污
+Partner_Filth_Statuses[3].GameName,Huge,满身污秽
+Partner_Gratification_Statuses[0].GameName,Looks very content.,看上去十分满足。
+Partner_Gratification_Statuses[1].GameName,Looks content.,看上去满足。
+Partner_Gratification_Statuses[2].GameName,Looks dissatisfied.,看上去不太满足。
+Partner_Gratification_Statuses[3].GameName,Looks miserable.,看上去极不满足。
+Partner_HandSize_Statuses[0].GameName,Has small hands.,有双小手。
+Partner_HandSize_Statuses[1].GameName,Has medium-sized hands.,有双一般尺寸的手。
+Partner_HandSize_Statuses[2].GameName,Has large hands.,有双大手。
+Partner_HipWidth_Statuses[0].GameName,Has narrow hips.,臀部较窄。
+Partner_HipWidth_Statuses[1].GameName,Has medium-sized hips.,臀部适中。
+Partner_HipWidth_Statuses[2].GameName,Has wide hips.,臀部较宽。
+Partner_HipWidth_Statuses[3].GameName,Has very wide hips.,臀部宽广。
+Partner_Infatuation_Statuses[0].GameName,Depleted Infatuation,着迷清醒
+Partner_Infatuation_Statuses[1].GameName,Looks Infatuated.,看上去着迷了。
+Partner_Infatuation_Statuses[2].GameName,Looks very infatuated.,看上去很着迷。
+Partner_Infatuation_Statuses[3].GameName,Looks Infatuated.,看上去着迷了。
+Partner_Infatuation_Statuses[4].GameName,-,-
+Partner_Intestines_Statuses[0].GameName,Digestion,消化
+Partner_Intestines_Statuses[1].GameName,Digestion,消化
+Partner_Intestines_Statuses[2].GameName,Digestion,消化
+Partner_Intestines_Statuses[3].GameName,Digestion,消化
+Partner_Intestines_Statuses[4].GameName,Digestion,消化
+Partner_JawSize_Statuses[0].GameName,Has a small jaw.,小下巴。
+Partner_JawSize_Statuses[1].GameName,Has a medium-sized jaw.,中等尺寸的下巴。
+Partner_JawSize_Statuses[2].GameName,Has a large jaw.,大下巴。
+Partner_Morale_Statuses[0].GameName,Looks happy.,看上去开心。
+Partner_Morale_Statuses[1].GameName,Looks content.,看上去满意。
+Partner_Morale_Statuses[2].GameName,Looks down.,看上去低落。
+Partner_Morale_Statuses[3].GameName,Looks sad.,看上去悲伤。
+Partner_Neoteny_Statuses[0].GameName,Very High,非常高
+Partner_Neoteny_Statuses[1].GameName,High,高
+Partner_Neoteny_Statuses[2].GameName,Moderate,中等
+Partner_Neoteny_Statuses[3].GameName,Low,低
+Partner_Neoteny_Statuses[4].GameName,Very Low,非常低
+Partner_NoseType_Statuses[0].GameName,Has a small upturned nose.,有个小小的朝天鼻。
+Partner_NoseType_Statuses[1].GameName,Has a medium-sized upturned nose.,有个一般尺寸的朝天鼻。
+Partner_NoseType_Statuses[2].GameName,Has a large upturned nose.,有个大大的朝天鼻。
+Partner_NoseType_Statuses[3].GameName,Has a small straight nose.,有个小小的直鼻。
+Partner_NoseType_Statuses[4].GameName,Has a medium-sized straight nose.,有个一般尺寸的直鼻。
+Partner_NoseType_Statuses[5].GameName,Has a large straight nose.,有个大大的直鼻。
+Partner_NoseType_Statuses[6].GameName,Has a small downturned nose.,有个小小的鹰钩鼻。
+Partner_NoseType_Statuses[7].GameName,Has a medium-sized downturned nose.,有个一般尺寸的鹰钩鼻。
+Partner_NoseType_Statuses[8].GameName,Has a large downturned nose.,有个大大的鹰钩鼻。
+Partner_NoseType_Statuses[9].GameName,Has a small hooked nose.,有个小小的驼峰鼻。
+Partner_NoseType_Statuses[10].GameName,Has a medium-sized hooked nose.,有个一般尺寸的驼峰鼻。
+Partner_NoseType_Statuses[11].GameName,Has a large hooked nose.,有个大大的驼峰鼻。
+Partner_Ornamentation_Statuses[0].GameName,Ornamentation,装饰
+Partner_Ornamentation_Statuses[1].GameName,Ornamentation,装饰
+Partner_Ornamentation_Statuses[2].GameName,Ornamentation,装饰
+Partner_PerceivedAttractiveness_Statuses[0].GameName,Looks extremely attractive to you.,看上去对你极具吸引力。
+Partner_PerceivedAttractiveness_Statuses[1].GameName,Looks very attractive to you.,看上去十分吸引你。
+Partner_PerceivedAttractiveness_Statuses[2].GameName,Looks attractive to you.,看上去吸引你。
+Partner_PerceivedAttractiveness_Statuses[3].GameName,Doesn't look particularly attractive to you.,看上去不怎么吸引你。
+Partner_PerceivedAttractiveness_Statuses[4].GameName,Looks unnatractive to you.,看上去对你缺乏吸引力。
+Partner_PerceivedAttractiveness_Statuses[5].GameName,Looks very unnatractive to you.,看上去对你非常缺乏吸引力。
+Partner_PerceivedTemperature_Statuses[0].GameName,Scorching Hot,灼热
+Partner_PerceivedTemperature_Statuses[1].GameName,Extremely Hot,极度炎热
+Partner_PerceivedTemperature_Statuses[2].GameName,Very Hot,非常热
+Partner_PerceivedTemperature_Statuses[3].GameName,Hot,热
+Partner_PerceivedTemperature_Statuses[4].GameName,Comfortable,舒适
+Partner_PerceivedTemperature_Statuses[5].GameName,Chilled,凉爽
+Partner_PerceivedTemperature_Statuses[6].GameName,Chilled,凉爽
+Partner_PerceivedTemperature_Statuses[7].GameName,Chilled,凉爽
+Partner_PerceivedTemperature_Statuses[8].GameName,Cold,冷
+Partner_PerceivedTemperature_Statuses[9].GameName,Cold,冷
+Partner_PerceivedTemperature_Statuses[10].GameName,Cold,冷
+Partner_PerceivedTemperature_Statuses[11].GameName,Very Cold,很冷
+Partner_PerceivedTemperature_Statuses[12].GameName,Very Cold,很冷
+Partner_PerceivedTemperature_Statuses[13].GameName,Very Cold,很冷
+Partner_PerceivedTemperature_Statuses[14].GameName,Extremely Cold,冰冷
+Partner_PerceivedTemperature_Statuses[15].GameName,Extremely Cold,冰冷
+Partner_PerceivedTemperature_Statuses[16].GameName,Extremely Cold,冰冷
+Partner_PerceivedTemperature_Statuses[17].GameName,Freezing,寒冷
+Partner_PerceivedTemperature_Statuses[18].GameName,Freezing,寒冷
+Partner_PerceivedTemperature_Statuses[19].GameName,Freezing,寒冷
+Partner_PerceivedTemperature_Statuses[20].GameName,Extremely Freezing,极度寒冷
+Partner_Satiation_Statuses[0].GameName,Looks full.,看上去饱了。
+Partner_Satiation_Statuses[1].GameName,Doesn't look hungry.,看上去不饿。
+Partner_Satiation_Statuses[2].GameName,Looks hungry.,看上去饿了。
+Partner_Satiation_Statuses[3].GameName,Looks very hungry.,看上去非常饿。
+Partner_Satiation_Statuses[4].GameName,Looks ravenous.,看上去饥肠辘辘。
+Partner_ShoulderWidth_Statuses[0].GameName,Has narrow shoulders.,有较窄的肩膀。
+Partner_ShoulderWidth_Statuses[1].GameName,Has medium-sized shoulders.,有一般尺寸的肩膀。
+Partner_ShoulderWidth_Statuses[2].GameName,Has broad shoulders.,有宽广的肩膀。
+Partner_ShoulderWidth_Statuses[3].GameName,Has very broad shoulders.,有十分宽广的肩膀。
+Partner_Size_Statuses[0].GameName,Has a very tall stature.,巨人身材
+Partner_Size_Statuses[1].GameName,Has a tall stature.,高大身材。
+Partner_Size_Statuses[2].GameName,Has an average stature.,中等身材。
+Partner_Size_Statuses[3].GameName,Has a short stature.,矮小身材。
+Partner_Size_Statuses[4].GameName,Has a very short stature.,侏儒身材。
+Partner_SizeArms_Statuses[0].GameName,Has very slim arms.,有十分纤细的胳膊。
+Partner_SizeArms_Statuses[1].GameName,Has slim arms.,有纤细的胳膊。
+Partner_SizeArms_Statuses[2].GameName,Has medium-sized arms.,有一般适中粗细的胳膊。
+Partner_SizeArms_Statuses[3].GameName,Has full arms.,有圆润的胳膊。
+Partner_SizeArms_Statuses[4].GameName,Has very full arms.,有十分圆润的胳膊。
+Partner_SizeStomach_Statuses[0].GameName,Has a flat stomach.,有平坦的腹部。
+Partner_SizeStomach_Statuses[1].GameName,Has a full stomach.,有圆润的腹部。
+Partner_SizeStomach_Statuses[2].GameName,Has a large stomach.,有圆鼓鼓的腹部。
+Partner_SizeStomach_Statuses[3].GameName,Has a very large stomach.,有硕大的腹部。
+Partner_SizeThighs_Statuses[0].GameName,Has very slim thighs.,拥有十分苗条的大腿。
+Partner_SizeThighs_Statuses[1].GameName,Has slim thighs.,拥有苗条的大腿。
+Partner_SizeThighs_Statuses[2].GameName,Has medium-sized thighs.,拥有适中粗细的大腿。
+Partner_SizeThighs_Statuses[3].GameName,Has full thighs.,拥有丰满的大腿。
+Partner_SizeThighs_Statuses[4].GameName,Has very full thighs.,拥有十分丰满的大腿。
+Partner_Stress_Statuses[0].GameName,Looks relaxed.,看上去很放松。
+Partner_Stress_Statuses[1].GameName,Looks tense.,看上去有点紧张。
+Partner_Stress_Statuses[2].GameName,Looks stressed.,看上去很紧张。
+Partner_Stress_Statuses[3].GameName,Looks very stressed.,看上去十分紧张。
+Partner_Testosterone_Statuses[0].GameName,Minimal Testosterone,极低雄激素水平
+Partner_Testosterone_Statuses[1].GameName,Low Testosterone,低雄激素
+Partner_Testosterone_Statuses[2].GameName,Moderate Testosterone,中雄激素水平
+Partner_Testosterone_Statuses[3].GameName,High Testosterone,高雄激素
+Partner_Thirst_Statuses[0].GameName,Hydrated,水分充足
+Partner_Thirst_Statuses[1].GameName,Looks thirsty.,看上去渴了。
+Partner_Thirst_Statuses[2].GameName,Looks very thirsty.,看上去非常渴
+Partner_Trust_Statuses[0].GameName,Looks really trusting.,看上去十分信任你。
+Partner_Trust_Statuses[1].GameName,Looks trusting.,看上去很信任你。
+Partner_Trust_Statuses[2].GameName,Looks comfortable with your company.,看上去陪着你很安逸。
+Partner_Trust_Statuses[3].GameName,Looks slightly guarded.,看上去有点警惕。
+Partner_Trust_Statuses[4].GameName,Looks guarded.,看上去很警惕。
+Partner_Trust_Statuses[5].GameName,Looks very guarded.,看上去非常警惕。
+Partner_Trustfulness_Statuses[0].GameName,Very Trusting,非常信任
+Partner_Trustfulness_Statuses[1].GameName,Trusting,信任
+Partner_Trustfulness_Statuses[2].GameName,Untrusting,不信任
+Partner_Trustfulness_Statuses[3].GameName,Very Untrusting,非常不信任
+Partner_VoiceRegister_Statuses[0].GameName,Has a soprano voice.,拥有一副女高音的嗓音。
+Partner_VoiceRegister_Statuses[1].GameName,Has a mezzo voice.,拥有一副女中音的嗓音。
+Partner_VoiceRegister_Statuses[2].GameName,Has a contralto voice.,拥有一副女低音的嗓音。
+Partner_VoiceRegister_Statuses[3].GameName,Has a tenor voice.,拥有一副男高音的嗓音。
+Partner_VoiceRegister_Statuses[4].GameName,Has a baritone voice.,拥有一副男中音的嗓音。
+Partner_VoiceRegister_Statuses[5].GameName,Has a bass voice.,拥有一副男低音的嗓音。
+Partner_Wakefulness_Statuses[0].GameName,Looks sleepy.,看上去很困。
+Partner_Wakefulness_Statuses[1].GameName,Looks very sleepy.,看上去非常困
+Partner_Weight_Statuses[0].GameName,Looks very fat.,看上去非常胖。
+Partner_Weight_Statuses[1].GameName,Looks fat.,看上去胖。
+Partner_Weight_Statuses[2].GameName,Looks sligthly fat.,看上去有点胖。
+Partner_Weight_Statuses[3].GameName,Looks well-fed.,看上去体型富态。
+Partner_Weight_Statuses[4].GameName,Looks average weight.,看上去体型标准。
+Partner_Weight_Statuses[5].GameName,Looks thin.,看上去很瘦。
+Partner_Weight_Statuses[6].GameName,Looks very thin.,看上去非常瘦。
+Partner_Weight_Statuses[7].GameName,Looks emaciated.,看上去瘦骨嶙峋。
+Partner_Weight_Statuses[8].GameName,Looks dead of starvation.,看上去要饿死了。
+Partner_Weight_Statuses[8].DeleteAgentMessage.Text,Your partner has died of a starvation.,你的同伴死于饥饿。
+Partner_Wellbeing_Statuses[0].GameName,Great Wellbeing,如沐春风
+Partner_Wellbeing_Statuses[1].GameName,Good Wellbeing,心旷神怡
+Partner_Wellbeing_Statuses[2].GameName,Average Wellbeing,无忧无虑
+Partner_Wellbeing_Statuses[3].GameName,Bad Wellbeing,忧心忡忡
+Partner_Wellbeing_Statuses[4].GameName,Poor Wellbeing,愁眉苦脸
+Agent_Partner_AgentName,Partner,同伴
+Agent_Partner_Interactions[0].ButtonName,Directions,方向
+Agent_Partner_Interactions[1].ButtonName,Talk,交谈
+Agent_PartnerTest_Interactions[0].ButtonName,Talk,交谈
+HeatherStemsFresh_FuelCapacity.OnZero.ActionDescription,Heather Stems Dried. ,干帚石南茎
+BoarFreeFemale_DismantleActions[1].ActionName,Release to the wild,放归自然
+BoarFreeMale_DismantleActions[1].ActionName,Release to the wild,放归自然
+BoarFreePiglet_DismantleActions[1].ActionName,Release to the wild,放归自然
+CowFreeCalf_DismantleActions[1].ActionName,Release to the wild,放归自然
+CowFreeFemale_DismantleActions[1].ActionName,Release to the wild,放归自然
+CowFreeMale_DismantleActions[1].ActionName,Release to the wild,放归自然
+ChickenFreeChick_DismantleActions[2].ActionName,Release to the wild,放归自然
+ChickenFreeFemale_DismantleActions[2].ActionName,Release to the wild,放归自然
+ChickenFreeMale_DismantleActions[2].ActionName,Release to the wild,放归自然
+PartridgeFreeChick_DismantleActions[2].ActionName,Release to the wild,放归自然
+PartridgeFreeFemale_DismantleActions[2].ActionName,Release to the wild,放归自然
+PartridgeFreeMale_DismantleActions[2].ActionName,Release to the wild,放归自然
+MeatStomachBoiled_SpecialDurability4.CardStatName,Boil,烹煮
+FishScraps_SpecialDurability4.CardStatName,Boil,烹煮
+FishScrapsCooked_SpecialDurability4.CardStatName,Boil,烹煮
+ToolOrWeapon_FireStrikerWithFlint_Metal_SpoilageTime.CardStatName,Beauty,美观
+WoodAlder_CardName,Wood,木材
+WoodAlder_CardDescription,"A hardwood, ideal for quality tools and construction. Useful as fuel too.",一种硬木，适合制作优质工具和建筑。也可用作燃料。
+WoodAlder_AlternateNames[0].Name,Oak Wood,橡木
+WoodAlder_AlternateNames[1].Name,Pine Wood,松木
+WoodAlder_AlternateNames[2].Name,Birch Wood,白桦木
+WoodAlder_AlternateNames[3].Name,Willow Wood,柳木
+WoodAlder_UsageDurability.CardStatName,Fragrance,香气
+WoodAlder_FuelCapacity.CardStatName,Fuel,燃料
+WoodAlder_SpecialDurability2.CardStatName,Quality,品质
+WoodAlder_SpecialDurability4.CardStatName,ID,ID
+WoodAlder_OnStatsChangeActions[0].ActionName,trasnform into a normal wood,变成普通木材
+TreadleLoomItem_DismantleActions[0].ActionName,Place,放置
+TreadleLoomLocation_CardName,Treadle Loom,踏板织机
+TreadleLoomLocation_CardDescription,Used for weaving cloth of different sizes more efficiently.,用于更高效的纺织不同尺寸的布。
+TreadleLoomLocation_DismantleActions[0].ActionName,Pick up,拿起
+FiberBreakItem_DismantleActions[0].ActionName,Place,放置
+FiberBreakLocation_CardName,Fiber Break,纤维破碎架
+FiberBreakLocation_CardDescription,Used for extracting fibers more effectively.,用于更有效地提取纤维。
+FiberBreakLocation_DismantleActions[0].ActionName,Pick up,拿起
+SpinningWheelItem_DismantleActions[0].ActionName,Place,放置
+SpinningWheelLocation_CardName,Spinning Wheel,纺车
+SpinningWheelLocation_CardDescription,Used for spinning fibers into twine or yarn much more effectively.,用于非常高效地将纤维缠成细线或线团。
+SpinningWheelLocation_DismantleActions[0].ActionName,Pick up,拿起
+ToolOrWeapon_SkinningKnife_Metal_AlternateNames[5].Name,White Bronze Skinning Knife,白铜剥皮刀
+LQ_Fertilizer_CardName,Fertilizer,肥料
+LQ_Fertilizer_CardDescription,Provides nutrition for gardens.,为菜园提供营养。
+LQ_Fertilizer_DismantleActions[0].ActionName,Take Out,取出
+LQ_Fertilizer_DismantleActions[1].ActionName,Take Out 10,拿出10份
+BedImprovised_SpecialDurability1.CardStatName,Being Used,已被使用
+ImprovisedShelter_SpecialDurability1.CardStatName,Being Used,已被使用
+GardenPlot_DismantleActions[0].RequiredReceivingDurabilities.FailMessage,Needs 0% Care,需要照料 0%
+Pk_3_10_FineFeatures_PerkName,Fine Features,五官精致
+Pk_3_10_FineFeatures_PerkDescription,"Increases facial harmony, improving general attractiveness.",增强面部和谐感，提升整体吸引力。
+Pk_3_11_IrregularFeatures_PerkName,Irregular Features,五官粗糙
+Pk_3_11_IrregularFeatures_PerkDescription,"Decreases facial harmony, worsening general attractiveness.",削弱面部和谐感，降低整体吸引力。
+Pk_4_12_AttractionBothSex_PerkName,Attraction to both Sexes,双性吸引
+Pk_4_12_AttractionSameSex_PerkName,Same Sex Attraction,同性吸引
+Pk_5_27_PartnerCraftsman_PerkName,Partner: The Craftsman,同伴：手艺人
+Pk_5_27_PartnerCraftsman_PerkDescription,"Makes you start with the Craftsman partner.  \nSteady and dependable, he finds purpose in building, maintaining and providing, quietly ensuring those he loves never face hardship alone.",开局拥有手艺人同伴。他坚实可靠，在建造维护和提供帮助的过程中找到了生命的意义，默默地确保着所爱之人永远不会独自面对困难。
+Pk_5_27_PartnerCustom_PerkName,Custom Partner,自定义同伴
+Pk_5_27_PartnerCustom_PerkDescription,Makes you start with a partner of your own creation.,开局拥有自定义同伴。
+Pk_5_27_PartnerDreamer_PerkName,Partner: The Dreamer,同伴：梦想家
+Pk_5_27_PartnerDreamer_PerkDescription,"Makes you start with the Dreamer partner. \nImaginative, open-hearted and fiercely romantic, he finds beauty where others see only the ordinary, reminding those around him that the world still holds wonder.",开局拥有梦想家同伴。他充满想象力，胸襟宽广且浪漫非常，能在平凡之处发现美的存在，并以此告知身边之人世界仍充满奇迹。
+Pk_5_27_PartnerHearthwife_PerkName,Partner: The Hearthwife,同伴：家庭主妇
+Pk_5_27_PartnerHearthwife_PerkDescription,"Makes you start with the Hearthwife partner. \nPatient and caring, she has the power to turn any place into a home, quietly weaving comfort into everyday life.",开局拥有家庭主妇同伴。她耐心且乐于助人，有能力将任何地方充满家的味道，默默地将舒适时光带入日常生活。
+Pk_5_27_PartnerMuse_PerkName,Partner: The Muse,同伴：女郎
+Pk_5_27_PartnerMuse_PerkDescription,"Makes you start with the Muse partner.  \nGraceful and self-assured, she inspires admiration and awakens the desire to become better, though winning her heart is never taken for granted.",开局拥有女郎同伴。她举止优雅且自信，总能激发人们的钦佩之情并唤醒他们对于追求卓越的渴望，尽管赢得她的芳心绝非易事。
+Pk_5_27_PartnerSpirited_PerkName,Partner: The Spirited,同伴：元气少女
+Pk_5_27_PartnerSpirited_PerkDescription,"Makes you start with the Spirited partner. \nBold and full of life, she meets every challenge with laughter and curiosity, encouraging others to embrace the world with the same boundless enthusiasm.",开局拥有元气少女同伴。她勇敢且活力满满，总是带着笑容和好奇心迎接每一个挑战，并用无拘无束的永恒热情感染人们去拥抱整个世界。
+Pk_5_27_PartnerUntamed_PerkName,Partner: The Untamed,同伴：不羁者
+Pk_5_27_PartnerUntamed_PerkDescription,"Makes you start with the Untamed partner. \nStrong, self-reliant and fiercely independent, he commands respect without seeking it, and is difficult to truly know.",开局拥有不羁者同伴。他遗世独立，随心所欲便能赢得尊重，令人难以看透。
+Spirit_AwakenedSoul_CardDescription,You know understand reality on a deeper level.\n\n,你理解了更深层次的现实。
+SnowValue_GameName,Snow Value,雪值
+SnowValue_Description,How strong the snow is. ,降雪的丰富程度。
+Assertiveness_GameName,Assertiveness,自信
+Trust_Statuses[3].GameName,Very Low,非常低
+DislikesFemaleTraits_GameName,Dislikes Female Traits,厌恶女性
+DislikesFemaleTraits_Statuses[0].GameName,Very High,非常高
+DislikesFemaleTraits_Statuses[1].GameName,High,高
+DislikesFemaleTraits_Statuses[2].GameName,Moderate,中等
+DislikesFemaleTraits_Statuses[3].GameName,Minimal,最低
+DislikesFemaleTraits_Statuses[4].GameName,Neutral,中立
+DislikesMaleTraits_GameName,Dislikes Male Traits,厌恶男性
+DislikesMaleTraits_Statuses[0].GameName,Very High,非常高
+DislikesMaleTraits_Statuses[1].GameName,High,高
+DislikesMaleTraits_Statuses[2].GameName,Moderate,中等
+DislikesMaleTraits_Statuses[3].GameName,Minimal,最低
+DislikesMaleTraits_Statuses[4].GameName,Neutral,中立
+LikesFemaleTraits_GameName,Likes Female Traits,性取向女
+LikesFemaleTraits_Statuses[0].GameName,Very High,非常高
+LikesFemaleTraits_Statuses[1].GameName,High,高
+LikesFemaleTraits_Statuses[2].GameName,Moderate,中等
+LikesFemaleTraits_Statuses[3].GameName,Minimal,最低
+LikesFemaleTraits_Statuses[4].GameName,Neutral,中立
+LikesMaleTraits_GameName,Likes Male Traits,性取向男
+LikesMaleTraits_Statuses[0].GameName,Very High,非常高
+LikesMaleTraits_Statuses[1].GameName,High,高
+LikesMaleTraits_Statuses[2].GameName,Moderate,中等
+LikesMaleTraits_Statuses[3].GameName,Minimal,最低
+LikesMaleTraits_Statuses[4].GameName,Neutral,中立
+Sexuality_GameName,Sexuality,性取向
+Sexuality_Statuses[0].GameName,Axexual,无性恋
+Sexuality_Statuses[1].GameName,Male Gynephilic,男性异性恋
+Sexuality_Statuses[2].GameName,Male Androphilic,男性同性恋
+Sexuality_Statuses[3].GameName,Female Androphilic,女性异性恋
+Sexuality_Statuses[4].GameName,Female Gynephilic,女性同性恋
+Sexuality_Statuses[5].GameName,Likes Both,双性恋
+SexualOrgans_GameName,Sexual Organs,性器官
+SexualOrgans_Statuses[0].GameName,Female,女性
+SexualOrgans_Statuses[1].GameName,Male,男性
+SexualOrgans_Statuses[2].GameName,Both,双性
+FacialHarmony_Statuses[0].GameName,Asymmetric,五官歪斜
+FacialHarmony_Statuses[1].GameName,Uneven,五官失调
+FacialHarmony_Statuses[2].GameName,Harmonious,五官端正
+FacialHarmony_Statuses[3].GameName,Very Harmonious,五官浑然天成
+HairFacialLength_GameName,Facial Hair Length,面部毛发长度
+HairFacialLength_Statuses[1].GameName,Stubble,胡茬
+HairFacialLength_Statuses[2].GameName,Short Beard,短须
+HairFacialLength_Statuses[3].GameName,Full Beard,络腮胡
+HairFacialLength_Statuses[4].GameName,Long Beard,长须
+HairLength_GameName,Hair Length,毛发长度
+HairLength_Statuses[0].GameName,Bald,秃头
+HairLength_Statuses[1].GameName,Short Hair,短发
+HairLength_Statuses[2].GameName,Neck-Length Hair,齐颈发
+HairLength_Statuses[3].GameName,Shoulder-Length Hair,齐肩发
+HairLength_Statuses[4].GameName,Back-Length Hair,及背发
+HairLength_Statuses[5].GameName,Waist-Length Hair,及腰发
+HairLength_Statuses[6].GameName,Hip-Length Hair,齐臀发
+HairType_GameName,Hair Type,发型
+HairType_Statuses[0].GameName,Straight,直发
+HairType_Statuses[1].GameName,Wavy,大波浪
+HairType_Statuses[2].GameName,Curly,大卷发
+HairType_Statuses[3].GameName,Coily,小卷发
+PartnerTab_Appearance_TabName,Appearance,外貌
+PartnerTab_Details_TabName,Details,详情
+GpTag_Bark_TabName,Bark,树皮
+GpTag_BirdCarcass_TabName,Bird Carcass,鸟类尸体
+GpTag_DryStalks_TabName,Dry Stalks,干茎秆
+GpTag_SpiritHerb_TabName,Spirit Herb,灵草
+tag_LQ_FertilizerWeak_InGameName,Weak Fertilizer,低效肥料
+tag_FillingPrecursor_InGameName,Filling Precursor,预制填料
+tag_FoodAcid_InGameName,Acid,酸
+tag_FoodBitter_InGameName,Bitter,苦味
+tag_FoodBland_InGameName,Bland,清淡的
+tag_FoodCrunchy_InGameName,Crunchy,脆脆的
+tag_FoodFatty_InGameName,Fatty,油腻的
+tag_FoodPungent_InGameName,Pungent,刺鼻的
+tag_FoodRaw_InGameName,Soft Food,软食
+tag_FoodRefreshing_InGameName,Crunchy,脆脆的
+tag_FoodSavoury_InGameName,Savoury,咸鲜味
+tag_FoodSoft_InGameName,Soft Food,软食
+tag_FoodStarchy_InGameName,Starchy,面粉口感
+tag_FoodSweet_InGameName,Sweet,甜食
+tag_HumanDrink_InGameName,Human Drink,人类饮水
+tag_Minceable_InGameName,Minceable,可切的
+tag_Door_InGameName,Secure,安全的
+tag_FiberClothing_InGameName,Fiber Clothing,纤维织物
+tag_LeatherClothing_InGameName,Leather Clothing,皮革服饰
+tag_PriorityClothing_InGameName,Leather Clothing,皮革服饰
+tag_ReedClothing_InGameName,Reed Clothing,芦苇织物
