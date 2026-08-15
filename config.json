@@ -25,6 +25,10 @@
       {
         "fromModVersion": "3.2.2",
         "requiredGameVersion": "0.0.65.0"
+      },
+      {
+        "fromModVersion": "3.3.1",
+        "requiredGameVersion": "0.0.66.0"
       }
     ]
   },

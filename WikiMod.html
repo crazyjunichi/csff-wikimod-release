@@ -5,22 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WikiMod</title>
 <style>
+  /* ===== 森林深色主题（对齐 CSFF-Wiki-Gen/src/style.css） ===== */
+  :root {
+    --color-base: #080c0a;
+    --color-surface: #0f1612;
+    --color-card: #151f1a;
+    --color-card-hover: #1c2b24;
+    --color-elevated: #1e3329;
+    --color-border: #2a4038;
+    --color-border-hover: #3d6b5a;
+    --color-accent: #5a8a4a;
+    --color-accent-light: #6bab5a;
+    --color-gold: #d4a017;
+    --color-parchment: #e0d8c0;
+    --color-text: #b8cfc0;
+    --color-muted: #6b8f7a;
+    --color-dim: #3d5c4d;
+  }
+
   *, *::before, *::after { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
+  html { color-scheme: dark; }
   body {
     font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
-    background: #f6f7f9;
-    color: #1f2937;
+    background: var(--color-base);
+    color: var(--color-text);
     line-height: 1.65;
     font-size: 15px;
   }
 
+  /* 滚动条 */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--color-surface); }
+  ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
+
+  ::selection { background: rgba(90, 138, 74, 0.35); color: var(--color-parchment); }
+
   /* ===== 顶栏 ===== */
   header.topbar {
     position: sticky; top: 0; z-index: 100;
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     display: flex; align-items: center;
     padding: 0 16px;
     height: 56px;
@@ -29,10 +56,10 @@
   .brand {
     font-weight: 700;
     font-size: 17px;
-    color: #4f46e5;
+    color: var(--color-gold);
     flex-shrink: 0;
   }
-  .brand .ver { color: #6b7280; font-weight: 500; font-size: 13px; margin-left: 8px; }
+  .brand .ver { color: var(--color-muted); font-weight: 500; font-size: 13px; margin-left: 8px; }
 
   .tabs {
     display: flex; gap: 4px;
@@ -50,42 +77,42 @@
     border-radius: 6px;
     font-size: 14px;
     font-weight: 500;
-    color: #4b5563;
+    color: var(--color-muted);
     cursor: pointer;
     transition: all 0.15s;
     white-space: nowrap;
     flex-shrink: 0;
   }
   .tab-btn .label { margin-left: 4px; }
-  .tab-btn:hover { background: #f3f4f6; color: #1f2937; }
+  .tab-btn:hover { background: var(--color-card-hover); color: var(--color-parchment); }
   body[data-tab="latest"] .tab-btn[data-target="latest"],
   body[data-tab="usage"] .tab-btn[data-target="usage"],
   body[data-tab="features"] .tab-btn[data-target="features"],
   body[data-tab="changelog"] .tab-btn[data-target="changelog"] {
-    background: #eef2ff; color: #4338ca;
+    background: var(--color-elevated); color: var(--color-accent-light);
   }
 
   .lang-switch {
     display: flex; gap: 0;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--color-border);
     border-radius: 6px;
     overflow: hidden;
     flex-shrink: 0;
   }
   .lang-btn {
-    background: #fff;
+    background: var(--color-card);
     border: 0;
     padding: 6px 12px;
     font-size: 13px;
-    color: #4b5563;
+    color: var(--color-muted);
     cursor: pointer;
     transition: all 0.15s;
   }
-  .lang-btn + .lang-btn { border-left: 1px solid #d1d5db; }
-  .lang-btn:hover { background: #f9fafb; }
+  .lang-btn + .lang-btn { border-left: 1px solid var(--color-border); }
+  .lang-btn:hover { background: var(--color-card-hover); color: var(--color-parchment); }
   body[data-lang="zh"] .lang-btn[data-target="zh"],
   body[data-lang="en"] .lang-btn[data-target="en"] {
-    background: #4f46e5; color: #fff;
+    background: var(--color-accent); color: var(--color-base);
   }
 
   /* 窄屏紧凑模式 */
@@ -133,8 +160,8 @@
     align-self: start;
     max-height: calc(100vh - 100px);
     overflow-y: auto;
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
     border-radius: 10px;
     padding: 12px 8px;
     font-size: 13.5px;
@@ -143,21 +170,25 @@
   aside.sidebar a {
     display: block;
     padding: 6px 12px;
-    color: #4b5563;
+    color: var(--color-text);
     text-decoration: none;
     border-left: 3px solid transparent;
     border-radius: 0 6px 6px 0;
     margin-bottom: 1px;
     transition: all 0.15s;
   }
-  aside.sidebar a:hover { background: #f3f4f6; color: #1f2937; }
-  aside.sidebar a.active { background: #eef2ff; color: #4338ca; border-left-color: #6366f1; }
-  aside.sidebar a.lvl-3 { padding-left: 28px; font-size: 12.5px; color: #6b7280; }
+  aside.sidebar a:hover { background: var(--color-card-hover); color: var(--color-parchment); }
+  aside.sidebar a.active {
+    background: var(--color-elevated);
+    color: var(--color-accent-light);
+    border-left-color: var(--color-accent);
+  }
+  aside.sidebar a.lvl-3 { padding-left: 28px; font-size: 12.5px; color: var(--color-muted); }
 
   /* ===== 文章内容样式 ===== */
   article.content {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
     border-radius: 10px;
     padding: 32px 40px;
     min-width: 0;
@@ -166,36 +197,38 @@
     article.content { padding: 20px; }
   }
 
-  article h1 { font-size: 26px; margin: 0 0 16px; color: #111827; }
+  article h1 { font-size: 26px; margin: 0 0 16px; color: var(--color-parchment); }
   article h2 {
     font-size: 22px; margin: 32px 0 14px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #e5e7eb;
-    color: #111827;
+    border-bottom: 2px solid var(--color-border);
+    color: var(--color-parchment);
   }
   article h2:first-child { margin-top: 0; }
-  article h3 { font-size: 17px; margin: 24px 0 10px; color: #1f2937; }
-  article h4 { font-size: 15px; margin: 18px 0 8px; color: #374151; }
+  article h3 { font-size: 17px; margin: 24px 0 10px; color: var(--color-parchment); }
+  article h4 { font-size: 15px; margin: 18px 0 8px; color: var(--color-text); }
 
   article p { margin: 10px 0; }
   article ul, article ol { margin: 10px 0; padding-left: 24px; }
   article li { margin: 4px 0; }
   article li > p { margin: 4px 0; }
+  article strong { color: var(--color-parchment); }
 
-  article a { color: #4f46e5; text-decoration: none; }
+  article a { color: var(--color-accent-light); text-decoration: none; }
   article a:hover { text-decoration: underline; }
 
   article code {
-    background: #f3f4f6;
-    color: #be185d;
+    background: var(--color-elevated);
+    color: var(--color-gold);
     padding: 2px 6px;
     border-radius: 4px;
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
     font-size: 13px;
   }
   article pre {
-    background: #1e293b;
-    color: #e2e8f0;
+    background: var(--color-base);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
     padding: 14px 16px;
     border-radius: 8px;
     overflow-x: auto;
@@ -213,18 +246,18 @@
     max-width: 100%;
     height: auto;
     border-radius: 6px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-border);
     margin: 12px 0;
     display: block;
   }
 
   article blockquote {
-    border-left: 4px solid #6366f1;
-    background: #eef2ff;
+    border-left: 4px solid var(--color-accent);
+    background: var(--color-elevated);
     margin: 14px 0;
     padding: 10px 16px;
     border-radius: 0 6px 6px 0;
-    color: #3730a3;
+    color: var(--color-parchment);
   }
   article blockquote p { margin: 4px 0; }
 
@@ -235,28 +268,28 @@
     font-size: 14px;
   }
   article th, article td {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-border);
     padding: 8px 12px;
     text-align: left;
   }
-  article th { background: #f9fafb; font-weight: 600; }
+  article th {
+    background: var(--color-elevated);
+    color: var(--color-parchment);
+    font-weight: 600;
+  }
 
   article hr {
     border: 0;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--color-border);
     margin: 28px 0;
   }
-
-  /* 强调 V3 / NEW 等标签 */
-  article .badge,
-  article strong:has(em) { /* 不一定能命中 */ }
 </style>
 </head>
 <body data-tab="latest" data-lang="zh">
 
 <header class="topbar">
   <div class="brand">
-    WikiMod <span class="ver">v3.3.0</span>
+    WikiMod <span class="ver">v3.3.1</span>
   </div>
   <nav class="tabs">
     <button class="tab-btn" data-target="latest">
