@@ -395,6 +395,10 @@
 </ul>
 <p><strong>@hotkey</strong>：为脚本绑定快捷键，值为 Unity 的 KeyCode 名称（如 <code>F5</code>、<code>Tab</code>、<code>Alpha1</code> 等）。绑定后按对应键即可执行该脚本。</p>
 <p><strong>@silent</strong>：加上这一行，脚本执行完毕后不会弹出结果对话框。适合频繁执行的短脚本。</p>
+<p><strong>@param</strong>：声明子脚本的参数，供父脚本通过 <code>call</code> 传入。多个参数用逗号分隔：</p>
+<pre><code>@param card, times
+</code></pre>
+<p>详见下方 3.6 节「调用子脚本」。</p>
 <h3 id="zh-h2-3-h3-2">3.2 卡牌操作</h3>
 <p>这是脚本最核心的功能——自动执行卡牌动作。</p>
 <h4 id="section-9">单一卡牌动作（对卡牌执行动作）</h4>
@@ -461,8 +465,10 @@ do Rest
 <p>在方括号内写 <code>属性名 运算符 数值</code> 作为过滤条件，只有满足条件的卡牌才参与后续选择。</p>
 <ul>
 <li>支持运算符：<code>&gt;</code>、<code>&lt;</code>、<code>&gt;=</code>、<code>&lt;=</code>、<code>=</code></li>
+<li>数值可以是数字字面量或 <code>$变量</code>（如 <code>肉干[变质&gt;$min]</code>）</li>
 <li>可用逗号组合多个过滤条件和一个选择策略（<code>max:</code>/<code>min:</code>/索引）</li>
 <li>特殊属性名 <code>inventory</code>：代表卡牌内部物品总数量（排除空槽位）</li>
+<li>特殊属性名 <code>液体量</code>（或 <code>LiquidQuantity</code>）：代表卡牌当前的液体含量</li>
 </ul>
 <h4 id="section-18">指定位置</h4>
 <pre><code>肉干[in:保险罐].吃掉                    # 只选在保险罐里的肉干
@@ -676,10 +682,42 @@ log 当前目标：{$t}
 }
 </code></pre>
 <p>遍历场景中所有匹配的同名卡牌。每轮循环中，变量名会绑定到当前卡牌。在条件和卡牌操作中使用 <code>$变量名</code> 引用。支持 <code>break</code> / <code>continue</code>。</p>
+<p><code>foreach</code> 的选择器支持完整的过滤语法：</p>
+<pre><code>var min = 50
+foreach item in 肉干[变质&gt;$min] {
+    $item.吃掉
+}
+
+foreach item in 木材[in:手中] {
+    $item+营火
+}
+</code></pre>
 <h4 id="call">调用子脚本：call</h4>
 <pre><code>call 子脚本名
+call &quot;子脚本名&quot;($var1, $var2)
 </code></pre>
 <p>调用另一个脚本（按脚本名查找）。子脚本有独立的变量空间，不与父脚本共享变量。子脚本的日志会合并到父脚本。如果子脚本执行出错，错误会传播给父脚本。</p>
+<h5 id="section-25">传参调用</h5>
+<p>可以在 <code>call</code> 时向子脚本传递变量，子脚本通过 <code>@param</code> 声明接收参数：</p>
+<pre><code># 父脚本
+var target = 木材[max:耐久]
+var n = 3
+call &quot;批量拆解&quot;($target, $n)
+</code></pre>
+<pre><code># 子脚本：批量拆解.wks
+@param card, times
+repeat $times {
+    $card.拆解
+    wait 0.5
+}
+</code></pre>
+<p>规则：</p>
+<ul>
+<li>参数按位置一一对应：<code>call</code> 的第 1 个变量绑定到子脚本 <code>@param</code> 的第 1 个名称，以此类推</li>
+<li>多个参数用逗号分隔</li>
+<li>多余的参数被忽略；缺少的参数默认为 null</li>
+<li>子脚本变量完全隔离，<code>@param</code> 是唯一的数据传入方式</li>
+</ul>
 <h4 id="log">日志：log</h4>
 <pre><code>log 当前燃料：{营火.燃料}
 log 变量值：{$target.变质}
@@ -692,13 +730,26 @@ log 变量值：{$target.变质}
 }
 </code></pre>
 <p>检查当前场景中是否有这张卡牌。</p>
+<p><code>exists()</code> 括号内支持完整的选择器语法（过滤、位置、包含内容等）：</p>
+<pre><code>if exists(肉干[变质&gt;80]) {
+    toast 有快坏的肉干
+}
+if exists(水壶[in:手中, has:水]) {
+    toast 手上有水
+}
+</code></pre>
 <h4 id="count">count — 卡牌数量</h4>
 <pre><code>if count(肉干) &gt;= 3 {
     肉干.吃掉
 }
 </code></pre>
 <p>检查当前场景中某卡牌有几张，可以用 <code>&gt;</code>、<code>&lt;</code>、<code>&gt;=</code>、<code>&lt;=</code>、<code>==</code>、<code>!=</code> 进行比较。</p>
-<h4 id="section-26">属性比较</h4>
+<p><code>count()</code> 同样支持完整选择器：</p>
+<pre><code>if count(木材[in:手中]) &gt;= 3 {
+    toast 手中有足够木材
+}
+</code></pre>
+<h4 id="section-27">属性比较</h4>
 <pre><code>if 营火.燃料 &gt; 10 {
     # 燃料还够，不用加柴
 }
@@ -709,13 +760,19 @@ if 肉干.变质 &gt; 80 {
 }
 </code></pre>
 <p>检查卡牌的某个属性值。格式：<code>卡牌名.属性名 运算符 数值</code></p>
-<h4 id="section-27">状态比较</h4>
+<p>右侧的数值也可以是 <code>$变量名</code>（变量必须是数值类型）：</p>
+<pre><code>var min = 30
+if 营火.燃料 &gt; $min {
+    # 燃料充足
+}
+</code></pre>
+<h4 id="section-28">状态比较</h4>
 <pre><code>if HP &gt; 50 {
     # 生命值足够
 }
 </code></pre>
 <p>检查游戏全局状态值。格式：<code>状态名 运算符 数值</code></p>
-<h4 id="section-28">变量比较</h4>
+<h4 id="section-29">变量比较</h4>
 <pre><code>var c = 树叶[min:湿度].湿度
 if $c &gt; 100 {
     toast 湿度很高：{$c}
@@ -728,7 +785,7 @@ if $t.变质 &gt; 80 {
     $t.吃掉
 }
 </code></pre>
-<h4 id="section-29">逻辑运算符</h4>
+<h4 id="section-30">逻辑运算符</h4>
 <p>条件可以用逻辑运算符组合：</p>
 <pre><code>if exists(河流) and count(肉干) &gt;= 3 {
     河流.饮用
@@ -908,6 +965,7 @@ repeat 10 {
 <li><code>continue</code> — 跳过本轮</li>
 <li><code>stop</code> / <code>exit</code> — 终止脚本</li>
 <li><code>call 脚本名</code> — 调用子脚本</li>
+<li><code>call &quot;脚本名&quot;($var1, $var2)</code> — 带参数调用子脚本</li>
 <li><code>log 消息</code> — 写入日志</li>
 <li><code>blueprint 蓝图卡名 [数量]</code> — 生成蓝图卡（仅支持蓝图卡，如 <code>blueprint 木屑</code>）</li>
 <li><code>build 蓝图卡名</code> — <strong>一键建造蓝图</strong>（spawn→inspect→自动填充→制作 一条龙；如 <code>build Bp_Cabin</code>）</li>
@@ -919,6 +977,7 @@ repeat 10 {
 <li><code>@error stop/continue</code> — 错误策略</li>
 <li><code>@hotkey 键名</code> — 绑定快捷键（如 <code>@hotkey F5</code>）</li>
 <li><code>@silent</code> — 静默执行</li>
+<li><code>@param 名1, 名2</code> — 声明子脚本参数（配合 <code>call</code> 传参使用）</li>
 <li><code># 文字</code> — 注释</li>
 </ul>
 <h3 id="zh-h2-7-h3-2">选择器</h3>
@@ -928,8 +987,9 @@ repeat 10 {
 <li><code>卡牌名[1]</code> — 第 2 张</li>
 <li><code>卡牌名[max:属性]</code> — 属性最高的那张</li>
 <li><code>卡牌名[min:属性]</code> — 属性最低的那张</li>
-<li><code>卡牌名[属性&gt;值]</code> — 满足条件的第一张（支持 <code>&gt;</code> <code>&lt;</code> <code>&gt;=</code> <code>&lt;=</code> <code>=</code>）</li>
+<li><code>卡牌名[属性&gt;值]</code> — 满足条件的第一张（支持 <code>&gt;</code> <code>&lt;</code> <code>&gt;=</code> <code>&lt;=</code> <code>=</code>，值可以是 <code>$变量</code>）</li>
 <li><code>卡牌名[inventory&gt;N]</code> — 内部物品数量大于 N 的第一张</li>
+<li><code>卡牌名[液体量&gt;N]</code> — 液体含量大于 N 的第一张</li>
 <li><code>卡牌名[in:位置]</code> — 只选在指定位置的卡牌（手中/装备/场景/场上/容器名）</li>
 <li><code>卡牌名[has:物品名]</code> — 只选包含指定物品或液体的卡牌</li>
 <li><code>卡牌名[条件, max:属性]</code> — 先过滤再排序（逗号组合）</li>
@@ -937,9 +997,9 @@ repeat 10 {
 </ul>
 <h3 id="zh-h2-7-h3-3">条件</h3>
 <ul>
-<li><code>exists(卡牌名)</code> — 场景中是否有这张卡（也支持标签名）</li>
-<li><code>count(卡牌名) &gt; N</code> — 这张卡的数量是否大于 N（也支持标签名）</li>
-<li><code>卡牌.属性 &gt; N</code> — 卡牌的属性是否大于 N</li>
+<li><code>exists(卡牌名)</code> — 场景中是否有这张卡（支持标签名和完整选择器，如 <code>exists(肉干[变质&gt;80])</code>）</li>
+<li><code>count(卡牌名) &gt; N</code> — 这张卡的数量是否大于 N（支持完整选择器，如 <code>count(木材[in:手中])</code>）</li>
+<li><code>卡牌.属性 &gt; N</code> — 卡牌的属性是否大于 N（N 可以是 <code>$变量</code>）</li>
 <li><code>$变量名.属性 &gt; N</code> — 变量卡牌的属性是否大于 N</li>
 <li><code>状态名 &gt; N</code> — 游戏状态是否大于 N</li>
 <li><code>$变量名 &gt; N</code> — 数值变量是否大于 N</li>
@@ -1022,6 +1082,10 @@ repeat 10 {
 </ul>
 <p><strong>@hotkey</strong>: Binds a hotkey to the script. The value is a Unity KeyCode name (e.g. <code>F5</code>, <code>Tab</code>, <code>Alpha1</code>). Once bound, pressing the key runs the script.</p>
 <p><strong>@silent</strong>: Add this and no result dialog will pop up after execution. Suitable for short, frequently-run scripts.</p>
+<p><strong>@param</strong>: Declares parameters for a sub-script, received from the parent via <code>call</code>. Multiple parameters are comma-separated:</p>
+<pre><code>@param card, times
+</code></pre>
+<p>See section 3.6 &quot;Sub-scripts&quot; for details.</p>
 <h3 id="en-h2-3-h3-2">3.2 Card Operations</h3>
 <p>This is the heart of scripting — automating card actions.</p>
 <h4 id="single-card-action-run-an-action-on-a-card">Single Card Action (run an action on a card)</h4>
@@ -1088,8 +1152,10 @@ Wood[Durability&gt;=10, 0]                 # Filter then take the first
 <p>Write <code>property operator value</code> inside brackets to filter candidates. Only cards meeting the condition are considered.</p>
 <ul>
 <li>Supported operators: <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>=</code></li>
+<li>The value can be a numeric literal or a <code>$variable</code> (e.g. <code>Jerky[Spoilage&gt;$min]</code>)</li>
 <li>Multiple filters and one selection strategy (<code>max:</code>/<code>min:</code>/index) can be combined with commas</li>
 <li>Special property <code>inventory</code>: the total item count inside the card (excludes empty slots)</li>
+<li>Special property <code>LiquidQuantity</code> (or <code>液体量</code>): the card's current liquid amount</li>
 </ul>
 <h4 id="location-filter">Location Filter</h4>
 <pre><code>Jerky[in:SafetyJar].Eat                     # Only pick jerky inside the safety jar
@@ -1303,10 +1369,42 @@ log Current target: {$t}
 }
 </code></pre>
 <p>Iterates over all matching cards with the same name in the scene. Each iteration binds the variable to the current card. Reference it with <code>$varName</code> in conditions and card operations. <code>break</code> and <code>continue</code> are supported.</p>
+<p><code>foreach</code> supports full selector syntax including filters:</p>
+<pre><code>var min = 50
+foreach item in Jerky[Spoilage&gt;$min] {
+    $item.Eat
+}
+
+foreach item in Wood[in:hand] {
+    $item+Campfire
+}
+</code></pre>
 <h4 id="sub-scripts-call">Sub-scripts: call</h4>
 <pre><code>call SubScriptName
+call &quot;SubScriptName&quot;($var1, $var2)
 </code></pre>
 <p>Calls another script by name. Sub-scripts have an independent variable scope (they don't share variables with the parent). Sub-script logs are merged into the parent. If a sub-script errors out, the error propagates to the parent.</p>
+<h5 id="passing-parameters">Passing Parameters</h5>
+<p>You can pass variables to a sub-script. The child declares its parameters with <code>@param</code>:</p>
+<pre><code># Parent script
+var target = Wood[max:Durability]
+var n = 3
+call &quot;BatchDismantle&quot;($target, $n)
+</code></pre>
+<pre><code># Child script: BatchDismantle.wks
+@param card, times
+repeat $times {
+    $card.Dismantle
+    wait 0.5
+}
+</code></pre>
+<p>Rules:</p>
+<ul>
+<li>Arguments are bound positionally: the 1st variable in <code>call</code> maps to the 1st name in <code>@param</code>, etc.</li>
+<li>Multiple parameters are comma-separated</li>
+<li>Extra arguments beyond declared params are ignored; missing params default to null</li>
+<li>Child variables are fully isolated — <code>@param</code> is the only way to pass data in</li>
+</ul>
 <h4 id="logging-log">Logging: log</h4>
 <pre><code>log Current fuel: {Campfire.Fuel}
 log Variable value: {$target.Spoilage}
@@ -1319,12 +1417,25 @@ log Variable value: {$target.Spoilage}
 }
 </code></pre>
 <p>Checks whether the card exists in the current scene.</p>
+<p><code>exists()</code> supports full selector syntax (filters, location, content, etc.):</p>
+<pre><code>if exists(Jerky[Spoilage&gt;80]) {
+    toast Some jerky is going bad
+}
+if exists(Waterskin[in:hand, has:Water]) {
+    toast Have water on hand
+}
+</code></pre>
 <h4 id="count-number-of-cards">count — number of cards</h4>
 <pre><code>if count(Jerky) &gt;= 3 {
     Jerky.Eat
 }
 </code></pre>
 <p>Checks how many of a card exist in the current scene. Comparable with <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>==</code>, <code>!=</code>.</p>
+<p><code>count()</code> also supports full selector syntax:</p>
+<pre><code>if count(Wood[in:hand]) &gt;= 3 {
+    toast Enough wood in hand
+}
+</code></pre>
 <h4 id="property-comparison">Property Comparison</h4>
 <pre><code>if Campfire.Fuel &gt; 10 {
     # Plenty of fuel, no need to add wood
@@ -1336,6 +1447,12 @@ if Jerky.Spoilage &gt; 80 {
 }
 </code></pre>
 <p>Checks a card's property value. Format: <code>CardName.Property operator number</code></p>
+<p>The right-hand side can also be a <code>$variable</code> (must hold a numeric value):</p>
+<pre><code>var min = 30
+if Campfire.Fuel &gt; $min {
+    # Plenty of fuel
+}
+</code></pre>
 <h4 id="stat-comparison">Stat Comparison</h4>
 <pre><code>if HP &gt; 50 {
     # Health is sufficient
@@ -1535,6 +1652,7 @@ repeat 10 {
 <li><code>continue</code> — skip this iteration</li>
 <li><code>stop</code> / <code>exit</code> — terminate the script</li>
 <li><code>call ScriptName</code> — call a sub-script</li>
+<li><code>call &quot;ScriptName&quot;($var1, $var2)</code> — call a sub-script with parameters</li>
 <li><code>log Message</code> — write to the log</li>
 <li><code>blueprint BlueprintName [count]</code> — spawn a blueprint card (blueprint cards only, e.g. <code>blueprint WoodShavings</code>)</li>
 <li><code>build BlueprintName</code> — <strong>one-shot blueprint build</strong> (spawn→inspect→AutoFill→Build, all in one; e.g. <code>build Bp_Cabin</code>)</li>
@@ -1546,6 +1664,7 @@ repeat 10 {
 <li><code>@error stop/continue</code> — error policy</li>
 <li><code>@hotkey KeyName</code> — bind a hotkey (e.g. <code>@hotkey F5</code>)</li>
 <li><code>@silent</code> — silent execution</li>
+<li><code>@param name1, name2</code> — declare sub-script parameters (used with <code>call</code> parameter passing)</li>
 <li><code># text</code> — comment</li>
 </ul>
 <h3 id="en-h2-7-h3-2">Selectors</h3>
@@ -1555,17 +1674,18 @@ repeat 10 {
 <li><code>CardName[1]</code> — 2nd card</li>
 <li><code>CardName[max:property]</code> — highest property value</li>
 <li><code>CardName[min:property]</code> — lowest property value</li>
-<li><code>CardName[property&gt;N]</code> — first card meeting the condition (supports <code>&gt;</code> <code>&lt;</code> <code>&gt;=</code> <code>&lt;=</code> <code>=</code>)</li>
+<li><code>CardName[property&gt;N]</code> — first card meeting the condition (supports <code>&gt;</code> <code>&lt;</code> <code>&gt;=</code> <code>&lt;=</code> <code>=</code>; N can be a <code>$variable</code>)</li>
 <li><code>CardName[inventory&gt;N]</code> — first card with more than N inventory items</li>
+<li><code>CardName[LiquidQuantity&gt;N]</code> — first card with liquid amount greater than N</li>
 <li><code>CardName[in:location]</code> — only cards at specified location (hand/equipped/location/base/container name)</li>
 <li><code>CardName[filter, max:property]</code> — filter then sort (comma-separated)</li>
 <li><code>&quot;Special Name&quot;</code> — name containing special characters</li>
 </ul>
 <h3 id="en-h2-7-h3-3">Conditions</h3>
 <ul>
-<li><code>exists(CardName)</code> — whether the card is in the scene (tag names also supported)</li>
-<li><code>count(CardName) &gt; N</code> — whether the count is greater than N (tag names also supported)</li>
-<li><code>Card.Property &gt; N</code> — whether a property is greater than N</li>
+<li><code>exists(CardName)</code> — whether the card is in the scene (supports tags and full selectors, e.g. <code>exists(Jerky[Spoilage&gt;80])</code>)</li>
+<li><code>count(CardName) &gt; N</code> — whether the count is greater than N (supports full selectors, e.g. <code>count(Wood[in:hand])</code>)</li>
+<li><code>Card.Property &gt; N</code> — whether a property is greater than N (N can be a <code>$variable</code>)</li>
 <li><code>$var.Property &gt; N</code> — whether a variable card's property is greater than N</li>
 <li><code>StatName &gt; N</code> — whether a game stat is greater than N</li>
 <li><code>$var &gt; N</code> — whether a numeric variable is greater than N</li>
