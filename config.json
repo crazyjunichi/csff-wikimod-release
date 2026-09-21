@@ -33,13 +33,17 @@
       {
         "fromModVersion": "3.5.3",
         "requiredGameVersion": "0.0.67.0"
+      },
+      {
+        "fromModVersion": "3.5.4",
+        "requiredGameVersion": "0.0.68.0"
       }
     ]
   },
   "ext": {
     "localization": {
-      "minSupportedGameVersion": "0.0.66.0",
-      "maxSupportedGameVersion": "0.0.66.9"
+      "minSupportedGameVersion": "0.0.68.0",
+      "maxSupportedGameVersion": "0.0.68.9"
     }
   }
 }

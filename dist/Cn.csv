@@ -1,4 +1,4 @@
-﻿﻿MORE_THAN_STRONG_FLAVOUR,Extremely {0},过量{0}
+﻿MORE_THAN_STRONG_FLAVOUR,Extremely {0},过量{0}
 ACTION_HAPPENING,I can't do two things at once...,我不能同时做两件事……
 ADD_TO_BLUEPRINT,Add {0} to {1},将{0}放入{1}
 A_FEW,a few {0},有点 {0}
@@ -749,7 +749,6 @@ MudHut_SpecialDurability2.OnFull.ActionDescription,The roof collapsed!,塌房啦
 MudHut_CardInteractions[0].ActionName,Clean,打扫
 MudHutEnclosure_CardName,Mud Hut Enclosure,泥屋畜栏
 MudHutEnclosure_SpoilageTime.CardStatName,Filth,污垢
-MudHutEnclosure_FuelCapacity.CardStatName,Flood,洪水
 MudHutEnclosure_SpecialDurability2.CardStatName,Overgrowth,过度生长
 MudHutEnclosure_SpecialDurability3.CardStatName,Foraging,觅食
 MudHutEnclosure_CardInteractions[0].ActionName,Throw Inside,扔进去
@@ -787,7 +786,6 @@ MudHutExpansionLeftEntrance_CardName,Enter Left Room,进入左屋
 MudHutExpansionLeftEntrance_DismantleActions[0].ActionName,Enter,进入
 MudHutExpansionLeftEntrance_DismantleActions[0].FadeMessage,Entering the Room...,正在进入房间……
 MudHutExpansionLeftExit_CardName,Exit,离开
-MudHutExpansionLeftExit_SpecialDurability2.CardStatName,Flood Damage,洪水损害
 MudHutExpansionLeftExit_DismantleActions[0].ActionName,Exit,离开
 MudHutExpansionLeftExit_DismantleActions[0].FadeMessage,Exiting the Room...,正在离开房间……
 MudHutExpansionRight_CardName,Right Room,右屋
@@ -802,7 +800,6 @@ MudHutExpansionRightEntrance_CardName,Enter Right Room,进入右屋
 MudHutExpansionRightEntrance_DismantleActions[0].ActionName,Enter,进入
 MudHutExpansionRightEntrance_DismantleActions[0].FadeMessage,Entering the Room...,正在进入房间……
 MudHutExpansionRightExit_CardName,Exit,离开
-MudHutExpansionRightExit_SpecialDurability2.CardStatName,Flood Damage,洪水损害
 MudHutExpansionRightExit_DismantleActions[0].ActionName,Exit,离开
 MudHutExpansionRightExit_DismantleActions[0].FadeMessage,Exiting the Room,正在离开房间……
 Dmg_RoofCollapsed_CardName,Collapsed Roof,坍塌的屋顶
@@ -3100,7 +3097,6 @@ PineFireWood_CardName,Pine firewood,松木柴
 Plank_CardName,Wooden Plank,木板
 Plank_CardDescription,Fundamental for constructing furniture and building structures.,建造家具和建筑结构的基础。
 Plaster_CardName,Plaster,灰泥
-Plaster_CardInteractions[0].ActionName,Craft Bowl,制作碗
 SnowPile_CardName,Snow Pile,雪堆
 SnowPile_CardDescription,Can be used to build snowmen or melted into water.,可用作堆雪人或煮成水。
 StickLong_CardName,Long Stick,长木棍
@@ -7738,13 +7734,6 @@ Combat_EncounterBoar_EnemyDefeatedEffects.ResultLog.LogText,The boar collapses t
 Combat_EncounterBoar_EnemyEscapedEffects.ResultLog.LogText,The boar disappears into the foliage....,野猪消失在叶丛中……
 Combat_EncounterBoar_PlayerEscapedEffects.ResultLog.LogText,You retreat and escape from the boar...,你从野猪处脱身并撤退……
 Combat_EncounterBoar_PlayerDemoralizedEffects.ResultLog.LogText,You run away from the boar!,你逃离了野猪！
-MudHut_FuelCapacity.CardStatName,Flood,洪水
-MudHut_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
-MudHutEnclosure_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
-MudHutExpansionLeft_FuelCapacity.CardStatName,Flood,洪水
-MudHutExpansionLeft_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
-MudHutExpansionRight_FuelCapacity.CardStatName,Flood,洪水
-MudHutExpansionRight_OnStatsChangeActions[0].ActionName,River Flooded,河水泛滥
 Event_FearSpiritAngry_CardName,Fear Spirit,恐惧精魄
 Event_FearSpiritAngry_CardDescription,Spirit is not impressed. He marks you and vanishes. ,精魄不为所动。它标记了你然后消逝了。
 Event_FearSpiritAngry_DismantleActions[0].ActionName,Continue,继续
@@ -8426,23 +8415,18 @@ MudHutConstructionDoorEntranceSecondary_CardName,Mud Hut,泥屋
 MudHutConstructionDoorEntranceSecondary_DismantleActions[0].ActionName,Enter,进入
 MudHutConstructionDoorEntranceSecondary_DismantleActions[0].FadeMessage,Entering the Hut...,正在进入泥屋……
 MudHutConstructionDoorExitEast_CardName,Exit (East),出口（东）
-MudHutConstructionDoorExitEast_SpecialDurability2.CardStatName,Flood Damage,洪水损害
 MudHutConstructionDoorExitEast_DismantleActions[0].ActionName,Exit,出口
 MudHutConstructionDoorExitEast_DismantleActions[0].FadeMessage,Exiting the Hut...,正在离开泥屋……
 MudHutConstructionDoorExitMain_CardName,Exit,出口
-MudHutConstructionDoorExitMain_SpecialDurability2.CardStatName,Flood Damage,洪水损害
 MudHutConstructionDoorExitMain_DismantleActions[0].ActionName,Exit,出口
 MudHutConstructionDoorExitMain_DismantleActions[0].FadeMessage,Exiting the Hut...,正在离开泥屋……
 MudHutConstructionDoorExitNorth_CardName,Exit (North),出口（北）
-MudHutConstructionDoorExitNorth_SpecialDurability2.CardStatName,Flood Damage,洪水损害
 MudHutConstructionDoorExitNorth_DismantleActions[0].ActionName,Exit,出口
 MudHutConstructionDoorExitNorth_DismantleActions[0].FadeMessage,Exiting the Hut...,正在离开泥屋……
 MudHutConstructionDoorExitSouth_CardName,Exit (South),出口（南）
-MudHutConstructionDoorExitSouth_SpecialDurability2.CardStatName,Flood Damage,洪水损害
 MudHutConstructionDoorExitSouth_DismantleActions[0].ActionName,Exit,出口
 MudHutConstructionDoorExitSouth_DismantleActions[0].FadeMessage,Exiting the Hut...,正在离开泥屋……
 MudHutConstructionDoorExitWest_CardName,Exit (West),出口（西）
-MudHutConstructionDoorExitWest_SpecialDurability2.CardStatName,Flood Damage,洪水损害
 MudHutConstructionDoorExitWest_DismantleActions[0].ActionName,Exit,出口
 MudHutConstructionDoorExitWest_DismantleActions[0].FadeMessage,Exiting the Hut...,正在离开泥屋……
 MudHutConstructionLocationCellar_CardName,Cellar,地窖
@@ -10457,8 +10441,8 @@ Carcass_BearCarcass_SpoilageTime.CardStatName,Spoilage,变质
 Carcass_BearCarcass_SpoilageTime.OnFull.ActionDescription,Bear Spoiled!,熊变质了！
 Carcass_BearCarcass_Progress.CardStatName,Spirit,精魄
 Carcass_BearCarcass_SpecialDurability2.CardStatName,Quality,品质
-NettleLeavesRaw_CardHelpSection,"<b>Found:</b> Oaken Clearings and Oaken River Banks.\n\n<b>Growth Needs:</b> Any Acidity, Any Hydration,Any Nutrients.\n\n<b>Benefits:</b> Food. ",<b>产地：</b>橡树区域的河岸和林隙。\n\n<b>需求：</b>任意酸度、湿度、养分。\n\n<b>效果：</b>食物。
-NettleLeavesDried_CardHelpSection,"<b>Found:</b> Oaken Clearings and Oaken River Banks.\n\n<b>Growth Needs:</b> Any Acidity, Any Hydration,Any Nutrients.\n\n<b>Benefits:</b> Food. ",<b>产地：</b>橡树区域的河岸和林隙。\n\n<b>需求：</b>任意酸度、湿度、养分。\n\n<b>效果：</b>食物。
+NettleLeavesRaw_CardHelpSection,"<b>Found:</b> Oaken Clearings and Oaken River Banks.\n\n<b>Growth Needs:</b> Low Acidity, Mid Hydration and Mid to High Nutrients.\n\n<b>Benefits:</b> Food. ",<b>产地：</b>橡树区域的河岸和林隙。\n\n<b>需求：</b>低酸度、中湿度、中高养分。\n\n<b>效果：</b>食物。
+NettleLeavesDried_CardHelpSection,"<b>Found:</b> Oaken Clearings and Oaken River Banks.\n\n<b>Growth Needs:</b> Low Acidity, Mid Hydration and Mid to High Nutrients.\n\n<b>Benefits:</b> Food. ",<b>产地：</b>橡树区域的河岸和林隙。\n\n<b>需求：</b>低酸度、中湿度、中高养分。\n\n<b>效果：</b>食物。
 TranquilizerCoating_SpoilageTime.OnFull.ActionDescription,Coating Spoiled!,涂层没了！
 WolfsbaneCoating_SpoilageTime.OnFull.ActionDescription,Coating Spoiled!,涂层没了！
 BroomQWR_CardInteractions[0].ActionName,Repair,修复
@@ -11330,7 +11314,7 @@ NewsEARelease41_PageTitle,"Basic Smithing, Copper and Patch Notes #37",基础金
 NewsEARelease41_Sections[0].Entries[0].Content,"Hello everyone!\n\nHope you're all well!\n\nLet's go straight to the new content for this week:\n\n\n<size=150%>Patch Highlights:</size>\n\n<size=125%>Copper Smelting:</size>\nWhen clearing the rapids in the bear area you will now sometimes find ""greenstones"".\nThese rare stones can be smelted in a new specialised structure called the Furnace, producing both copper nuggets and slag. \nThe furnace can reach higher temperatures than the kiln, but will only smelt copper if built in a windy location or if you are actively using bellows on it. \nSlag has no use at the moment, but in a future update you will be able to use some techniques to squeeze some extra copper out of it.\n\n\n<size=125%>Copper Forging:</size>\nAt this tech level we are not casting metals into molds yet but instead heating up copper nuggets and lumps on campfires and striking them into shape. This is more time consuming and requires some skill but is more than enough to craft simple tools and shapes.\n\nThe objects you will be able to craft at this point are:\n- Copper Knives\n- Copper Axes\n- Copper Spears\n- Copper Arrows\n\n\n<size=150%>What's Next?</size>\n\nFor next week we are planning a textile update that will include some improvements and additions to this area of the game, including a new crop: Flax. \n\nOther than that, over the next few weeks we will be implementing additional ways to get copper, more metal tools, parts of the swamp area and cooking and construction improvements.\n\n\n\n<size=150%>Version EA_0.42 and Hotfixes since our last patch:</size>\n\n\n- Added Furnace, Greenstone, Slag, Copper and smelting systems.\n- Added smithing skill.\n- Added Basic Smithing quest for quest mode.\n- Fixed putting salt and powder into jars having a ""Transfer Liquid"" tooltip.\n- Paths now allow you to travel in the dark too.\n- You can now drag a whole stack of salt/powders into a container by holding the cards before dropping them.\n- Fixed Jars inside chests or shelves not stacking/unstacking properly.\n- Fixed some text overflow on some buttons.\n- Fixed a bug which prevented Tanning pit to store the tanning liquor and leather at the same time.\n- Fixed a bug which prevented enchanted items such as knife sheaths to hold items inside them.\n- Fixed a bug which caused the enchants on items such as knife sheaths which had items inside them to fail.\n- Fixed a bug which caused bound spirits to leave right away after being summoned.\n- Fixed a bug which would use up all the powder in the pouch or clay jar when creating or interacting with a firebrew or fairybrew made inside a cauldron.\n- Fixed a bug which would cause a travois left on the ground to sometimes take durability damage.\n- Seasons now affect the spoilage rates of powders stored inside clay jars and pouches.\n- Powders stored inside clay jars and pouches now get a proper spoilage reduction.\n- Travelling actions now indicate if you have built a path.\n- Using the ""Empty"" action on things like salt and powders in a jar will now give you the right amount of cards back instead of destroying the powder.\n- Removed the alternate mudhut exists as the feature is not fully ready yet.\n- Removed the North Path improvement from the Deer Grove.\n- Rye fields are now properly increasing soil structure.\n- Extinguished Oven no longer increases the ambient perceived temperature.\n- Fixed a bug where the turnroot field blueprint would be stuck and never complete its second step.\n- Fixed a bug which prevented the Sacred Spring from Generating Water.\n- Fixed a bug which hid the Kill action for partridges when there was not enough light instead of informing you of the reason.\n- Fixed a bug which would sometimes prevent the player from taking the last powder out of a clay jar.\n- Temporarily disabled the player low muscle mass penalties until some issues with the system can be solved.\n- Snow piles should now more consistently melt when player is away.\n- Removed the North Path improvement from the Mysterious Grove.\n- Fixed a bug which hid away the expansion options for an Enclosure.\n- Updated Icons for the Rye Dough and Rye Sour Dough yeast durability.\n- Fixed a bug which prevented enchanted tools from being used in blueprints.\n\n\nThat's all for now.\nSee you all for next week!",大家好！\n\n希望大家一切都好！\n\n让我们直接切入本周的新内容：\n\n<size=150%>更新亮点：</size>\n\n<size=125%>铜冶炼：</size>\n现在清理有熊巡逻的湍流区域时，会发现“绿石”。\n这些稀有的石头可以在一种名为熔炉的新型专用建筑中冶炼，产出铜块和炉石。\n熔炉的温度上限比窑炉高，但只有在风力够强的地方建造或使用风箱才能达到冶炼铜的温度。\n炉石目前没有用处，但在未来的更新中，你将能够学习一些技巧从而从中榨取一些额外的铜。\n\n<size=125%>铜锻造：</size>\n在这个科技水平下，我们还不能通过模具进行铸造，而是将铜块和大块铜放在营火上加热，然后将其敲打成形。这需要花费更多时间，也需要一定技巧，但足以敲打出简单的形状和工具。\n\n目前你可以制作的物品有：\n- 铜刀\n- 铜斧\n- 铜矛\n- 铜箭\n\n<size=150%>接下来是？</size>\n\n下周我们计划进行一次纺织品更新，其中包括对游戏这一领域的一些改进和补充，包括一种新的作物：亚麻。\n\n除此之外，在接下来的几周内，我们将引入更多获取铜的途径、更多金属工具、沼泽区域的部分内容以及烹饪和建筑方面的改进。\n\n<size=150%>版本EA_0.42 及自上次更新以来的热修复：</size>\n\n- 新增熔炉、绿石、炉石、铜和冶炼系统。\n- 新增金工技能。\n- 新增任务模式的基础金工任务。\n- 修复了将盐和粉末放入罐子时出现“转移液体”提示的问题。\n- 现在可以在黑暗中走修过的路了。\n- 现在可以通过长按卡牌堆，将整叠盐/粉末拖入容器中了。\n- 修复了箱子或架子内的罐子无法正确堆叠/拆分的问题。\n- 修复了某些按钮上的文本溢出问题。\n- 修复了鞣制坑无法同时放入鞣液和皮的bug。\n- 修复了附魔物品（例如刀鞘）无法在其中存放物品的bug。\n- 修复了导致内部装有物品的刀鞘等物品附魔失效的bug。\n- 修复了导致绑定的精魄在被召唤后立即消逝的bug。\n- 修复了在坩埚内制作或交互火酿/仙酿时，会耗尽袋子或小陶罐中所有粉末的bug。\n- 修复了导致留在地面上的雪橇有时会损失耐久的bug。\n- 季节现在会影响小陶罐和袋子中粉末的腐败速率。\n- 现在存储在小陶罐和袋子中的粉末有正确的保鲜加成了。\n- 移动操作现在会显示您是否已建造道路。\n- 现在对罐子中的盐和粉末等物品执行“清空”操作时会获得正确数量的卡牌而不是销毁粉末。\n- 移除了改变泥屋形态，因为该功能尚未完成。\n- 移除了鹿鸣松林中的“北方道路”改进。\n- 黑麦田现在能够正确地改进土质。\n- 熄灭的烤箱不再增加环境温度。\n- 修复了“翻根田”蓝图卡住且无法完成第二步的bug。\n- 修复了导致“神圣之泉”无法产水的bug。\n- 修复了导致在光线不足时不告知原因而是隐藏对灰山鹑的“击杀”动作bug。\n- 修复了导致玩家有时无法从小陶罐中取出最后一点粉末的bug。\n- 暂时禁用玩家肌肉质量低的惩罚，直到解决了该系统的部分问题。\n- 现在雪堆的融化速率在玩家不在场时应该更一致了。\n- 移除了神秘林地中的“北方道路”改进。\n- 修复了导致“畜栏”扩建选项隐藏的bug。\n- 更新了黑麦面团和黑麦酸面团酵母的耐久度图标。\n- 修复了一个导致附魔工具无法在蓝图中使用的bug。\n\n目前就这些。\n下周见！
 Bp_Enclosure_CardName,Enclosure,畜栏
 Bp_Enclosure_CardDescription,An animal enclosure.,动物畜栏。
-Bp_Enclosure_UnlockConditionsDesc,Animal Needed,需要动物
+Bp_Enclosure_UnlockConditionsDesc,Long Stick Needed,需要长木棍
 Bp_ClothCoifQWE_CardName,Cloth Coif,布头巾
 Bp_ClothCoifQWE_CardDescription,Should protect me a bit from bug bites and the sun.,能减轻一些虫咬和日晒对我的伤害。
 Bp_ClothCoifQWE_UnlockConditionsDesc,Cloth Needed,需要布
@@ -13274,7 +13258,6 @@ CabinConstructionDoorEntranceMainCabin_CardName,Cabin,木屋
 CabinConstructionDoorEntranceMainCabin_DismantleActions[0].ActionName,Enter,进入
 CabinConstructionDoorEntranceMainCabin_DismantleActions[0].FadeMessage,Entering the Cabin...,正在进入小屋……
 CabinConstructionDoorExitMain_CardName,Exit,出口
-CabinConstructionDoorExitMain_SpecialDurability2.CardStatName,Flood Damage,洪水损害
 CabinConstructionDoorExitMain_DismantleActions[0].ActionName,Exit,离开
 CabinConstructionDoorExitMain_DismantleActions[0].FadeMessage,Exiting the Cabin...,正在离开小屋……
 CabinConstructionLocationAttic_CardName,Attic,阁楼
@@ -16772,7 +16755,7 @@ GroveOak_PrimevalWoods_DismantleActions[2].ActionDescription,Gives you wood and 
 GroveOak_PrimevalWoods_DismantleActions[3].ActionName,North,北方
 GroveOak_PrimevalWoods_DismantleActions[3].FadeMessage,Travelling North...,向北移动……
 GrovePine_CrowPines_CardName,Crow Pines,乌鸦松林
-GrovePine_CrowPines_CardHelpSection,"<b>Pine Grove:\n</b>\n\n<b>Conditions:</b> Acidic soil.\n\n<b>Flora:</b> Pines, Healer's Moss, Fireroot, Bilberries (summer), Pine Nuts (autumn), Fly Agaric.\n\n<b>Fauna:</b> Squirrels..",<b>松木林地：\n</b>\n\n<b>条件：</b>-酸性土壤\n\n<b>植物：</b>松树，疗伤地衣，火根，越橘（夏季），松子（秋季），毒蝇伞。\n\n<b>动物：</b>松鼠。
+GrovePine_CrowPines_CardHelpSection,"<b>Pine Grove:\n</b>\n\n<b>Conditions:</b> Acidic soil.\n\n<b>Flora:</b> Pines, Healer's Moss, Fireroot, Bilberries (summer), Pine Nuts (autumn), Fly Agaric.\n\n<b>Fauna:</b> Squirrels.",<b>松木林地：\n</b>\n\n<b>条件：</b>-酸性土壤\n\n<b>植物：</b>松树，疗伤地衣，火根，越橘（夏季），松子（秋季），毒蝇伞。\n\n<b>动物：</b>松鼠。
 GrovePine_CrowPines_SpecialDurability1.CardStatName,Trees,树林
 GrovePine_CrowPines_SpecialDurability2.CardStatName,Overgrowth,过度生长
 GrovePine_CrowPines_SpecialDurability3.CardStatName,Foraging,觅食
@@ -22327,7 +22310,7 @@ LQ_Milk_CardName,Milk,牛奶
 LQ_Milk_CardDescription,A nutritious liquid. Expires into curdled milk.\n\nCan be used to make cheese and butter. ,一种营养丰富的液体。会变成凝乳牛奶。\n\n可用于制作奶酪和黄油。
 LQ_Milk_CardHelpSection,"Experies into curdled milk, which can be pressed to make cheese.\n\nIts cream can be extracted to make butter.",会变成凝乳牛奶，可压制成奶酪。\n\n其中的奶油可被提取出来制作黄油。
 LQ_Milk_SpoilageTime.CardStatName,Spoilage,变质
-LQ_Milk_SpoilageTime.OnFull.ActionDescription,Milk Spoiled!,牛奶变质了！
+LQ_Milk_SpoilageTime.OnFull.ActionDescription,Milk Curdled!,牛奶变酸了！
 LQ_Milk_UsageDurability.CardStatName,Fat,脂肪
 LQ_Milk_FuelCapacity.CardStatName,Temperature,温度
 LQ_Milk_SpecialDurability2.CardStatName,Quality,品质
@@ -25156,7 +25139,7 @@ KingcupPlantedDormant_CardDescription,"A nutritious plant that grows in swampy a
 KingcupPlantedGrowing_CardDescription,"A nutritious plant that grows in swampy areas. Needs low to medium acidity, medium to high nutrients, and high hydration.",一种生长在沼泽地区的营养植物。需要中低酸度、中高养分和高水分。
 KingcupPlantedMature_CardDescription,"A nutritious plant that grows in swampy areas. Needs low to medium acidity, medium to high nutrients, and high hydration.",一种生长在沼泽地区的营养植物。需要中低酸度、中高养分和高水分。
 NettleStemsFresh_Progress.OnFull.ActionDescription,Nettle has taken.,荨麻已扎根。
-TumourBoiled_CardName,Boiled Tumour,水煮肿瘤
+TumourBoiled_CardName,Boiled Growth,水煮肉瘤
 TumourBoiled_CardDescription,A strange and ominous piece of meat.,一块奇异而不祥的肉。
 TumourBoiled_SpoilageTime.CardStatName,Spoilage,变质
 TumourBoiled_SpoilageTime.OnFull.ActionDescription,Tumour Spoiled!,肿瘤变质了！
@@ -25196,7 +25179,7 @@ Carcass_HollowCarcassSkinned_CardInteractions[1].ActionName,Harvest Haunch Meat,
 Carcass_HollowCarcassSkinned_CardInteractions[2].ActionName,Harvest Loin Meat,收获脊肉
 Carcass_HollowCarcassSkinned_CardInteractions[3].ActionName,Harvest Shoulder Meat,收获肩肉
 KingcupRaw_Progress.OnFull.ActionDescription,Kingcup has taken.,驴蹄草已扎根。
-TumourRaw_CardName,Raw Tumour,生肿瘤
+TumourRaw_CardName,Strange Growth,奇异肉瘤
 TumourRaw_CardDescription,A strange and ominous piece of meat.\n\nCan be cooked or dried to last longer.,一块奇异而不祥的肉。\n\n可以烹制或晾干以延长保质期。
 TumourRaw_SpoilageTime.CardStatName,Spoilage,变质
 TumourRaw_SpoilageTime.OnFull.ActionDescription,Tumour Spoiled!,肿瘤变质了！
@@ -25209,7 +25192,7 @@ TumourRaw_SpecialDurability4.CardStatName,Boil,烹煮
 TumourRaw_DismantleActions[0].ActionName,Eat,吃掉
 PeasDried_Progress.OnFull.ActionDescription,Peas have taken.,豌豆已扎根。
 PieRaw_CardInteractions[44].ActionName,Add Fish Filling,添加鱼肉填料
-TumourCooked_CardName,Cooked Tumour,烹制肿瘤
+TumourCooked_CardName,Cooked Growth,熟肉瘤
 TumourCooked_CardDescription,A strange and ominous piece of meat.\n\nCan be dried to last longer.,一块奇异而不祥的肉。\n\n可以晾干以延长保质期。
 TumourCooked_SpoilageTime.CardStatName,Spoilage,变质
 TumourCooked_SpoilageTime.OnFull.ActionDescription,Tumour Spoiled!,肿瘤变质了！
@@ -25220,7 +25203,7 @@ TumourCooked_SpecialDurability1.CardStatName,Burned,烤焦的
 TumourCooked_SpecialDurability2.CardStatName,Quality,品质
 TumourCooked_SpecialDurability4.CardStatName,Boil,烹煮
 TumourCooked_DismantleActions[0].ActionName,Eat,吃掉
-TumourDried_CardName,Dried Tumour,肿瘤干
+TumourDried_CardName,Dried Growth,肉瘤干
 TumourDried_CardDescription,A strange and ominous piece of meat.,一块奇异而不祥的肉。
 TumourDried_SpoilageTime.CardStatName,Spoilage,变质
 TumourDried_SpoilageTime.OnFull.ActionDescription,Tumour Spoiled!,肿瘤变质了！
@@ -25597,7 +25580,7 @@ EA_DISCLAIMER,"This game is still in Early Access. We are working to continuousl
 EXIT_NPC_CREATOR_UNIQUE_NAME,Please enter a unique name for your character,请为你的角色取个独特的名字
 PURCHASE_TO_UNLOCK,Purchase to unlock,购买以解锁
 COPY_AND_EDIT,Copy and Edit,复制并编辑
-Expression Hub 1_Line,Your partner listens.,你的同伴正在听从。
+Expression Hub 1_Line,Your partner listens.,你的同伴正听着呢。
 Expression Hub 1_PossibleAnswers[0].Answer,Step Back,退后
 Expression Hub 1_PossibleAnswers[1].Answer,Express Care,表达关心
 Expression Hub 1_PossibleAnswers[2].Answer,Express Gratitude,表达感激
@@ -25605,19 +25588,18 @@ Expression Hub 1_PossibleAnswers[3].Answer,Express Attraction,表达好感
 Expression Hub 1_PossibleAnswers[4].Answer,Express Happiness,表达幸福
 Expression Hub 1_PossibleAnswers[5].Answer,Express Sadness,表达悲伤
 Expression Hub 1_PossibleAnswers[6].Answer,Express Emotions,表达情绪
-Expression Hub_Line,Your partner listens.,你的同伴正在听从。
+Expression Hub_Line,Your partner listens.,你的同伴正听着呢。
 Expression Hub_PossibleAnswers[0].Answer,Step Back,退后
 Expression Hub_PossibleAnswers[1].Answer,Express Care,表达关心
 Expression Hub_PossibleAnswers[2].Answer,Express Gratitude,表达感激
 Expression Hub_PossibleAnswers[3].Answer,Express Attraction,表达好感
 Expression Hub_PossibleAnswers[4].Answer,Express Happiness,表达幸福
 Expression Hub_PossibleAnswers[5].Answer,Express Sadness,表达悲伤
-PartnerDialog_Directions_Directions Hub_Line,Your partner listens.,你的同伴正在听从。
+PartnerDialog_Directions_Directions Hub_Line,Your partner listens.,你的同伴正听着呢。
 PartnerDialog_Directions_Directions Hub_PossibleAnswers[0].Answer,Step Back,退后
 PartnerDialog_Directions_Directions Hub_PossibleAnswers[1].Answer,Follow,跟随
 PartnerDialog_Directions_Directions Hub_PossibleAnswers[2].Answer,Stop Following,停止跟随
 PartnerDialog_Directions_Directions Hub_PossibleAnswers[3].Answer,Mark place as home,标记居住点
-PartnerDialog_Directions_Directions Hub_PossibleAnswers[4].Answer,Return Home,回家
 PartnerDialog_Directions_Directions Hub_PossibleAnswers[5].Answer,Stop Processing Inventory,停止整理物品
 PartnerDialog_Directions_Directions Hub_PossibleAnswers[6].Answer,Process Inventory,整理物品
 PartnerDialog_ExpressAttraction_Express Attraction_Line,Your partner approaches you and expresses attraction.,你的同伴靠近你并表达了好感。
@@ -25645,13 +25627,13 @@ PartnerDialog_Expression_Express Intimacy - Success_Line,You initiate an intimat
 PartnerDialog_Expression_Express Intimacy - Failure_Line,You initiate an intimate moment.\nThe reaction is negative.,你营造了暧昧的氛围。\n得到了消极的回应。
 PartnerDialog_Expression_Needs Hub_Line,Your partner is ready to engage.,你的同伴已经准备好了。
 PartnerDialog_Expression_Needs Hub_PossibleAnswers[0].Answer,Back,返回
-PartnerDialog_Expression_Needs Hub_PossibleAnswers[1].Answer,Express Need fo Help,表达需要帮助
+PartnerDialog_Expression_Needs Hub_PossibleAnswers[1].Answer,Express Need for Help,表达需要帮助
 PartnerDialog_Expression_Needs Hub_PossibleAnswers[2].Answer,Express need for Emotional Support,表达情感渴求
 PartnerDialog_Expression_Express Need for Help - Success_Line,You make conversation fueled by the need for help you feel.\nThe reaction is positive.,你满怀对帮助的需要并表述了内心。\n得到了积极的回应。
 PartnerDialog_Expression_Express Need for Help - Failure_Line,You make conversation fueled by the need for help you feel.\nThe reaction is negative.,你满怀对帮助的需要并表述了内心。\n得到了消极的回应。
 PartnerDialog_Expression_Care Hub_Line,Your partner is ready to engage.,你的同伴已经准备好了。
 PartnerDialog_Expression_Care Hub_PossibleAnswers[0].Answer,Back,返回
-PartnerDialog_Expression_Care Hub_PossibleAnswers[1].Answer,Listen,听从
+PartnerDialog_Expression_Care Hub_PossibleAnswers[1].Answer,Listen,聆听
 PartnerDialog_Expression_Care Hub_PossibleAnswers[2].Answer,Express Gratitude,表达感激
 PartnerDialog_Expression_Care Hub_PossibleAnswers[3].Answer,Express Affection,表达兴致
 PartnerDialog_Expression_Listen - Successful_Line,"You listen to your partner attentively, giving them your attention.\nThe reaction is positive.",你认真倾听并关注了伙伴。得到了积极的回应。
@@ -25678,24 +25660,20 @@ TraderTalkGeneral_Bring Partner_Line,He asks you to describe what kind of partne
 TraderTalkGeneral_Bring Partner_PossibleAnswers[0].Answer,Cancel,取消
 TraderTalkGeneral_Bring Partner_PossibleAnswers[1].Answer,Describe Partner,描述伙伴
 TraderTalkGeneral_Partner Confirmed_Line,"He says he will try to find such a person for his next forest visit, and that you should let him know if you change your mind.",他说他会试着找到这么个人，下次来的时候带上他。如果你改变主意了得告诉他。
-DutyTag_Creative_InGameName,Relaxed,小菜一碟的
 DutyTag_Methodical_InGameName,Methodical,有条不紊的
-DutyTag_Nature_InGameName,Relaxed,小菜一碟的
-DutyTag_Nurturing_InGameName,Relaxed,小菜一碟的
-DutyTag_Physical_InGameName,Physical,锻炼
-PartnerDuty_BaitFishing_DutyName,Add bait to fishing line,在鱼线上添加诱饵
-PartnerDuty_Bedkeeping_DutyName,Bed keeping,维护床铺
+PartnerDuty_BaitFishing_DutyName,Add Bait,钓鱼上饵
+PartnerDuty_Bedkeeping_DutyName,Bed Keeping,整理床铺
 PartnerDuty_BrainTan_DutyName,Brain Tan,脑鞣
-PartnerDuty_ButcherLarge_DutyName,Butcher Large Animal,屠宰大型动物
-PartnerDuty_ButcherMedium_DutyName,Butcher Medium Animal,屠宰中型动物
-PartnerDuty_ButcherSmall_DutyName,Butcher Small Animal,屠宰小型动物
-PartnerDuty_ButcherTiny_DutyName,Butcher Tiny Animal,屠宰极小动物
-PartnerDuty_ButcherVeryLarge_DutyName,Butcher Very Large Animal,屠宰特大动物
-PartnerDuty_ClayVaseFillWithWater_DutyName,Fill Water,加水
+PartnerDuty_ButcherLarge_DutyName,Butcher,屠宰
+PartnerDuty_ButcherMedium_DutyName,Butcher,屠宰
+PartnerDuty_ButcherSmall_DutyName,Butcher,屠宰
+PartnerDuty_ButcherTiny_DutyName,Butcher,屠宰
+PartnerDuty_ButcherVeryLarge_DutyName,Butcher,屠宰
+PartnerDuty_ClayVaseFillWithWater_DutyName,Fill with Water,加水
 PartnerDuty_Clean_DutyName,Clean,打扫
 PartnerDuty_CordMaking_DutyName,Cord Making,制线
-PartnerDuty_CreateIceHole_DutyName,Create Hole,凿洞
-PartnerDuty_CutDownTree_DutyName,Cut Down Tree,砍树
+PartnerDuty_CreateIceHole_DutyName,Make Hole,凿洞
+PartnerDuty_CutDownTree_DutyName,Cut Down,砍倒
 PartnerDuty_DigMud_DutyName,Dig Mud,挖泥
 PartnerDuty_DrinkFree_DutyName,Drink,饮用
 PartnerDuty_Eat_DutyName,Eat,吃饭
@@ -25704,63 +25682,63 @@ PartnerDuty_ExpressAttraction_DutyName,Express Attraction,表达好感
 PartnerDuty_ExpressGratitude_DutyName,Express Gratitude,表达感激
 PartnerDuty_ExpressNeedAttention_DutyName,Express Need for Attention,表达关照
 PartnerDuty_ExpressNeedFood_DutyName,Express Need for Food,表达需要食物
-PartnerDuty_ExpressNeedTrust_DutyName,Express Need for Trust,表达需要信任
-PartnerDuty_ExpressNeedWarmth_DutyName,Express Need for Food,表达需要食物
+PartnerDuty_ExpressNeedTrust_DutyName,Express need for Trust,表达需要信任
+PartnerDuty_ExpressNeedWarmth_DutyName,Express Need for Warmth,表达需要食物
 PartnerDuty_ExpressUltimatum_DutyName,Express Ultimatum,表达最后通牒
-PartnerDuty_Firekeeping_DutyName,Fire keeping,护火
-PartnerDuty_FleshSkin_DutyName,Flesh Skin,刮皮
+PartnerDuty_Firekeeping_DutyName,Fire Keeping,护火
+PartnerDuty_FleshSkin_DutyName,Flesh,刮净
 PartnerDuty_Follow_DutyName,Follow,跟随
 PartnerDuty_Forage_DutyName,Forage,觅食
 PartnerDuty_GardenHighAcidity_DutyName,High Acidity,高酸度
 PartnerDuty_GardenHighHydration_DutyName,High Hydration,高水分
 PartnerDuty_GardenHIghNutrients_DutyName,High Nutrients,高肥力
-PartnerDuty_GardenInspect_DutyName,Inspect Garden,检查菜园
+PartnerDuty_GardenInspect_DutyName,Inspect,检查
 PartnerDuty_GardenLowAcidity_DutyName,Low Acidity,低酸度
-PartnerDuty_GardenMediumAcidityAcidify_DutyName,Acidify to Medium,酸化至中等
-PartnerDuty_GardenMediumAcidityNeutralize_DutyName,Neutralize to Medium,中和至中等
+PartnerDuty_GardenMediumAcidityAcidify_DutyName,Medium Acidity,菜园酸化(中酸度)
+PartnerDuty_GardenMediumAcidityNeutralize_DutyName,Medium Acidity,菜园中和(中酸度)
 PartnerDuty_GardenMediumHydration_DutyName,Medium Hydration,中水分
 PartnerDuty_GardenMediumNutrients_DutyName,Medium Nutrients,中肥力
 PartnerDuty_GatherBark_DutyName,Gather Bark,收集树皮
 PartnerDuty_GatherWood_DutyName,Gather Wood,收集木材
-PartnerDuty_GrindWithHammeringTool_DutyName,Grind with Hammering Tool,用锤击工具研磨
-PartnerDuty_GrindWithMortarAndPestle_DutyName,Grind with Mortar and Pestle,用臼和杵研磨
-PartnerDuty_GutFish_DutyName,Gut Fish,剖鱼
-PartnerDuty_HarvestBogIron_DutyName,Harvest Bog Iron,收获沼铁
-PartnerDuty_HarvestClover_DutyName,Harvest Clover,收获三叶草
-PartnerDuty_HarvestFlax_DutyName,Harvest Flax,收获亚麻
-PartnerDuty_HarvestHeather_DutyName,Harvest Heather,收获帚石南
-PartnerDuty_HarvestKingcup_DutyName,Harvest Kingcup,收获驴蹄草
-PartnerDuty_HarvestMeadowgrass_DutyName,Harvest Meadowgrass,收获牧草
-PartnerDuty_HarvestNettle_DutyName,Harvest Nettle,收获荨麻
-PartnerDuty_HarvestPeas_DutyName,Harvest Peas,收获豌豆
-PartnerDuty_HarvestPineRoots_DutyName,Harvest Pine Roots,收获松树根
-PartnerDuty_HarvestReeds_DutyName,Harvest Reeds,收获芦苇
-PartnerDuty_HarvestRye_DutyName,Harvest Rye,收获黑麦
-PartnerDuty_HarvestTurnroot_DutyName,Harvest Turnroot,收获翻根
-PartnerDuty_HarvestWheat_DutyName,Harvest Wheat,收获小麦
+PartnerDuty_GrindWithHammeringTool_DutyName,Grind,研磨
+PartnerDuty_GrindWithMortarAndPestle_DutyName,Grind,研磨
+PartnerDuty_GutFish_DutyName,Gut,剖
+PartnerDuty_HarvestBogIron_DutyName,Harvest,收获
+PartnerDuty_HarvestClover_DutyName,Harvest,收获
+PartnerDuty_HarvestFlax_DutyName,Harvest,收获
+PartnerDuty_HarvestHeather_DutyName,Harvest,收获
+PartnerDuty_HarvestKingcup_DutyName,Harvest,收获
+PartnerDuty_HarvestMeadowgrass_DutyName,Harvest,收获
+PartnerDuty_HarvestNettle_DutyName,Harvest,收获
+PartnerDuty_HarvestPeas_DutyName,Harvest,收获
+PartnerDuty_HarvestPineRoots_DutyName,Harvest,收获
+PartnerDuty_HarvestReeds_DutyName,Harvest,收获
+PartnerDuty_HarvestRye_DutyName,Harvest,收获
+PartnerDuty_HarvestTurnroot_DutyName,Harvest,收获
+PartnerDuty_HarvestWheat_DutyName,Harvest,收获
 PartnerDuty_Idle_DutyName,Idle,闲逛
 PartnerDuty_IdleReturn_DutyName,Return Home,回家
-PartnerDuty_InspectField_DutyName,Inspect Field,检查耕地
-PartnerDuty_LineFishing_DutyName,Cut Down Tree,砍树
+PartnerDuty_InspectField_DutyName,Inspect,检查
+PartnerDuty_LineFishing_DutyName,Fish,砍树钓鱼
 PartnerDuty_MakeBrick_DutyName,Make Brick,制砖
 PartnerDuty_MakeClay_DutyName,Make Clay,制作粘土
-PartnerDuty_MakeFilling_DutyName,Mince Meat,绞肉
-PartnerDuty_MakeTwineFromPineRoots_DutyName,Make Twine from Pine Roots,用松树根制线
-PartnerDuty_MilkTheCow_DutyName,Milk the Cow,挤奶
-PartnerDuty_MinceMeat_DutyName,Mince Meat,绞肉
-PartnerDuty_NettleFiber_DutyName,Extract nettle fibers,提取荨麻纤维
-PartnerDuty_PoundSinew_DutyName,Pound Sinew,捶打肌腱
-PartnerDuty_PressCheese_DutyName,Press Cheese,压制奶酪
+PartnerDuty_MakeFilling_DutyName,Make Filling,制馅
+PartnerDuty_MakeTwineFromPineRoots_DutyName,Make Cord from Pine Roots,用松树根编线
+PartnerDuty_MilkTheCow_DutyName,Milk,挤奶
+PartnerDuty_MinceMeat_DutyName,Mince,剁肉
+PartnerDuty_NettleFiber_DutyName,Process,处理
+PartnerDuty_PoundSinew_DutyName,Pound,捶打
+PartnerDuty_PressCheese_DutyName,Press,压制
 PartnerDuty_ReturnHome_DutyName,Return Home,回家
 PartnerDuty_SeekDrink_DutyName,Seek Drink,寻找饮水
 PartnerDuty_SeekFire_DutyName,Seek Fire,寻找火源
-PartnerDuty_SinewCord_DutyName,Make Sinew Cord,制作肌腱绳
-PartnerDuty_SkinLarge_DutyName,Skin Large Animal,剥取大型动物
-PartnerDuty_SkinMedium_DutyName,Skin Medium Animal,剥取中型动物
-PartnerDuty_SkinVeryLarge_DutyName,Skin Very Large Animal,剥取特大动物
+PartnerDuty_SinewCord_DutyName,Make Cord,制作细线
+PartnerDuty_SkinLarge_DutyName,Skin,剥皮
+PartnerDuty_SkinMedium_DutyName,Skin,剥皮
+PartnerDuty_SkinVeryLarge_DutyName,Skin,剥皮
 PartnerDuty_Sleep_DutyName,Sleep,睡觉
-PartnerDuty_SleepRough_DutyName,Sleep Rough,小睡
-PartnerDuty_Spearfish_DutyName,SpearFish,叉鱼
+PartnerDuty_SleepRough_DutyName,Sleep,睡觉
+PartnerDuty_Spearfish_DutyName,Spear Fish,叉鱼
 PartnerDuty_StoreFood_DutyName,Store Food,储存食物
 PartnerDuty_WarmUp_DutyName,Warm Up,取暖
 NPCPkTab0_Internal_TabName,Internal,身体内部
@@ -25770,7 +25748,7 @@ NPCPkTab3_Personality_TabName,Personality,个性
 NPCPkTab4_Knowledge_TabName,Knowledge,知识
 NPCPkTab4_Situational_TabName,Situational,情境
 PartnerPreset_Man_AgentName,The Untamed,男性
-PartnerPreset_ManCraftsman_AgentName,The Provider,供应商
+PartnerPreset_ManCraftsman_AgentName,The Craftsman,手艺人
 PartnerPreset_ManCraftsman_AgentDescription,"Steady and dependable, he finds purpose in building, maintaining and providing, quietly ensuring those he loves never face hardship alone.",他坚实可靠，在建造维护和提供帮助的过程中找到了生命的意义，默默地确保着所爱之人永远不会独自面对困难。
 PartnerPreset_ManDreamer_AgentName,The Dreamer,梦想家
 PartnerPreset_ManDreamer_AgentDescription,"Imaginative, open-hearted and fiercely romantic, he finds beauty where others see only the ordinary, reminding those around him that the world still holds wonder.",他充满想象力，胸襟宽广且浪漫非常，能在平凡之处发现美的存在，并以此告知身边之人世界仍充满奇迹。
@@ -25779,7 +25757,7 @@ PartnerPreset_ManUntamed_AgentDescription,"Strong, self-reliant and fiercely ind
 PartnerPreset_Woman_AgentName,Woman,女性
 PartnerPreset_WomanHearthwife_AgentName,The Hearthwife,家庭主妇
 PartnerPreset_WomanHearthwife_AgentDescription,"Patient and caring, she has the power to turn any place into a home, quietly weaving comfort into everyday life.",她耐心且乐于助人，有能力将任何地方充满家的味道，默默地将舒适时光带入日常生活。
-PartnerPreset_WomanMuse_AgentName,The Muse,女郎
+PartnerPreset_WomanMuse_AgentName,The Muse,文艺少女
 PartnerPreset_WomanMuse_AgentDescription,"Graceful and self-assured, she inspires admiration and awakens the desire to become better, though winning her heart is never taken for granted.",她举止优雅且自信，总能激发人们的钦佩之情并唤醒他们对于追求卓越的渴望，尽管赢得她的芳心绝非易事。
 PartnerPreset_WomanSpirited_AgentName,The Spirited One,元气少女
 PartnerPreset_WomanSpirited_AgentDescription,"Bold and full of life, she meets every challenge with laughter and curiosity, encouraging others to embrace the world with the same boundless enthusiasm.",她勇敢且活力满满，总是带着笑容和好奇心迎接每一个挑战，并用无拘无束的永恒热情感染人们去拥抱整个世界。
@@ -25815,35 +25793,35 @@ PartnerPerk_BeardFull_PerkDescription,Makes your partner start with a full manly
 PartnerPerk_BeardLong_PerkName,Long Beard,长须
 PartnerPerk_BeardLong_PerkDescription,Makes your partner start with a long wise beard.,开局同伴拥有饱含智慧的长须
 PartnerPerk_BustFuller_PerkName,Fuller Bust,胸部丰满
-PartnerPerk_BustFuller_PerkDescription,Makes yor partner have a fuller bust.,让你的同伴有丰满的胸部。
+PartnerPerk_BustFuller_PerkDescription,Makes your partner have a fuller bust.,让你的同伴有丰满的胸部。
 PartnerPerk_BustSmaller_PerkName,Smaller Bust,胸围较小
-PartnerPerk_BustSmaller_PerkDescription,Makes yor partner have a smaller bust.,让你的同伴有较小的胸围。
+PartnerPerk_BustSmaller_PerkDescription,Makes your partner have a smaller bust.,让你的同伴有较小的胸围。
 PartnerPerk_ClothesFemale_PerkName,Female Clothes,女装
-PartnerPerk_ClothesFemale_PerkDescription,Makes yor partner start with female clothes.,同伴开局穿着女装。
+PartnerPerk_ClothesFemale_PerkDescription,Makes your partner start with female clothes.,同伴开局穿着女装。
 PartnerPerk_ClothesMale_PerkName,Male Clothes,男装
-PartnerPerk_ClothesMale_PerkDescription,Makes yor partner start with male clothes.,同伴开局穿着男装。
+PartnerPerk_ClothesMale_PerkDescription,Makes your partner start with male clothes.,同伴开局穿着男装。
 PartnerPerk_EyesBlue_PerkName,Blue Eyes,蓝色眼睛
-PartnerPerk_EyesBlue_PerkDescription,Makes yor partner start with blue eyes.,同伴开局拥有蓝色眼睛。
+PartnerPerk_EyesBlue_PerkDescription,Makes your partner start with blue eyes.,同伴开局拥有蓝色眼睛。
 PartnerPerk_EyesBrown_PerkName,Brown Eyes,棕色眼睛
-PartnerPerk_EyesBrown_PerkDescription,Makes yor partner start with brown eyes.,同伴开局拥有棕色眼睛。
+PartnerPerk_EyesBrown_PerkDescription,Makes your partner start with brown eyes.,同伴开局拥有棕色眼睛。
 PartnerPerk_EyesDarkBrown_PerkName,Dark Brown Eyes,深棕色眼睛
-PartnerPerk_EyesDarkBrown_PerkDescription,Makes yor partner start with dark brown eyes.,同伴开局拥有棕黑色眼睛。
+PartnerPerk_EyesDarkBrown_PerkDescription,Makes your partner start with dark brown eyes.,同伴开局拥有棕黑色眼睛。
 PartnerPerk_EyesGreen_PerkName,Green Eyes,绿色眼睛
-PartnerPerk_EyesGreen_PerkDescription,Makes yor partner start with green eyes.,同伴开局拥有绿色眼睛。
+PartnerPerk_EyesGreen_PerkDescription,Makes your partner start with green eyes.,同伴开局拥有绿色眼睛。
 PartnerPerk_EyesGrey_PerkName,Grey Eyes,灰色眼睛
-PartnerPerk_EyesGrey_PerkDescription,Makes yor partner start with grey eyes.,同伴开局拥有灰色眼睛。
+PartnerPerk_EyesGrey_PerkDescription,Makes your partner start with grey eyes.,同伴开局拥有灰色眼睛。
 PartnerPerk_EyesHazel_PerkName,Hazel Eyes,淡褐色眼睛
-PartnerPerk_EyesHazel_PerkDescription,Makes yor partner start with hazel eyes.,同伴开局拥有淡褐色眼睛。
+PartnerPerk_EyesHazel_PerkDescription,Makes your partner start with hazel eyes.,同伴开局拥有淡褐色眼睛。
 PartnerPerk_EyesLarge_PerkName,Large Eyes,大眼睛
-PartnerPerk_EyesLarge_PerkDescription,Makes yor partner start with large eyes.,同伴开局眼睛大大的。
+PartnerPerk_EyesLarge_PerkDescription,Makes your partner start with large eyes.,同伴开局眼睛大大的。
 PartnerPerk_EyesLightBlue_PerkName,Light Blue Eyes,浅蓝色眼睛
-PartnerPerk_EyesLightBlue_PerkDescription,Makes yor partner start with light blue eyes.,同伴开局拥浅蓝色眼睛。
+PartnerPerk_EyesLightBlue_PerkDescription,Makes your partner start with light blue eyes.,同伴开局拥浅蓝色眼睛。
 PartnerPerk_EyesNarrowSet_PerkName,Narrow-Set Eyes,窄眼距
-PartnerPerk_EyesNarrowSet_PerkDescription,Makes yor partner start with narrow-set eyes.,同伴开局的眼距较窄。
+PartnerPerk_EyesNarrowSet_PerkDescription,Makes your partner start with narrow-set eyes.,同伴开局的眼距较窄。
 PartnerPerk_EyesSmall_PerkName,Small Eyes,小眼睛
-PartnerPerk_EyesSmall_PerkDescription,Makes yor partner start with small eyes.,同伴开局眼睛小小的。
+PartnerPerk_EyesSmall_PerkDescription,Makes your partner start with small eyes.,同伴开局眼睛小小的。
 PartnerPerk_EyesWideSet_PerkName,Wide-Set Eyes,宽眼距
-PartnerPerk_EyesWideSet_PerkDescription,Makes yor partner start with wide-set eyes.,同伴开局的眼距较宽。
+PartnerPerk_EyesWideSet_PerkDescription,Makes your partner start with wide-set eyes.,同伴开局的眼距较宽。
 PartnerPerk_FeaturesFine_PerkName,Fine Features,五官精致
 PartnerPerk_FeaturesFine_PerkDescription,"Increases facial harmony, improving general attractiveness.",增强面部和谐感，提升整体吸引力。
 PartnerPerk_FeaturesIrregular_PerkName,Irregular Features,五官粗糙
@@ -25853,45 +25831,45 @@ PartnerPerk_FocusSingular_PerkDescription,Increases preference for methodical ta
 PartnerPerk_FocusWandering_PerkName,Wandering Focus,兴趣广泛
 PartnerPerk_FocusWandering_PerkDescription,Decreases preference for methodical tasks while increasing it for creative ones. ,降低对条理性任务的偏好，提高对创造性任务的偏好。
 PartnerPerk_Freckles_PerkName,Freckles,雀斑
-PartnerPerk_Freckles_PerkDescription,Makes yor partner start with freckles.,同伴开局拥有雀斑。
+PartnerPerk_Freckles_PerkDescription,Makes your partner start with freckles.,同伴开局拥有雀斑。
 PartnerPerk_HairColourAuburn_PerkName,Auburn Hair,红棕色头发
-PartnerPerk_HairColourAuburn_PerkDescription,Makes yor partner start with auburn hair.,同伴开局拥有红棕色头发。
+PartnerPerk_HairColourAuburn_PerkDescription,Makes your partner start with auburn hair.,同伴开局拥有红棕色头发。
 PartnerPerk_HairColourBlack_PerkName,Black Hair,黑发
-PartnerPerk_HairColourBlack_PerkDescription,Makes yor partner start with black hair.,同伴开局拥有黑发。
+PartnerPerk_HairColourBlack_PerkDescription,Makes your partner start with black hair.,同伴开局拥有黑发。
 PartnerPerk_HairColourBlonde_PerkName,Blonde Hair,金发
-PartnerPerk_HairColourBlonde_PerkDescription,Makes yor partner start with blonde hair.,同伴开局拥有金发。
+PartnerPerk_HairColourBlonde_PerkDescription,Makes your partner start with blonde hair.,同伴开局拥有金发。
 PartnerPerk_HairColourBrown_PerkName,Brown Hair,棕色头发
-PartnerPerk_HairColourBrown_PerkDescription,Makes yor partner start with brown hair.,同伴开局拥有棕色头发。
+PartnerPerk_HairColourBrown_PerkDescription,Makes your partner start with brown hair.,同伴开局拥有棕色头发。
 PartnerPerk_HairColourDarkBrown_PerkName,Dark Brown Hair,深棕色头发
-PartnerPerk_HairColourDarkBrown_PerkDescription,Makes yor partner start with dark brown hair.,同伴开局拥有黑棕色头发。
+PartnerPerk_HairColourDarkBrown_PerkDescription,Makes your partner start with dark brown hair.,同伴开局拥有黑棕色头发。
 PartnerPerk_HairColourGinger_PerkName,Ginger Hair,姜黄色头发
-PartnerPerk_HairColourGinger_PerkDescription,Makes yor partner start with ginger hair.,同伴开局拥有姜黄色头发。
+PartnerPerk_HairColourGinger_PerkDescription,Makes your partner start with ginger hair.,同伴开局拥有姜黄色头发。
 PartnerPerk_HairColourGrey_PerkName,Grey Hair,灰色头发
-PartnerPerk_HairColourGrey_PerkDescription,Makes yor partner start with grey hair.,同伴开局拥有灰色头发。
+PartnerPerk_HairColourGrey_PerkDescription,Makes your partner start with grey hair.,同伴开局拥有灰色头发。
 PartnerPerk_HairColourLightBlonde_PerkName,Light Blonde Hair,浅金色头发
-PartnerPerk_HairColourLightBlonde_PerkDescription,Makes yor partner start with light blonde hair.,同伴开局拥有浅金色头发。
+PartnerPerk_HairColourLightBlonde_PerkDescription,Makes your partner start with light blonde hair.,同伴开局拥有浅金色头发。
 PartnerPerk_HairColourLightBrown_PerkName,Light Brown Hair,浅棕色头发
-PartnerPerk_HairColourLightBrown_PerkDescription,Makes yor partner start with light brown hair.,同伴开局拥有浅棕色头发。
+PartnerPerk_HairColourLightBrown_PerkDescription,Makes your partner start with light brown hair.,同伴开局拥有浅棕色头发。
 PartnerPerk_HairColourPlatinumBlonde_PerkName,Platinum Blonde Hair,铂金色头发
-PartnerPerk_HairColourPlatinumBlonde_PerkDescription,Makes yor partner start with platinum blonde hair.,同伴开局拥有铂金色头发。
+PartnerPerk_HairColourPlatinumBlonde_PerkDescription,Makes your partner start with platinum blonde hair.,同伴开局拥有铂金色头发。
 PartnerPerk_HairColourStrawberryBlonde_PerkName,Strawberry Blonde Hair,草莓金色头发
-PartnerPerk_HairColourStrawberryBlonde_PerkDescription,Makes yor partner start with strawberry blonde hair.,同伴开局拥有草莓金色头发。
+PartnerPerk_HairColourStrawberryBlonde_PerkDescription,Makes your partner start with strawberry blonde hair.,同伴开局拥有草莓金色头发。
 PartnerPerk_HairColourWhite_PerkName,White Hair,白发
-PartnerPerk_HairColourWhite_PerkDescription,Makes yor partner start with white hair.,同伴开局拥有白色头发。
+PartnerPerk_HairColourWhite_PerkDescription,Makes your partner start with white hair.,同伴开局拥有白色头发。
 PartnerPerk_HairCurly_PerkName,Curly Hair,大卷发
-PartnerPerk_HairCurly_PerkDescription,Makes yor partner start with curly hair.,同伴开局拥有大卷发
+PartnerPerk_HairCurly_PerkDescription,Makes your partner start with curly hair.,同伴开局拥有大卷发
 PartnerPerk_HairKinky_PerkName,Kinky Hair,羊毛卷
-PartnerPerk_HairKinky_PerkDescription,Makes yor partner start with kinky hair.,同伴开局拥有羊毛卷
+PartnerPerk_HairKinky_PerkDescription,Makes your partner start with kinky hair.,同伴开局拥有羊毛卷
 PartnerPerk_HairLong_PerkName,Long Hair,长发
-PartnerPerk_HairLong_PerkDescription,Makes yor partner start with long hair.,同伴开局拥有长头发。
+PartnerPerk_HairLong_PerkDescription,Makes your partner start with long hair.,同伴开局拥有长头发。
 PartnerPerk_HairShort_PerkName,Short Hair,短发
-PartnerPerk_HairShort_PerkDescription,Makes yor partner start with short hair.,同伴开局拥有短头发。
+PartnerPerk_HairShort_PerkDescription,Makes your partner start with short hair.,同伴开局拥有短头发。
 PartnerPerk_HairStraight_PerkName,Straight Hair,直发
-PartnerPerk_HairStraight_PerkDescription,Makes yor partner start with straight hair.,同伴开局拥有直发。
+PartnerPerk_HairStraight_PerkDescription,Makes your partner start with straight hair.,同伴开局拥有直发。
 PartnerPerk_HairVeryLong_PerkName,Very Long Hair,长发飘飘
-PartnerPerk_HairVeryLong_PerkDescription,Makes yor partner start with very long hair.,同伴开局拥有很长的头发。
+PartnerPerk_HairVeryLong_PerkDescription,Makes your partner start with very long hair.,同伴开局拥有很长的头发。
 PartnerPerk_HairWavy_PerkName,Wavy Hair,大波浪
-PartnerPerk_HairWavy_PerkDescription,Makes yor partner start with wavy hair.,同伴开局拥有大波浪
+PartnerPerk_HairWavy_PerkDescription,Makes your partner start with wavy hair.,同伴开局拥有大波浪
 PartnerPerk_HighAppetite_PerkName,High Apetite,食欲旺盛
 PartnerPerk_HighAppetite_PerkDescription,"Inceases hunger faster, making eating easier so it's harder to become malnourished.",增加饥饿感更快，进食变得更容易，因此更难出现营养不良的情况。
 PartnerPerk_HighEstrogen_PerkName,High Estrogen,高雌激素水平
@@ -25925,9 +25903,9 @@ PartnerPerk_KnowledgeWoodworker_PerkName,Woodworker,木匠
 PartnerPerk_LikesCreative_PerkName,Creative,创作者
 PartnerPerk_LikesCreative_PerkDescription,"Likes performing creative tasks, such as carving, playing music or working clay.",喜欢进行创意性工作，如雕刻、演奏音乐或捏陶。
 PartnerPerk_LikesFemaleTraits_PerkName,Likes Female Traits,性取向女
-PartnerPerk_LikesFemaleTraits_PerkDescription,Makes yor partner be attracted to female traits.,让你的伴侣被女性特质所吸引。
+PartnerPerk_LikesFemaleTraits_PerkDescription,Makes your partner be attracted to female traits.,让你的伴侣被女性特质所吸引。
 PartnerPerk_LikesMaleTraits_PerkName,Likes Male Traits,性取向男
-PartnerPerk_LikesMaleTraits_PerkDescription,Makes yor partner be attracted to male traits.,让你的伴侣被男性特质所吸引。
+PartnerPerk_LikesMaleTraits_PerkDescription,Makes your partner be attracted to male traits.,让你的伴侣被男性特质所吸引。
 PartnerPerk_LikesMethodical_PerkName,Methodical,有条不紊的
 PartnerPerk_LikesMethodical_PerkDescription,"Likes performing methodical tasks, such as weaving, grinding or fleshing.",喜欢执行有条理的工作，如编织、研磨或刮皮。
 PartnerPerk_LikesNature_PerkName,Nature Loving,热爱自然
@@ -25945,15 +25923,15 @@ PartnerPerk_LowMetabolism_PerkDescription,Makes them burn through their fat rese
 PartnerPerk_LowTestosterone_PerkName,Low Testosterone,低雄激素
 PartnerPerk_LowTestosterone_PerkDescription,"Reduces male physical traits, leading to a more youthful appearance, smaller stature, and less muscle mass.",弱化男性身体特征，导致外观更年轻、身材更小以及肌肉密度更低。
 PartnerPerk_NoseDownturned_PerkName,Downturned Nose,鹰钩鼻
-PartnerPerk_NoseDownturned_PerkDescription,Makes yor partner start with a downturned nose.,同伴开局拥有鹰钩鼻
+PartnerPerk_NoseDownturned_PerkDescription,Makes your partner start with a downturned nose.,同伴开局拥有鹰钩鼻
 PartnerPerk_NoseHooked_PerkName,Hooked Nose,驼峰鼻
-PartnerPerk_NoseHooked_PerkDescription,Makes yor partner start with a hooked nose.,同伴开局拥有驼峰鼻
+PartnerPerk_NoseHooked_PerkDescription,Makes your partner start with a hooked nose.,同伴开局拥有驼峰鼻
 PartnerPerk_NoseLarge_PerkName,Large Nose,大鼻子
-PartnerPerk_NoseLarge_PerkDescription,Makes yor partner start with a large nose.,同伴开局拥有大鼻子
+PartnerPerk_NoseLarge_PerkDescription,Makes your partner start with a large nose.,同伴开局拥有大鼻子
 PartnerPerk_NoseSmall_PerkName,Small Nose,小鼻子
-PartnerPerk_NoseSmall_PerkDescription,Makes yor partner start with a small nose.,同伴开局拥有小鼻子
+PartnerPerk_NoseSmall_PerkDescription,Makes your partner start with a small nose.,同伴开局拥有小鼻子
 PartnerPerk_NoseUpturned_PerkName,Upturned Nose,朝天鼻
-PartnerPerk_NoseUpturned_PerkDescription,Makes yor partner start with an upturned nose.,同伴开局拥有朝天鼻
+PartnerPerk_NoseUpturned_PerkDescription,Makes your partner start with an upturned nose.,同伴开局拥有朝天鼻
 PartnerPerk_OrgansFemale_PerkName,Female Organs,女性器官
 PartnerPerk_OrgansFemale_PerkDescription,Boosts estrogen levels and confers the capacity to conceive and bear children.,提高雌激素水平并获得怀孕和生育孩子的能力。
 PartnerPerk_OrgansMale_PerkName,Male Organs,男性器官
@@ -26011,17 +25989,17 @@ PartnerPerk_PersonalityTrusting_PerkDescription,Gains trust more quickly and is 
 PartnerPerk_Short_PerkName,Short Stature,身材矮小
 PartnerPerk_Short_PerkDescription,"Decreases size and combat reach, decreases caloric needs and enhances stealth capabilities.",减小体型和攻击距离，降低能量消耗并提高潜行能力。
 PartnerPerk_SkinDark_PerkName,Dark Skin,黝黑皮肤
-PartnerPerk_SkinDark_PerkDescription,Makes yor partner start with dark skin.,同伴开局拥有黝黑皮肤。
+PartnerPerk_SkinDark_PerkDescription,Makes your partner start with dark skin.,同伴开局拥有黝黑皮肤。
 PartnerPerk_SkinFair_PerkName,Fair Skin,白皙皮肤
-PartnerPerk_SkinFair_PerkDescription,Makes yor partner start with fair skin.,同伴开局拥有白皙皮肤。
+PartnerPerk_SkinFair_PerkDescription,Makes your partner start with fair skin.,同伴开局拥有白皙皮肤。
 PartnerPerk_SkinMedium_PerkName,Medium Skin,自然肤色
-PartnerPerk_SkinMedium_PerkDescription,Makes yor partner start with medium skin.,同伴开局拥有自然肤色。
+PartnerPerk_SkinMedium_PerkDescription,Makes your partner start with medium skin.,同伴开局拥有自然肤色。
 PartnerPerk_SkinVeryDark_PerkName,Very Dark Skin,深黑皮肤
-PartnerPerk_SkinVeryDark_PerkDescription,Makes yor partner start with very dark skin.,同伴开局拥有黑色皮肤。
+PartnerPerk_SkinVeryDark_PerkDescription,Makes your partner start with very dark skin.,同伴开局拥有黑色皮肤。
 PartnerPerk_SkinVeryFair_PerkName,Very Fair Skin,雪白皮肤
-PartnerPerk_SkinVeryFair_PerkDescription,Makes yor partner start with very fair skin.,同伴开局拥有雪白皮肤。
+PartnerPerk_SkinVeryFair_PerkDescription,Makes your partner start with very fair skin.,同伴开局拥有雪白皮肤。
 PartnerPerk_Tall_PerkName,Tall Stature,身材高大
-PartnerPerk_Tall_PerkDescription,"Increases  size and combat reach, reduces stealth, and raises  caloric needs.",增大体型和攻击距离、降低潜行能力并提高能量消耗。
+PartnerPerk_Tall_PerkDescription,"Increases size and combat reach, reduces stealth, and raises caloric needs.",增大体型和攻击距离、降低潜行能力并提高能量消耗。
 PartnerPerk_VeryShort_PerkName,Very Short Stature,侏儒血统
 PartnerPerk_VeryShort_PerkDescription,"Dramatically decreases size and combat reach, decreases caloric needs and enhances stealth capabilities.",大幅缩小体型和攻击距离，降低能量消耗并增强潜行能力。
 PartnerPerk_VeryTall_PerkName,Very Tall Stature,巨人血统
@@ -26117,7 +26095,7 @@ Partner_FemaleTraits_Statuses[1].GameName,Pronounced,显著
 Partner_FemaleTraits_Statuses[2].GameName,Balanced,均衡
 Partner_FemaleTraits_Statuses[3].GameName,Subtle,微妙
 Partner_FemaleTraits_Statuses[4].GameName,Minimal,最低
-Partner_Freckles_Statuses[0].GameName,Has freckles.,有雀斑
+Partner_Freckles_Statuses[0].GameName,Has freckles.,有雀斑。
 Partner_HairColour_Statuses[0].GameName,Has white hair.,有白发
 Partner_HairColour_Statuses[1].GameName,Has platinum blonde hair.,有铂金色头发
 Partner_HairColour_Statuses[2].GameName,Has strawberry blonde hair.,有草莓金色头发
@@ -26128,7 +26106,7 @@ Partner_HairColour_Statuses[6].GameName,Has auburn hair.,有红棕色头发
 Partner_HairColour_Statuses[7].GameName,Has light brown hair.,有浅棕色头发
 Partner_HairColour_Statuses[8].GameName,Has brown hair.,有棕色头发
 Partner_HairColour_Statuses[9].GameName,Has dark brown hair.,有深棕色头发
-Partner_HairColour_Statuses[10].GameName,Has black hair.,有黑发
+Partner_HairColour_Statuses[10].GameName,Has black hair.,有黑发。
 Partner_HairColour_Statuses[11].GameName,Has grey hair.,有灰色头发
 Partner_HairFacialLength_Statuses[1].GameName,Has a stubble.,有胡茬。
 Partner_HairFacialLength_Statuses[2].GameName,Has a short beard.,有短须。
@@ -26139,7 +26117,7 @@ Partner_HairLength_Statuses[1].GameName,Has short hair.,有短发。
 Partner_HairLength_Statuses[2].GameName,Has neck-length hair.,有齐颈发。
 Partner_HairLength_Statuses[3].GameName,Has shoulder-length hair.,有齐肩发。
 Partner_HairLength_Statuses[4].GameName,Has back-length hair.,有及背发。
-Partner_HairLength_Statuses[5].GameName,Has waist-length hair.,有及腰发。
+Partner_HairLength_Statuses[5].GameName,Has waist-length hair.,有及腰长发。
 Partner_HairLength_Statuses[6].GameName,Has hip-length hair.,有齐臀发。
 Partner_HairType_Statuses[0].GameName,Has straight hair.,有直发。
 Partner_HairType_Statuses[1].GameName,Has wavy hair.,有大波浪。
@@ -26184,10 +26162,10 @@ Partner_SexualOrgans_Statuses[0].GameName,Female,女性
 Partner_SexualOrgans_Statuses[1].GameName,Male,男性
 Partner_SexualOrgans_Statuses[2].GameName,Both,双性
 Partner_SkinColour_Statuses[0].GameName,Has very fair skin.,有着雪白的皮肤。
-Partner_SkinColour_Statuses[1].GameName,Has fair skin.,有着白皙的皮肤
+Partner_SkinColour_Statuses[1].GameName,Has fair skin.,有着白皙的皮肤。
 Partner_SkinColour_Statuses[2].GameName,Has medium-toned skin.,有一般色调的皮肤。
-Partner_SkinColour_Statuses[3].GameName,Has dark skin.,有深色的皮肤
-Partner_SkinColour_Statuses[4].GameName,Has very dark skin.,有黝黑的皮肤
+Partner_SkinColour_Statuses[3].GameName,Has dark skin.,有深色的皮肤。
+Partner_SkinColour_Statuses[4].GameName,Has very dark skin.,有黝黑的皮肤。
 Partner_Affection_Statuses[0].GameName,Looks very fond of you.,看上去非常喜欢你。
 Partner_Affection_Statuses[1].GameName,Looks fond of you.,看上去很喜欢你。
 Partner_Affection_Statuses[2].GameName,Looks neutral towards you.,看上去对你无感。
@@ -26208,7 +26186,7 @@ Partner_Awkwardness_Statuses[1].GameName,Feels awkward.,感到尴尬。
 Partner_Awkwardness_Statuses[2].GameName,Feels a bit awkward.,感到有点尴尬。
 Partner_BodyTemperature_Statuses[0].GameName,Looks dead of a heatstroke.,看上去要热死了。
 Partner_BodyTemperature_Statuses[0].DeleteAgentMessage.Text,Your partner has died of a heatrstroke.,你的同伴死于中暑。
-Partner_BodyTemperature_Statuses[1].GameName,Looks uncomfortably hot and sweaty.,看起来热得难受且满身是汗。
+Partner_BodyTemperature_Statuses[1].GameName,Looks uncomfortably hot.,看起来热得难受。
 Partner_BodyTemperature_Statuses[2].GameName,Looks sweaty.,看上去出汗了。
 Partner_BodyTemperature_Statuses[3].GameName,Looks comfortable.,看上去温度很舒服。
 Partner_BodyTemperature_Statuses[4].GameName,Looks cold.,看上去冷。
@@ -26276,7 +26254,7 @@ Partner_Favour_Statuses[3].GameName,Looks a bit resentful.,看上去有点不满
 Partner_Favour_Statuses[4].GameName,Looks resentful.,看上去不满。
 Partner_Favour_Statuses[5].GameName,Looks very resentful.,看上去非常不满。
 Partner_FeetSize_Statuses[0].GameName,Has small feet.,有双小脚。
-Partner_FeetSize_Statuses[1].GameName,Has medium-sized feet.,有双一般尺寸的脚。
+Partner_FeetSize_Statuses[1].GameName,Has medium-sized feet.,有双一般大小的脚。
 Partner_FeetSize_Statuses[2].GameName,Has large feet.,有双大脚。
 Partner_Filth_Statuses[0].GameName,Small,少量脏污
 Partner_Filth_Statuses[1].GameName,Medium,中等脏污
@@ -26287,7 +26265,7 @@ Partner_Gratification_Statuses[1].GameName,Looks content.,看上去满足。
 Partner_Gratification_Statuses[2].GameName,Looks dissatisfied.,看上去不太满足。
 Partner_Gratification_Statuses[3].GameName,Looks miserable.,看上去极不满足。
 Partner_HandSize_Statuses[0].GameName,Has small hands.,有双小手。
-Partner_HandSize_Statuses[1].GameName,Has medium-sized hands.,有双一般尺寸的手。
+Partner_HandSize_Statuses[1].GameName,Has medium-sized hands.,有双一般大小的手。
 Partner_HandSize_Statuses[2].GameName,Has large hands.,有双大手。
 Partner_HipWidth_Statuses[0].GameName,Has narrow hips.,臀部较窄。
 Partner_HipWidth_Statuses[1].GameName,Has medium-sized hips.,臀部适中。
@@ -26306,26 +26284,26 @@ Partner_Intestines_Statuses[4].GameName,Digestion,消化
 Partner_JawSize_Statuses[0].GameName,Has a small jaw.,小下巴。
 Partner_JawSize_Statuses[1].GameName,Has a medium-sized jaw.,中等尺寸的下巴。
 Partner_JawSize_Statuses[2].GameName,Has a large jaw.,大下巴。
-Partner_Morale_Statuses[0].GameName,Looks happy.,看上去开心。
-Partner_Morale_Statuses[1].GameName,Looks content.,看上去满意。
-Partner_Morale_Statuses[2].GameName,Looks down.,看上去低落。
-Partner_Morale_Statuses[3].GameName,Looks sad.,看上去悲伤。
+Partner_Morale_Statuses[0].GameName,Looks very happy.,看上去十分开心。
+Partner_Morale_Statuses[1].GameName,Looks happy.,看上去开心。
+Partner_Morale_Statuses[2].GameName,Looks sad.,看上去悲伤。
+Partner_Morale_Statuses[3].GameName,Looks very sad.,看上去十分悲伤。
 Partner_Neoteny_Statuses[0].GameName,Very High,非常高
 Partner_Neoteny_Statuses[1].GameName,High,高
 Partner_Neoteny_Statuses[2].GameName,Moderate,中等
 Partner_Neoteny_Statuses[3].GameName,Low,低
 Partner_Neoteny_Statuses[4].GameName,Very Low,非常低
 Partner_NoseType_Statuses[0].GameName,Has a small upturned nose.,有个小小的朝天鼻。
-Partner_NoseType_Statuses[1].GameName,Has a medium-sized upturned nose.,有个一般尺寸的朝天鼻。
+Partner_NoseType_Statuses[1].GameName,Has a medium-sized upturned nose.,有个一般大小的朝天鼻。
 Partner_NoseType_Statuses[2].GameName,Has a large upturned nose.,有个大大的朝天鼻。
 Partner_NoseType_Statuses[3].GameName,Has a small straight nose.,有个小小的直鼻。
-Partner_NoseType_Statuses[4].GameName,Has a medium-sized straight nose.,有个一般尺寸的直鼻。
+Partner_NoseType_Statuses[4].GameName,Has a medium-sized straight nose.,有个一般大小的直鼻。
 Partner_NoseType_Statuses[5].GameName,Has a large straight nose.,有个大大的直鼻。
 Partner_NoseType_Statuses[6].GameName,Has a small downturned nose.,有个小小的鹰钩鼻。
-Partner_NoseType_Statuses[7].GameName,Has a medium-sized downturned nose.,有个一般尺寸的鹰钩鼻。
+Partner_NoseType_Statuses[7].GameName,Has a medium-sized downturned nose.,有个一般尺大小的鹰钩鼻。
 Partner_NoseType_Statuses[8].GameName,Has a large downturned nose.,有个大大的鹰钩鼻。
 Partner_NoseType_Statuses[9].GameName,Has a small hooked nose.,有个小小的驼峰鼻。
-Partner_NoseType_Statuses[10].GameName,Has a medium-sized hooked nose.,有个一般尺寸的驼峰鼻。
+Partner_NoseType_Statuses[10].GameName,Has a medium-sized hooked nose.,有个一般大小的驼峰鼻。
 Partner_NoseType_Statuses[11].GameName,Has a large hooked nose.,有个大大的驼峰鼻。
 Partner_Ornamentation_Statuses[0].GameName,Ornamentation,装饰
 Partner_Ornamentation_Statuses[1].GameName,Ornamentation,装饰
@@ -26363,12 +26341,12 @@ Partner_Satiation_Statuses[2].GameName,Looks hungry.,看上去饿了。
 Partner_Satiation_Statuses[3].GameName,Looks very hungry.,看上去非常饿。
 Partner_Satiation_Statuses[4].GameName,Looks ravenous.,看上去饥肠辘辘。
 Partner_ShoulderWidth_Statuses[0].GameName,Has narrow shoulders.,有较窄的肩膀。
-Partner_ShoulderWidth_Statuses[1].GameName,Has medium-sized shoulders.,有一般尺寸的肩膀。
+Partner_ShoulderWidth_Statuses[1].GameName,Has medium-sized shoulders.,有一般大小的肩膀。
 Partner_ShoulderWidth_Statuses[2].GameName,Has broad shoulders.,有宽广的肩膀。
 Partner_ShoulderWidth_Statuses[3].GameName,Has very broad shoulders.,有十分宽广的肩膀。
 Partner_Size_Statuses[0].GameName,Has a very tall stature.,巨人身材
 Partner_Size_Statuses[1].GameName,Has a tall stature.,高大身材。
-Partner_Size_Statuses[2].GameName,Has an average stature.,中等身材。
+Partner_Size_Statuses[2].GameName,Has a medium stature.,中等身材。
 Partner_Size_Statuses[3].GameName,Has a short stature.,矮小身材。
 Partner_Size_Statuses[4].GameName,Has a very short stature.,侏儒身材。
 Partner_SizeArms_Statuses[0].GameName,Has very slim arms.,有十分纤细的胳膊。
@@ -26415,8 +26393,8 @@ Partner_VoiceRegister_Statuses[5].GameName,Has a bass voice.,拥有一副男低�
 Partner_Wakefulness_Statuses[0].GameName,Looks sleepy.,看上去很困。
 Partner_Wakefulness_Statuses[1].GameName,Looks very sleepy.,看上去非常困
 Partner_Weight_Statuses[0].GameName,Looks very fat.,看上去非常胖。
-Partner_Weight_Statuses[1].GameName,Looks fat.,看上去胖。
-Partner_Weight_Statuses[2].GameName,Looks sligthly fat.,看上去有点胖。
+Partner_Weight_Statuses[1].GameName,Looks fat.,看上去富态。
+Partner_Weight_Statuses[2].GameName,Looks sligthly fat.,看上去有点富态。
 Partner_Weight_Statuses[3].GameName,Looks well-fed.,看上去体型富态。
 Partner_Weight_Statuses[4].GameName,Looks average weight.,看上去体型标准。
 Partner_Weight_Statuses[5].GameName,Looks thin.,看上去很瘦。
@@ -26430,7 +26408,7 @@ Partner_Wellbeing_Statuses[2].GameName,Average Wellbeing,无忧无虑
 Partner_Wellbeing_Statuses[3].GameName,Bad Wellbeing,忧心忡忡
 Partner_Wellbeing_Statuses[4].GameName,Poor Wellbeing,愁眉苦脸
 Agent_Partner_AgentName,Partner,同伴
-Agent_Partner_Interactions[0].ButtonName,Directions,方向
+Agent_Partner_Interactions[0].ButtonName,Directions,命令
 Agent_Partner_Interactions[1].ButtonName,Talk,交谈
 Agent_PartnerTest_Interactions[0].ButtonName,Talk,交谈
 HeatherStemsFresh_FuelCapacity.OnZero.ActionDescription,Heather Stems Dried. ,干帚石南茎
@@ -26495,8 +26473,8 @@ Pk_5_27_PartnerDreamer_PerkName,Partner: The Dreamer,同伴：梦想家
 Pk_5_27_PartnerDreamer_PerkDescription,"Makes you start with the Dreamer partner. \nImaginative, open-hearted and fiercely romantic, he finds beauty where others see only the ordinary, reminding those around him that the world still holds wonder.",开局拥有梦想家同伴。他充满想象力，胸襟宽广且浪漫非常，能在平凡之处发现美的存在，并以此告知身边之人世界仍充满奇迹。
 Pk_5_27_PartnerHearthwife_PerkName,Partner: The Hearthwife,同伴：家庭主妇
 Pk_5_27_PartnerHearthwife_PerkDescription,"Makes you start with the Hearthwife partner. \nPatient and caring, she has the power to turn any place into a home, quietly weaving comfort into everyday life.",开局拥有家庭主妇同伴。她耐心且乐于助人，有能力将任何地方充满家的味道，默默地将舒适时光带入日常生活。
-Pk_5_27_PartnerMuse_PerkName,Partner: The Muse,同伴：女郎
-Pk_5_27_PartnerMuse_PerkDescription,"Makes you start with the Muse partner.  \nGraceful and self-assured, she inspires admiration and awakens the desire to become better, though winning her heart is never taken for granted.",开局拥有女郎同伴。她举止优雅且自信，总能激发人们的钦佩之情并唤醒他们对于追求卓越的渴望，尽管赢得她的芳心绝非易事。
+Pk_5_27_PartnerMuse_PerkName,Partner: The Muse,同伴：文艺少女
+Pk_5_27_PartnerMuse_PerkDescription,"Makes you start with the Muse partner.  \nGraceful and self-assured, she inspires admiration and awakens the desire to become better, though winning her heart is never taken for granted.",开局拥有文艺少女同伴。她举止优雅且自信，总能激发人们的钦佩之情并唤醒他们对于追求卓越的渴望，尽管赢得她的芳心绝非易事。
 Pk_5_27_PartnerSpirited_PerkName,Partner: The Spirited,同伴：元气少女
 Pk_5_27_PartnerSpirited_PerkDescription,"Makes you start with the Spirited partner. \nBold and full of life, she meets every challenge with laughter and curiosity, encouraging others to embrace the world with the same boundless enthusiasm.",开局拥有元气少女同伴。她勇敢且活力满满，总是带着笑容和好奇心迎接每一个挑战，并用无拘无束的永恒热情感染人们去拥抱整个世界。
 Pk_5_27_PartnerUntamed_PerkName,Partner: The Untamed,同伴：不羁者
@@ -26556,7 +26534,7 @@ HairLength_Statuses[1].GameName,Short Hair,短发
 HairLength_Statuses[2].GameName,Neck-Length Hair,齐颈发
 HairLength_Statuses[3].GameName,Shoulder-Length Hair,齐肩发
 HairLength_Statuses[4].GameName,Back-Length Hair,及背发
-HairLength_Statuses[5].GameName,Waist-Length Hair,及腰发
+HairLength_Statuses[5].GameName,Waist-Length Hair,及腰长发
 HairLength_Statuses[6].GameName,Hip-Length Hair,齐臀发
 HairType_GameName,Hair Type,发型
 HairType_Statuses[0].GameName,Straight,直发
@@ -26590,3 +26568,695 @@ tag_FiberClothing_InGameName,Fiber Clothing,纤维织物
 tag_LeatherClothing_InGameName,Leather Clothing,皮革服饰
 tag_PriorityClothing_InGameName,Leather Clothing,皮革服饰
 tag_ReedClothing_InGameName,Reed Clothing,芦苇织物
+HAS_NO_HOME,Has no Home,没有家
+HOME_IS,Home is {0},家在 {0}
+LOCATION_WITHIN_LOCATION,{0} in {1},{0} 在 {1}
+PartnerDialog_ExpressAffection_Express Affection_Line,Your partner approaches you and expresses affection.,你的同伴靠近你并表达了爱意。
+PartnerDialog_ExpressAffection_Express Affection_PossibleAnswers[0].Answer,Continue,继续
+PartnerDuty_ExpressAffection_DutyName,Express Affection,表达感情
+Agent_Partner_HelpSection,"<b>How can I get my partner to help me?</b>\nMark cards for specific duties or place them in your partner's inventory and they will work on them. Make sure they have the appropriate tools if necessary.\n\n<b>Why is my partner not doing his duties? </b>\nMost likely because they're feeling resentful (visible in the details tab). If you see them resentful stop assigning duties for a while until they feel better.\n\n<b>Why is my partner always resentful?</b>\nDepending on their personality and how much they trust you, partners will get resentful faster when you ask for help. If you treat them well, their trust and affection will increase and they will gradually become more helpful.\n\n<b>Why does my partner want attention or feel neglected?</b>\nProbably because you haven't talked to them in a while. Try talking to them every now and then to keep them happy. ""Casual talk"" is usually the easiest option.\n\n<b>How can I ensure my partner reacts positvely to what I say?</b>\nMake sure your partner is not feeling akward and otherwise wait until that's no longer the case. Use ""listen"" only if your focus is high. \n",<b>如何让我的伙伴帮我？</b>\n标记卡牌以分配特定任务，或将卡片放入伙伴的物品栏，他们就会去做。必要情况下，确保他们有合适的工具。\n\n<b>为什么我的伙伴不做任务？</b>\n很可能是因为他们感到不满（在详情标签页中可见）。如果你发现他们不满，请暂时停止分配任务，直到他们心情好转。\n\n<b>为什么我的伙伴总是心怀不满？</b>\n根据他们的性格以及对你的信任程度，当你请求帮助时，伙伴更容易产生不满。如果你善待他们，他们的信任和好感度会增加，他们也会逐渐变得更加乐于助人。\n\n<b>为什么我的伙伴想要得到关注或感到被忽视？</b>\n可能是因为你很久没有和他们交流了。试着时不时地和他们聊聊天，让他们开心。 “随意交谈”通常是最简单的选择。\n\n<b>如何确保我的伴侣对我所说的话做出积极回应？</b>\n确认你的伴侣没有感觉到尴尬，不然就等到不再尴尬的时候。只有在你的注意力较高时才使用“倾听”。
+IS_BUSY,Is busy with a task.,正忙于一项任务。
+NOT_PERFORMING_DUTY,Not doing anything special at the moment.,当前没做什么特别的事。
+PERFORMING_DUTY,Thinking of {0},考虑去{0}
+RENAME_CHARACTER,Rename Character,重命名角色
+PartnerDialog_Directions_Directions Hub_PossibleAnswers[7].Answer,Complex Tasks,复杂的任务
+PartnerDialog_Directions_Expeditions Hub_Line,Your partner listens attentively.,你的同伴正认真的倾听。
+PartnerDialog_Directions_Expeditions Hub_PossibleAnswers[0].Answer,Back,返回
+PartnerDialog_Directions_Expeditions Hub_PossibleAnswers[1].Answer,Go Foraging,去觅食
+PartnerDialog_Directions_Expeditions Hub_PossibleAnswers[2].Answer,Go Fishing,去钓鱼
+PartnerDialog_Directions_Expeditions Hub_PossibleAnswers[3].Answer,Go Hunting,去狩猎
+PartnerDialog_Directions_Expeditions Hub_PossibleAnswers[4].Answer,Cancel Expeditions,取消探险
+PartnerDialog_Directions_Foraging Go!_Line,Your partner prepares to go foraging and promises to return once enough food has been found or before it gets dark.,你的伙伴准备去觅食，承诺一旦找到足够的食物或在天黑前就会回来。
+PartnerDialog_Directions_Foraging Go!_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_Directions_Fishing Go!_Line,Your partner prepares to go fishing and promises to return once enough fish has been found or before it gets dark.,你的伙伴准备去钓鱼，承诺一旦钓到足够的鱼或在天黑前就会回来。
+PartnerDialog_Directions_Fishing Go!_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_Directions_Cancel Expeditions_Line,Your partner cancels all expeditions and complex tasks.,你的伙伴取消了所有探险和复杂任务。
+PartnerDialog_Directions_Cancel Expeditions_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_Directions_Hunting Go!_Line,Your partner prepares to go hunting and promises to return once something has been caught or before it gets dark.,你的同伴准备出门狩猎，答应打到猎物后就回来，最晚天黑前返回。
+PartnerDialog_Directions_Hunting Go!_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_ReportFishing_Report - Fishing_Line,Your partner has returned from a fishing expedition.,你的同伴钓鱼远征归来了。
+PartnerDialog_ReportFishing_Report - Fishing_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_ReportForaging_Report - Foraging_Line,Your partner has returned from a foraging expedition.,你的同伴觅食远征归来了。
+PartnerDialog_ReportForaging_Report - Foraging_PossibleAnswers[0].Answer,Continue,继续
+PartnerDialog_ReportHunting_Report - Foraging_Line,Your partner has returned from a hunting expedition.,你的同伴狩猎远征归来了。
+PartnerDialog_ReportHunting_Report - Foraging_PossibleAnswers[0].Answer,Continue,继续
+PartnerDuty_BaitFishing_DutySummary,Adding bait to hook.,给鱼钩装饵。
+PartnerDuty_Bedkeeping_DutySummary,Adding leaves to the bed.,给床铺铺上叶子。
+PartnerDuty_BrainTan_DutySummary,Brain tanning.,脑鞣中。
+PartnerDuty_ButcherLarge_DutySummary,Butchering a large animal.,屠宰了一头大型动物。
+PartnerDuty_ButcherMedium_DutySummary,Butchering a medium animal.,正在屠宰一只中型动物。
+PartnerDuty_ButcherSmall_DutySummary,Butchering a small animal.,正在屠宰一只小型动物。
+PartnerDuty_ButcherTiny_DutySummary,Butchering a tiny animal.,正在屠宰一只小动物。
+PartnerDuty_ButcherVeryLarge_DutySummary,Butchering a very large animal.,屠宰了一头超大型动物。
+PartnerDuty_ClayVaseOrBarrelFillWithWater_DutySummary,Filling a container with water.,用水注满容器。
+PartnerDuty_Clean_DutySummary,Cleaning the area.,打扫区域。
+PartnerDuty_CordMaking_DutySummary,Making cords.,制作绳索。
+PartnerDuty_CreateIceHole_DutySummary,Making an ice hole.,凿一个冰洞。
+PartnerDuty_CrushBonePieces_DutyName,Crush Bone Pieces,碾骨碎
+PartnerDuty_CrushBonePieces_DutySummary,Crushing bone pieces.,碾碎骨片。
+PartnerDuty_CrushBones_DutyName,Crush Bones,碾骨
+PartnerDuty_CrushBones_DutySummary,Crushing bones.,碾碎骨头。
+PartnerDuty_CutDownTree_DutySummary,Cutting down a tree.,砍倒树木。
+PartnerDuty_DigMud_DutySummary,Digging mud.,挖泥。
+PartnerDuty_DrinkFree_DutySummary,Drinking.,饮水。
+PartnerDuty_Eat_DutySummary,Eating.,进食。
+PartnerDuty_EatFree_DutySummary,Eating.,进食。
+PartnerDuty_ExpeditionFishingDone_DutySummary,Finishing fishing expedition.,结束钓鱼远征。
+PartnerDuty_ExpeditionFishingEquipBait_DutyName,Fishing Expedition Equip Bait,钓鱼远征上饵
+PartnerDuty_ExpeditionFishingEquipBait_DutySummary,Adding bait to hook.,给鱼钩装饵。
+PartnerDuty_ExpeditionFishingFish_DutyName,Fish,钓鱼远征垂钓
+PartnerDuty_ExpeditionFishingFish_DutySummary,Fishing.,钓鱼。
+PartnerDuty_ExpeditionFishingSeek_DutySummary,Looking for a place to fish.,寻找钓鱼地点。
+PartnerDuty_ExpeditionForageDone_DutySummary,Finishing foraging expedition.,结束觅食远征。
+PartnerDuty_ExpeditionForageForage_DutyName,Foraging Expedition Forage,觅食远征采集
+PartnerDuty_ExpeditionForageForage_DutySummary,Foraging.,觅食。
+PartnerDuty_ExpeditionForageSeek_DutySummary,Looking for a place to forage.,寻找采集地点。
+PartnerDuty_ExpeditionHuntingDone_DutySummary,Finishing hunting expedition.,结束狩猎远征。
+PartnerDuty_ExpressAffection_DutySummary,Showing affection.,表达好感。
+PartnerDuty_ExpressAttraction_DutySummary,Expressing attraction.,表达倾慕。
+PartnerDuty_ExpressGratitude_DutySummary,Expressing gratitude.,表达感激。
+PartnerDuty_ExpressNeedAttention_DutySummary,Asking for your attention.,寻求你的关注。
+PartnerDuty_ExpressNeedFood_DutySummary,Asking for food.,讨要食物。
+PartnerDuty_ExpressNeedTrust_DutySummary,Expressing mistrust.,表达不信任。
+PartnerDuty_ExpressNeedWarmth_DutySummary,Asking for warmth.,寻求温暖。
+PartnerDuty_ExpressUltimatum_DutySummary,Leaving you forever.,永远的离开了你。
+PartnerDuty_Firekeeping_DutySummary,Keeping your fire going.,照看火堆，不让火熄灭。
+PartnerDuty_FleshSkin_DutySummary,Fleshing a skin.,刮除兽皮上的残肉。
+PartnerDuty_Follow_DutySummary,Following you.,跟随你。
+PartnerDuty_Forage_DutySummary,Foraging.,觅食。
+PartnerDuty_GardenHighAcidity_DutySummary,Acidifying a garden plot.,给菜地增酸。
+PartnerDuty_GardenHighHydration_DutySummary,Watering a garden plot.,给菜地浇水。
+PartnerDuty_GardenHIghNutrients_DutySummary,Fertilizing a garden plot.,给菜地施肥。
+PartnerDuty_GardenInspect_DutySummary,Inspecting a garden plot.,检查菜地。
+PartnerDuty_GardenLowAcidity_DutySummary,Lowering a garden plot's acidity.,降低菜地酸度。
+PartnerDuty_GardenMediumAcidityAcidify_DutySummary,Acidifying a garden plot.,给菜地增酸。
+PartnerDuty_GardenMediumAcidityNeutralize_DutySummary,Lowering a garden plot's acidity.,降低菜地酸度。
+PartnerDuty_GardenMediumHydration_DutySummary,Watering a garden plot.,给菜地浇水。
+PartnerDuty_GardenMediumNutrients_DutySummary,Fertilizing a garden plot.,给菜地施肥。
+PartnerDuty_GatherBark_DutySummary,Gathering bark.,收集树皮。
+PartnerDuty_GatherWood_DutySummary,Gathering wood.,收集木材。
+PartnerDuty_GrindWithHammeringTool_DutySummary,Grinding something.,研磨东西。
+PartnerDuty_GrindWithMortarAndPestle_DutySummary,Grinding something with a mortar and pestle.,用石臼和杵研磨。
+PartnerDuty_GutFish_DutySummary,Gutting a fish.,清理鱼内脏。
+PartnerDuty_HarvestBogIron_DutySummary,Harvesting bog iron.,采集沼铁。
+PartnerDuty_HarvestCloverOrSorrel_DutySummary,Harvesting grass.,采集草料。
+PartnerDuty_HarvestFlax_DutySummary,Harvesting flax.,收割亚麻。
+PartnerDuty_HarvestHeather_DutySummary,Harvesting heather.,收割帚石南。
+PartnerDuty_HarvestKingcup_DutySummary,Harvesting kingcup.,采集驴蹄草。
+PartnerDuty_HarvestMeadowgrass_DutySummary,Harvesting meadowgrass.,收割牧草。
+PartnerDuty_HarvestNettle_DutySummary,Harvesting nettle.,收割荨麻。
+PartnerDuty_HarvestPeas_DutySummary,Harvesting peas.,收获豌豆。
+PartnerDuty_HarvestPineRoots_DutySummary,Harvesting pine roots.,挖取松根。
+PartnerDuty_HarvestReeds_DutySummary,Harvesting reeds.,收获芦苇。
+PartnerDuty_HarvestRye_DutySummary,Harvesting rye.,收割黑麦。
+PartnerDuty_HarvestTurnroot_DutySummary,Harvesting turnroot.,收获翻根。
+PartnerDuty_HarvestWheat_DutySummary,Harvesting wheat.,收割小麦。
+PartnerDuty_Idle_DutySummary,Relaxing.,放松。
+PartnerDuty_IdleReturn_DutySummary,Returning home.,回家。
+PartnerDuty_InspectField_DutySummary,Inspecting a field.,检查农田。
+PartnerDuty_LineFishing_DutySummary,Fishing.,钓鱼。
+PartnerDuty_MakeBrick_DutySummary,Making a brick.,制作砖块。
+PartnerDuty_MakeClay_DutySummary,Making clay.,制作粘土。
+PartnerDuty_MakeFilling_DutySummary,Preparing meat filling.,准备肉馅。
+PartnerDuty_MakeTwineFromPineRoots_DutySummary,Making cord from pine roots.,用松根制线。
+PartnerDuty_MilkTheCow_DutySummary,MIlking a cow.,挤牛奶。
+PartnerDuty_MinceMeat_DutySummary,Mincing meat.,剁肉馅。
+PartnerDuty_MineFlint_DutyName,Mine Flint,采掘燧石
+PartnerDuty_MineFlint_DutySummary,Mining flint.,开采燧石。
+PartnerDuty_NettleFiber_DutySummary,Extracting nettle fibers.,提取荨麻纤维。
+PartnerDuty_PeelRoots_DutyName,Peel Roots,削根皮
+PartnerDuty_PeelRoots_DutySummary,Peeling roots.,削根皮。
+PartnerDuty_PoundSinew_DutySummary,Pounding sinew.,捣筋腱。
+PartnerDuty_PressCheese_DutySummary,Pressing cheese.,压制奶酪。
+PartnerDuty_ReleaseSpirit_DutyName,Release Spirit,释放精魄
+PartnerDuty_ReleaseSpirit_DutySummary,Releasing a spirit.,释放精魄。
+PartnerDuty_RemoveStretchedLeather_DutyName,Remove Leather,取下绷皮
+PartnerDuty_RemoveStretchedLeather_DutySummary,Removing stretched leather.,取下绷紧的皮革。
+PartnerDuty_ReturnHome_DutySummary,Returning home.,回家。
+PartnerDuty_SeekDrink_DutySummary,Looking for something to drink.,寻找水喝。
+PartnerDuty_SeekFire_DutySummary,Looking for a source of heat.,寻找热源。
+PartnerDuty_SinewCord_DutySummary,Making cord out of sinew.,用筋腱制绳。
+PartnerDuty_SkinLarge_DutySummary,Skinning a large animal.,剥大型动物的皮。
+PartnerDuty_SkinMedium_DutySummary,Skinning a medium animal.,剥中型动物的皮。
+PartnerDuty_SkinVeryLarge_DutySummary,Skinning a very large animal.,剥超大型动物的皮。
+PartnerDuty_Sleep_DutySummary,Sleeping.,睡眠中。
+PartnerDuty_SleepRough_DutySummary,Sleeping on the ground.,就地露宿。
+PartnerDuty_SmithHardPlaceInForge_DutyName,Place in Forge,锻造放入熔炉(硬)
+PartnerDuty_SmithHardPlaceInForge_DutySummary,Placing something in the forge.,把东西放进熔炉。
+PartnerDuty_SmithPlaceOnGround_DutyName,Place on Ground,锻造放置地面
+PartnerDuty_SmithPlaceOnGround_DutySummary,Placing something on the ground.,把东西放在地上。
+PartnerDuty_SmithSoftPlaceInForge_DutyName,Place in Forge,锻造放入熔炉(软)
+PartnerDuty_SmithSoftPlaceInForge_DutySummary,Placing something in the forge.,把东西放进熔炉。
+PartnerDuty_Spearfish_DutySummary,Spearfishing.,叉鱼。
+PartnerDuty_StoreFood_DutySummary,Storing food.,储存食物。
+PartnerDuty_StretchLeather_DutyName,Stretch Leather,绷皮
+PartnerDuty_StretchLeather_DutySummary,Stretching leather.,绷紧皮革。
+PartnerDuty_TestBp_DutyName,Add Bait,挂饵
+PartnerDuty_TestBp_DutySummary,Adding bait to hook.,给鱼钩装饵。
+PartnerDuty_ThreshWheatOrRye_DutyName,Thresh Sheaves,脱粒
+PartnerDuty_ThreshWheatOrRye_DutySummary,Threshing grain from sheaves. ,给麦捆脱粒。
+PartnerDuty_WarmUp_DutySummary,Warming up by the fire.,在火边取暖。
+PartnerPerk_LikesSpiritual_PerkName,Spiritual,灵性
+PartnerPerk_LikesSpiritual_PerkDescription,"Likes performing spiritual tasks, such as releasing animal spirits. ",喜欢从事灵性类工作，比如释放动物精魄。
+Partner_LikesSpiritualTasks_Statuses[0].GameName,Really Likes,很喜欢
+Partner_LikesSpiritualTasks_Statuses[1].GameName, Likes,喜欢
+Partner_LikesSpiritualTasks_Statuses[2].GameName,Dislikes,不喜欢
+Partner_LikesSpiritualTasks_Statuses[3].GameName,Really Dislikes,很不喜欢
+Bp_Cabin_BpDutySetup.DutyName,Build Cabin,建造木屋
+Bp_Cabin_BpDutySetup.DutySummary,Bulding a cabin.,正在建造木屋。
+Bp_Cast_BlankArrowBroadhead_BpDutySetup.DutyName,Cast Broadhead Arrows,铸造宽头箭头
+Bp_Cast_BlankArrowBroadhead_BpDutySetup.DutySummary,Casting broadhead arrows.,正在铸造宽头箭头。
+Bp_Cast_BlankArrowHeads_BpDutySetup.DutyName,Cast Arrow Heads,铸造箭头
+Bp_Cast_BlankArrowHeads_BpDutySetup.DutySummary,Casting arrow heads.,正在铸造箭头。
+Bp_Cast_BlankAxeHead_BpDutySetup.DutyName,Cast Axe Head,铸造斧刃头
+Bp_Cast_BlankAxeHead_BpDutySetup.DutySummary,Casting an axe head.,正在铸造斧刃头。
+Bp_Cast_BlankButcheringKnifeBlade_BpDutySetup.DutyName,Cast Butchering Knife Blade,铸造屠宰刀刃片
+Bp_Cast_BlankButcheringKnifeBlade_BpDutySetup.DutySummary,Casting a butchering knife blade.,正在铸造屠宰刀刃片。
+Bp_Cast_BlankChiselBlade_BpDutySetup.DutyName,Cast Chisel Blade,铸造凿刃
+Bp_Cast_BlankChiselBlade_BpDutySetup.DutySummary,Casting a chisel blade.,正在铸造凿刃。
+Bp_Cast_BlankDrawknifeBlade_BpDutySetup.DutyName,Cast Drawknife Blade,铸造拉刀刃片
+Bp_Cast_BlankDrawknifeBlade_BpDutySetup.DutySummary,Casting a drawknife blade.,正在铸造拉刀刃片。
+Bp_Cast_BlankHoeHead_BpDutySetup.DutyName,Cast Hoe Head,铸造锄头
+Bp_Cast_BlankHoeHead_BpDutySetup.DutySummary,Casting a hoe head.,正在铸造锄头。
+Bp_Cast_BlankHuntingSpearHead_BpDutySetup.DutyName,Cast Hunting Spear Head,铸造狩猎长矛头
+Bp_Cast_BlankHuntingSpearHead_BpDutySetup.DutySummary,Casting a hunting spear head.,正在铸造狩猎长矛头。
+Bp_Cast_BlankKnifeBlade_BpDutySetup.DutyName,Cast Knife Blade,铸造刀刃
+Bp_Cast_BlankKnifeBlade_BpDutySetup.DutySummary,Casting a knife blade.,正在铸造刀刃。
+Bp_Cast_BlankMeatHook_BpDutySetup.DutyName,Cast Meat Hook,铸造肉钩
+Bp_Cast_BlankMeatHook_BpDutySetup.DutySummary,Casting a meat hook.,正在铸造肉钩。
+Bp_Cast_BlankScytheBlade_BpDutySetup.DutyName,Cast Scythe Blade,铸造大镰刀头
+Bp_Cast_BlankScytheBlade_BpDutySetup.DutySummary,Casting a scythe blade.,正在铸造大镰刀头。
+Bp_Cast_BlankShovelHead_BpDutySetup.DutyName,Cast Shovel Head,铸造铲子头
+Bp_Cast_BlankShovelHead_BpDutySetup.DutySummary,Casting a shovel head.,正在铸造铲子头。
+Bp_Cast_BlankSickleBlade_BpDutySetup.DutyName,Cast Sickle Blade,铸造镰刀头
+Bp_Cast_BlankSickleBlade_BpDutySetup.DutySummary,Casting a sickle blade.,正在铸造镰刀头。
+Bp_Cast_BlankSkinningKnifeBlade_BpDutySetup.DutyName,Cast Skinning Knife Blade,铸造剥皮刀刃片
+Bp_Cast_BlankSkinningKnifeBlade_BpDutySetup.DutySummary,Casting a skinning knife blade.,正在铸造剥皮刀刃片。
+Bp_Cast_BlankSpearHead_BpDutySetup.DutyName,Cast Spear Head,铸造矛头
+Bp_Cast_BlankSpearHead_BpDutySetup.DutySummary,Casting a spear head.,正在铸造矛头。
+Bp_Cast_BlankSpoonBit_BpDutySetup.DutyName,Cast Spoon Bit,铸造勺型钻头
+Bp_Cast_BlankSpoonBit_BpDutySetup.DutySummary,Casting a spoon bit.,正在铸造勺型钻头。
+Bp_Cellar_BpDutySetup.DutyName,Build Cellar,建造地窖
+Bp_Cellar_BpDutySetup.DutySummary,Building a cellar.,正在建造地窖。
+Bp_CopperMine_BpDutySetup.DutyName,Build Copper Mine,建造铜矿井
+Bp_CopperMine_BpDutySetup.DutySummary,Building a copper mine.,正在建造铜矿井。
+Bp_Enclosure_BpDutySetup.DutyName,Build Enclosure,建造畜栏
+Bp_Enclosure_BpDutySetup.DutySummary,Building an enclosure.,正在建造畜栏。
+Bp_FlintMine_BpDutySetup.DutyName,Build Flint Mine,建造燧石矿井
+Bp_FlintMine_BpDutySetup.DutySummary,Building a flint mine.,正在建造燧石矿井。
+Bp_GreenStone_BpDutySetup.DutyName,Mine Greenstone,开采绿石
+Bp_GreenStone_BpDutySetup.DutySummary,Mining greenstone.,正在开采绿石。
+Bp_HandStone_BpDutySetup.DutyName,Craft Hand Stone,制作手磨盘
+Bp_HandStone_BpDutySetup.DutySummary,Crafting a hand stone.,正在制作手磨盘。
+Bp_Hook_Metal_BpDutySetup.DutyName,Craft Metal Hook,制作金属钩
+Bp_Hook_Metal_BpDutySetup.DutySummary,Crafting a metal hook.,正在制作金属钩。
+Bp_IceBlock_BpDutySetup.DutyName,Cut Ice Block,切割冰块
+Bp_IceBlock_BpDutySetup.DutySummary,Cuting an ice block.,正在切割冰块。
+Bp_Levee_BpDutySetup.DutyName,Build Levee,建造堤坝
+Bp_Levee_BpDutySetup.DutySummary,Building a levee.,正在建造堤坝。
+Bp_LogBoom_BpDutySetup.DutyName,Construct Log Boom,建造原木围栏
+Bp_LogBoom_BpDutySetup.DutySummary,Construcing a log boom.,正在建造原木围栏。
+Bp_LogTrap_BpDutySetup.DutyName,Construct Log Trap,建造原木陷阱
+Bp_LogTrap_BpDutySetup.DutySummary,Constructing a log trap. ,正在建造原木陷阱。
+Bp_MetalBar_BpDutySetup.DutyName,Smith Metal Bar,锻造金属锭
+Bp_MetalBar_BpDutySetup.DutySummary,Smithing a metal bar.,正在锻造金属锭。
+Bp_MudHut_BpDutySetup.DutyName,Build Mud Hut,建造泥屋
+Bp_MudHut_BpDutySetup.DutySummary,Building a mud hut.,正在建造泥屋。
+Bp_Needle_Metal_BpDutySetup.DutyName,Craft Metal Needles,制作金属针
+Bp_Needle_Metal_BpDutySetup.DutySummary,Crafting metal needles.,正在制作金属针。
+Bp_PitTrap_BpDutySetup.DutyName,Build Pit Trap,建造陷坑
+Bp_PitTrap_BpDutySetup.DutySummary,Building a pit trap.,正在建造陷坑。
+Bp_Planks_BpDutySetup.DutyName,Craft Planks,制作木板
+Bp_Planks_BpDutySetup.DutySummary,Crafting planks.,正在制作木板。
+Bp_ProcessIronSlag_BpDutySetup.DutyName,Process Iron Slag,处理铁渣
+Bp_ProcessIronSlag_BpDutySetup.DutySummary,Processing iron slag.,正在处理铁渣。
+Bp_RainCistern_BpDutySetup.DutyName,Build Rain Cistern,建造雨水窖
+Bp_RainCistern_BpDutySetup.DutySummary,Building a rain cistern.,正在建造雨水窖。
+Bp_RemakeIronBar_BpDutySetup.DutyName,Remake Iron Bar,重制铁锭
+Bp_RemakeIronBar_BpDutySetup.DutySummary,Remaking an iron bar.,正在重制铁锭。
+Bp_SaddleQuern_BpDutySetup.DutyName,Craft Saddle Quern,制作大石臼
+Bp_SaddleQuern_BpDutySetup.DutySummary,Crafting a Saddle Quern. ,正在制作大石臼。
+Bp_Smithed_BlankArrowBroadhead_BpDutySetup.DutyName,Smith Broadhead Arrow,锻造宽头箭
+Bp_Smithed_BlankArrowBroadhead_BpDutySetup.DutySummary,Smithing a broadhead arrow.,正在锻造宽头箭。
+Bp_Smithed_BlankArrowHead_BpDutySetup.DutyName,Smith Arrow Head,锻造箭头
+Bp_Smithed_BlankArrowHead_BpDutySetup.DutySummary,Smithing an arrow head.,正在锻造箭头。
+Bp_Smithed_BlankAxeHead_BpDutySetup.DutyName,Smith Axe Head,锻造斧子头
+Bp_Smithed_BlankAxeHead_BpDutySetup.DutySummary,Smithing an axe head.,正在锻造斧子头。
+Bp_Smithed_BlankBlade_BpDutySetup.DutyName,Smith Blade,锻造刀刃
+Bp_Smithed_BlankBlade_BpDutySetup.DutySummary,Smithing a blade.,正在锻造刀刃。
+Bp_Smithed_BlankButcheringKnifeBlade_BpDutySetup.DutyName,Smith Butchering Knife Blade,锻造屠宰刀刃片
+Bp_Smithed_BlankButcheringKnifeBlade_BpDutySetup.DutySummary,Smithing a butchering knife blade.,正在锻造屠宰刀刃片。
+Bp_Smithed_BlankChiselBlade_BpDutySetup.DutyName,Smith Chisel Blade,锻造凿刃
+Bp_Smithed_BlankChiselBlade_BpDutySetup.DutySummary,Smithing a chisel blade.,正在锻造凿刃。
+Bp_Smithed_BlankDrawknifeBlade_BpDutySetup.DutyName,Smith Drawknife Blade,锻造拉刀刃片
+Bp_Smithed_BlankDrawknifeBlade_BpDutySetup.DutySummary,Smithing a drawknife blade.,正在锻造拉刀刃片。
+Bp_Smithed_BlankFireStriker_BpDutySetup.DutyName,Smith Fire Striker,锻造火镰
+Bp_Smithed_BlankFireStriker_BpDutySetup.DutySummary,Smithing a fire striker.,正在锻造火镰。
+Bp_Smithed_BlankHammerHead_BpDutySetup.DutyName,Smith Hammer Head,锻造锤头
+Bp_Smithed_BlankHammerHead_BpDutySetup.DutySummary,Smithing a hammer head.,正在锻造锤头。
+Bp_Smithed_BlankHandsawBlade_BpDutySetup.DutyName,Smith Handsaw Blade,锻造手锯刀片
+Bp_Smithed_BlankHandsawBlade_BpDutySetup.DutySummary,Smithing a handsaw blade.,正在锻造手锯刀片。
+Bp_Smithed_BlankHoeHead_BpDutySetup.DutyName,Smith Hoe Head,锻造锄头
+Bp_Smithed_BlankHoeHead_BpDutySetup.DutySummary,Smithing a hoe head.,正在锻造锄头。
+Bp_Smithed_BlankHuntingSpearHead_BpDutySetup.DutyName,Smith Hunting Spear Head,锻造狩猎长矛头
+Bp_Smithed_BlankHuntingSpearHead_BpDutySetup.DutySummary,Smithing a hunting spear head.,正在锻造狩猎长矛头。
+Bp_Smithed_BlankMeatHook_BpDutySetup.DutyName,Smith Meat Hook,锻造肉钩
+Bp_Smithed_BlankMeatHook_BpDutySetup.DutySummary,Smithing a meat hook.,正在锻造肉钩。
+Bp_Smithed_BlankPickaxeHead_BpDutySetup.DutyName,Smith Pickaxe Head,锻造镐头
+Bp_Smithed_BlankPickaxeHead_BpDutySetup.DutySummary,Smithing a pickaxe head.,正在锻造镐头。
+Bp_Smithed_BlankScytheBlade_BpDutySetup.DutyName,Smith Scythe Blade,锻造大镰刀头
+Bp_Smithed_BlankScytheBlade_BpDutySetup.DutySummary,Smithing a scythe blade.,正在锻造大镰刀头。
+Bp_Smithed_BlankShovelHead_BpDutySetup.DutyName,Smith Shovel Head,锻造铲子头
+Bp_Smithed_BlankShovelHead_BpDutySetup.DutySummary,Smithing a shovel head.,正在锻造铲子头。
+Bp_Smithed_BlankSickleBlade_BpDutySetup.DutyName,Smith Sickle Blade,锻造镰刀头
+Bp_Smithed_BlankSickleBlade_BpDutySetup.DutySummary,Smithing a sickle blade.,正在锻造镰刀头。
+Bp_Smithed_BlankSkinningKnifeBlade_BpDutySetup.DutyName,Smith Skinning Knife Blade,锻造剥皮刀刃片
+Bp_Smithed_BlankSkinningKnifeBlade_BpDutySetup.DutySummary,Smithing a skinning knife blade.,正在锻造剥皮刀刃片。
+Bp_Smithed_BlankSpearHead_BpDutySetup.DutyName,Smith Spear Head,锻造矛头
+Bp_Smithed_BlankSpearHead_BpDutySetup.DutySummary,Smithing a spear head.,正在锻造矛头。
+Bp_Smithed_BlankSpoonBit_BpDutySetup.DutyName,Smith Spoon Bit,锻造勺型钻头
+Bp_Smithed_BlankSpoonBit_BpDutySetup.DutySummary,Smithing a spoon bit.,正在锻造勺型钻头。
+Bp_SplitIntoIronBars_BpDutySetup.DutyName,Split Metal Into Iron Bars,将金属分割成铁锭
+Bp_SplitIntoIronBars_BpDutySetup.DutySummary,Spliting metal into iron bars.,正在将金属分割成铁锭。
+Bp_TanningPit_BpDutySetup.DutyName,Build Tanning Pit,建造鞣制坑
+Bp_TanningPit_BpDutySetup.DutySummary,Building a tanning pit.,正在建造鞣制坑。
+Bp_TilledField_BpDutySetup.DutyName,Till Field,耕地
+Bp_TilledField_BpDutySetup.DutySummary,Tilling a field.,正在耕地。
+Bp_Torc_Metal_BpDutySetup.DutyName,Smith Torc,锻造金属颈环
+Bp_Torc_Metal_BpDutySetup.DutySummary,Smithing a torc. ,正在锻造金属颈环。
+Bp_TwistedRing_Metal_BpDutySetup.DutyName,Smith Metal Twisted Ring,锻造金属扭结戒指
+Bp_TwistedRing_Metal_BpDutySetup.DutySummary,Smithing a metal twisted ring. ,正在锻造金属扭结戒指。
+Bp_Whetstone_BpDutySetup.DutyName,Craft Whetstone,制作磨刀石
+Bp_Whetstone_BpDutySetup.DutySummary,Crafting a whetstone.,正在制作磨刀石。
+Bp_Wire_Metal_BpDutySetup.DutyName,Smith Metal Wire,锻造金属线
+Bp_Wire_Metal_BpDutySetup.DutySummary,Smithing a metal wire.,正在锻造金属线。
+Bp_WitchStoneMine_BpDutySetup.DutyName,Build Witchstone Mine,建造巫石矿井
+Bp_WitchStoneMine_BpDutySetup.DutySummary,Building a witchstone mine. ,建造一个巫石矿井。
+Bp_Amulet_BpDutySetup.DutyName,Craft Amulet,制作护身符
+Bp_Amulet_BpDutySetup.DutySummary,Crafting an amulet.,制作一件护身符。
+Bp_BarkSandals_BpDutySetup.DutyName,Craft Bark Sandals,制作树皮凉鞋
+Bp_BarkSandals_BpDutySetup.DutySummary,Crafting bark sandals.,正在制作树皮凉鞋。
+Bp_Basket_BpDutySetup.DutyName,Weave Basket,编织篮子
+Bp_Basket_BpDutySetup.DutySummary,Weaving a basket.,正在编织篮子。
+Bp_BoneHook_BpDutySetup.DutyName,Craft Bone Hook,制作骨钩
+Bp_BoneHook_BpDutySetup.DutySummary,Crafting a bone hook.,正在制作骨钩。
+Bp_BoneNeedle_BpDutySetup.DutyName,Craft Bone Needle,制作骨针
+Bp_BoneNeedle_BpDutySetup.DutySummary,Crafting a bone needle.,正在制作骨针。
+Bp_Broom_BpDutySetup.DutyName,Craft Broom,制作扫帚
+Bp_Broom_BpDutySetup.DutySummary,Crafting a broom.,正在制作扫帚。
+Bp_BugRepellentSalve_BpDutySetup.DutyName,Make Bug Repellent Salve,制作驱虫膏
+Bp_BugRepellentSalve_BpDutySetup.DutySummary,Making some bug repellent salve.,正在制作驱虫膏。
+Bp_ButcheringMat_BpDutySetup.DutyName,Craft Butchering Mat,制作屠宰垫
+Bp_ButcheringMat_BpDutySetup.DutySummary,Crafting a butchering mat.,正在制作屠宰垫。
+Bp_Campfire_BpDutySetup.DutyName,Prepare Campfire,准备营火
+Bp_Campfire_BpDutySetup.DutySummary,Preparing a campfire.,正在准备营火。
+Bp_Candle_BpDutySetup.DutyName,Craft Candle,制作蜡烛
+Bp_Candle_BpDutySetup.DutySummary,Crafting a candle.,正在制作蜡烛。
+Bp_CharcoalMound_BpDutySetup.DutyName,Build Charcoal Mound,建造炭堆
+Bp_CharcoalMound_BpDutySetup.DutySummary,Building a charcoal mound.,正在建造炭堆。
+Bp_ClayBasin_BpDutySetup.DutyName,Craft Clay Basin,制作陶盆
+Bp_ClayBasin_BpDutySetup.DutySummary,Crafting a clay basin.,正在制作陶盆。
+Bp_ClayBowl_BpDutySetup.DutyName,Craft Clay Bowl,制作陶碗
+Bp_ClayBowl_BpDutySetup.DutySummary,Crafting a clay bowl.,正在制作陶碗。
+Bp_ClayCauldron_BpDutySetup.DutyName,Craft Clay Cauldron,制作粘土大锅
+Bp_ClayCauldron_BpDutySetup.DutySummary,Crafting clay cauldron.,正在制作粘土大锅。
+Bp_ClayFermentationBin_BpDutySetup.DutyName,Craft Fermentation Bin,制作发酵桶
+Bp_ClayFermentationBin_BpDutySetup.DutySummary,Crafting a fermentation bin.,正在制作发酵桶。
+Bp_ClayJar_BpDutySetup.DutyName,Craft Clay Jar,制作小陶罐
+Bp_ClayJar_BpDutySetup.DutySummary,Crafting a clay jar.,正在制作小陶罐。
+Bp_ClayPlate_BpDutySetup.DutyName,Craft Clay Plate,制作陶盘
+Bp_ClayPlate_BpDutySetup.DutySummary,Crafting a clay plate.,正在制作陶盘。
+Bp_ClayStoragePot_BpDutySetup.DutyName,Craft Clay Storage Pot,制作粘土储物罐
+Bp_ClayStoragePot_BpDutySetup.DutySummary,Crafting a clay storage pot.,正在制作粘土储物罐。
+Bp_ClayVase_BpDutySetup.DutyName,Craft Clay Vase,制作陶罐
+Bp_ClayVase_BpDutySetup.DutySummary,Crafting a clay vase.,正在制作陶罐。
+Bp_ClothCoif_BpDutySetup.DutyName,Sew Cloth Coif,缝制布头巾
+Bp_ClothCoif_BpDutySetup.DutySummary,Sewing a cloth coif.,正在缝制布头巾。
+Bp_ClothDress_BpDutySetup.DutyName,Sew Cloth Dress,缝制布裙
+Bp_ClothDress_BpDutySetup.DutySummary,Sewing a cloth dress.,正在缝制布裙。
+Bp_ClothLarge_BpDutySetup.DutyName,Sew Large Cloth,缝制大块的布
+Bp_ClothLarge_BpDutySetup.DutySummary,Sewing a large cloth.,正在缝制大块的布。
+Bp_ClothLargeTreadle_BpDutySetup.DutyName,Sew Large Cloth,缝制大块的布
+Bp_ClothLargeTreadle_BpDutySetup.DutySummary,Sewing a large cloth.,正在缝制大块的布。
+Bp_ClothMedium_BpDutySetup.DutyName,Sew Medium Cloth,缝制中块的布
+Bp_ClothMedium_BpDutySetup.DutySummary,Sewing a medium cloth.,正在缝制中块的布。
+Bp_ClothMediumTreadle_BpDutySetup.DutyName,Sew Medium Cloth,缝制中块的布
+Bp_ClothMediumTreadle_BpDutySetup.DutySummary,Sewing a medium cloth.,正在缝制中块的布。
+Bp_ClothSack_BpDutySetup.DutyName,Sew Cloth Sack,缝制布袋
+Bp_ClothSack_BpDutySetup.DutySummary,Sewing a cloth sack,正在缝制布袋。
+Bp_ClothShirt_BpDutySetup.DutyName,Sew Cloth Shirt,缝制布衬衫
+Bp_ClothShirt_BpDutySetup.DutySummary,Sewing a cloth shirt.,正在缝制布衬衫。
+Bp_ClothSmall_BpDutySetup.DutyName,Sew Small Cloth,缝制布片
+Bp_ClothSmall_BpDutySetup.DutySummary,Sewing a small cloth.,正在缝制布片。
+Bp_ClothSmallTreadle_BpDutySetup.DutyName,Sew Small Cloth,缝制布片
+Bp_ClothSmallTreadle_BpDutySetup.DutySummary,Sewing a small cloth.,正在缝制布片。
+Bp_ClothTrousers_BpDutySetup.DutyName,Sew Cloth Trousers,缝制布裤
+Bp_ClothTrousers_BpDutySetup.DutySummary,Sewing a pair of cloth trousers.,正在缝制布裤。
+Bp_ClothUnderwear_BpDutySetup.DutyName,Sew Cloth Underwear,缝制布内裤
+Bp_ClothUnderwear_BpDutySetup.DutySummary,Sewing cloth underwear.,正在缝制布内裤。
+Bp_CookingPot_BpDutySetup.DutyName,Craft Cooking Pot,制作烹饪锅
+Bp_CookingPot_BpDutySetup.DutySummary,Crafting a cooking pot.,正在制作烹饪锅。
+Bp_CrucibleLarge_BpDutySetup.DutyName,Construct Large Crucible,建造大型坩埚
+Bp_CrucibleLarge_BpDutySetup.DutySummary,Constructing a large crucible,正在建造大型坩埚。
+Bp_CrucibleSmall_BpDutySetup.DutyName,Construct Small Crucible,建造小型坩埚
+Bp_CrucibleSmall_BpDutySetup.DutySummary,Constructing a small crucible.,正在建造小型坩埚。
+Bp_DeadfallTrap_BpDutySetup.DutyName,Construct Deadfall Trap,建造落石陷阱
+Bp_DeadfallTrap_BpDutySetup.DutySummary,Constructing a deadfall trap.,正在建造落石陷阱。
+Bp_DryFodder_BpDutySetup.DutyName,Make Dry Fodder,制作干饲料
+Bp_DryFodder_BpDutySetup.DutySummary,Making some dry fodder.,正在制作干饲料。
+Bp_Firepit__BpDutySetup.DutyName,Construct Fire Pit,建造火坑
+Bp_Firepit__BpDutySetup.DutySummary,Constructing a fire pit. ,正在建造火坑。
+Bp_FishingBait_BpDutySetup.DutyName,Craft Fishing Bait,制作鱼饵
+Bp_FishingBait_BpDutySetup.DutySummary,Crafting a fishing bait.,正在制作鱼饵。
+Bp_FishingLine_Rustic_BpDutySetup.DutyName,Craft Rustic Fishing Line,制作简易钓鱼线
+Bp_FishingLine_Rustic_BpDutySetup.DutySummary,Crafting a rustic fishing line.,正在制作简易钓鱼线。
+Bp_FishLure_BpDutySetup.DutyName,Craft Fish Lure,制作路亚饵
+Bp_FishLure_BpDutySetup.DutySummary,Crafting a fish lure.,正在制作路亚饵。
+Bp_FlintHoe_BpDutySetup.DutyName,Craft Flint Hoe,制作燧石锄
+Bp_FlintHoe_BpDutySetup.DutySummary,Crafting a flint hoe.,正在制作燧石锄。
+Bp_Flint_Arrows_BpDutySetup.DutyName,Craft Flint Arrows,制作燧石箭
+Bp_Flint_Arrows_BpDutySetup.DutySummary,Crafting flint arrows.,正在制作燧石箭。
+Bp_Flint_Axe_BpDutySetup.DutyName,Craft Flint Axe,制作燧石斧
+Bp_Flint_Axe_BpDutySetup.DutySummary,Crafting a flint axe.,正在制作燧石斧。
+Bp_FlyLure_BpDutySetup.DutyName,Craft Fly Lure,制作飞虫饵
+Bp_FlyLure_BpDutySetup.DutySummary,Crafting a fly lure.,正在制作飞虫饵。
+Bp_FrameDrum_BpDutySetup.DutyName,Craft Frame Drum,制作框鼓
+Bp_FrameDrum_BpDutySetup.DutySummary,Crafting a frame drum.,正在制作框鼓。
+Bp_FunnelTrap_BpDutySetup.DutyName,Weave Funnel Trap,编织鱼篓陷阱
+Bp_FunnelTrap_BpDutySetup.DutySummary,Weaving a funnel trap.,正在编织鱼篓陷阱。
+Bp_FurCoat_BpDutySetup.DutyName,Sew Fur Coat,缝制毛皮大衣
+Bp_FurCoat_BpDutySetup.DutySummary,Sewing a fur coat.,正在缝制毛皮大衣。
+Bp_FurMittens_BpDutySetup.DutyName,Sew Fur Mittens,缝制毛皮手套
+Bp_FurMittens_BpDutySetup.DutySummary,Sewing a pair of fur mittens.,正在缝制毛皮手套。
+Bp_HandBasket_BpDutySetup.DutyName,Weave Hand Basket,编织手提篮
+Bp_HandBasket_BpDutySetup.DutySummary,Weaving a hand basket.,正在编织手提篮。
+Bp_HealingOintment_BpDutySetup.DutyName,Make Healing Ointment,制作疗伤膏
+Bp_HealingOintment_BpDutySetup.DutySummary,Making some healing ointment.,正在制作疗伤膏。
+Bp_HealingSalve_BpDutySetup.DutyName,Make Healing Salve,制作治愈膏
+Bp_HealingSalve_BpDutySetup.DutySummary,Making some healing salve.,正在制作治愈膏。
+Bp_IceSkates_BpDutySetup.DutyName,Craft Ice Skates,制作冰鞋
+Bp_IceSkates_BpDutySetup.DutySummary,Crafting a pair of ice skates.,正在制作冰鞋。
+Bp_ImprovisedBed_BpDutySetup.DutyName,Prepare Improvised Bed,准备简易床
+Bp_ImprovisedBed_BpDutySetup.DutySummary,Preparing an improvised bed.,正在准备简易床。
+Bp_Knife_Flint_BpDutySetup.DutyName,Craft Flint Knife,制作燧石刀
+Bp_Knife_Flint_BpDutySetup.DutySummary,Crafting a flint knife.,正在制作燧石刀。
+Bp_LeatherBracers_BpDutySetup.DutyName,Sew Leather Bracers,缝制皮革护腕
+Bp_LeatherBracers_BpDutySetup.DutySummary,Sewing a pair of leather bracers.,正在缝制皮革护腕。
+Bp_LeatherCoif_BpDutySetup.DutyName,Sew Leather Coif,缝制皮革兜帽
+Bp_LeatherCoif_BpDutySetup.DutySummary,Sewing a leather coif.,正在缝制皮革兜帽。
+Bp_LeatherCordage_BpDutySetup.DutyName,Cut Leather Cordage,切割皮革绳
+Bp_LeatherCordage_BpDutySetup.DutySummary,Cuting leather cordage.,正在切割皮革绳。
+Bp_LeatherCuirass__BpDutySetup.DutyName,Sew Leather Cuirass,缝制皮革胸甲
+Bp_LeatherCuirass__BpDutySetup.DutySummary,Sewing a leather cuirass.,正在缝制皮革胸甲。
+Bp_LeatherGloves_BpDutySetup.DutyName,Sew Leather Gloves,缝制皮革手套
+Bp_LeatherGloves_BpDutySetup.DutySummary,Sewing a pair of leather gloves.,正在缝制皮革手套。
+Bp_LeatherGreaves_BpDutySetup.DutyName,Sew Leather Greaves,缝制皮革护胫
+Bp_LeatherGreaves_BpDutySetup.DutySummary,Sewing a pair of leather greaves.,正在缝制皮革护胫。
+Bp_LeatherHelmet_BpDutySetup.DutyName,Sew Leather Helmet,缝制皮革头盔
+Bp_LeatherHelmet_BpDutySetup.DutySummary,Sewing a leather helmet.,正在缝制皮革头盔。
+Bp_LeatherKnifeSheath_BpDutySetup.DutyName,Sew Knife Sheath,缝制刀鞘
+Bp_LeatherKnifeSheath_BpDutySetup.DutySummary,Sewing a knife sheath.,正在缝制刀鞘。
+Bp_LeatherSack_BpDutySetup.DutyName,Sew Leather Sack,缝制皮革包
+Bp_LeatherSack_BpDutySetup.DutySummary,Sewing a leather sack. ,正在缝制皮革包。
+Bp_LeatherShoes_BpDutySetup.DutyName,Sew Leather Shoes,缝制皮革鞋
+Bp_LeatherShoes_BpDutySetup.DutySummary,Sewing a pair of leather shoes.,正在缝制皮革鞋。
+Bp_LeatherSpearSheath_BpDutySetup.DutyName,Sew Spear Sheath,缝制矛鞘
+Bp_LeatherSpearSheath_BpDutySetup.DutySummary,Sew a spear sheath.,正在缝制矛鞘。
+Bp_LeatherTrousers_BpDutySetup.DutyName,Sew Leather Trousers. ,缝制皮革裤
+Bp_LeatherTrousers_BpDutySetup.DutySummary,Sewing a pair of leather trousers. ,正在缝制皮革裤。
+Bp_LeatherTunic_BpDutySetup.DutyName,Sew Leather Tunic,缝制皮革长袍
+Bp_LeatherTunic_BpDutySetup.DutySummary,Sewing a leather tunic.,正在缝制皮革长袍。
+Bp_NightBroth_BpDutySetup.DutyName,Prepare Night Broth,准备暗夜浓汤
+Bp_NightBroth_BpDutySetup.DutySummary,Preparing night broth.,正在准备暗夜浓汤。
+Bp_Parchment_BpDutySetup.DutyName,Craft Parchment,制作兽皮纸
+Bp_Parchment_BpDutySetup.DutySummary,Crafting a parchment.,正在制作兽皮纸。
+Bp_PatchedLeatherLarge_BpDutySetup.DutyName,Patch Large Leather,缝补大块皮革
+Bp_PatchedLeatherLarge_BpDutySetup.DutySummary,Patching large leather.,正在缝补大块皮革。
+Bp_PatchedLeatherMedium_BpDutySetup.DutyName,Patch Small Leather,缝补小块皮革
+Bp_PatchedLeatherMedium_BpDutySetup.DutySummary,Patching small leather.,正在缝补小块皮革。
+Bp_PatchedLeatherVeryLarge_BpDutySetup.DutyName,Patch Very Large Leather,缝补特大块皮革
+Bp_PatchedLeatherVeryLarge_BpDutySetup.DutySummary,Patching very large leather.,正在缝补特大块皮革。
+Bp_PineSalve_BpDutySetup.DutyName,Make Pine Salve,制作松脂膏
+Bp_PineSalve_BpDutySetup.DutySummary,Making pine salve.,制作松脂膏。
+Bp_Plaster_BpDutySetup.DutyName,Make Plaster,制作灰泥
+Bp_Plaster_BpDutySetup.DutySummary,Making plaster.,制作灰泥。
+Bp_Pouch_BpDutySetup.DutyName,Sew Pouch,缝制袋子
+Bp_Pouch_BpDutySetup.DutySummary,Sewing a pouch.,缝制一个袋子。
+Bp_Quill_BpDutySetup.DutyName,Craft Quill,制作羽毛笔
+Bp_Quill_BpDutySetup.DutySummary,Crafting a quill.,制作一根羽毛笔。
+Bp_ReedCoat_BpDutySetup.DutyName,Weave Reed Coat,编织芦苇大衣
+Bp_ReedCoat_BpDutySetup.DutySummary,Weaving a reed coat.,编织一件芦苇大衣。
+Bp_ReedSkirt_BpDutySetup.DutyName,Weave Reed Skirt,编织芦苇裙
+Bp_ReedSkirt_BpDutySetup.DutySummary,Weaving a reed skirt.,正在编织芦苇裙。
+Bp_ReedTunic_BpDutySetup.DutyName,Weave Reed Tunic,编织芦苇长袍
+Bp_ReedTunic_BpDutySetup.DutySummary,Weaving a reed tunic.,正在编织芦苇长袍。
+Bp_Rope_BpDutySetup.DutyName,Weave Rope,编织绳子
+Bp_Rope_BpDutySetup.DutySummary,Weaving a rope.,正在编织绳子。
+Bp_SimpleArrows_BpDutySetup.DutyName,Craft Simple Arrows,制作简易箭
+Bp_SimpleArrows_BpDutySetup.DutySummary,Crafting simple arrows.,正在制作简易箭。
+Bp_Skis_BpDutySetup.DutyName,Craft Skis,制作滑雪板
+Bp_Skis_BpDutySetup.DutySummary,Crafting a pair of skis.,正在制作滑雪板。
+Bp_SlagPanning_BpDutySetup.DutyName,Pan Slag,淘洗炉石
+Bp_SlagPanning_BpDutySetup.DutySummary,Panning slag.,正在淘洗炉石。
+Bp_Sledge_BpDutySetup.DutyName,Construct Sledge,建造雪橇
+Bp_Sledge_BpDutySetup.DutySummary,Constructing a sledge.,正在建造雪橇。
+Bp_SnareTrap_BpDutySetup.DutyName,Construct Snare Trap,建造套索陷阱
+Bp_SnareTrap_BpDutySetup.DutySummary,Constructing a snare trap.,正在建造套索陷阱。
+Bp_SnowShoes_BpDutySetup.DutyName,Craft Snow Shoes,制作雪靴
+Bp_SnowShoes_BpDutySetup.DutySummary,Crafting a pair of snow shoes.,正在制作雪靴。
+Bp_Soap_BpDutySetup.DutyName,Make Soap,制作肥皂
+Bp_Soap_BpDutySetup.DutySummary,Making soap.,制作肥皂。
+Bp_SoothingOintment_BpDutySetup.DutyName,Make Soothing Ointment,制作止痛膏
+Bp_SoothingOintment_BpDutySetup.DutySummary,Making soothing ointment.,正在制作止痛膏。
+Bp_SoothingSalve_BpDutySetup.DutyName,Make Soothing Salve,制作舒缓膏
+Bp_SoothingSalve_BpDutySetup.DutySummary,Making soothing salve.,正在制作舒缓膏。
+Bp_SootInk_BpDutySetup.DutyName,Make Soot Ink,制作墨水
+Bp_SootInk_BpDutySetup.DutySummary,aking soot ink.,正在制作墨水。
+Bp_Spear_Flint_BpDutySetup.DutyName,Craft Flint Spear,制作燧石矛
+Bp_Spear_Flint_BpDutySetup.DutySummary,Crafting a flint spear.,正在制作燧石矛。
+Bp_StomachPouch_BpDutySetup.DutyName,Sew Stomach Pouch,缝制胃袋
+Bp_StomachPouch_BpDutySetup.DutySummary,Sewing a stomach pouch.,正在缝制胃袋。
+Bp_Torch_BpDutySetup.DutyName,Craft Torch,制作火炬
+Bp_Torch_BpDutySetup.DutySummary,Crafting a torch.,正在制作火炬。
+Bp_TourniquetRustic_BpDutySetup.DutyName,Craft Tourniquet,制作止血带
+Bp_TourniquetRustic_BpDutySetup.DutySummary,Crafting a tourniquet.,正在制作止血带。
+Bp_Twine_BpDutySetup.DutyName,Make Twine,制作细线
+Bp_Twine_BpDutySetup.DutySummary,Making twine. ,正在制作细线。
+Bp_TwineSpinningWheel_BpDutySetup.DutyName,Make Twine,制作细线
+Bp_TwineSpinningWheel_BpDutySetup.DutySummary,Making twine. ,正在制作细线。
+Bp_WaterPouch_BpDutySetup.DutyName,Sew Water Pouch,缝制胃水袋
+Bp_WaterPouch_BpDutySetup.DutySummary,Sewing a water pouch.\n,正在缝制胃水袋。
+Bp_Waterskin_BpDutySetup.DutyName,Sew Waterskin,缝制水袋
+Bp_Waterskin_BpDutySetup.DutySummary,Sewing a waterskin.,正在缝制水袋。
+Bp_Wheelbarrow_BpDutySetup.DutyName,Construct Wheelbarrow,建造手推车
+Bp_Wheelbarrow_BpDutySetup.DutySummary,Constructing a wheelbarrow.,正在建造手推车。
+Bp_WolfsbaneCoating_BpDutySetup.DutyName,Make Wolfsbane Coating,制作乌头涂层
+Bp_WolfsbaneCoating_BpDutySetup.DutySummary,Making a wolfsbane coating.,正在制作乌头涂层。
+Bp_WoodShavings_BpDutySetup.DutyName,Shave Wood,刨木屑
+Bp_WoodShavings_BpDutySetup.DutySummary,Shaving some wood.,正在刨木屑。
+Bp_Yarn_BpDutySetup.DutyName,Make Yarn,制作线团
+Bp_Yarn_BpDutySetup.DutySummary,Making some yarn.,制作一些线团。
+Bp_YarnSpinningWheel_BpDutySetup.DutyName,Make Yarn,制作线团
+Bp_YarnSpinningWheel_BpDutySetup.DutySummary,Making some yarn.,制作一些线团。
+Bp_BedLog_BpDutySetup.DutyName,Build Log Bed,建造原木床
+Bp_BedLog_BpDutySetup.DutySummary,Building a log bed.\n,正在建造原木床。
+Bp_Bloomery_BpDutySetup.DutyName,Construct Bloomery,建造块炼炉
+Bp_Bloomery_BpDutySetup.DutySummary,Constructing a bloomery.,正在建造块炼炉。
+Bp_Cage_BpDutySetup.DutyName,Construct Cage,建造诱捕笼
+Bp_Cage_BpDutySetup.DutySummary,Constructing a cage.,正在建造诱捕笼。
+Bp_Clay_BpDutySetup.DutyName,Make Clay,制作粘土
+Bp_Clay_BpDutySetup.DutySummary,Making some clay.,正在制作粘土。
+Bp_CloverField_BpDutySetup.DutyName,Seed Clover Field,播种三叶草田
+Bp_CloverField_BpDutySetup.DutySummary,Planting a clover field.,正在播种三叶草田。
+Bp_CompostBin_BpDutySetup.DutyName,Construct Compost Bin,建造堆肥箱
+Bp_CompostBin_BpDutySetup.DutySummary,Constructing a compost bin.,正在建造堆肥箱。
+Bp_DryingRack_BpDutySetup.DutyName,Construct Drying Rack,建造晾晒架
+Bp_DryingRack_BpDutySetup.DutySummary,Constructing a drying rack.,正在建造晾晒架。
+Bp_FiberBreak_BpDutySetup.DutyName,Construct Fiber Break,建造纤维破碎架
+Bp_FiberBreak_BpDutySetup.DutySummary,Constructing a fiber break.,正在建造纤维破碎架。
+Bp_Flatbow_BpDutySetup.DutyName,Craft Flatbow,制作平弓
+Bp_Flatbow_BpDutySetup.DutySummary,Crafting a flatbow.,正在制作平弓。
+Bp_FlaxField_BpDutySetup.DutyName,Plant Flax Field,种植亚麻田
+Bp_FlaxField_BpDutySetup.DutySummary,Planting a flax field.,正在种植亚麻田。
+Bp_FleshingBeam_BpDutySetup.DutyName,Construct Fleshing Beam,建造刮皮梁
+Bp_FleshingBeam_BpDutySetup.DutySummary,Constructing a fleshing beam.,正在建造刮皮梁。
+Bp_FluteWooden_BpDutySetup.DutyName,Carve Wooden Flute,雕刻木笛
+Bp_FluteWooden_BpDutySetup.DutySummary,Carving a wooden flute.,正在雕刻木笛。
+Bp_Forge_BpDutySetup.DutyName,Build Forge,建造锻造台
+Bp_Forge_BpDutySetup.DutySummary,Building a forge.,建造一个锻造台。
+Bp_Furnace_BpDutySetup.DutyName,Build Furnace,建造熔炉
+Bp_Furnace_BpDutySetup.DutySummary,Building a furnace.,建造一个熔炉。
+Bp_GardenPlot_BpDutySetup.DutyName,Prepare Garden Plot,准备菜园
+Bp_GardenPlot_BpDutySetup.DutySummary,Preparing a garden plot.,正在准备菜园。
+Bp_HandDrill_BpDutySetup.DutyName,Craft Hand Drill,制作手钻
+Bp_HandDrill_BpDutySetup.DutySummary,Crafting a hand drill. ,正在制作手钻。
+Bp_HeatherField_BpDutySetup.DutyName,Plant Heather Field,种植帚石南田
+Bp_HeatherField_BpDutySetup.DutySummary,Planting a heather field.,正在种植帚石南田。
+Bp_ImprovisedShelter_BpDutySetup.DutyName,Making Improvised Shelter,搭建临时庇护所
+Bp_ImprovisedShelter_BpDutySetup.DutySummary,Constructing an improvised shelter.,正在搭建临时庇护所。
+Bp_Kiln_BpDutySetup.DutyName,Build Kiln,建造窑炉
+Bp_Kiln_BpDutySetup.DutySummary,Building a kiln.,正在建造窑炉。
+Bp_Mallet_BpDutySetup.DutyName,Craft Mallet,制作木槌
+Bp_Mallet_BpDutySetup.DutySummary,Crafting a Mallet.,正在制作木槌。
+Bp_MeadowgrassField_BpDutySetup.DutyName,Plant Meadowgrass Field,种植牧草田
+Bp_MeadowgrassField_BpDutySetup.DutySummary,Planting a meadowgrass field.,正在种植牧草田。
+Bp_MudBrickMold_BpDutySetup.DutyName,Construct Brick Mold,建造砖模具
+Bp_MudBrickMold_BpDutySetup.DutySummary,Constructing a brick mold.,正在建造砖模具。
+Bp_MudBricks_BpDutySetup.DutyName,Make Mud Bricks,制作泥砖
+Bp_MudBricks_BpDutySetup.DutySummary,Making mud bricks.,正在制作泥砖。
+Bp_NestingBox_BpDutySetup.DutyName,Construct Nesting Box,建造巢盒
+Bp_NestingBox_BpDutySetup.DutySummary,Construct a nesting box.,正在建造巢盒。
+Bp_OakenStaff_BpDutySetup.DutyName,Carve Oaken Staff,雕刻橡木杖
+Bp_OakenStaff_BpDutySetup.DutySummary,Carving an oaken staff.,正在雕刻橡木杖。
+Bp_Oven_BpDutySetup.DutyName,Build Oven,建造烤箱
+Bp_Oven_BpDutySetup.DutySummary,Building an oven.,正在建造烤箱。
+Bp_PeaField_BpDutySetup.DutyName,Plant Pea Field,种植豌豆田
+Bp_PeaField_BpDutySetup.DutySummary,Planting a pea field.,正在种植豌豆田。
+Bp_PeasField_BpDutySetup.DutyName,Plant Peas Field\n,种植豌豆田
+Bp_PeasField_BpDutySetup.DutySummary,Planting a peas field.,正在种植豌豆田。
+Bp_PotteryWheel_BpDutySetup.DutyName,Construct Pottery Wheel,建造陶轮
+Bp_PotteryWheel_BpDutySetup.DutySummary,Constructing a pottery wheel. ,正在建造陶轮。
+Bp_RusticBarrel_BpDutySetup.DutyName,Construct Rustic Barrel,建造粗制木桶
+Bp_RusticBarrel_BpDutySetup.DutySummary,Constructing a rustic barrel.,正在建造粗制木桶。
+Bp_RusticSpear_BpDutySetup.DutyName,Craft Rustic Spear,制作简易长矛
+Bp_RusticSpear_BpDutySetup.DutySummary,Crafting a rustic spear.,正在制作简易长矛。
+Bp_RusticTable_BpDutySetup.DutyName,Construct Rustic Table,建造简易桌子
+Bp_RusticTable_BpDutySetup.DutySummary,Constructing a rustic table.,正在建造简易桌子。
+Bp_RyeField_BpDutySetup.DutyName,Plant Rye Field,种植黑麦田
+Bp_RyeField_BpDutySetup.DutySummary,Planting a rye field.,正在种植黑麦田。
+Bp_Sawhorses_BpDutySetup.DutyName,Construct Sawhorses.,建造锯木架
+Bp_Sawhorses_BpDutySetup.DutySummary,Constructing sawhorses.,正在建造锯木架。
+Bp_SharpenedStone_BpDutySetup.DutyName,Sharpen Stone,打磨石头
+Bp_SharpenedStone_BpDutySetup.DutySummary,Sharpening a stone.,正在打磨石头。
+Bp_Shelf_BpDutySetup.DutyName,Construct Shelf,建造储物架
+Bp_Shelf_BpDutySetup.DutySummary,Constructing a shelf.,正在建造储物架。
+Bp_Sieve_BpDutySetup.DutyName,Construct Sieve,建造筛子
+Bp_Sieve_BpDutySetup.DutySummary,Constructing a sieve.,正在建造筛子。
+Bp_SimpleBow_BpDutySetup.DutyName,Craft Simple Bow,制作简易弓
+Bp_SimpleBow_BpDutySetup.DutySummary,Crafting a simple bow.,正在制作简易弓。
+Bp_SnowMan_BpDutySetup.DutyName,Build Snowman,建造雪人
+Bp_SnowMan_BpDutySetup.DutySummary,Building a snowman.,正在建造雪人。
+Bp_Spindle_BpDutySetup.DutyName,Carve Spindle,雕刻纺锤
+Bp_Spindle_BpDutySetup.DutySummary,Carving a spindle.,正在雕刻纺锤。
+Bp_SpinningWheel_BpDutySetup.DutyName,Construct Spinning Wheel,建造纺车
+Bp_SpinningWheel_BpDutySetup.DutySummary,Constructing a spinning Wheel.,正在建造纺车。
+Bp_SpiritShrine_Fire_RitualPyre_BpDutySetup.DutyName,Construct Ritual Pyre,建造仪式柴堆
+Bp_SpiritShrine_Fire_RitualPyre_BpDutySetup.DutySummary,Constructing a ritual pyre.,正在建造仪式柴堆。
+Bp_SpiritShrine_Frost_FrostShrine_BpDutySetup.DutyName,Construct Frost Shrine\n,建造霜冻祭坛
+Bp_SpiritShrine_Frost_FrostShrine_BpDutySetup.DutySummary,Constructing a frost shrine.,正在建造霜冻祭坛。
+Bp_Splint_BpDutySetup.DutyName,Craft Splint,制作夹板
+Bp_Splint_BpDutySetup.DutySummary,Crafting a splint.,正在制作夹板。
+Bp_StoneAxe_BpDutySetup.DutyName,Craft Stone Axe,制作石斧
+Bp_StoneAxe_BpDutySetup.DutySummary,Crafting a stone axe.,正在制作石斧。
+Bp_StretchingFrame_BpDutySetup.DutyName,Construct Stretching Frame,建造伸张架
+Bp_StretchingFrame_BpDutySetup.DutySummary,Constructing a stretching frame.,正在建造伸张架。
+Bp_Thresher_BpDutySetup.DutyName,Craft Thresher,制作脱粒机
+Bp_Thresher_BpDutySetup.DutySummary,Crafting a thresher.,正在制作脱粒机。
+Bp_ToolOrWeapon_ArrowBroadhead_Metal_BpDutySetup.DutyName,Craft Broadhead Arrow,制作宽头箭
+Bp_ToolOrWeapon_ArrowBroadhead_Metal_BpDutySetup.DutySummary,Crafting a broadhead arrow.,正在制作宽头箭。
+Bp_ToolOrWeapon_Arrow_Metal_BpDutySetup.DutyName,Craft Metal Arrow,制作金属箭
+Bp_ToolOrWeapon_Arrow_Metal_BpDutySetup.DutySummary,Crafting a metal arrow.,正在制作金属箭。
+Bp_ToolOrWeapon_Axe_Metal_BpDutySetup.DutyName,Craft a Metal Axe,制作金属斧
+Bp_ToolOrWeapon_Axe_Metal_BpDutySetup.DutySummary,Crafting a metal axe.,正在制作金属斧。
+Bp_ToolOrWeapon_ButcheringKnife_Metal_BpDutySetup.DutyName,Craft Butchering Knife,制作屠宰刀
+Bp_ToolOrWeapon_ButcheringKnife_Metal_BpDutySetup.DutySummary,Crafting a butchering knife.,正在制作屠宰刀。
+Bp_ToolOrWeapon_Chisel_Metal_BpDutySetup.DutyName,Craft Metal Chisel,制作金属凿子
+Bp_ToolOrWeapon_Chisel_Metal_BpDutySetup.DutySummary,Crafting a metal chisel.,正在制作金属凿子。
+Bp_ToolOrWeapon_Drawknife_Metal_BpDutySetup.DutyName,Craft Metal Drawknife,制作金属拉刀
+Bp_ToolOrWeapon_Drawknife_Metal_BpDutySetup.DutySummary,Crafting a metal drawknife.,正在制作金属拉刀。
+Bp_ToolOrWeapon_Hammer_Metal_BpDutySetup.DutyName,Craft Metal Hammer,制作锻造锤
+Bp_ToolOrWeapon_Hammer_Metal_BpDutySetup.DutySummary,Crafting a metal hammer.,正在制作锻造锤。
+Bp_ToolOrWeapon_Handsaw_Metal_BpDutySetup.DutyName,Craft Metal Handsaw,制作金属手锯
+Bp_ToolOrWeapon_Handsaw_Metal_BpDutySetup.DutySummary,Crafting a metal handsaw.,正在制作金属手锯。
+Bp_ToolOrWeapon_Hoe_Metal_BpDutySetup.DutyName,Craft Metal Hoe,制作金属锄
+Bp_ToolOrWeapon_Hoe_Metal_BpDutySetup.DutySummary,Crafting a metal hoe.,正在制作金属锄。
+Bp_ToolOrWeapon_Knife_Metal_BpDutySetup.DutyName,Craft Metal Knife.,制作金属刀
+Bp_ToolOrWeapon_Knife_Metal_BpDutySetup.DutySummary,Crafting a metal knife.,正在制作金属刀。
+Bp_ToolOrWeapon_MeatHook_Metal_BpDutySetup.DutyName,Craft Metal Meat Hook.,制作金属肉钩
+Bp_ToolOrWeapon_MeatHook_Metal_BpDutySetup.DutySummary,Crafting a metal meat hook.,正在制作金属肉钩。
+Bp_ToolOrWeapon_Pickaxe_Metal_BpDutySetup.DutyName,Craft Metal Pickaxe,制作金属镐
+Bp_ToolOrWeapon_Pickaxe_Metal_BpDutySetup.DutySummary,Crafting a metal pickaxe.,正在制作金属镐。
+Bp_ToolOrWeapon_Scythe_Metal_BpDutySetup.DutyName,Craft Metal Scythe,制作金属大镰刀
+Bp_ToolOrWeapon_Scythe_Metal_BpDutySetup.DutySummary,Crafting a metal scythe.,正在制作金属大镰刀。
+Bp_ToolOrWeapon_Shovel_Metal_BpDutySetup.DutyName,Craft Metal Shovel,制作金属铲
+Bp_ToolOrWeapon_Shovel_Metal_BpDutySetup.DutySummary,Crafting a metal shovel.,正在制作金属铲。
+Bp_ToolOrWeapon_Sickle_Metal_BpDutySetup.DutyName,Craft Metal Sickle.,制作金属镰刀
+Bp_ToolOrWeapon_Sickle_Metal_BpDutySetup.DutySummary,Crafting a metal sickle. ,正在制作金属镰刀。
+Bp_ToolOrWeapon_SkinningKnife_Metal_BpDutySetup.DutyName,Craft Metal Skinning Knife,制作金属剥皮刀
+Bp_ToolOrWeapon_SkinningKnife_Metal_BpDutySetup.DutySummary,Crafting a metal skinning knife.,正在制作金属剥皮刀。
+Bp_ToolOrWeapon_SpearHunting_Metal_BpDutySetup.DutyName,Craft Metal Hunting Spear,制作狩猎长矛
+Bp_ToolOrWeapon_SpearHunting_Metal_BpDutySetup.DutySummary,Crafting a metal hunting spear. ,正在制作狩猎长矛。
+Bp_ToolOrWeapon_Spear_Metal_BpDutySetup.DutyName,Craft Metal Spear.,制作金属矛
+Bp_ToolOrWeapon_Spear_Metal_BpDutySetup.DutySummary,Crafting a metal spear. ,正在制作金属矛。
+Bp_ToolOrWeapon_SpoonAuger_Metal_BpDutySetup.DutyName,Craft Metal Spoon Auger,制作金属勺型钻
+Bp_ToolOrWeapon_SpoonAuger_Metal_BpDutySetup.DutySummary,Crafting a metal spoon auger. ,正在制作金属勺型钻。
+Bp_Travois_BpDutySetup.DutyName,Construct Travois,建造旧式雪橇
+Bp_Travois_BpDutySetup.DutySummary,Constructing a travois. ,正在建造旧式雪橇。
+Bp_TreadleLoom_BpDutySetup.DutyName,Construct Treadle Loom,建造踏板织机
+Bp_TreadleLoom_BpDutySetup.DutySummary,Constructing a treadle loom. ,正在建造踏板织机。
+Bp_TurnrootField_BpDutySetup.DutyName,Plant Turnroot Field,种植翻根田
+Bp_TurnrootField_BpDutySetup.DutySummary,Planting a turnroot field. ,正在种植翻根田。
+Bp_WeightedLoom_BpDutySetup.DutyName,Construct Weighted Loom,建造重锤织机
+Bp_WeightedLoom_BpDutySetup.DutySummary,Constructing a weighted loom.,正在建造重锤织机。
+Bp_WheatField_BpDutySetup.DutyName,Plant Wheat Field,种植小麦田
+Bp_WheatField_BpDutySetup.DutySummary,Planting a wheat field. ,正在种植小麦田。
+Bp_WoodCarvings_BpDutySetup.DutyName,Carve Woodcarving,雕刻木雕
+Bp_WoodCarvings_BpDutySetup.DutySummary,Carving a woodcarving.,正在雕刻木雕。
+Bp_WoodenPlate_BpDutySetup.DutyName,Carve Wooden Plate\n,雕刻木盘
+Bp_WoodenPlate_BpDutySetup.DutySummary,Carving a wooden plate.,正在雕刻木盘。
+Bp_WoodenShovel_BpDutySetup.DutyName,Carve Wooden Shovel,雕刻木铲
+Bp_WoodenShovel_BpDutySetup.DutySummary,Carving a wooden shovel.,正在雕刻木铲。
+Bp_Workbench_BpDutySetup.DutyName,Construct Workbench,建造工作台
+Bp_Workbench_BpDutySetup.DutySummary,Constructing a workbench.,正在建造工作台。
+Bp_ArrowBone_BpDutySetup.DutyName,Craft Bone Arrow,制作骨制箭矢
+Bp_ArrowBone_BpDutySetup.DutySummary,Crafting a bone arrow.,正在制作骨制箭矢。
+Bp_Bedroll_BpDutySetup.DutyName,Craft Bedroll\n,制作睡袋
+Bp_Bedroll_BpDutySetup.DutySummary,Crafting a bedroll.,正在制作睡袋。
+Bp_BoneKnife_BpDutySetup.DutyName,Craft Bone Knife\n,制作骨刀
+Bp_BoneKnife_BpDutySetup.DutySummary,Crafting a bone knife.,正在制作骨刀。
+Bp_Butter_BpDutySetup.DutyName,Make Butter.,制作黄油
+Bp_Butter_BpDutySetup.DutySummary,Making some butter.,正在制作黄油。
+Bp_ButterChunk_BpDutySetup.DutyName,Make Butter Chunk.,制作黄油块
+Bp_ButterChunk_BpDutySetup.DutySummary,Making a Butter Chunk.,正在制作黄油块。
+Bp_CheeseSoft_BpDutySetup.DutyName,Make Soft Cheese,制作软奶酪
+Bp_CheeseSoft_BpDutySetup.DutySummary,Making some soft cheese.,正在制作软奶酪。
+Bp_DoughStarter_BpDutySetup.DutyName,Make Dough Starter,制作酵种
+Bp_DoughStarter_BpDutySetup.DutySummary,Making some dough starter.,正在制作酵种。
+Bp_Fatchunk_BpDutySetup.DutyName,Make Fat Chunk,制作脂肪块
+Bp_Fatchunk_BpDutySetup.DutySummary,Make a fat chunk.,正在制作脂肪块。
+Bp_Fungicide_BpDutySetup.DutyName,Make Fungicide,制作除菌剂
+Bp_Fungicide_BpDutySetup.DutySummary,Making some fungicide.,正在制作除菌剂。
+Bp_Insecticide_BpDutySetup.DutyName,Make Insecticide,制作杀虫剂
+Bp_Insecticide_BpDutySetup.DutySummary,Making insecticide.,正在制作杀虫剂。
+Bp_LeatherBellows_BpDutySetup.DutyName,Construct Leather Bellows,制作皮革风箱
+Bp_LeatherBellows_BpDutySetup.DutySummary,Constructing leather bellows.,正在制作皮革风箱。
+Bp_LeatherQuiver_BpDutySetup.DutyName,Sew Leather Quiver,缝制皮革箭筒
+Bp_LeatherQuiver_BpDutySetup.DutySummary,Sewing a leather Quiver.,正在缝制皮革箭筒。
+Bp_Pie_BpDutySetup.DutyName,Make Pie,制作派
+Bp_Pie_BpDutySetup.DutySummary,Making a pie.,正在制作派。
+Bp_Poridge_BpDutySetup.DutyName,Make Poridge,煮粥
+Bp_Poridge_BpDutySetup.DutySummary,Making poridge.,正在煮粥。
+Bp_RyeBreadLoaf_BpDutySetup.DutyName,Make Rye Breadloaf,制作黑麦面包条
+Bp_RyeBreadLoaf_BpDutySetup.DutySummary,Making a rye breadloaf.,正在制作黑麦面包条。
+Bp_WheatBreadLoaf_BpDutySetup.DutyName,Make Wheat Breadloaf,制作小麦面包条
+Bp_WheatBreadLoaf_BpDutySetup.DutySummary,Making a wheat breadloaf. ,正在制作小麦面包条。
+Bp_Bookshelf_BpDutySetup.DutyName,Build Bookshelf,建造书架
+Bp_Bookshelf_BpDutySetup.DutySummary,Building a bookshelf.,正在建造书架。
+Bp_Hackle_BpDutySetup.DutyName,Craft Hackle,制作梳理器
+Bp_Hackle_BpDutySetup.DutySummary,Crafting a hackle.,正在制作梳理器。
+Bp_Hideout_BpDutySetup.DutyName,Construct Hideout,建造藏匿点
+Bp_Hideout_BpDutySetup.DutySummary,Construcing a hideout.,正在建造藏匿点。
+Bp_SnowShelter_BpDutySetup.DutyName,Construct Snow Shelter,建造雪棚
+Bp_SnowShelter_BpDutySetup.DutySummary,Constructing a snow shelter.,正在建造雪棚。
+Bp_CurseGrove_BpDutySetup.DutyName,Curse Grove,诅咒林地
+Bp_CurseGrove_BpDutySetup.DutySummary,Curse a grove.,正在诅咒林地。
+Bp_MaidenCharm_BpDutySetup.DutyName,Craft Maiden Charm,制作少女木雕
+Bp_MaidenCharm_BpDutySetup.DutySummary,Crafting a maiden charm.,正在制作少女木雕。
+RainCistern_DismantleActions[2].ActionName,Demolish,拆除
+CrayfishRaw_SpecialDurability4.CardStatName,Boil,烹煮
+MeatBrainMush_Progress.CardStatName,Boil,烹煮
+FishScraps_FuelCapacity.CardStatName,Temperature,温度
+FishScraps_SpecialDurability1.CardStatName,Cook,烹饪
+FishScrapsCooked_SpecialDurability1.CardStatName,Burned,烤焦的
+CrayfishCooked_SpecialDurability4.CardStatName,Boil,烹煮
+FluteWooden_DismantleActions[4].ActionDescription,Partner 76-149,同伴 76-149
